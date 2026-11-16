@@ -1,0 +1,17 @@
+[
+  {
+    "kind": "clean",
+    "exact_residuals": true,
+    "exact_selected_candidates": true
+  },
+  {
+    "kind": "edge16",
+    "exact_residuals": true,
+    "exact_selected_candidates": true
+  },
+  {
+    "kind": "global",
+    "exact_residuals": true,
+    "exact_selected_candidates": true
+  }
+]

@@ -49,6 +49,13 @@ class EstimationConfig:
     use_overlap_reranking: bool = False
     overlap_penalty: float = .15
     frequency_merge_tolerance: float = .0078125
+    minimum_small_window_cycles: float = 3.
+    minimum_small_window_stability: float = .8
+    amplitude_model: str = 'affine'
+    envelope_grid_size: int = 3
+    envelope_smoothness: float = .002
+    envelope_ridge: float = .0002
+    envelope_gain_threshold: float = .01
 
     def __post_init__(self):
         if not self.scales or any(s < 32 for s in self.scales):
@@ -69,6 +76,15 @@ class EstimationConfig:
             raise ValueError('Overlap reranking requires two candidate refinement')
         if self.overlap_penalty < 0 or self.frequency_merge_tolerance <= 0:
             raise ValueError('Invalid overlap or frequency merge settings')
+        if not np.isfinite(self.minimum_small_window_cycles) or self.minimum_small_window_cycles <= 0:
+            raise ValueError('minimum_small_window_cycles must be finite and positive')
+        if not np.isfinite(self.minimum_small_window_stability) or not 0 <= self.minimum_small_window_stability <= 1:
+            raise ValueError('minimum_small_window_stability must be in [0,1]')
+        if self.amplitude_model not in ('affine','grid') or self.envelope_grid_size != 3:
+            raise ValueError('amplitude_model must be affine/grid; the supported envelope grid is 3x3')
+        if any(not np.isfinite(value) or value < 0 for value in (
+                self.envelope_smoothness,self.envelope_ridge,self.envelope_gain_threshold)):
+            raise ValueError('Envelope regularization and gain threshold must be finite and nonnegative')
 
 
 @dataclass
@@ -253,6 +269,21 @@ def fit_candidate(a,candidate,cfg,*,fit_mask=None,force_model=None):
             prediction=trial_noise+plane@nuisance
         else:final_sse=best['sse']
     else:final_sse=best['sse']
+    envelope_gain=0.;envelope_diagnostics=None
+    force_grid=force_model is not None and 'grid_amplitude' in force_model
+    allow_grid=(cfg.enable_amplitude_model and cfg.amplitude_model=='grid') if force_model is None else force_grid
+    if allow_grid and amplitude>1e-8:
+        from spatial_envelope import fit_spatial_envelope
+        grid=fit_spatial_envelope(a,carrier,weight,plane,amplitude,
+            grid_size=cfg.envelope_grid_size,smoothness=cfg.envelope_smoothness,ridge=cfg.envelope_ridge)
+        penalty=weight.sum()*(grid['smoothness_penalty']+grid['amplitude_penalty'])
+        envelope_gain=float((final_sse-grid['sse']-penalty)/max(baseline_sse-final_sse,1e-15))
+        selected_grid=bool(grid['solver_status']>0 and (force_grid or envelope_gain>cfg.envelope_gain_threshold+complexity_penalty))
+        envelope_diagnostics={key:value for key,value in grid.items() if key not in ('field','residual','prediction')}
+        envelope_diagnostics['selected']=selected_grid
+        if selected_grid:
+            noise=grid['residual'];envelope=grid['field'];prediction=grid['prediction'];final_sse=grid['sse']
+            model=('chirp' if 'chirp' in model else 'sinusoid')+'_grid_amplitude'
     fit_ratio=float(np.clip(np.sum(weight*noise**2)/max(baseline_sse,1e-15),0,1))
     improvement=float(np.clip((baseline_sse-final_sse)/max(baseline_sse,1e-15),0,1))
     params=best['parameters']
@@ -273,10 +304,14 @@ def fit_candidate(a,candidate,cfg,*,fit_mask=None,force_model=None):
         model='rejected_frequency_range'
         prediction=plane@baseline_coef
         final_sse=baseline_sse
+        if envelope_diagnostics is not None:
+            envelope_diagnostics['selected']=False
+            envelope_diagnostics['rejection_reason']='frequency_range'
     return dict(residual=noise,prediction=prediction,amplitude=float(np.sqrt(np.sum(weight*envelope**2)/weight.sum())),
                 fit_ratio=fit_ratio,fit_improvement=improvement,
                 fy=best['fy'],fx=best['fx'],model=model,
                 chirp_gain=chirp_gain,amplitude_gain=amplitude_gain,
+                envelope_gain=envelope_gain,envelope_diagnostics=envelope_diagnostics,
                 hessian_yy=float(params[2]/h**2),hessian_yx=float(params[3]/(h*w)),hessian_xx=float(params[4]/w**2),
                 final_sse=float(final_sse),baseline_sse=baseline_sse,
                 frequency_min=frequency_min,frequency_max=frequency_max,
@@ -299,7 +334,7 @@ def _holdout_mask(shape,fraction,seed):
 
 
 def _model_complexity(model):
-    return 7+3*int('chirp' in model)+2*int('affine_amplitude' in model)
+    return 7+3*int('chirp' in model)+2*int('affine_amplitude' in model)+8*int('grid_amplitude' in model)
 
 
 def _model_alternatives(patch,pool,cfg):
@@ -391,6 +426,7 @@ def prepare(image,config: EstimationConfig | None = None):
     for gy,y in enumerate(ys):
         for gx,x in enumerate(xs):
             candidates=[]
+            small_checks=[]
             windows={}
             for scale in sorted(set(cfg.scales)):
                 ah,aw=min(scale,h),min(scale,w)
@@ -401,13 +437,22 @@ def prepare(image,config: EstimationConfig | None = None):
                 ay,ax,ah,aw=key
                 if key not in cache:cache[key]=spectral_candidates(a[ay:ay+ah,ax:ax+aw],cfg)
                 requested=(cfg.force_scale if cfg.force_scale in requested_scales else min(requested_scales))
-                candidates.extend(dict(c,requested_scale=requested,requested_scales=list(requested_scales),
-                                       analysis_window_id=key) for c in cache[key])
+                for candidate in cache[key]:
+                    candidate=dict(candidate,requested_scale=requested,requested_scales=list(requested_scales),analysis_window_id=key)
+                    if requested==32 and min(ah,aw)==32:
+                        from small_window import small_window_evidence
+                        candidate['small_window_evidence']=small_window_evidence(a[ay:ay+ah,ax:ax+aw],candidate,
+                            minimum_cycles=cfg.minimum_small_window_cycles,minimum_stability=cfg.minimum_small_window_stability)
+                        small_checks.append(dict(fy=candidate['fy'],fx=candidate['fx'],analysis_window_id=key,
+                                                 **candidate['small_window_evidence']))
+                        if not candidate['small_window_evidence']['eligible']:continue
+                    candidates.append(candidate)
             t=dict(y=y,x=x,h=sy,w=sx,gy=gy,gx=gx,candidates=candidates,selected=None,
                    residual=np.zeros((sy,sx)),amplitude=0.,fit_ratio=0.,fit_improvement=0.,
                    cross_scale=0.,cross_window=0.,different_window_support=False,
                    neighbor=0.,confidence=0.,candidate_models=[],overlap_discrepancy=0.,overlap_reranked=False,
                    effective_window_count=len(windows),validation_mse=None,validation_score=None)
+            t['small_window_checks']=small_checks
             pool=[c for c in candidates if cfg.force_scale is None or cfg.force_scale in c['requested_scales']]
             patch=a[y:y+sy,x:x+sx]
             if pool:
@@ -419,7 +464,7 @@ def prepare(image,config: EstimationConfig | None = None):
                     amp=float(np.hypot(coef[0],coef[1]))
                     # The local captured energy rejects peaks belonging mainly
                     # to a distant part of a large analysis window.
-                    score=amp**2*max(c['evidence'],.05)*(1+.04*np.log2(c['scale']/min(cfg.scales)))
+                    score=amp**2*max(c['evidence'],.05)*(1+.04*np.log2(c['scale']/64))
                     c['local_amplitude']=amp;c['selection_score']=float(score)
                 alternatives=_model_alternatives(patch,pool,cfg)
                 t['_alternatives']=alternatives
@@ -471,7 +516,7 @@ def restore(prepared,weights=None,strength=1.,return_diagnostics=False):
     if weights.shape!=(len(p.tiles),) or not np.isfinite(weights).all() or np.any((weights<0)|(weights>1)):
         raise ValueError('weights must be finite [0,1], one per tile')
     numerator=np.zeros(p.image.shape);denominator=np.zeros_like(numerator)
-    maps={k:np.zeros_like(numerator) for k in ('frequency_y','frequency_x','selected_scale','confidence','suppression','model_chirp','model_affine_amplitude')}
+    maps={k:np.zeros_like(numerator) for k in ('frequency_y','frequency_x','selected_scale','confidence','suppression','model_chirp','model_affine_amplitude','model_grid_amplitude')}
     records=[]
     for t,confidence in zip(p.tiles,weights):
         sl=np.s_[t['y']:t['y']+t['h'],t['x']:t['x']+t['w']]
@@ -481,7 +526,8 @@ def restore(prepared,weights=None,strength=1.,return_diagnostics=False):
         values=dict(frequency_y=c['fy'] if c else 0.,frequency_x=c['fx'] if c else 0.,
                     selected_scale=c['scale'] if c else 0.,confidence=float(confidence),suppression=gain,
                     model_chirp=float(c is not None and 'chirp' in c['model']),
-                    model_affine_amplitude=float(c is not None and 'affine_amplitude' in c['model']))
+                    model_affine_amplitude=float(c is not None and 'affine_amplitude' in c['model']),
+                    model_grid_amplitude=float(c is not None and 'grid_amplitude' in c['model']))
         for k,value in values.items():maps[k][sl]+=weight*value
         records.append({k:v for k,v in t.items() if k!='residual'}|values)
     if np.any(denominator<=0):raise RuntimeError('Overlap weights do not cover image')

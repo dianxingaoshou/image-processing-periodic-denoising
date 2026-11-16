@@ -1,0 +1,474 @@
+[
+  {
+    "stage": "regression",
+    "dataset": "DTD_regression",
+    "image_id": "dtd_banded_0105",
+    "kind": "clean",
+    "variant": 0,
+    "amplitude": 0.0,
+    "synthesis": {
+      "kind": "clean",
+      "seed": 0,
+      "clipping_fraction": 0.0
+    },
+    "preprocessing": {
+      "reference": "textures_v3/clean/dtd_banded_0105.npy",
+      "sha256": "d117aacd40677a862a5315b65fd3306c8833a1f564a02ec3ab6cc8b8f2669472"
+    },
+    "float_input_sha256": "c3bb5e019225c1c8ad58a118f867ac7310d21bd0c9ff93722dc6f72bc9f6dc65"
+  },
+  {
+    "stage": "regression",
+    "dataset": "DTD_regression",
+    "image_id": "dtd_braided_0179",
+    "kind": "clean",
+    "variant": 1,
+    "amplitude": 0.0,
+    "synthesis": {
+      "kind": "clean",
+      "seed": 0,
+      "clipping_fraction": 0.0
+    },
+    "preprocessing": {
+      "reference": "textures_v3/clean/dtd_braided_0179.npy",
+      "sha256": "5b52d7bd8cdb70d53868e97636bd174ac03de99cc5d897982ed64fee1f2d2db3"
+    },
+    "float_input_sha256": "9db45a31dcf17bce4e1cb266e0374e6b491989fd9c80c3ad753d37a40c9a129a"
+  },
+  {
+    "stage": "regression",
+    "dataset": "DTD_regression",
+    "image_id": "dtd_chequered_0195",
+    "kind": "clean",
+    "variant": 2,
+    "amplitude": 0.0,
+    "synthesis": {
+      "kind": "clean",
+      "seed": 0,
+      "clipping_fraction": 0.0
+    },
+    "preprocessing": {
+      "reference": "textures_v3/clean/dtd_chequered_0195.npy",
+      "sha256": "f410d9f6788cd9ac03437bca84a8ba4afa431a9949c586ccf613fdf288a1bda9"
+    },
+    "float_input_sha256": "c91540ce69c08d5e266fbdf1c753879ec094f9860355bca44fb6ed0cc46e7807"
+  },
+  {
+    "stage": "regression",
+    "dataset": "DTD_regression",
+    "image_id": "dtd_crosshatched_0165",
+    "kind": "clean",
+    "variant": 3,
+    "amplitude": 0.0,
+    "synthesis": {
+      "kind": "clean",
+      "seed": 0,
+      "clipping_fraction": 0.0
+    },
+    "preprocessing": {
+      "reference": "textures_v3/clean/dtd_crosshatched_0165.npy",
+      "sha256": "b6928e151f68014506287bc0fa3cbcc1d52b82655f8ce5225ccc35faf55c2c68"
+    },
+    "float_input_sha256": "82bdb07b7391ec31277e1eddf290d04774359b1251dd324cfde4237fe42561ae"
+  },
+  {
+    "stage": "regression",
+    "dataset": "DTD_regression",
+    "image_id": "dtd_grid_0064",
+    "kind": "clean",
+    "variant": 0,
+    "amplitude": 0.0,
+    "synthesis": {
+      "kind": "clean",
+      "seed": 0,
+      "clipping_fraction": 0.0
+    },
+    "preprocessing": {
+      "reference": "textures_v3/clean/dtd_grid_0064.npy",
+      "sha256": "e0a99a5f978ae3a059396b0e33a39f7f15922789af8de39670013249b4b964c2"
+    },
+    "float_input_sha256": "7c10609bfdf9c3762d5d6853e5526f5827a19f606e38da6f64fc1f647c4e0081"
+  },
+  {
+    "stage": "regression",
+    "dataset": "DTD_regression",
+    "image_id": "dtd_grooved_0048",
+    "kind": "clean",
+    "variant": 1,
+    "amplitude": 0.0,
+    "synthesis": {
+      "kind": "clean",
+      "seed": 0,
+      "clipping_fraction": 0.0
+    },
+    "preprocessing": {
+      "reference": "textures_v3/clean/dtd_grooved_0048.npy",
+      "sha256": "2e5e40efed1e9b4690df348b7c8c0221c623c164ec9ae37a784230c082fd51cf"
+    },
+    "float_input_sha256": "15ee3769c5af8ff59660c3799efc6adc0629d6d49309f382cf102dac380ce2db"
+  },
+  {
+    "stage": "regression",
+    "dataset": "DTD_regression",
+    "image_id": "dtd_honeycombed_0065",
+    "kind": "clean",
+    "variant": 2,
+    "amplitude": 0.0,
+    "synthesis": {
+      "kind": "clean",
+      "seed": 0,
+      "clipping_fraction": 0.0
+    },
+    "preprocessing": {
+      "reference": "textures_v3/clean/dtd_honeycombed_0065.npy",
+      "sha256": "25b8d55aac819488b3cc023b03e3b237d6013bccaffc8f1fd32facf4aa27ba43"
+    },
+    "float_input_sha256": "75362b7af82f60644299eaf2eb26d77974f9982c6aabc067450e9fc9fdc703ba"
+  },
+  {
+    "stage": "regression",
+    "dataset": "DTD_regression",
+    "image_id": "dtd_knitted_0108",
+    "kind": "clean",
+    "variant": 3,
+    "amplitude": 0.0,
+    "synthesis": {
+      "kind": "clean",
+      "seed": 0,
+      "clipping_fraction": 0.0
+    },
+    "preprocessing": {
+      "reference": "textures_v3/clean/dtd_knitted_0108.npy",
+      "sha256": "849a46d3d8921e89a484b9d05552aa7c05daa3d73182fa64d9fea4bc79a3ec28"
+    },
+    "float_input_sha256": "6b0e47abe4007c0c7517e634274f9bb024090e10541ef5f74da126a2dde8a7bf"
+  },
+  {
+    "stage": "regression",
+    "dataset": "DTD_regression",
+    "image_id": "dtd_lined_0172",
+    "kind": "clean",
+    "variant": 0,
+    "amplitude": 0.0,
+    "synthesis": {
+      "kind": "clean",
+      "seed": 0,
+      "clipping_fraction": 0.0
+    },
+    "preprocessing": {
+      "reference": "textures_v3/clean/dtd_lined_0172.npy",
+      "sha256": "258ce0df97bb742f5d6ba113afda34f21f5ebc0d49f4b4ca80145090a4bb67d6"
+    },
+    "float_input_sha256": "fd83fe833ff075e77297729a8b590a7066b22da24fe0788e412cda95b9781b29"
+  },
+  {
+    "stage": "regression",
+    "dataset": "DTD_regression",
+    "image_id": "dtd_meshed_0162",
+    "kind": "clean",
+    "variant": 1,
+    "amplitude": 0.0,
+    "synthesis": {
+      "kind": "clean",
+      "seed": 0,
+      "clipping_fraction": 0.0
+    },
+    "preprocessing": {
+      "reference": "textures_v3/clean/dtd_meshed_0162.npy",
+      "sha256": "06ea1c37b391ec1add1936f9bce59ad5094ea156732844659948c5e5ee40f830"
+    },
+    "float_input_sha256": "9da9a83eaada44907021a59fd7d6f4f95b6098f86033ecca991d7d31c71622f0"
+  },
+  {
+    "stage": "regression",
+    "dataset": "DTD_regression",
+    "image_id": "dtd_striped_0119",
+    "kind": "clean",
+    "variant": 2,
+    "amplitude": 0.0,
+    "synthesis": {
+      "kind": "clean",
+      "seed": 0,
+      "clipping_fraction": 0.0
+    },
+    "preprocessing": {
+      "reference": "textures_v3/clean/dtd_striped_0119.npy",
+      "sha256": "ef7c97b385ee7c683929f938d99af536b4764fff07a79cac8a1b0ed527f9b567"
+    },
+    "float_input_sha256": "809c35360705f7755fef4b0299735acfd278e95afff42e5acaa88442240ab136"
+  },
+  {
+    "stage": "regression",
+    "dataset": "DTD_regression",
+    "image_id": "dtd_woven_0094",
+    "kind": "clean",
+    "variant": 3,
+    "amplitude": 0.0,
+    "synthesis": {
+      "kind": "clean",
+      "seed": 0,
+      "clipping_fraction": 0.0
+    },
+    "preprocessing": {
+      "reference": "textures_v3/clean/dtd_woven_0094.npy",
+      "sha256": "1fcd1699bdaf7145d2662b861608694566fbdb401503c78a251f2f538959352b"
+    },
+    "float_input_sha256": "47686f3a8e6817528165c1932c540dd3de9f456ac22ed9533ae00b69bc6837f7"
+  },
+  {
+    "stage": "regression",
+    "dataset": "BSDS_regression",
+    "image_id": "118072",
+    "kind": "edge16",
+    "variant": 0,
+    "amplitude": 0.12,
+    "synthesis": {
+      "kind": "edge16",
+      "seed": 1184761584,
+      "amplitude": 0.12,
+      "variant": 0,
+      "width_pixels": 16,
+      "edge_support": "width pixels inwards from boundary",
+      "interior_support": null,
+      "fy": 0.023015846690056407,
+      "fx": 0.15017110565654998,
+      "frequency": 0.1519246200356311,
+      "phase_offset": -0.32967110211187256,
+      "clipping_fraction": 0.0001220703125,
+      "contaminated_fraction": 0.05859375
+    },
+    "preprocessing": {
+      "input_path": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\data\\source\\images\\test\\118072.jpg",
+      "input_sha256": "5da8ebc70169f79ca0bfc118a25b74469da928cd41ffc6a646bf67a97d933c28",
+      "input_mode": "RGB",
+      "input_shape": [
+        321,
+        481
+      ],
+      "output_shape": [
+        256,
+        256
+      ],
+      "output_dtype": "float64",
+      "intensity_range": [
+        0,
+        1
+      ],
+      "grayscale_rule": "0.2125R+0.7154G+0.0721B",
+      "grayscale_weights": [
+        0.2125,
+        0.7154,
+        0.0721
+      ],
+      "rgba_background": 1.0,
+      "alpha_policy": "composite before luminance",
+      "contrast_normalization": false,
+      "geometry": {
+        "resize": "short-side Lanczos",
+        "resized_wh": [
+          384,
+          256
+        ],
+        "center_crop_xywh": [
+          64,
+          0,
+          256,
+          256
+        ]
+      }
+    },
+    "float_input_sha256": "fd9a54172ac1e3a7982dc28ec0e1216855dc95c015fd16ffd3f93f12b4591f57"
+  },
+  {
+    "stage": "regression",
+    "dataset": "BSDS_regression",
+    "image_id": "156054",
+    "kind": "edge16",
+    "variant": 1,
+    "amplitude": 0.12,
+    "synthesis": {
+      "kind": "edge16",
+      "seed": 614084726,
+      "amplitude": 0.12,
+      "variant": 1,
+      "width_pixels": 16,
+      "edge_support": "width pixels inwards from boundary",
+      "interior_support": null,
+      "fy": 0.064837160394857,
+      "fx": 0.0662521128269461,
+      "frequency": 0.09269951360229896,
+      "phase_offset": 2.558376287518061,
+      "clipping_fraction": 6.103515625e-05,
+      "contaminated_fraction": 0.05859375
+    },
+    "preprocessing": {
+      "input_path": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\data\\source\\images\\test\\156054.jpg",
+      "input_sha256": "b6fd2f5ea33770bf59d1c93cb072eef201a6ed2effe1b6849047c79bbe3cf7d1",
+      "input_mode": "RGB",
+      "input_shape": [
+        481,
+        321
+      ],
+      "output_shape": [
+        256,
+        256
+      ],
+      "output_dtype": "float64",
+      "intensity_range": [
+        0,
+        1
+      ],
+      "grayscale_rule": "0.2125R+0.7154G+0.0721B",
+      "grayscale_weights": [
+        0.2125,
+        0.7154,
+        0.0721
+      ],
+      "rgba_background": 1.0,
+      "alpha_policy": "composite before luminance",
+      "contrast_normalization": false,
+      "geometry": {
+        "resize": "short-side Lanczos",
+        "resized_wh": [
+          256,
+          384
+        ],
+        "center_crop_xywh": [
+          0,
+          64,
+          256,
+          256
+        ]
+      }
+    },
+    "float_input_sha256": "bd527a4da998b3f2b3c4d649b5be26e6fd8e03952a9eeb4b98e823282fcaac3b"
+  },
+  {
+    "stage": "regression",
+    "dataset": "BSDS_regression",
+    "image_id": "160006",
+    "kind": "edge16",
+    "variant": 2,
+    "amplitude": 0.12,
+    "synthesis": {
+      "kind": "edge16",
+      "seed": 1614812630,
+      "amplitude": 0.12,
+      "variant": 2,
+      "width_pixels": 16,
+      "edge_support": "width pixels inwards from boundary",
+      "interior_support": null,
+      "fy": 0.10465328758754601,
+      "fx": 0.0646103135458865,
+      "frequency": 0.12299106967328716,
+      "phase_offset": -2.1451480073531837,
+      "clipping_fraction": 0.0,
+      "contaminated_fraction": 0.05859375
+    },
+    "preprocessing": {
+      "input_path": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\data\\source\\images\\test\\160006.jpg",
+      "input_sha256": "d7e9211d09d4e2f9ed1cc26c2881a875b6d0267ceaed46c33752c73634437e54",
+      "input_mode": "RGB",
+      "input_shape": [
+        321,
+        481
+      ],
+      "output_shape": [
+        256,
+        256
+      ],
+      "output_dtype": "float64",
+      "intensity_range": [
+        0,
+        1
+      ],
+      "grayscale_rule": "0.2125R+0.7154G+0.0721B",
+      "grayscale_weights": [
+        0.2125,
+        0.7154,
+        0.0721
+      ],
+      "rgba_background": 1.0,
+      "alpha_policy": "composite before luminance",
+      "contrast_normalization": false,
+      "geometry": {
+        "resize": "short-side Lanczos",
+        "resized_wh": [
+          384,
+          256
+        ],
+        "center_crop_xywh": [
+          64,
+          0,
+          256,
+          256
+        ]
+      }
+    },
+    "float_input_sha256": "e1451f1ec759793dba3bdc8b47e350ca1cc31605fede5868f5d0afa245788813"
+  },
+  {
+    "stage": "regression",
+    "dataset": "BSDS_regression",
+    "image_id": "208078",
+    "kind": "edge16",
+    "variant": 3,
+    "amplitude": 0.12,
+    "synthesis": {
+      "kind": "edge16",
+      "seed": 1090272421,
+      "amplitude": 0.12,
+      "variant": 3,
+      "width_pixels": 16,
+      "edge_support": "width pixels inwards from boundary",
+      "interior_support": null,
+      "fy": -0.04871961639085699,
+      "fx": 0.15050054609400415,
+      "frequency": 0.1581898081289238,
+      "phase_offset": -0.42117826770380296,
+      "clipping_fraction": 0.000518798828125,
+      "contaminated_fraction": 0.05859375
+    },
+    "preprocessing": {
+      "input_path": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\data\\source\\images\\test\\208078.jpg",
+      "input_sha256": "063a3c11846c0ee2591da2a5c5542f915cfb36a9085198a053569f8acc1f3f1f",
+      "input_mode": "RGB",
+      "input_shape": [
+        321,
+        481
+      ],
+      "output_shape": [
+        256,
+        256
+      ],
+      "output_dtype": "float64",
+      "intensity_range": [
+        0,
+        1
+      ],
+      "grayscale_rule": "0.2125R+0.7154G+0.0721B",
+      "grayscale_weights": [
+        0.2125,
+        0.7154,
+        0.0721
+      ],
+      "rgba_background": 1.0,
+      "alpha_policy": "composite before luminance",
+      "contrast_normalization": false,
+      "geometry": {
+        "resize": "short-side Lanczos",
+        "resized_wh": [
+          384,
+          256
+        ],
+        "center_crop_xywh": [
+          64,
+          0,
+          256,
+          256
+        ]
+      }
+    },
+    "float_input_sha256": "fe65a0e67217bb93dffb3aeb3177dffff41f5946728fd9b4d0920deda19422f6"
+  }
+]

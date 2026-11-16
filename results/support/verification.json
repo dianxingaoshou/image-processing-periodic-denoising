@@ -1,0 +1,35 @@
+{
+  "all_passed": true,
+  "snapshot_sha256": "529c3031d14a85e8e219f63c1dc0c104587110c754396ba6945d023eefaef048",
+  "independent_ids_disjoint_from_old210_and_previous4": true,
+  "stages": {
+    "development": {
+      "inputs": 56,
+      "metric_rows": 1400,
+      "unique_result_keys": true,
+      "source_hashes_match_freeze": true,
+      "reconstructed_inputs": 56
+    },
+    "regression": {
+      "inputs": 16,
+      "metric_rows": 400,
+      "unique_result_keys": true,
+      "source_hashes_match_freeze": true,
+      "reconstructed_inputs": 16
+    },
+    "check": {
+      "inputs": 28,
+      "metric_rows": 700,
+      "unique_result_keys": true,
+      "source_hashes_match_freeze": true,
+      "reconstructed_inputs": 28
+    }
+  },
+  "note": "Input reconstruction and artifact checks, without rerunning inference or retuning parameters. Not a performance/safety claim.",
+  "tests": {
+    "tests": 220,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  }
+}
