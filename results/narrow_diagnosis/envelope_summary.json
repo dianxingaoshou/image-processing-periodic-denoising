@@ -1,0 +1,38 @@
+{
+  "edge8": {
+    "input_dirty_mse": 0.0029443380930669672,
+    "protected_dirty_mse": 0.0029443380930669672,
+    "unprotected_dirty_mse": 0.0032348460527149084,
+    "protected_adjacent_mse": 0.0,
+    "unprotected_adjacent_mse": 0.0002895236026018433,
+    "matched_tiles": 3,
+    "dirty_tiles": 120,
+    "known_phase_true_peak_above_cap_fraction": 1.0,
+    "matched_fits_with_positive_gain": 0,
+    "matched_fits_grid_selected": 3
+  },
+  "edge16": {
+    "input_dirty_mse": 0.002922658877842911,
+    "protected_dirty_mse": 0.002858840568517554,
+    "unprotected_dirty_mse": 0.002732527069963101,
+    "protected_adjacent_mse": 2.93845850237327e-07,
+    "unprotected_adjacent_mse": 0.00025524051058194906,
+    "matched_tiles": 31,
+    "dirty_tiles": 120,
+    "known_phase_true_peak_above_cap_fraction": 1.0,
+    "matched_fits_with_positive_gain": 4,
+    "matched_fits_grid_selected": 0
+  },
+  "edge32": {
+    "input_dirty_mse": 0.002817584008894273,
+    "protected_dirty_mse": 0.002211520125246645,
+    "unprotected_dirty_mse": 0.0011688948528649945,
+    "protected_adjacent_mse": 7.980001563787662e-09,
+    "unprotected_adjacent_mse": 0.00026450863016457156,
+    "matched_tiles": 94,
+    "dirty_tiles": 240,
+    "known_phase_true_peak_above_cap_fraction": 0.041666666666666664,
+    "matched_fits_with_positive_gain": 44,
+    "matched_fits_grid_selected": 3
+  }
+}

@@ -42,6 +42,9 @@ GitHub Actions通过 `-m "not requires_bsds"` 执行不依赖下载数据的测�
 .\.venv\Scripts\python.exe filter_image_v3.py "input.png" --config configs/support_a32.json --out results/own_image_a32
 .\.venv\Scripts\python.exe filter_image_v3.py "input.png" --config configs/support_s32.json --out results/own_image_s32
 .\.venv\Scripts\python.exe filter_image_v3.py "input.png" --config configs/support_grid.json --out results/own_image_grid
+
+# 充分延展、近似定频的水平／垂直窄条，用独立入口
+.\.venv\Scripts\python.exe filter_narrow.py "input.png" --config configs/narrow_full.json --out results/own_image_narrow
 ```
 
 当前证据未支持把解耦版视为普遍更优替代。先读 `results/v3/DECISION.md`、`results/v3/RESULTS.md` 和 `results/v3/texture_tradeoff/EXPLORATORY.md`，其中保留性能损失、纹理净损伤和负面结果。
@@ -61,7 +64,9 @@ git push -u origin improve/my-change
 
 初始导入提交和 `v3-validated-baseline` 标签用于回到历史v3完整代码。本轮修改了科学源码，旧快照在当前分支不再匹配；保留旧快照及原始表，不修改其SHA冒充精确复现。`.gitattributes`关闭换行归一化，避免Git自动转换换行使快照失效。
 
-本轮重跑入口为 `run_support.ps1`，默认写入 `results/support_reproduction/`。复用固定协议，依次执行开发、冻结、回归、一次独立检查和报告；拒绝覆盖已有阶段结果。新一轮应使用新的 `-Output`，保持结果和源码对应。独立4图已从旧210图及风险轮4图之外选择，保留完整官方JPEG提取目录以重建输入。
+本轮重跑入口为 `run_narrow.ps1`，默认写入 `results/narrow_reproduction/`；窄条分支使用单独的 `filter_narrow.py`，不自动与旧残差叠加。先诊断、再修改的证据位于 `results/narrow_diagnosis/`，完整对照位于 `results/narrow/`。协议复用固定图片，依次执行开发、冻结、回归、一次独立检查、报告和产物核验；拒绝覆盖已有阶段结果。新一轮使用新的 `-Output`，保持结果和源码对应。
+
+上一轮空间支撑完整提交为 `support-ablation-baseline` 标签，原 `run_support.ps1` 与结果保持不变；默认输出 `results/support_reproduction/`。本轮新增4张检查图排除了旧210图及风险／支撑轮各4图，保留完整官方JPEG提取目录以重建输入。
 
 前一轮风险实验用 `git worktree add ..\periodic-risk-baseline risk-refinement-baseline` 建立独立目录，再在该目录安装环境、执行 `run_refinement.ps1`；当前支撑增强源码不应通过修改旧SHA冒充旧冻结实验。
 

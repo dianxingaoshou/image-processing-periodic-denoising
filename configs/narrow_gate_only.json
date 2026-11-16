@@ -1,0 +1,26 @@
+{
+  "configuration": {
+    "profiles": {
+      "min_frequency": 0.005,
+      "max_frequency": 0.45,
+      "minimum_cycles": 3.0,
+      "minimum_tangent_length": 64,
+      "max_candidates": 5,
+      "pooling_rows": 4,
+      "fft_oversampling": 4
+    },
+    "support": {
+      "min_amplitude": 0.02,
+      "min_stability": 0.8,
+      "min_validation_gain": 0.08,
+      "min_width": 3,
+      "max_width": 32,
+      "flank_width": 16,
+      "max_flank_ratio": 0.35
+    },
+    "use_gate": true,
+    "compact_support": false,
+    "strength": 1.0
+  },
+  "purpose": "Input-only axis-aligned extended narrow periodic bands; fixed coarse settings; ablation config, not a general/default replacement."
+}

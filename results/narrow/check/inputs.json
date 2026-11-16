@@ -1,0 +1,1762 @@
+[
+  {
+    "stage": "check",
+    "dataset": "BSDS",
+    "image_id": "196040",
+    "kind": "clean",
+    "variant": 0,
+    "preprocessing": {
+      "input_path": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\data\\source\\images\\test\\196040.jpg",
+      "input_sha256": "118104de61573ce715006fd507185a23acdc5db88d7ea419bfee068b90eaca64",
+      "input_mode": "RGB",
+      "input_shape": [
+        481,
+        321
+      ],
+      "output_shape": [
+        256,
+        256
+      ],
+      "output_dtype": "float64",
+      "intensity_range": [
+        0,
+        1
+      ],
+      "grayscale_rule": "0.2125R+0.7154G+0.0721B",
+      "grayscale_weights": [
+        0.2125,
+        0.7154,
+        0.0721
+      ],
+      "rgba_background": 1.0,
+      "alpha_policy": "composite before luminance",
+      "contrast_normalization": false,
+      "geometry": {
+        "resize": "short-side Lanczos",
+        "resized_wh": [
+          256,
+          384
+        ],
+        "center_crop_xywh": [
+          0,
+          64,
+          256,
+          256
+        ]
+      }
+    },
+    "synthesis": {
+      "kind": "clean",
+      "seed": 0,
+      "clipping_fraction": 0.0
+    },
+    "float_input_sha256": "29bd4941eca29b1a146701f0cced0185fa3701ee986f9dee9b695e0e07a9b4a7"
+  },
+  {
+    "stage": "check",
+    "dataset": "BSDS",
+    "image_id": "196040",
+    "kind": "edge8",
+    "variant": 0,
+    "preprocessing": {
+      "input_path": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\data\\source\\images\\test\\196040.jpg",
+      "input_sha256": "118104de61573ce715006fd507185a23acdc5db88d7ea419bfee068b90eaca64",
+      "input_mode": "RGB",
+      "input_shape": [
+        481,
+        321
+      ],
+      "output_shape": [
+        256,
+        256
+      ],
+      "output_dtype": "float64",
+      "intensity_range": [
+        0,
+        1
+      ],
+      "grayscale_rule": "0.2125R+0.7154G+0.0721B",
+      "grayscale_weights": [
+        0.2125,
+        0.7154,
+        0.0721
+      ],
+      "rgba_background": 1.0,
+      "alpha_policy": "composite before luminance",
+      "contrast_normalization": false,
+      "geometry": {
+        "resize": "short-side Lanczos",
+        "resized_wh": [
+          256,
+          384
+        ],
+        "center_crop_xywh": [
+          0,
+          64,
+          256,
+          256
+        ]
+      }
+    },
+    "synthesis": {
+      "kind": "edge8",
+      "seed": 2433831503,
+      "amplitude": 0.12,
+      "variant": 0,
+      "width_pixels": 8,
+      "edge_support": "width pixels inwards from boundary",
+      "interior_support": null,
+      "fy": 0.10980171967197029,
+      "fx": 0.09139105518709517,
+      "frequency": 0.14285917055314518,
+      "phase_offset": -1.848835610151179,
+      "clipping_fraction": 0.0025177001953125,
+      "contaminated_fraction": 0.03125
+    },
+    "float_input_sha256": "93e7b90156d8401f9a55e1ec9262d0a9ec281c9051dc34a9bb93b6a086e7def6"
+  },
+  {
+    "stage": "check",
+    "dataset": "BSDS",
+    "image_id": "196040",
+    "kind": "edge16",
+    "variant": 0,
+    "preprocessing": {
+      "input_path": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\data\\source\\images\\test\\196040.jpg",
+      "input_sha256": "118104de61573ce715006fd507185a23acdc5db88d7ea419bfee068b90eaca64",
+      "input_mode": "RGB",
+      "input_shape": [
+        481,
+        321
+      ],
+      "output_shape": [
+        256,
+        256
+      ],
+      "output_dtype": "float64",
+      "intensity_range": [
+        0,
+        1
+      ],
+      "grayscale_rule": "0.2125R+0.7154G+0.0721B",
+      "grayscale_weights": [
+        0.2125,
+        0.7154,
+        0.0721
+      ],
+      "rgba_background": 1.0,
+      "alpha_policy": "composite before luminance",
+      "contrast_normalization": false,
+      "geometry": {
+        "resize": "short-side Lanczos",
+        "resized_wh": [
+          256,
+          384
+        ],
+        "center_crop_xywh": [
+          0,
+          64,
+          256,
+          256
+        ]
+      }
+    },
+    "synthesis": {
+      "kind": "edge16",
+      "seed": 2433831503,
+      "amplitude": 0.12,
+      "variant": 0,
+      "width_pixels": 16,
+      "edge_support": "width pixels inwards from boundary",
+      "interior_support": null,
+      "fy": 0.10980171967197029,
+      "fx": 0.09139105518709517,
+      "frequency": 0.14285917055314518,
+      "phase_offset": -1.848835610151179,
+      "clipping_fraction": 0.0052337646484375,
+      "contaminated_fraction": 0.05859375
+    },
+    "float_input_sha256": "9b909f32dcb13a34003b149fb7092e802a0a26cc3d61ab071072c9dac533280f"
+  },
+  {
+    "stage": "check",
+    "dataset": "BSDS",
+    "image_id": "196040",
+    "kind": "edge32",
+    "variant": 0,
+    "preprocessing": {
+      "input_path": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\data\\source\\images\\test\\196040.jpg",
+      "input_sha256": "118104de61573ce715006fd507185a23acdc5db88d7ea419bfee068b90eaca64",
+      "input_mode": "RGB",
+      "input_shape": [
+        481,
+        321
+      ],
+      "output_shape": [
+        256,
+        256
+      ],
+      "output_dtype": "float64",
+      "intensity_range": [
+        0,
+        1
+      ],
+      "grayscale_rule": "0.2125R+0.7154G+0.0721B",
+      "grayscale_weights": [
+        0.2125,
+        0.7154,
+        0.0721
+      ],
+      "rgba_background": 1.0,
+      "alpha_policy": "composite before luminance",
+      "contrast_normalization": false,
+      "geometry": {
+        "resize": "short-side Lanczos",
+        "resized_wh": [
+          256,
+          384
+        ],
+        "center_crop_xywh": [
+          0,
+          64,
+          256,
+          256
+        ]
+      }
+    },
+    "synthesis": {
+      "kind": "edge32",
+      "seed": 2433831503,
+      "amplitude": 0.12,
+      "variant": 0,
+      "width_pixels": 32,
+      "edge_support": "width pixels inwards from boundary",
+      "interior_support": null,
+      "fy": 0.10980171967197029,
+      "fx": 0.09139105518709517,
+      "frequency": 0.14285917055314518,
+      "phase_offset": -1.848835610151179,
+      "clipping_fraction": 0.0085601806640625,
+      "contaminated_fraction": 0.1171875
+    },
+    "float_input_sha256": "a03bf73352a03d09cf29596564138ef58c3d519b6aade8f543f29eea180905ef"
+  },
+  {
+    "stage": "check",
+    "dataset": "BSDS",
+    "image_id": "196040",
+    "kind": "interior16",
+    "variant": 0,
+    "preprocessing": {
+      "input_path": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\data\\source\\images\\test\\196040.jpg",
+      "input_sha256": "118104de61573ce715006fd507185a23acdc5db88d7ea419bfee068b90eaca64",
+      "input_mode": "RGB",
+      "input_shape": [
+        481,
+        321
+      ],
+      "output_shape": [
+        256,
+        256
+      ],
+      "output_dtype": "float64",
+      "intensity_range": [
+        0,
+        1
+      ],
+      "grayscale_rule": "0.2125R+0.7154G+0.0721B",
+      "grayscale_weights": [
+        0.2125,
+        0.7154,
+        0.0721
+      ],
+      "rgba_background": 1.0,
+      "alpha_policy": "composite before luminance",
+      "contrast_normalization": false,
+      "geometry": {
+        "resize": "short-side Lanczos",
+        "resized_wh": [
+          256,
+          384
+        ],
+        "center_crop_xywh": [
+          0,
+          64,
+          256,
+          256
+        ]
+      }
+    },
+    "synthesis": {
+      "kind": "interior16",
+      "seed": 2433831503,
+      "amplitude": 0.12,
+      "variant": 0,
+      "width_pixels": 16,
+      "edge_support": null,
+      "interior_support": "total width in pixels",
+      "fy": 0.10980171967197029,
+      "fx": 0.09139105518709517,
+      "frequency": 0.14285917055314518,
+      "phase_offset": -1.848835610151179,
+      "clipping_fraction": 7.62939453125e-05,
+      "contaminated_fraction": 0.05859375
+    },
+    "float_input_sha256": "88a5bb5c33f67163f118b902ea5a1bc07dc211d5bc1ba328e4d0df7569ec7aa1"
+  },
+  {
+    "stage": "check",
+    "dataset": "BSDS",
+    "image_id": "196040",
+    "kind": "patch32",
+    "variant": 0,
+    "preprocessing": {
+      "input_path": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\data\\source\\images\\test\\196040.jpg",
+      "input_sha256": "118104de61573ce715006fd507185a23acdc5db88d7ea419bfee068b90eaca64",
+      "input_mode": "RGB",
+      "input_shape": [
+        481,
+        321
+      ],
+      "output_shape": [
+        256,
+        256
+      ],
+      "output_dtype": "float64",
+      "intensity_range": [
+        0,
+        1
+      ],
+      "grayscale_rule": "0.2125R+0.7154G+0.0721B",
+      "grayscale_weights": [
+        0.2125,
+        0.7154,
+        0.0721
+      ],
+      "rgba_background": 1.0,
+      "alpha_policy": "composite before luminance",
+      "contrast_normalization": false,
+      "geometry": {
+        "resize": "short-side Lanczos",
+        "resized_wh": [
+          256,
+          384
+        ],
+        "center_crop_xywh": [
+          0,
+          64,
+          256,
+          256
+        ]
+      }
+    },
+    "synthesis": {
+      "kind": "patch32",
+      "seed": 2433831503,
+      "amplitude": 0.12,
+      "variant": 0,
+      "width_pixels": 32,
+      "edge_support": null,
+      "interior_support": "total width in pixels",
+      "fy": 0.10980171967197029,
+      "fx": 0.09139105518709517,
+      "frequency": 0.14285917055314518,
+      "phase_offset": -1.848835610151179,
+      "clipping_fraction": 0.0,
+      "contaminated_fraction": 0.0126800537109375
+    },
+    "float_input_sha256": "0014fb8a2404ca5cb998699f01fb811f1694eb42e6083e1c291c65eb8f4e53ef"
+  },
+  {
+    "stage": "check",
+    "dataset": "BSDS",
+    "image_id": "196040",
+    "kind": "global",
+    "variant": 0,
+    "preprocessing": {
+      "input_path": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\data\\source\\images\\test\\196040.jpg",
+      "input_sha256": "118104de61573ce715006fd507185a23acdc5db88d7ea419bfee068b90eaca64",
+      "input_mode": "RGB",
+      "input_shape": [
+        481,
+        321
+      ],
+      "output_shape": [
+        256,
+        256
+      ],
+      "output_dtype": "float64",
+      "intensity_range": [
+        0,
+        1
+      ],
+      "grayscale_rule": "0.2125R+0.7154G+0.0721B",
+      "grayscale_weights": [
+        0.2125,
+        0.7154,
+        0.0721
+      ],
+      "rgba_background": 1.0,
+      "alpha_policy": "composite before luminance",
+      "contrast_normalization": false,
+      "geometry": {
+        "resize": "short-side Lanczos",
+        "resized_wh": [
+          256,
+          384
+        ],
+        "center_crop_xywh": [
+          0,
+          64,
+          256,
+          256
+        ]
+      }
+    },
+    "synthesis": {
+      "kind": "global",
+      "amplitude": 0.12,
+      "seed": 128695774,
+      "shape": [
+        256,
+        256
+      ],
+      "frequency_unit": "cycles/pixel",
+      "parameters": {
+        "base_frequency_cycles_per_pixel": 0.1363017111373254,
+        "angle_radians": 1.0166247621840743,
+        "fx_cycles_per_pixel": 0.07172728050975237,
+        "fy_cycles_per_pixel": -0.11590234548807972,
+        "phase_offset_radians": -1.1852870518864596
+      },
+      "clipping_fraction": 0.010986328125,
+      "contaminated_fraction": 1.0,
+      "clean_fraction": 0.0,
+      "transition_fraction": 0.0,
+      "preclip_noise_rms": 0.08485187440278319,
+      "postclip_noise_rms": 0.084397113583303,
+      "mask_definition": "contaminated: envelope>0.01; clean: envelope<1e-6; transition: neither; all masks evaluation only"
+    },
+    "float_input_sha256": "8079709214968b7251783ce99bbe1bc1940195f9e6a30114aa54f5b9392be28b"
+  },
+  {
+    "stage": "check",
+    "dataset": "BSDS",
+    "image_id": "347031",
+    "kind": "clean",
+    "variant": 1,
+    "preprocessing": {
+      "input_path": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\data\\source\\images\\test\\347031.jpg",
+      "input_sha256": "283792b66010077e6dd7353e7a45de356b4bed897c8e7678561b0369127c0b08",
+      "input_mode": "RGB",
+      "input_shape": [
+        481,
+        321
+      ],
+      "output_shape": [
+        256,
+        256
+      ],
+      "output_dtype": "float64",
+      "intensity_range": [
+        0,
+        1
+      ],
+      "grayscale_rule": "0.2125R+0.7154G+0.0721B",
+      "grayscale_weights": [
+        0.2125,
+        0.7154,
+        0.0721
+      ],
+      "rgba_background": 1.0,
+      "alpha_policy": "composite before luminance",
+      "contrast_normalization": false,
+      "geometry": {
+        "resize": "short-side Lanczos",
+        "resized_wh": [
+          256,
+          384
+        ],
+        "center_crop_xywh": [
+          0,
+          64,
+          256,
+          256
+        ]
+      }
+    },
+    "synthesis": {
+      "kind": "clean",
+      "seed": 0,
+      "clipping_fraction": 0.0
+    },
+    "float_input_sha256": "565ae91605e4e24aeb1db8bda5406f4ed9a52f8f4989f72a6f6b63b9c2bfe8be"
+  },
+  {
+    "stage": "check",
+    "dataset": "BSDS",
+    "image_id": "347031",
+    "kind": "edge8",
+    "variant": 1,
+    "preprocessing": {
+      "input_path": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\data\\source\\images\\test\\347031.jpg",
+      "input_sha256": "283792b66010077e6dd7353e7a45de356b4bed897c8e7678561b0369127c0b08",
+      "input_mode": "RGB",
+      "input_shape": [
+        481,
+        321
+      ],
+      "output_shape": [
+        256,
+        256
+      ],
+      "output_dtype": "float64",
+      "intensity_range": [
+        0,
+        1
+      ],
+      "grayscale_rule": "0.2125R+0.7154G+0.0721B",
+      "grayscale_weights": [
+        0.2125,
+        0.7154,
+        0.0721
+      ],
+      "rgba_background": 1.0,
+      "alpha_policy": "composite before luminance",
+      "contrast_normalization": false,
+      "geometry": {
+        "resize": "short-side Lanczos",
+        "resized_wh": [
+          256,
+          384
+        ],
+        "center_crop_xywh": [
+          0,
+          64,
+          256,
+          256
+        ]
+      }
+    },
+    "synthesis": {
+      "kind": "edge8",
+      "seed": 2785682147,
+      "amplitude": 0.12,
+      "variant": 1,
+      "width_pixels": 8,
+      "edge_support": "width pixels inwards from boundary",
+      "interior_support": null,
+      "fy": -0.07598279524033331,
+      "fx": 0.04841202377508348,
+      "frequency": 0.09009500107405331,
+      "phase_offset": 2.114135860028801,
+      "clipping_fraction": 0.0,
+      "contaminated_fraction": 0.03125
+    },
+    "float_input_sha256": "bdaa38fcba9165584f6bddc78e007b682d0fa1dcd7f087a1a4a8a36a44750e22"
+  },
+  {
+    "stage": "check",
+    "dataset": "BSDS",
+    "image_id": "347031",
+    "kind": "edge16",
+    "variant": 1,
+    "preprocessing": {
+      "input_path": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\data\\source\\images\\test\\347031.jpg",
+      "input_sha256": "283792b66010077e6dd7353e7a45de356b4bed897c8e7678561b0369127c0b08",
+      "input_mode": "RGB",
+      "input_shape": [
+        481,
+        321
+      ],
+      "output_shape": [
+        256,
+        256
+      ],
+      "output_dtype": "float64",
+      "intensity_range": [
+        0,
+        1
+      ],
+      "grayscale_rule": "0.2125R+0.7154G+0.0721B",
+      "grayscale_weights": [
+        0.2125,
+        0.7154,
+        0.0721
+      ],
+      "rgba_background": 1.0,
+      "alpha_policy": "composite before luminance",
+      "contrast_normalization": false,
+      "geometry": {
+        "resize": "short-side Lanczos",
+        "resized_wh": [
+          256,
+          384
+        ],
+        "center_crop_xywh": [
+          0,
+          64,
+          256,
+          256
+        ]
+      }
+    },
+    "synthesis": {
+      "kind": "edge16",
+      "seed": 2785682147,
+      "amplitude": 0.12,
+      "variant": 1,
+      "width_pixels": 16,
+      "edge_support": "width pixels inwards from boundary",
+      "interior_support": null,
+      "fy": -0.07598279524033331,
+      "fx": 0.04841202377508348,
+      "frequency": 0.09009500107405331,
+      "phase_offset": 2.114135860028801,
+      "clipping_fraction": 0.0,
+      "contaminated_fraction": 0.05859375
+    },
+    "float_input_sha256": "d1fa19b534feaea2773a00930286b0428999efda11d5c8388553c953bb986aaa"
+  },
+  {
+    "stage": "check",
+    "dataset": "BSDS",
+    "image_id": "347031",
+    "kind": "edge32",
+    "variant": 1,
+    "preprocessing": {
+      "input_path": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\data\\source\\images\\test\\347031.jpg",
+      "input_sha256": "283792b66010077e6dd7353e7a45de356b4bed897c8e7678561b0369127c0b08",
+      "input_mode": "RGB",
+      "input_shape": [
+        481,
+        321
+      ],
+      "output_shape": [
+        256,
+        256
+      ],
+      "output_dtype": "float64",
+      "intensity_range": [
+        0,
+        1
+      ],
+      "grayscale_rule": "0.2125R+0.7154G+0.0721B",
+      "grayscale_weights": [
+        0.2125,
+        0.7154,
+        0.0721
+      ],
+      "rgba_background": 1.0,
+      "alpha_policy": "composite before luminance",
+      "contrast_normalization": false,
+      "geometry": {
+        "resize": "short-side Lanczos",
+        "resized_wh": [
+          256,
+          384
+        ],
+        "center_crop_xywh": [
+          0,
+          64,
+          256,
+          256
+        ]
+      }
+    },
+    "synthesis": {
+      "kind": "edge32",
+      "seed": 2785682147,
+      "amplitude": 0.12,
+      "variant": 1,
+      "width_pixels": 32,
+      "edge_support": "width pixels inwards from boundary",
+      "interior_support": null,
+      "fy": -0.07598279524033331,
+      "fx": 0.04841202377508348,
+      "frequency": 0.09009500107405331,
+      "phase_offset": 2.114135860028801,
+      "clipping_fraction": 0.0,
+      "contaminated_fraction": 0.1171875
+    },
+    "float_input_sha256": "1c8b391bc1185688e84f50a86bbd08393de60bfd8f3011b15df67fd66c0c89b2"
+  },
+  {
+    "stage": "check",
+    "dataset": "BSDS",
+    "image_id": "347031",
+    "kind": "interior16",
+    "variant": 1,
+    "preprocessing": {
+      "input_path": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\data\\source\\images\\test\\347031.jpg",
+      "input_sha256": "283792b66010077e6dd7353e7a45de356b4bed897c8e7678561b0369127c0b08",
+      "input_mode": "RGB",
+      "input_shape": [
+        481,
+        321
+      ],
+      "output_shape": [
+        256,
+        256
+      ],
+      "output_dtype": "float64",
+      "intensity_range": [
+        0,
+        1
+      ],
+      "grayscale_rule": "0.2125R+0.7154G+0.0721B",
+      "grayscale_weights": [
+        0.2125,
+        0.7154,
+        0.0721
+      ],
+      "rgba_background": 1.0,
+      "alpha_policy": "composite before luminance",
+      "contrast_normalization": false,
+      "geometry": {
+        "resize": "short-side Lanczos",
+        "resized_wh": [
+          256,
+          384
+        ],
+        "center_crop_xywh": [
+          0,
+          64,
+          256,
+          256
+        ]
+      }
+    },
+    "synthesis": {
+      "kind": "interior16",
+      "seed": 2785682147,
+      "amplitude": 0.12,
+      "variant": 1,
+      "width_pixels": 16,
+      "edge_support": null,
+      "interior_support": "total width in pixels",
+      "fy": -0.07598279524033331,
+      "fx": 0.04841202377508348,
+      "frequency": 0.09009500107405331,
+      "phase_offset": 2.114135860028801,
+      "clipping_fraction": 0.0004119873046875,
+      "contaminated_fraction": 0.05859375
+    },
+    "float_input_sha256": "873c0b0358b5f02b6e9b129995b0611647dccc1d36569e73874d407b3b0ed3a4"
+  },
+  {
+    "stage": "check",
+    "dataset": "BSDS",
+    "image_id": "347031",
+    "kind": "patch32",
+    "variant": 1,
+    "preprocessing": {
+      "input_path": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\data\\source\\images\\test\\347031.jpg",
+      "input_sha256": "283792b66010077e6dd7353e7a45de356b4bed897c8e7678561b0369127c0b08",
+      "input_mode": "RGB",
+      "input_shape": [
+        481,
+        321
+      ],
+      "output_shape": [
+        256,
+        256
+      ],
+      "output_dtype": "float64",
+      "intensity_range": [
+        0,
+        1
+      ],
+      "grayscale_rule": "0.2125R+0.7154G+0.0721B",
+      "grayscale_weights": [
+        0.2125,
+        0.7154,
+        0.0721
+      ],
+      "rgba_background": 1.0,
+      "alpha_policy": "composite before luminance",
+      "contrast_normalization": false,
+      "geometry": {
+        "resize": "short-side Lanczos",
+        "resized_wh": [
+          256,
+          384
+        ],
+        "center_crop_xywh": [
+          0,
+          64,
+          256,
+          256
+        ]
+      }
+    },
+    "synthesis": {
+      "kind": "patch32",
+      "seed": 2785682147,
+      "amplitude": 0.12,
+      "variant": 1,
+      "width_pixels": 32,
+      "edge_support": null,
+      "interior_support": "total width in pixels",
+      "fy": -0.07598279524033331,
+      "fx": 0.04841202377508348,
+      "frequency": 0.09009500107405331,
+      "phase_offset": 2.114135860028801,
+      "clipping_fraction": 0.0,
+      "contaminated_fraction": 0.0126800537109375
+    },
+    "float_input_sha256": "81471ecb2829d77315fccc163b7a5ea74ad69f33ebd0625ca37fecebf1b2f1bf"
+  },
+  {
+    "stage": "check",
+    "dataset": "BSDS",
+    "image_id": "347031",
+    "kind": "global",
+    "variant": 1,
+    "preprocessing": {
+      "input_path": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\data\\source\\images\\test\\347031.jpg",
+      "input_sha256": "283792b66010077e6dd7353e7a45de356b4bed897c8e7678561b0369127c0b08",
+      "input_mode": "RGB",
+      "input_shape": [
+        481,
+        321
+      ],
+      "output_shape": [
+        256,
+        256
+      ],
+      "output_dtype": "float64",
+      "intensity_range": [
+        0,
+        1
+      ],
+      "grayscale_rule": "0.2125R+0.7154G+0.0721B",
+      "grayscale_weights": [
+        0.2125,
+        0.7154,
+        0.0721
+      ],
+      "rgba_background": 1.0,
+      "alpha_policy": "composite before luminance",
+      "contrast_normalization": false,
+      "geometry": {
+        "resize": "short-side Lanczos",
+        "resized_wh": [
+          256,
+          384
+        ],
+        "center_crop_xywh": [
+          0,
+          64,
+          256,
+          256
+        ]
+      }
+    },
+    "synthesis": {
+      "kind": "global",
+      "amplitude": 0.12,
+      "seed": 3105555859,
+      "shape": [
+        256,
+        256
+      ],
+      "frequency_unit": "cycles/pixel",
+      "parameters": {
+        "base_frequency_cycles_per_pixel": 0.07758790025816874,
+        "angle_radians": 1.0383546619955324,
+        "fx_cycles_per_pixel": 0.039386606689311245,
+        "fy_cycles_per_pixel": 0.06684741939651107,
+        "phase_offset_radians": 0.3654840564133708
+      },
+      "clipping_fraction": 0.0267333984375,
+      "contaminated_fraction": 1.0,
+      "clean_fraction": 0.0,
+      "transition_fraction": 0.0,
+      "preclip_noise_rms": 0.08485223988535487,
+      "postclip_noise_rms": 0.08377128920496615,
+      "mask_definition": "contaminated: envelope>0.01; clean: envelope<1e-6; transition: neither; all masks evaluation only"
+    },
+    "float_input_sha256": "6bff9fd602a8dc084eff5b29377ec3fc1535660d995d768da9349ec0c7efd861"
+  },
+  {
+    "stage": "check",
+    "dataset": "BSDS",
+    "image_id": "41085",
+    "kind": "clean",
+    "variant": 2,
+    "preprocessing": {
+      "input_path": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\data\\source\\images\\test\\41085.jpg",
+      "input_sha256": "2ea580f7c07e104624e8da4733319fb25def289b4fa6258b39e9c97eba2cb221",
+      "input_mode": "RGB",
+      "input_shape": [
+        321,
+        481
+      ],
+      "output_shape": [
+        256,
+        256
+      ],
+      "output_dtype": "float64",
+      "intensity_range": [
+        0,
+        1
+      ],
+      "grayscale_rule": "0.2125R+0.7154G+0.0721B",
+      "grayscale_weights": [
+        0.2125,
+        0.7154,
+        0.0721
+      ],
+      "rgba_background": 1.0,
+      "alpha_policy": "composite before luminance",
+      "contrast_normalization": false,
+      "geometry": {
+        "resize": "short-side Lanczos",
+        "resized_wh": [
+          384,
+          256
+        ],
+        "center_crop_xywh": [
+          64,
+          0,
+          256,
+          256
+        ]
+      }
+    },
+    "synthesis": {
+      "kind": "clean",
+      "seed": 0,
+      "clipping_fraction": 0.0
+    },
+    "float_input_sha256": "5f90994e88089bfa8ab7557c87f2e36da8c69cd2cda1f3ce1f8bba41eea20c10"
+  },
+  {
+    "stage": "check",
+    "dataset": "BSDS",
+    "image_id": "41085",
+    "kind": "edge8",
+    "variant": 2,
+    "preprocessing": {
+      "input_path": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\data\\source\\images\\test\\41085.jpg",
+      "input_sha256": "2ea580f7c07e104624e8da4733319fb25def289b4fa6258b39e9c97eba2cb221",
+      "input_mode": "RGB",
+      "input_shape": [
+        321,
+        481
+      ],
+      "output_shape": [
+        256,
+        256
+      ],
+      "output_dtype": "float64",
+      "intensity_range": [
+        0,
+        1
+      ],
+      "grayscale_rule": "0.2125R+0.7154G+0.0721B",
+      "grayscale_weights": [
+        0.2125,
+        0.7154,
+        0.0721
+      ],
+      "rgba_background": 1.0,
+      "alpha_policy": "composite before luminance",
+      "contrast_normalization": false,
+      "geometry": {
+        "resize": "short-side Lanczos",
+        "resized_wh": [
+          384,
+          256
+        ],
+        "center_crop_xywh": [
+          64,
+          0,
+          256,
+          256
+        ]
+      }
+    },
+    "synthesis": {
+      "kind": "edge8",
+      "seed": 444508764,
+      "amplitude": 0.12,
+      "variant": 2,
+      "width_pixels": 8,
+      "edge_support": "width pixels inwards from boundary",
+      "interior_support": null,
+      "fy": -0.09879698637900217,
+      "fx": 0.08985942865533539,
+      "frequency": 0.13354984625912547,
+      "phase_offset": 0.29662948078427975,
+      "clipping_fraction": 0.0,
+      "contaminated_fraction": 0.03125
+    },
+    "float_input_sha256": "11a5b8751d7c78722bf0808cf4344d859b4866a4847737bc056c8278bc4fb1fa"
+  },
+  {
+    "stage": "check",
+    "dataset": "BSDS",
+    "image_id": "41085",
+    "kind": "edge16",
+    "variant": 2,
+    "preprocessing": {
+      "input_path": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\data\\source\\images\\test\\41085.jpg",
+      "input_sha256": "2ea580f7c07e104624e8da4733319fb25def289b4fa6258b39e9c97eba2cb221",
+      "input_mode": "RGB",
+      "input_shape": [
+        321,
+        481
+      ],
+      "output_shape": [
+        256,
+        256
+      ],
+      "output_dtype": "float64",
+      "intensity_range": [
+        0,
+        1
+      ],
+      "grayscale_rule": "0.2125R+0.7154G+0.0721B",
+      "grayscale_weights": [
+        0.2125,
+        0.7154,
+        0.0721
+      ],
+      "rgba_background": 1.0,
+      "alpha_policy": "composite before luminance",
+      "contrast_normalization": false,
+      "geometry": {
+        "resize": "short-side Lanczos",
+        "resized_wh": [
+          384,
+          256
+        ],
+        "center_crop_xywh": [
+          64,
+          0,
+          256,
+          256
+        ]
+      }
+    },
+    "synthesis": {
+      "kind": "edge16",
+      "seed": 444508764,
+      "amplitude": 0.12,
+      "variant": 2,
+      "width_pixels": 16,
+      "edge_support": "width pixels inwards from boundary",
+      "interior_support": null,
+      "fy": -0.09879698637900217,
+      "fx": 0.08985942865533539,
+      "frequency": 0.13354984625912547,
+      "phase_offset": 0.29662948078427975,
+      "clipping_fraction": 0.0,
+      "contaminated_fraction": 0.05859375
+    },
+    "float_input_sha256": "fd96156cda745329ae502bdeb0e2fb9a88afd0a66eb311b1a27337727723a4c2"
+  },
+  {
+    "stage": "check",
+    "dataset": "BSDS",
+    "image_id": "41085",
+    "kind": "edge32",
+    "variant": 2,
+    "preprocessing": {
+      "input_path": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\data\\source\\images\\test\\41085.jpg",
+      "input_sha256": "2ea580f7c07e104624e8da4733319fb25def289b4fa6258b39e9c97eba2cb221",
+      "input_mode": "RGB",
+      "input_shape": [
+        321,
+        481
+      ],
+      "output_shape": [
+        256,
+        256
+      ],
+      "output_dtype": "float64",
+      "intensity_range": [
+        0,
+        1
+      ],
+      "grayscale_rule": "0.2125R+0.7154G+0.0721B",
+      "grayscale_weights": [
+        0.2125,
+        0.7154,
+        0.0721
+      ],
+      "rgba_background": 1.0,
+      "alpha_policy": "composite before luminance",
+      "contrast_normalization": false,
+      "geometry": {
+        "resize": "short-side Lanczos",
+        "resized_wh": [
+          384,
+          256
+        ],
+        "center_crop_xywh": [
+          64,
+          0,
+          256,
+          256
+        ]
+      }
+    },
+    "synthesis": {
+      "kind": "edge32",
+      "seed": 444508764,
+      "amplitude": 0.12,
+      "variant": 2,
+      "width_pixels": 32,
+      "edge_support": "width pixels inwards from boundary",
+      "interior_support": null,
+      "fy": -0.09879698637900217,
+      "fx": 0.08985942865533539,
+      "frequency": 0.13354984625912547,
+      "phase_offset": 0.29662948078427975,
+      "clipping_fraction": 0.0,
+      "contaminated_fraction": 0.1171875
+    },
+    "float_input_sha256": "173f6286616d368a91b5d9401c16173f999cfd6256d7f7efa0f513fab04be243"
+  },
+  {
+    "stage": "check",
+    "dataset": "BSDS",
+    "image_id": "41085",
+    "kind": "interior16",
+    "variant": 2,
+    "preprocessing": {
+      "input_path": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\data\\source\\images\\test\\41085.jpg",
+      "input_sha256": "2ea580f7c07e104624e8da4733319fb25def289b4fa6258b39e9c97eba2cb221",
+      "input_mode": "RGB",
+      "input_shape": [
+        321,
+        481
+      ],
+      "output_shape": [
+        256,
+        256
+      ],
+      "output_dtype": "float64",
+      "intensity_range": [
+        0,
+        1
+      ],
+      "grayscale_rule": "0.2125R+0.7154G+0.0721B",
+      "grayscale_weights": [
+        0.2125,
+        0.7154,
+        0.0721
+      ],
+      "rgba_background": 1.0,
+      "alpha_policy": "composite before luminance",
+      "contrast_normalization": false,
+      "geometry": {
+        "resize": "short-side Lanczos",
+        "resized_wh": [
+          384,
+          256
+        ],
+        "center_crop_xywh": [
+          64,
+          0,
+          256,
+          256
+        ]
+      }
+    },
+    "synthesis": {
+      "kind": "interior16",
+      "seed": 444508764,
+      "amplitude": 0.12,
+      "variant": 2,
+      "width_pixels": 16,
+      "edge_support": null,
+      "interior_support": "total width in pixels",
+      "fy": -0.09879698637900217,
+      "fx": 0.08985942865533539,
+      "frequency": 0.13354984625912547,
+      "phase_offset": 0.29662948078427975,
+      "clipping_fraction": 0.0,
+      "contaminated_fraction": 0.05859375
+    },
+    "float_input_sha256": "1c9fac5708391f737a3cfb25611e9b9dec23f4394d276c561f15c8534dcf1551"
+  },
+  {
+    "stage": "check",
+    "dataset": "BSDS",
+    "image_id": "41085",
+    "kind": "patch32",
+    "variant": 2,
+    "preprocessing": {
+      "input_path": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\data\\source\\images\\test\\41085.jpg",
+      "input_sha256": "2ea580f7c07e104624e8da4733319fb25def289b4fa6258b39e9c97eba2cb221",
+      "input_mode": "RGB",
+      "input_shape": [
+        321,
+        481
+      ],
+      "output_shape": [
+        256,
+        256
+      ],
+      "output_dtype": "float64",
+      "intensity_range": [
+        0,
+        1
+      ],
+      "grayscale_rule": "0.2125R+0.7154G+0.0721B",
+      "grayscale_weights": [
+        0.2125,
+        0.7154,
+        0.0721
+      ],
+      "rgba_background": 1.0,
+      "alpha_policy": "composite before luminance",
+      "contrast_normalization": false,
+      "geometry": {
+        "resize": "short-side Lanczos",
+        "resized_wh": [
+          384,
+          256
+        ],
+        "center_crop_xywh": [
+          64,
+          0,
+          256,
+          256
+        ]
+      }
+    },
+    "synthesis": {
+      "kind": "patch32",
+      "seed": 444508764,
+      "amplitude": 0.12,
+      "variant": 2,
+      "width_pixels": 32,
+      "edge_support": null,
+      "interior_support": "total width in pixels",
+      "fy": -0.09879698637900217,
+      "fx": 0.08985942865533539,
+      "frequency": 0.13354984625912547,
+      "phase_offset": 0.29662948078427975,
+      "clipping_fraction": 1.52587890625e-05,
+      "contaminated_fraction": 0.0126800537109375
+    },
+    "float_input_sha256": "39c624a9541da99dadbcccbc093fb658184df5330ac2c615ab9dda572fb344b1"
+  },
+  {
+    "stage": "check",
+    "dataset": "BSDS",
+    "image_id": "41085",
+    "kind": "global",
+    "variant": 2,
+    "preprocessing": {
+      "input_path": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\data\\source\\images\\test\\41085.jpg",
+      "input_sha256": "2ea580f7c07e104624e8da4733319fb25def289b4fa6258b39e9c97eba2cb221",
+      "input_mode": "RGB",
+      "input_shape": [
+        321,
+        481
+      ],
+      "output_shape": [
+        256,
+        256
+      ],
+      "output_dtype": "float64",
+      "intensity_range": [
+        0,
+        1
+      ],
+      "grayscale_rule": "0.2125R+0.7154G+0.0721B",
+      "grayscale_weights": [
+        0.2125,
+        0.7154,
+        0.0721
+      ],
+      "rgba_background": 1.0,
+      "alpha_policy": "composite before luminance",
+      "contrast_normalization": false,
+      "geometry": {
+        "resize": "short-side Lanczos",
+        "resized_wh": [
+          384,
+          256
+        ],
+        "center_crop_xywh": [
+          64,
+          0,
+          256,
+          256
+        ]
+      }
+    },
+    "synthesis": {
+      "kind": "global",
+      "amplitude": 0.12,
+      "seed": 3766666546,
+      "shape": [
+        256,
+        256
+      ],
+      "frequency_unit": "cycles/pixel",
+      "parameters": {
+        "base_frequency_cycles_per_pixel": 0.14496364836976566,
+        "angle_radians": 1.3452587863030145,
+        "fx_cycles_per_pixel": 0.03241826724392649,
+        "fy_cycles_per_pixel": -0.14129230445277063,
+        "phase_offset_radians": 2.7096086819638225
+      },
+      "clipping_fraction": 0.0149688720703125,
+      "contaminated_fraction": 1.0,
+      "clean_fraction": 0.0,
+      "transition_fraction": 0.0,
+      "preclip_noise_rms": 0.08485001375641425,
+      "postclip_noise_rms": 0.08446300313022842,
+      "mask_definition": "contaminated: envelope>0.01; clean: envelope<1e-6; transition: neither; all masks evaluation only"
+    },
+    "float_input_sha256": "005975bd4c663c898b4f6a6c9d88cd90965daca92539e834b57ca22a31a36450"
+  },
+  {
+    "stage": "check",
+    "dataset": "BSDS",
+    "image_id": "69022",
+    "kind": "clean",
+    "variant": 3,
+    "preprocessing": {
+      "input_path": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\data\\source\\images\\test\\69022.jpg",
+      "input_sha256": "5ea4f2727b606318075639f1489df29f1fdae655f2efa8597f7f2b24445f9679",
+      "input_mode": "RGB",
+      "input_shape": [
+        321,
+        481
+      ],
+      "output_shape": [
+        256,
+        256
+      ],
+      "output_dtype": "float64",
+      "intensity_range": [
+        0,
+        1
+      ],
+      "grayscale_rule": "0.2125R+0.7154G+0.0721B",
+      "grayscale_weights": [
+        0.2125,
+        0.7154,
+        0.0721
+      ],
+      "rgba_background": 1.0,
+      "alpha_policy": "composite before luminance",
+      "contrast_normalization": false,
+      "geometry": {
+        "resize": "short-side Lanczos",
+        "resized_wh": [
+          384,
+          256
+        ],
+        "center_crop_xywh": [
+          64,
+          0,
+          256,
+          256
+        ]
+      }
+    },
+    "synthesis": {
+      "kind": "clean",
+      "seed": 0,
+      "clipping_fraction": 0.0
+    },
+    "float_input_sha256": "4923c33c5de7c30850e6488a318d592f99fdfee462ce918bb446e886700cb442"
+  },
+  {
+    "stage": "check",
+    "dataset": "BSDS",
+    "image_id": "69022",
+    "kind": "edge8",
+    "variant": 3,
+    "preprocessing": {
+      "input_path": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\data\\source\\images\\test\\69022.jpg",
+      "input_sha256": "5ea4f2727b606318075639f1489df29f1fdae655f2efa8597f7f2b24445f9679",
+      "input_mode": "RGB",
+      "input_shape": [
+        321,
+        481
+      ],
+      "output_shape": [
+        256,
+        256
+      ],
+      "output_dtype": "float64",
+      "intensity_range": [
+        0,
+        1
+      ],
+      "grayscale_rule": "0.2125R+0.7154G+0.0721B",
+      "grayscale_weights": [
+        0.2125,
+        0.7154,
+        0.0721
+      ],
+      "rgba_background": 1.0,
+      "alpha_policy": "composite before luminance",
+      "contrast_normalization": false,
+      "geometry": {
+        "resize": "short-side Lanczos",
+        "resized_wh": [
+          384,
+          256
+        ],
+        "center_crop_xywh": [
+          64,
+          0,
+          256,
+          256
+        ]
+      }
+    },
+    "synthesis": {
+      "kind": "edge8",
+      "seed": 3532781412,
+      "amplitude": 0.12,
+      "variant": 3,
+      "width_pixels": 8,
+      "edge_support": "width pixels inwards from boundary",
+      "interior_support": null,
+      "fy": 0.12757175417245825,
+      "fx": 0.11597650650018251,
+      "frequency": 0.17240969381860463,
+      "phase_offset": 0.12489300021959959,
+      "clipping_fraction": 0.0012359619140625,
+      "contaminated_fraction": 0.03125
+    },
+    "float_input_sha256": "90c79de66f7b96accf2775f8a5b4e0a453148faf8c38206eef792fc661b0cc41"
+  },
+  {
+    "stage": "check",
+    "dataset": "BSDS",
+    "image_id": "69022",
+    "kind": "edge16",
+    "variant": 3,
+    "preprocessing": {
+      "input_path": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\data\\source\\images\\test\\69022.jpg",
+      "input_sha256": "5ea4f2727b606318075639f1489df29f1fdae655f2efa8597f7f2b24445f9679",
+      "input_mode": "RGB",
+      "input_shape": [
+        321,
+        481
+      ],
+      "output_shape": [
+        256,
+        256
+      ],
+      "output_dtype": "float64",
+      "intensity_range": [
+        0,
+        1
+      ],
+      "grayscale_rule": "0.2125R+0.7154G+0.0721B",
+      "grayscale_weights": [
+        0.2125,
+        0.7154,
+        0.0721
+      ],
+      "rgba_background": 1.0,
+      "alpha_policy": "composite before luminance",
+      "contrast_normalization": false,
+      "geometry": {
+        "resize": "short-side Lanczos",
+        "resized_wh": [
+          384,
+          256
+        ],
+        "center_crop_xywh": [
+          64,
+          0,
+          256,
+          256
+        ]
+      }
+    },
+    "synthesis": {
+      "kind": "edge16",
+      "seed": 3532781412,
+      "amplitude": 0.12,
+      "variant": 3,
+      "width_pixels": 16,
+      "edge_support": "width pixels inwards from boundary",
+      "interior_support": null,
+      "fy": 0.12757175417245825,
+      "fx": 0.11597650650018251,
+      "frequency": 0.17240969381860463,
+      "phase_offset": 0.12489300021959959,
+      "clipping_fraction": 0.002410888671875,
+      "contaminated_fraction": 0.05859375
+    },
+    "float_input_sha256": "d064c3b6e7a66ff666b6eea42ca9b7711e733d05468ff7330b6c031b34835d64"
+  },
+  {
+    "stage": "check",
+    "dataset": "BSDS",
+    "image_id": "69022",
+    "kind": "edge32",
+    "variant": 3,
+    "preprocessing": {
+      "input_path": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\data\\source\\images\\test\\69022.jpg",
+      "input_sha256": "5ea4f2727b606318075639f1489df29f1fdae655f2efa8597f7f2b24445f9679",
+      "input_mode": "RGB",
+      "input_shape": [
+        321,
+        481
+      ],
+      "output_shape": [
+        256,
+        256
+      ],
+      "output_dtype": "float64",
+      "intensity_range": [
+        0,
+        1
+      ],
+      "grayscale_rule": "0.2125R+0.7154G+0.0721B",
+      "grayscale_weights": [
+        0.2125,
+        0.7154,
+        0.0721
+      ],
+      "rgba_background": 1.0,
+      "alpha_policy": "composite before luminance",
+      "contrast_normalization": false,
+      "geometry": {
+        "resize": "short-side Lanczos",
+        "resized_wh": [
+          384,
+          256
+        ],
+        "center_crop_xywh": [
+          64,
+          0,
+          256,
+          256
+        ]
+      }
+    },
+    "synthesis": {
+      "kind": "edge32",
+      "seed": 3532781412,
+      "amplitude": 0.12,
+      "variant": 3,
+      "width_pixels": 32,
+      "edge_support": "width pixels inwards from boundary",
+      "interior_support": null,
+      "fy": 0.12757175417245825,
+      "fx": 0.11597650650018251,
+      "frequency": 0.17240969381860463,
+      "phase_offset": 0.12489300021959959,
+      "clipping_fraction": 0.0037841796875,
+      "contaminated_fraction": 0.1171875
+    },
+    "float_input_sha256": "ac0e4ec6273f91df89e2a9f8c7d99a31e3fdbadafc870aeba39643733538e556"
+  },
+  {
+    "stage": "check",
+    "dataset": "BSDS",
+    "image_id": "69022",
+    "kind": "interior16",
+    "variant": 3,
+    "preprocessing": {
+      "input_path": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\data\\source\\images\\test\\69022.jpg",
+      "input_sha256": "5ea4f2727b606318075639f1489df29f1fdae655f2efa8597f7f2b24445f9679",
+      "input_mode": "RGB",
+      "input_shape": [
+        321,
+        481
+      ],
+      "output_shape": [
+        256,
+        256
+      ],
+      "output_dtype": "float64",
+      "intensity_range": [
+        0,
+        1
+      ],
+      "grayscale_rule": "0.2125R+0.7154G+0.0721B",
+      "grayscale_weights": [
+        0.2125,
+        0.7154,
+        0.0721
+      ],
+      "rgba_background": 1.0,
+      "alpha_policy": "composite before luminance",
+      "contrast_normalization": false,
+      "geometry": {
+        "resize": "short-side Lanczos",
+        "resized_wh": [
+          384,
+          256
+        ],
+        "center_crop_xywh": [
+          64,
+          0,
+          256,
+          256
+        ]
+      }
+    },
+    "synthesis": {
+      "kind": "interior16",
+      "seed": 3532781412,
+      "amplitude": 0.12,
+      "variant": 3,
+      "width_pixels": 16,
+      "edge_support": null,
+      "interior_support": "total width in pixels",
+      "fy": 0.12757175417245825,
+      "fx": 0.11597650650018251,
+      "frequency": 0.17240969381860463,
+      "phase_offset": 0.12489300021959959,
+      "clipping_fraction": 0.0004119873046875,
+      "contaminated_fraction": 0.05859375
+    },
+    "float_input_sha256": "a0c5f927107c2c3d1b71c4d140ab6a6ef969c5cff55839a30d3f8fd3b52f96e4"
+  },
+  {
+    "stage": "check",
+    "dataset": "BSDS",
+    "image_id": "69022",
+    "kind": "patch32",
+    "variant": 3,
+    "preprocessing": {
+      "input_path": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\data\\source\\images\\test\\69022.jpg",
+      "input_sha256": "5ea4f2727b606318075639f1489df29f1fdae655f2efa8597f7f2b24445f9679",
+      "input_mode": "RGB",
+      "input_shape": [
+        321,
+        481
+      ],
+      "output_shape": [
+        256,
+        256
+      ],
+      "output_dtype": "float64",
+      "intensity_range": [
+        0,
+        1
+      ],
+      "grayscale_rule": "0.2125R+0.7154G+0.0721B",
+      "grayscale_weights": [
+        0.2125,
+        0.7154,
+        0.0721
+      ],
+      "rgba_background": 1.0,
+      "alpha_policy": "composite before luminance",
+      "contrast_normalization": false,
+      "geometry": {
+        "resize": "short-side Lanczos",
+        "resized_wh": [
+          384,
+          256
+        ],
+        "center_crop_xywh": [
+          64,
+          0,
+          256,
+          256
+        ]
+      }
+    },
+    "synthesis": {
+      "kind": "patch32",
+      "seed": 3532781412,
+      "amplitude": 0.12,
+      "variant": 3,
+      "width_pixels": 32,
+      "edge_support": null,
+      "interior_support": "total width in pixels",
+      "fy": 0.12757175417245825,
+      "fx": 0.11597650650018251,
+      "frequency": 0.17240969381860463,
+      "phase_offset": 0.12489300021959959,
+      "clipping_fraction": 0.0,
+      "contaminated_fraction": 0.0126800537109375
+    },
+    "float_input_sha256": "8db0eb0a66f6246ead615f8cf8a90861257b646f8d8478786a64e80c86b5af7a"
+  },
+  {
+    "stage": "check",
+    "dataset": "BSDS",
+    "image_id": "69022",
+    "kind": "global",
+    "variant": 3,
+    "preprocessing": {
+      "input_path": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\data\\source\\images\\test\\69022.jpg",
+      "input_sha256": "5ea4f2727b606318075639f1489df29f1fdae655f2efa8597f7f2b24445f9679",
+      "input_mode": "RGB",
+      "input_shape": [
+        321,
+        481
+      ],
+      "output_shape": [
+        256,
+        256
+      ],
+      "output_dtype": "float64",
+      "intensity_range": [
+        0,
+        1
+      ],
+      "grayscale_rule": "0.2125R+0.7154G+0.0721B",
+      "grayscale_weights": [
+        0.2125,
+        0.7154,
+        0.0721
+      ],
+      "rgba_background": 1.0,
+      "alpha_policy": "composite before luminance",
+      "contrast_normalization": false,
+      "geometry": {
+        "resize": "short-side Lanczos",
+        "resized_wh": [
+          384,
+          256
+        ],
+        "center_crop_xywh": [
+          64,
+          0,
+          256,
+          256
+        ]
+      }
+    },
+    "synthesis": {
+      "kind": "global",
+      "amplitude": 0.12,
+      "seed": 448385274,
+      "shape": [
+        256,
+        256
+      ],
+      "frequency_unit": "cycles/pixel",
+      "parameters": {
+        "base_frequency_cycles_per_pixel": 0.07441615361797223,
+        "angle_radians": 1.3265625632529203,
+        "fx_cycles_per_pixel": 0.017994785843926046,
+        "fy_cycles_per_pixel": 0.07220769766254066,
+        "phase_offset_radians": -1.4058652639626226
+      },
+      "clipping_fraction": 0.019195556640625,
+      "contaminated_fraction": 1.0,
+      "clean_fraction": 0.0,
+      "transition_fraction": 0.0,
+      "preclip_noise_rms": 0.08485210049399493,
+      "postclip_noise_rms": 0.0841523866032396,
+      "mask_definition": "contaminated: envelope>0.01; clean: envelope<1e-6; transition: neither; all masks evaluation only"
+    },
+    "float_input_sha256": "977d8140b4dd59b2384e5b3f2993b364dccaa28059058078b7ff5b3087a8e81a"
+  }
+]

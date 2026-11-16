@@ -1,0 +1,33 @@
+{
+  "aggregate_mass_fractions": {
+    "no_correct_candidate": 0.5493062961884642,
+    "candidate_gate_rejected": 0.2531359924949687,
+    "wrong_selected_or_fitted_frequency": 0.03058812162852574,
+    "processed_correct_candidate": 0.16097655338693848,
+    "reliability_zero": 0.005993036301102913
+  },
+  "by_kind": {
+    "edge8": {
+      "no_correct_candidate": 0.9750000000000001,
+      "candidate_gate_rejected": 0.02499999999999996
+    },
+    "edge16": {
+      "no_correct_candidate": 0.7416666666666666,
+      "candidate_gate_rejected": 0.22500000000000006,
+      "processed_correct_candidate": 0.03333333333333334
+    },
+    "edge32": {
+      "candidate_gate_rejected": 0.27840490061716355,
+      "no_correct_candidate": 0.4575270325398371,
+      "wrong_selected_or_fitted_frequency": 0.04253286660788921,
+      "processed_correct_candidate": 0.2132018669017767,
+      "reliability_zero": 0.008333333333333337
+    }
+  },
+  "raw_pool_miss_mass_fraction": {
+    "edge8": 0.975,
+    "edge16": 0.750000000000001,
+    "edge32": 0.45982691585847824
+  },
+  "interpretation": "Already-used dev8, amplitude .12, supportall32/grid. All dirty-intersecting tiles included. Fractions weighted by Hann mass of dirty overlap; correlated and not pixel recall. Counterfactuals reuse existing residuals; local oracle is not a full-image optimum. Frequency recovered by continuous fitting proceeds to gate attribution even if raw pool missed."
+}
