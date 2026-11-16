@@ -1,0 +1,28 @@
+{
+  "configuration": {
+    "profiles": {
+      "min_frequency": 0.005,
+      "max_frequency": 0.45,
+      "minimum_cycles": 3.0,
+      "minimum_tangent_length": 64,
+      "max_candidates": 5,
+      "pooling_rows": 4,
+      "fft_oversampling": 4
+    },
+    "support": {
+      "min_amplitude": 0.02,
+      "min_stability": 0.8,
+      "min_validation_gain": 0.08,
+      "min_width": 3,
+      "max_width": 32,
+      "flank_width": 16,
+      "max_flank_ratio": 0.35,
+      "contrast_context": "amplitude",
+      "limit_context_width": false
+    },
+    "use_gate": true,
+    "compact_support": true,
+    "strength": 1.0
+  },
+  "purpose": "Qualified output rows unchanged. Context/flank ablation; ratio-relaxed and no-width configs are mechanism controls, not recommended presets."
+}

@@ -1,0 +1,290 @@
+[
+  {
+    "stage": "controls",
+    "dataset": "analytic",
+    "image_id": "broad_phase_banded_clean",
+    "kind": "broad_phase_banded_clean",
+    "variant": 0,
+    "preprocessing": {
+      "source": "fixed analytic controls"
+    },
+    "synthesis": {
+      "source": "fixed analytic evaluation controls",
+      "seed": 1729,
+      "shape": [
+        256,
+        256
+      ],
+      "reference_interpretation": "legitimate content is retained in clean reference",
+      "parameters_fixed_before_evaluation": true,
+      "semantic_label": "legitimate broad periodic content",
+      "condition": "80-row amplitude context /20 coherent rows",
+      "normal_axis": 0,
+      "band_start": 88,
+      "band_stop": 168,
+      "coherent_start": 118,
+      "coherent_stop": 138,
+      "tangent_frequency": 0.125,
+      "normal_frequency": 0.03125,
+      "outer_half_phase_jump": 1.5707963267948966,
+      "amplitude": 0.1,
+      "ambiguity_control": false
+    },
+    "float_input_sha256": "c600ca5b8031e3924d486cf601eaa9c55ed5c3efece8878ae636bd7c7581095b"
+  },
+  {
+    "stage": "controls",
+    "dataset": "analytic",
+    "image_id": "global_periodic_clean",
+    "kind": "global_periodic_clean",
+    "variant": 0,
+    "preprocessing": {
+      "source": "fixed analytic controls"
+    },
+    "synthesis": {
+      "source": "fixed analytic evaluation controls",
+      "seed": 1729,
+      "shape": [
+        256,
+        256
+      ],
+      "reference_interpretation": "legitimate content is retained in clean reference",
+      "parameters_fixed_before_evaluation": true,
+      "semantic_label": "legitimate global periodic texture",
+      "condition": "globally coherent periodic control",
+      "normal_frequency": 0.11,
+      "tangent_frequency": 0.14,
+      "amplitude": 0.1
+    },
+    "float_input_sha256": "d59a2c31a8cc84c1c1de31064d2bdc80f49d7db841b451d145c371ffb9e6c246"
+  },
+  {
+    "stage": "controls",
+    "dataset": "analytic",
+    "image_id": "broad_amplitude_slope_clean",
+    "kind": "broad_amplitude_slope_clean",
+    "variant": 0,
+    "preprocessing": {
+      "source": "fixed analytic controls"
+    },
+    "synthesis": {
+      "source": "fixed analytic evaluation controls",
+      "seed": 1729,
+      "shape": [
+        256,
+        256
+      ],
+      "reference_interpretation": "legitimate content is retained in clean reference",
+      "parameters_fixed_before_evaluation": true,
+      "semantic_label": "legitimate broad periodic texture",
+      "condition": "smooth broad normal amplitude slope",
+      "normal_frequency": 0.03125,
+      "tangent_frequency": 0.125,
+      "amplitude_min": 0.045,
+      "amplitude_max": 0.125
+    },
+    "float_input_sha256": "8b437a61a002185b06c04fdddd1e2c274b0997532210ba2a04aa529c323eebd2"
+  },
+  {
+    "stage": "controls",
+    "dataset": "analytic",
+    "image_id": "sharp_edge_clutter_clean",
+    "kind": "sharp_edge_clutter_clean",
+    "variant": 0,
+    "preprocessing": {
+      "source": "fixed analytic controls"
+    },
+    "synthesis": {
+      "source": "fixed analytic evaluation controls",
+      "seed": 1729,
+      "shape": [
+        256,
+        256
+      ],
+      "reference_interpretation": "legitimate content is retained in clean reference",
+      "parameters_fixed_before_evaluation": true,
+      "semantic_label": "legitimate nonperiodic scene structure",
+      "condition": "sharp steps and seeded smooth clutter",
+      "clutter_sigma": 3.0
+    },
+    "float_input_sha256": "36974c8f436951e6f7519f6814df202311fa7a431aace17b5dcf6c57c67e3d95"
+  },
+  {
+    "stage": "controls",
+    "dataset": "analytic",
+    "image_id": "compact_legitimate_stripe_clean",
+    "kind": "compact_legitimate_stripe_clean",
+    "variant": 0,
+    "preprocessing": {
+      "source": "fixed analytic controls"
+    },
+    "synthesis": {
+      "source": "fixed analytic evaluation controls",
+      "seed": 1729,
+      "shape": [
+        256,
+        256
+      ],
+      "reference_interpretation": "legitimate content is retained in clean reference",
+      "parameters_fixed_before_evaluation": true,
+      "semantic_label": "legitimate compact periodic stripe",
+      "condition": "single-image ambiguity counterexample",
+      "normal_frequency": 0.08,
+      "tangent_frequency": 0.125,
+      "support_width": 8,
+      "amplitude": 0.12,
+      "ambiguity_control": true,
+      "caveat": "Pixels also admit the interpretation of added noise on a flat field; protection is not identifiable from input alone."
+    },
+    "float_input_sha256": "6cfb689da8bba7f452b0684d1abb4b2429bf7260f486e74f678c6d1f14f4f2ae"
+  },
+  {
+    "stage": "controls",
+    "dataset": "analytic",
+    "image_id": "broad_texture_edge8",
+    "kind": "broad_texture_edge8",
+    "variant": 0,
+    "preprocessing": {
+      "source": "fixed analytic controls"
+    },
+    "synthesis": {
+      "source": "fixed analytic evaluation controls",
+      "seed": 1729,
+      "shape": [
+        256,
+        256
+      ],
+      "reference_interpretation": "legitimate content is retained in clean reference",
+      "parameters_fixed_before_evaluation": true,
+      "semantic_label": "added narrow interference on legitimate periodic background",
+      "condition": "paired broad background plus added edge band",
+      "reference_control": "broad_amplitude_slope_clean",
+      "width": 8,
+      "amplitude": 0.12,
+      "carrier_phase": 0.7,
+      "normal_frequency": 0.09375,
+      "tangent_frequency": 0.1875,
+      "background_tangent_frequency": 0.125,
+      "pairing_id": "broad_texture_added_edge"
+    },
+    "float_input_sha256": "7e0ac15977707eb3ea12ad9de8811a4eaeaf239e01557133bb298c4f67c01435"
+  },
+  {
+    "stage": "controls",
+    "dataset": "analytic",
+    "image_id": "broad_texture_edge16",
+    "kind": "broad_texture_edge16",
+    "variant": 0,
+    "preprocessing": {
+      "source": "fixed analytic controls"
+    },
+    "synthesis": {
+      "source": "fixed analytic evaluation controls",
+      "seed": 1729,
+      "shape": [
+        256,
+        256
+      ],
+      "reference_interpretation": "legitimate content is retained in clean reference",
+      "parameters_fixed_before_evaluation": true,
+      "semantic_label": "added narrow interference on legitimate periodic background",
+      "condition": "paired broad background plus added edge band",
+      "reference_control": "broad_amplitude_slope_clean",
+      "width": 16,
+      "amplitude": 0.12,
+      "carrier_phase": 0.7,
+      "normal_frequency": 0.09375,
+      "tangent_frequency": 0.1875,
+      "background_tangent_frequency": 0.125,
+      "pairing_id": "broad_texture_added_edge"
+    },
+    "float_input_sha256": "7fda19120c135d22d10eb152181296f3c2c8d3ec51cf9b98d48909a26cfcd992"
+  },
+  {
+    "stage": "controls",
+    "dataset": "analytic",
+    "image_id": "weak_edge16",
+    "kind": "weak_edge16",
+    "variant": 0,
+    "preprocessing": {
+      "source": "fixed analytic controls"
+    },
+    "synthesis": {
+      "source": "fixed analytic evaluation controls",
+      "seed": 1729,
+      "shape": [
+        256,
+        256
+      ],
+      "reference_interpretation": "legitimate content is retained in clean reference",
+      "parameters_fixed_before_evaluation": true,
+      "semantic_label": "weak added periodic interference",
+      "condition": "amplitude below fixed .02 evidence floor",
+      "width": 16,
+      "amplitude": 0.012,
+      "carrier_phase": 0.7
+    },
+    "float_input_sha256": "ddd577bd94e7ae8d896e450cecdca8b4704c1638eea852b186513702a744e60c"
+  },
+  {
+    "stage": "controls",
+    "dataset": "analytic",
+    "image_id": "fragmented_coherence_edge16",
+    "kind": "fragmented_coherence_edge16",
+    "variant": 0,
+    "preprocessing": {
+      "source": "fixed analytic controls"
+    },
+    "synthesis": {
+      "source": "fixed analytic evaluation controls",
+      "seed": 1729,
+      "shape": [
+        256,
+        256
+      ],
+      "reference_interpretation": "legitimate content is retained in clean reference",
+      "parameters_fixed_before_evaluation": true,
+      "semantic_label": "added interference with specified tangent phase mismatch",
+      "condition": "fragmented cross-half coherence",
+      "width": 16,
+      "amplitude": 0.12,
+      "normal_frequency": 0.09375,
+      "tangent_frequency": 0.1875,
+      "changed_normal_rows": [
+        1,
+        2,
+        6,
+        9
+      ],
+      "phase_jump": 1.5707963267948966,
+      "frequency_truth": "base carrier only; phase discontinuity is model mismatch"
+    },
+    "float_input_sha256": "8beb2239f6860ae270ae91d5fccd0711b73ee36f6fd75174fd0a98b1b5d7db50"
+  },
+  {
+    "stage": "controls",
+    "dataset": "analytic",
+    "image_id": "smooth_background_edge16",
+    "kind": "smooth_background_edge16",
+    "variant": 0,
+    "preprocessing": {
+      "source": "fixed analytic controls"
+    },
+    "synthesis": {
+      "source": "fixed analytic evaluation controls",
+      "seed": 1729,
+      "shape": [
+        256,
+        256
+      ],
+      "reference_interpretation": "legitimate content is retained in clean reference",
+      "parameters_fixed_before_evaluation": true,
+      "semantic_label": "added coherent interference on smooth scene content",
+      "condition": "positive narrow-band control",
+      "width": 16,
+      "amplitude": 0.12,
+      "carrier_phase": 0.7
+    },
+    "float_input_sha256": "fb3732b0f90baf3ba1fb53ef013047617a3fb767ee44066acce02860488532d0"
+  }
+]

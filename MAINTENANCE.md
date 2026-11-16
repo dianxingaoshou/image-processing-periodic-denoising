@@ -45,6 +45,9 @@ GitHub Actions通过 `-m "not requires_bsds"` 执行不依赖下载数据的测�
 
 # 充分延展、近似定频的水平／垂直窄条，用独立入口
 .\.venv\Scripts\python.exe filter_narrow.py "input.png" --config configs/narrow_full.json --out results/own_image_narrow
+
+# 本轮上下文修复，保持原资格门槛和严格输出
+.\.venv\Scripts\python.exe filter_narrow.py "input.png" --config configs/context_context_full.json --out results/own_image_context
 ```
 
 当前证据未支持把解耦版视为普遍更优替代。先读 `results/v3/DECISION.md`、`results/v3/RESULTS.md` 和 `results/v3/texture_tradeoff/EXPLORATORY.md`，其中保留性能损失、纹理净损伤和负面结果。
@@ -64,7 +67,11 @@ git push -u origin improve/my-change
 
 初始导入提交和 `v3-validated-baseline` 标签用于回到历史v3完整代码。本轮修改了科学源码，旧快照在当前分支不再匹配；保留旧快照及原始表，不修改其SHA冒充精确复现。`.gitattributes`关闭换行归一化，避免Git自动转换换行使快照失效。
 
-本轮重跑入口为 `run_narrow.ps1`，默认写入 `results/narrow_reproduction/`；窄条分支使用单独的 `filter_narrow.py`，不自动与旧残差叠加。先诊断、再修改的证据位于 `results/narrow_diagnosis/`，完整对照位于 `results/narrow/`。协议复用固定图片，依次执行开发、冻结、回归、一次独立检查、报告和产物核验；拒绝覆盖已有阶段结果。新一轮使用新的 `-Output`，保持结果和源码对应。
+本轮重跑入口为 `run_context.ps1`，默认写入 `results/context_reproduction/`。先执行开发与10个固定解析纹理控制，再冻结、回归和一次新图检查；最后生成报告、图及输入完整性核验。拒绝覆盖已有阶段，新一轮使用新的 `-Output`。定位证据在 `results/rejection_diagnosis/`，结果在 `results/context/`。
+
+支撑的 `contrast_context='qualified'` 保留原路径；`amplitude`只改变邻带取样范围，不扩大减除资格。348项完整测试及原默认逐像素一致性核对已记录。旧精确快照因源码新增上下文选项而在当前分支不再匹配；用 `git worktree add ..\periodic-narrow-baseline narrow-profile-baseline` 建立79da40c独立目录后，再运行该目录的 `run_narrow.ps1`，不修改旧SHA。
+
+上一轮窄条对照使用 `run_narrow.ps1`，默认新目录 `results/narrow_reproduction/`。本轮69022等已成为设计回归材料，新4图从旧210图及前三轮各4图之外预选，保留完整官方JPEG提取目录以重建输入。
 
 上一轮空间支撑完整提交为 `support-ablation-baseline` 标签，原 `run_support.ps1` 与结果保持不变；默认输出 `results/support_reproduction/`。本轮新增4张检查图排除了旧210图及风险／支撑轮各4图，保留完整官方JPEG提取目录以重建输入。
 

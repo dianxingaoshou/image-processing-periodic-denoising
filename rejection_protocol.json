@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "seed": 2026111607,
+  "development_ids": [
+    "140055",
+    "145053",
+    "147021",
+    "151087",
+    "153093",
+    "156079",
+    "164074",
+    "181079"
+  ],
+  "regression_images": [
+    {
+      "id": "196040",
+      "source_jpg": "source/images/test/196040.jpg",
+      "source_sha256": "118104de61573ce715006fd507185a23acdc5db88d7ea419bfee068b90eaca64"
+    },
+    {
+      "id": "347031",
+      "source_jpg": "source/images/test/347031.jpg",
+      "source_sha256": "283792b66010077e6dd7353e7a45de356b4bed897c8e7678561b0369127c0b08"
+    },
+    {
+      "id": "41085",
+      "source_jpg": "source/images/test/41085.jpg",
+      "source_sha256": "2ea580f7c07e104624e8da4733319fb25def289b4fa6258b39e9c97eba2cb221"
+    },
+    {
+      "id": "69022",
+      "source_jpg": "source/images/test/69022.jpg",
+      "source_sha256": "5ea4f2727b606318075639f1489df29f1fdae655f2efa8597f7f2b24445f9679"
+    }
+  ],
+  "regression_textures": [
+    "dtd_banded_0105",
+    "dtd_braided_0179",
+    "dtd_chequered_0195",
+    "dtd_crosshatched_0165",
+    "dtd_grid_0064",
+    "dtd_grooved_0048",
+    "dtd_honeycombed_0065",
+    "dtd_knitted_0108",
+    "dtd_lined_0172",
+    "dtd_meshed_0162",
+    "dtd_striped_0119",
+    "dtd_woven_0094"
+  ],
+  "independent_check": [
+    {
+      "id": "14092",
+      "source_jpg": "source/images/test/14092.jpg",
+      "source_sha256": "28cf7a6fedc4e759b555a21ec7293c1c76ed86ba584e78acc15fa80a3f0a8af4"
+    },
+    {
+      "id": "217090",
+      "source_jpg": "source/images/test/217090.jpg",
+      "source_sha256": "9ff5a18053187ca3d3c4a00d87178259b1712323c3f6e7d5be2bccc78216e889"
+    },
+    {
+      "id": "230063",
+      "source_jpg": "source/images/test/230063.jpg",
+      "source_sha256": "4d0063df58cbcb503aa7276b8b5166a12fc2f50c767db46a1a9a8e1b4c2f79cf"
+    },
+    {
+      "id": "33044",
+      "source_jpg": "source/images/test/33044.jpg",
+      "source_sha256": "e7fb5606edf799db4c13804fbb1b2148f85896a643dcf1ce87493b9e5996e2b2"
+    }
+  ],
+  "independent_selection": "4of8 unusedofficialtestfilenames, seededbeforepixelviewing; excludesold210+3priorchecks4each",
+  "kinds": [
+    "clean",
+    "edge8",
+    "edge16",
+    "edge32",
+    "interior16",
+    "patch32",
+    "global"
+  ],
+  "amplitude": 0.12,
+  "strengths": [
+    0.5,
+    0.75,
+    1.0
+  ],
+  "primary_strength": 1.0,
+  "tie_tolerance": 1e-12,
+  "primary": "dirty MSE improves versus input and unchanged current narrow baseline; clean and adjacent errors must not increase. Report old successes lost and newly modified clean pixels.",
+  "mechanism": "Separate input amplitude-connected context for flank measurement from unchanged strict qualified-run output; no fill, dilation or lowered gate threshold.",
+  "source_manifest_sha256": "cdbdbdec0fbda8874378763bcb2f597811afbff7023d375e9314780fe38023b4",
+  "methods": [
+    "baseline",
+    "ratio_relaxed",
+    "context_no_width",
+    "context_full"
+  ],
+  "baseline_commit": "79da40c222f590c1d552968627b72b2c5a67a0c0",
+  "controls": "10fixedanalytictexture/mixed/weak cases; legitimatecompactstripe explicitlyambiguous",
+  "fixed_thresholds": {
+    "amplitude": 0.02,
+    "stability": 0.8,
+    "validation_gain": 0.08,
+    "qualified_min_width": 3,
+    "max_width": 32,
+    "flank_width": 16,
+    "flank_ratio": 0.35
+  },
+  "ablations": {
+    "ratio_relaxed": "only maxflankratio .35->.9",
+    "context_no_width": "outside amplitudecontext but no additionalcontextwidth restriction; qualifiedwidth stillbounded",
+    "context_full": "outside amplitudecontext plus amplitudecontext<=32; output originalqualifiedruns only"
+  }
+}

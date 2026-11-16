@@ -6,7 +6,7 @@
 
 项目包含可运行的灰度图去噪算法、可控退化生成器、对照方法、模块消融及可复现实验。算法以局部周期残差拟合和加权减除为主，无需训练神经网络；少量运行参数在开发集校准。干净参考图、真实频率与干扰掩膜只用于校准和评价，不传给去噪器。
 
-**当前结论：**新窄条专用通道在4张新图的8／16像素边缘条件中，平均含噪区MSE相对输入降低约67%／63%；本批局部输入及12张DTD对照未出现新增干净区改动。仍有拒绝处理和不适用条件，不能推广为任意纹理安全保证。该通道使用独立入口，原通用方法保持不变。
+**当前结论：**已修复“把未通过资格的条纹行误当作外部背景”的上下文问题，可靠性门槛和实际输出资格不变。69022的8／16像素条纹在回归中改善；新4图额外恢复2个32像素边缘输入，本批未增加自然图、DTD及相邻区损伤。仍有拒绝与合法窄纹理歧义，不能推广为普遍安全保证。
 
 快速入口：[运行自己的图片](#快速运行自己的图片) · [复现实验](#测试与实验复现) · [实验结果](#实验结果) · [目前的不足](#目前的不足) · [维护说明](MAINTENANCE.md)
 
@@ -29,7 +29,7 @@ flowchart LR
 - **系统实验：**实现全局陷波、固定尺度、历史版本及ARPENOS Python移植对照，记录质量指标、区域损伤、运行时间、失败案例、频率误差和处理覆盖率。
 - **窄条专用通道：**沿长方向提出1D频率，按法向逐行拟合正弦／余弦系数；联合检查两半系数一致性、交叉拟合收益、连续支撑宽度和相邻带对比。估计支撑外修正严格为零，不在其他区域附加旧方法的频率残差。
 
-### 前一轮风险评分修订
+### 历史风险评分修订
 
 | 要求 | 当前实现与验收 |
 |---|---|
@@ -39,7 +39,7 @@ flowchart LR
 | 检查安全评分是否对应实际收益 | 新增逐候选参考增益、误减除／过度保护、得分分箱及尾部损伤诊断；真实参考仅进入评价模块。 |
 | 风险依据由剩余复杂度转向被移除结构 | 新增输入局部周期歧义、谐波支撑和减除前后结构损失；保持候选残差、资格及拟合权重 `q` 不变，便于归因。 |
 
-该轮只修改风险评分。本轮继续实现**局部支撑增强**，分别控制32分析窗口、32复原块和非负包络，保护模块固定为原风险耦合版，不把两个研究方向混在同一对照中。
+该轮只修改风险评分。后续局部支撑轮分别控制32分析窗口、32复原块和非负包络，保护模块固定为原风险耦合版，不把两个研究方向混在同一对照中。
 
 ### 上一轮空间支撑修订
 
@@ -51,7 +51,7 @@ flowchart LR
 
 包络与背景平面通过有界线性最小二乘联合求解；没有向算法提供真实干扰掩膜。实现依据见 [SciPy `lsq_linear` 文档](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.lsq_linear.html)。小窗口稳定性和网格拟合改善都不能证明候选一定是噪声。
 
-### 本轮先定位，再修改
+### 上一轮：窄条检测、门控与包络定位
 
 诊断只使用已用开发图和旧失败案例，新增检查图未参与定位。统计所有与含噪区域相交的块，避免块中心漏掉8像素条纹。
 
@@ -66,6 +66,14 @@ flowchart LR
 
 频率细化使用 [SciPy有界标量局部优化](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize_scalar.html)，不保证找到全局最佳频率；旧候选对照与新候选使用相同细化过程。
 
+### 本轮：对比上下文与减除资格分离
+
+69022的边缘8像素案例中，251～254行通过资格，255行虽幅度较高却因稳定性约0.778＜0.8未通过。原逻辑把255行当作“外侧邻带”，比值达到1.445而拒绝旁边可靠条纹；16像素案例同类比值为1.313。这里的行号从0开始。
+
+现在先找包含该资格段的连续高幅度上下文，在上下文之外取邻带；实际减除仍只用原先通过资格的连续段。幅度0.02、稳定性0.8、收益0.08、至少3个连续资格行及邻带比值0.35均不变，不填资格孔、不放大输出支撑。完整修复还限制幅度上下文宽度≤32，防止宽真实纹理被资格碎片误当作窄条。
+
+诊断与源提交记录见 [69022逐行定位](results/rejection_diagnosis/case_FINDINGS.md)、[其他拒绝案例](results/rejection_diagnosis/dev_FINDINGS.md)。151087还存在频率偏差和背景半区不一致，未通过放宽门槛掩盖。
+
 ## 版本与配置怎么选
 
 | 版本／配置 | 内容 | 当前定位 |
@@ -77,6 +85,7 @@ flowchart LR
 | 风险实验：`configs/refined_risk.json` | 相同估计器与耦合增益，仅替换纹理风险评分 | 固定粗参数、未校准；显式启用，未升级为默认 |
 | 支撑实验：`configs/support_*.json` | 32分析、32复原及非负包络的8种因子组合 | 同一保护配置与强度，独立比较各开关及组合 |
 | 窄条专用：`configs/narrow_full.json` | 长方向剖面拟合＋局部门控＋紧支撑 | 独立入口 `filter_narrow.py`；不作为任意周期干扰的默认替代 |
+| 上下文修复：`configs/context_context_full.json` | 原可靠性门槛与输出资格，邻带取自连续幅度上下文之外 | 用于本轮修复；宽幅度区域保护保留，显式选择 |
 
 v3将拟合权重记为 `q`，安全权重记为 `s`，二者在 `[0,1]` 内；不具减除资格的候选直接置零。两种组合为：
 
@@ -149,6 +158,14 @@ python -m venv .venv
 
 `narrow_*.json`配置用于这个专用入口。输出同样包含恢复PNG、浮点NPY、诊断NPZ和`decisions.json`，额外记录逐剖面幅度、稳定性、支撑区间及拒绝原因。至少一个切向需达到64像素且观察到3周期；方向变化明显、条纹很短或输入证据不足时允许不处理。切向频率图不能当作完整二维频率场。
 
+使用本轮上下文修复配置：
+
+```powershell
+.\.venv\Scripts\python.exe filter_narrow.py "input.png" --config configs/context_context_full.json --out results/own_image_context
+```
+
+诊断区间增加`context_start / context_stop / context_width`，它们表示对比背景的范围，不等于实际输出范围。`context_ratio_relaxed.json`与`context_context_no_width.json`仅用于消融，不是推荐预设。
+
 **注意配置选择：**省略 `--config` 时默认加载 `configs/v3_p0_coupled.json`。配置文件缺失会报错；只有显式 `--use-default-config` 才允许使用未经校准的程序默认参数，这不等于推荐配置。
 
 ## 测试与实验复现
@@ -159,7 +176,7 @@ python -m venv .venv
 .\.venv\Scripts\python.exe -m pytest -q tests original/periodic_notch_starter/test_demo.py -m "not requires_bsds"
 ```
 
-本轮为 **289项通过、2项数据集成测试按标记排除**。GitHub Actions使用这条命令，仅检验数值与接口行为，不代表重新完成全部图像实验。也可直接运行 `pytest -q -rs`，缺少数据时会明确显示跳过原因。
+本轮为 **346项通过、2项数据集成测试按标记排除**。GitHub Actions使用这条命令，仅检验数值与接口行为，不代表重新完成全部图像实验。也可直接运行 `pytest -q -rs`，缺少数据时会明确显示跳过原因。
 
 ### 2. 重建固定数据并运行完整测试
 
@@ -168,11 +185,29 @@ python -m venv .venv
 .\.venv\Scripts\python.exe -m pytest -q tests original/periodic_notch_starter/test_demo.py --require-bsds
 ```
 
-首次需要下载官方BSDS500归档及固定图片。脚本按已有清单和哈希重建210张BSDS参考、12张DTD参考及2个无配对实例，不重新选择审计图。本轮完整测试为 **291项通过**，记录在 [测试日志](results/narrow/tests.xml)；支撑轮220项、风险轮154项与历史v3的104项记录保留在对应旧结果目录。
+首次需要下载官方BSDS500归档及固定图片。脚本按已有清单和哈希重建210张BSDS参考、12张DTD参考及2个无配对实例，不重新选择审计图。本轮完整测试为 **348项通过**，记录在 [测试日志](results/context/tests.xml)；窄条轮291项及更早记录保留在对应旧结果目录。
 
 原图和NPY未纳入Git。无数据时跳过表示“未验证”，不是测试通过；完整验收必须使用 `--require-bsds`。
 
-### 3. 复现本轮窄条对照
+### 3. 复现本轮拒绝案例修复
+
+```powershell
+.\run_context.ps1
+```
+
+复用 [固定协议](rejection_protocol.json)，依次执行完整测试、开发集、10个固定解析控制、冻结、旧案例／DTD回归、新4图检查、报告与输入核验。默认写入 `results/context_reproduction/`，已有阶段拒绝覆盖；可用`-Output`指定新目录。
+
+单阶段入口为`python rejection_experiments.py development --out results/my_context_run`；后续为`controls`、`freeze`、`regression`、`check`、`report`，保持同一`--out`。新4图排除旧210图及前三轮各4张检查图；69022已用于本轮设计，只作为回归材料。
+
+### 4. 复现上一轮窄条对照
+
+精确源码位于`narrow-profile-baseline`标签：
+
+```powershell
+git worktree add ..\periodic-narrow-baseline narrow-profile-baseline
+```
+
+在该独立目录安装环境后运行：
 
 ```powershell
 .\run_narrow.ps1
@@ -182,7 +217,9 @@ python -m venv .venv
 
 新4图从旧210图、风险轮4图和支撑轮4图之外按文件名及种子预选；输入JPEG、像素哈希和退化参数均保存。不要重新选择检查图或将本轮检查再次当作未参与设计的数据。
 
-### 4. 复现上一轮支撑对照
+本轮修改了支撑源码与配置结构，旧窄条快照在当前分支不匹配是预期行为；原快照与结果不改SHA冒充复现。
+
+### 5. 复现更早支撑对照
 
 ```powershell
 .\run_support.ps1
@@ -194,7 +231,7 @@ python -m venv .venv
 
 历史完整提交为 `support-ablation-baseline` 标签。本轮未修改其算法源码、配置或原始结果。
 
-### 5. 复现更早风险实验
+### 6. 复现更早风险实验
 
 精确源码对应 `risk-refinement-baseline` 标签，先建立独立目录并在其中安装环境：
 
@@ -212,7 +249,7 @@ git worktree add ..\periodic-risk-baseline risk-refinement-baseline
 
 每阶段也可单独运行：`python refinement_experiments.py development --out results/my_study`；后续 `freeze`、`regression`、`check`、`report` 使用同一 `--out`。独立检查使用官方归档中4张未纳入旧清单的图片，文件名及SHA已固定，需保留 `data/source/images/test/`。
 
-### 6. 复现历史v3实验
+### 7. 复现历史v3实验
 
 历史3900条主审计对应标签 `v3-validated-baseline`。当前源码已修订，旧快照校验失败是预期行为；要复现旧表，先建立该标签的独立工作目录，再安装依赖和重建数据：
 
@@ -234,7 +271,33 @@ git worktree add ..\periodic-v3-baseline v3-validated-baseline
 
 历史参数仅在30张开发图上选择；风险与支撑扩展均使用固定粗参数，在其中8张图上诊断，未根据审计或DTD调参。同一原图的不同退化版本保持同一划分；历史三档幅度为0.06、0.12、0.18，同图同条件的频率、相位和包络保持配对。像素范围为 `[0,1]`，PSNR、SSIM明确使用 `data_range=1`，不对各结果分别拉伸对比度。
 
-### 本轮：诊断驱动的8／16像素窄条优化
+### 本轮：69022等拒绝案例的上下文修复
+
+开发56个输入、旧案例／DTD回归28个、新4图检查28个、固定解析控制10个，共122个输入、1586行指标。4种方法共享完全相同的候选与系数，强度均为1，另存0.5／0.75对照；不根据新图或DTD调整阈值。
+
+69022是已参与定位的回归案例，下面的改善不是独立确认结果：
+
+| 条纹宽度 | 原窄条方法MSE | 完整修复MSE | 降低 | 干净区／相邻区MSE |
+|---|---:|---:|---:|---:|
+| 8像素 | 0.00297031 | 0.00104122 | 64.9% | 0／0 |
+| 16像素 | 0.00294463 | 0.00118094 | 59.9% | 0／0 |
+| 32像素 | 0.00284453 | 0.00101890 | 64.2% | 0／0 |
+
+新4图的20个局部输入中，完整修复新增恢复2个旧拒绝输入，均为32像素边缘条件；8／16像素条件没有额外恢复收益。6个原成功输入均保留，未新增干净区或相邻区损伤。开发集新增恢复5/40，旧图回归新增恢复5/12，均未使原成功输入退步。
+
+| 对照方案 | 新图新增恢复／20 | 新图新增干净／相邻损伤 | 旧图回归成功退步／丢失 | DTD被修改照片数／12 |
+|---|---:|---:|---:|---:|
+| 仅把邻带比值0.35放宽到0.9 | 2 | 0／0 | 2／2 | 6 |
+| 改幅度上下文，关闭上下文宽度保护 | 2 | 5／4 | 0／0 | 4 |
+| 完整上下文修复 | **2** | **0／0** | **0／0** | **0** |
+
+固定宽周期纹理控制中，放宽比值或取消宽度保护都会产生MAE约0.004982，完整修复与原方法均不修改。合法紧窄纹理的歧义控制中，两者仍会误删、MAE约0.002384；因此不能把本批自然图的零新增损伤说成普遍识别了真实纹理。
+
+完整修复仍不处理未通过原资格的端点／短碎片，条纹可有残留；151087等频率或半区不一致案例仍未解决。见 [完整结果](results/context/RESULTS.md)、[取舍与失败分析](results/context/DECISION.md)、[新增恢复与旧成功回归](results/context/check/paired_deltas.csv)、[新修改像素指标](results/context/check/metrics.csv) 和 [冻结及输入核验](results/context/verification.json)。
+
+![资格段与幅度上下文分离、69022回归及纹理保护对照](docs/figures/context-ablation.png)
+
+### 上一轮：诊断驱动的8／16像素窄条优化
 
 开发8图×7条件、回归12张DTD加4张旧图×4条件、新4图×7条件，共112个输入、2464行结果。所有原图的退化版本保持配对，新图仅在冻结后检查一次；三档减除强度不增加独立样本数。
 
@@ -262,7 +325,7 @@ git worktree add ..\periodic-v3-baseline v3-validated-baseline
 
 这支持本批数据中三个环节需要配合：提高候选召回不足以确保安全，门控不能替代支撑，支撑也不能替代可靠性判断。12张DTD无新增干扰照片中，完整方案平均及尾部修改MAE均为0；旧64和旧32＋网格平均MAE分别为0.054074、0.053021。这里只能报告这批照片未修改，不能宣称真实周期纹理已被完全识别。
 
-**仍然失败或不适用：**`69022`的8／16像素候选频率已接近真值，但因邻带对比不足被拒绝；小斑块仍未恢复。全局干扰条件中新通道平均MSE为0.00708903，与输入相同，而旧32基线为0.00073582。因此它不是通用去噪器的替代。分半检验只验证周期系数，频率提出仍读取完整输入，不是完全独立交叉验证；局部真实条纹与干扰高度相似时仍可能误删。
+**该轮仍失败或不适用：**`69022`当时因邻带对比不足被拒绝，已作为本轮设计回归；小斑块仍未恢复。全局干扰条件中新通道平均MSE为0.00708903，与输入相同，而旧32基线为0.00073582。因此它不是通用去噪器的替代。分半检验只验证周期系数，频率提出仍读取完整输入，不是完全独立交叉验证；局部真实条纹与干扰高度相似时仍可能误删。
 
 见 [完整结果](results/narrow/RESULTS.md)、[取舍与失败分析](results/narrow/DECISION.md)、[逐图指标](results/narrow/check/metrics.csv)、[净改善与失败缓解配对](results/narrow/check/paired_deltas.csv)、[输入与产物核验](results/narrow/verification.json)。算法、配置和新检查ID已冻结，不根据这些结果再调阈值。
 
@@ -394,6 +457,7 @@ v3主数据清单共210张BSDS图：30开发、120过往验证回归、60当轮�
 | [run_support.ps1](run_support.ps1)、[verify_support.py](verify_support.py) | 一键复现、输入重建及产物完整性核验 |
 | [narrow_profiles.py](narrow_profiles.py)、[narrow_support.py](narrow_support.py)、[narrow_denoiser.py](narrow_denoiser.py) | 专用切向候选、局部门控、紧支撑减除 |
 | [filter_narrow.py](filter_narrow.py)、[narrow_experiments.py](narrow_experiments.py)、[run_narrow.ps1](run_narrow.ps1) | 窄条入口、环节消融与批量复现 |
+| [narrow_context.py](narrow_context.py)、[rejection_experiments.py](rejection_experiments.py)、[run_context.ps1](run_context.ps1) | 对比上下文修复、纹理控制与配对验证 |
 | [tests/](tests/)、[configs/](configs/) | 数值边界测试与已测配置 |
 | [results/](results/)、[data/v3_manifest.json](data/v3_manifest.json) | 原始CSV、报告、核验记录及数据清单 |
 | [original/](original/)、[third_party/](third_party/) | 起步原型、外部源码与来源说明 |

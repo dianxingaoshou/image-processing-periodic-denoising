@@ -1,0 +1,14 @@
+{
+  "baseline_commit": "79da40c222f590c1d552968627b72b2c5a67a0c0",
+  "baseline_tag": "narrow-profile-baseline",
+  "source_hashes": {
+    "narrow_profiles.py": "b1482d15a9030605c6d7094464f61b51d26aa030596b70241d02bd90e6dcca7e",
+    "narrow_support.py": "c38932957a9ef58ae0bf9be980aac05ad3a264494adcd990b5075f2352797506",
+    "narrow_denoiser.py": "bea9339ee886ed261c33b1c7bc1b80b8f5656eb12a4322a86b13c3334fd5acb7",
+    "configs/narrow_full.json": "890f161be1b5ee9198f415772a7f4d61bcbacbb7b93e0c7fd8ecb7289e853773",
+    "support_data.py": "ba9576076a1c873338adaa6f88634ceb837efee44dda692c24236771baf9b189",
+    "rejection_69022_audit.py": "76c52310388f50fddec03db2041be8631f8865a527ccb7441d0bfc0ce3e8eac4",
+    "rejection_dev_audit.py": "c87cd6785f87cf6a1ff454f4bc4ab5bdc0a1716378dc7ab2c170ab6271276301"
+  },
+  "note": "Production support logic unchanged until rejection diagnosis completed. Ground truth only in offline attribution."
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "140055",
+    "kind": "edge16",
+    "variant": 0,
+    "bit_exact_baseline": true
+  },
+  {
+    "id": "147021",
+    "kind": "edge8",
+    "variant": 2,
+    "bit_exact_baseline": true
+  },
+  {
+    "id": "69022",
+    "kind": "edge8",
+    "variant": 3,
+    "bit_exact_baseline": true
+  },
+  {
+    "id": "69022",
+    "kind": "clean",
+    "variant": 3,
+    "bit_exact_baseline": true
+  }
+]

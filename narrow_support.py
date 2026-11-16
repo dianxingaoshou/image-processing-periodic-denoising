@@ -20,8 +20,14 @@ class SupportConfig:
     max_width: int = 32
     flank_width: int = 16
     max_flank_ratio: float = .35
+    contrast_context: str = 'qualified'
+    limit_context_width: bool = True
 
     def __post_init__(self):
+        if self.contrast_context not in ('qualified','amplitude'):
+            raise ValueError('contrast_context must be qualified or amplitude')
+        if not isinstance(self.limit_context_width,bool):
+            raise ValueError('limit_context_width must be boolean')
         if not np.isfinite(self.min_amplitude) or self.min_amplitude <= 0:
             raise ValueError('min_amplitude must be finite and positive')
         if not np.isfinite(self.min_stability) or not 0 <= self.min_stability <= 1:
@@ -79,6 +85,13 @@ def build_support(profile,config:SupportConfig|None=None,*,use_gate=True,compact
     No gap filling, dilation or extrapolation is performed. Outside the final
     mask weights are exactly zero.
 
+    ``contrast_context='amplitude'`` measures flanks beyond the enclosing
+    amplitude-connected interval, so an unreliable high-amplitude row is not
+    automatically treated as background. It never enters the output mask.
+    The qualified run still needs three consecutive rows; optional context
+    width protection rejects a broad amplitude region despite a short reliable
+    fragment. The default ``qualified`` preserves the previous behavior.
+
     Disabling compact support preserves the qualified-row mask while skipping
     group width and flank contrast. Disabling the gate skips only stability and
     validation-gain checks. Neither ablation accepts a ground-truth mask.
@@ -95,21 +108,26 @@ def build_support(profile,config:SupportConfig|None=None,*,use_gate=True,compact
     for start,stop in _runs(qualified):
         width=stop-start
         inside=float(np.median(amplitude[start:stop]))
-        left=amplitude[max(0,start-cfg.flank_width):start]
-        right=amplitude[stop:min(len(amplitude),stop+cfg.flank_width)]
-        left_median=float(np.median(left)) if len(left) else None
-        right_median=float(np.median(right)) if len(right) else None
+        context_start,context_stop=start,stop
+        if cfg.contrast_context=='amplitude':
+            from narrow_context import amplitude_context
+            context_start,context_stop=amplitude_context(amplitude,start,stop,cfg.min_amplitude)
+        from narrow_context import context_flanks
+        left_median,right_median=context_flanks(amplitude,context_start,context_stop,cfg.flank_width)
+        context_width=context_stop-context_start
         flanks=[value for value in (left_median,right_median) if value is not None]
         ratio=max(flanks)/max(inside,1e-15) if flanks else None
         if not compact_support:reason='compact_support_disabled'
         elif width<cfg.min_width:reason='too_few_supported_rows'
         elif width>cfg.max_width:reason='broad_periodic_region'
+        elif cfg.limit_context_width and context_width>cfg.max_width:reason='broad_amplitude_context'
         elif ratio is None:reason='no_observed_flank'
         elif ratio>cfg.max_flank_ratio:reason='insufficient_outside_contrast'
         else:reason='compact_supported_region'
         accepted=bool(reason in ('compact_support_disabled','compact_supported_region'))
         if accepted:mask[start:stop]=True
         intervals.append(dict(start=start,stop=stop,width=width,accepted=accepted,reason=reason,
+            contrast_context=cfg.contrast_context,context_start=context_start,context_stop=context_stop,context_width=context_width,
             touches_image_edge=bool(start==0 or stop==len(amplitude)),
             median_amplitude=inside,left_flank_median=left_median,right_flank_median=right_median,
             outside_to_inside_ratio=ratio,
