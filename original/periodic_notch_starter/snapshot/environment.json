@@ -1,0 +1,20 @@
+{
+  "python": "3.13.5",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "scikit_image": "0.26.0",
+  "config": {
+    "threshold": 6.5,
+    "median_window": 15,
+    "dc_radius": 8.0,
+    "min_distance": 5.0,
+    "max_pairs": 8,
+    "bandwidth_patch_radius": 7,
+    "bandwidth_scale": 3.0,
+    "sigma_min": 0.6,
+    "sigma_max": 4.0,
+    "fixed_sigma": 2.0,
+    "strength": 1.0
+  },
+  "evaluation_note": "Exploratory, NOT a held-out benchmark."
+}

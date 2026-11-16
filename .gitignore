@@ -1,0 +1,43 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local credentials and editor state
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.idea/
+.vscode/
+
+# Downloaded or regenerable bulk data
+*.zip
+*.tgz
+*.tar.gz
+*.part
+*.npy
+*.npz
+data/source/images/
+data/clean/
+data/textures_v3/source/
+data/textures_v3/clean/
+third_party/real_examples/*.jpg
+third_party/real_examples/*.png
+
+# Keep numeric evidence; curated figures are copied to docs/figures
+results/**/examples/
+results/own_image*/
+results/cli_smoke/
+results/**/*.png
+original/periodic_notch_starter/snapshot/**/*.png
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini

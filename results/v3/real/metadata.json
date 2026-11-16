@@ -1,0 +1,126 @@
+[
+  {
+    "id": "opencv_period_input",
+    "reference_available": false,
+    "source": {
+      "id": "opencv_period_input",
+      "filename": "opencv_period_input.jpg",
+      "url": "https://raw.githubusercontent.com/opencv/opencv/4.x/doc/tutorials/imgproc/periodic_noise_removing_filter/images/period_input.jpg",
+      "source_page": "https://docs.opencv.org/4.13.0/d2/d0b/tutorial_periodic_noise_removing_filter.html",
+      "interpretation": "Official OpenCV tutorial explicitly describes this as a real-world periodic-noise image.",
+      "use_terms": "Official OpenCV repository sample; repository Apache2.0 terms do not establish ownership of every photographed subject.",
+      "shape": [
+        471,
+        640
+      ],
+      "path": "third_party/real_examples/opencv_period_input.jpg",
+      "sha256": "cc702df3ae80b441f33aebe3a475509f18e8d92c6b8c9bf9b02cc9622b4dba10",
+      "reference_available": false,
+      "evaluation": "qualitative fixed-configuration outputs only; no PSNR or SSIM",
+      "processing_recommendation": "shared float grayscale; optionally fix longest side512 for every real case, no per-image tuning"
+    },
+    "shape": [
+      377,
+      512
+    ],
+    "outputs": {
+      "input": {
+        "runtime_ms": 0.0,
+        "strength": 0.0,
+        "combination": "input",
+        "path": "results\\v3\\real\\opencv_period_input_input.npy",
+        "modification_mae": 0.0
+      },
+      "v2_frozen": {
+        "runtime_ms": 2547.563199999786,
+        "strength": 2.0,
+        "combination": "coupled_v2",
+        "path": "results\\v3\\real\\opencv_period_input_v2_frozen.npy",
+        "modification_mae": 0.07310072285917135
+      },
+      "v3_coupled_P0": {
+        "runtime_ms": 2767.117400000643,
+        "strength": 2.0,
+        "combination": "coupled",
+        "path": "results\\v3\\real\\opencv_period_input_v3_coupled_P0.npy",
+        "modification_mae": 0.07909447339697916
+      },
+      "v3_decoupled": {
+        "runtime_ms": 2767.258599998968,
+        "strength": 2.0,
+        "combination": "decoupled",
+        "path": "results\\v3\\real\\opencv_period_input_v3_decoupled.npy",
+        "modification_mae": 0.04777293533798781
+      },
+      "v3_unprotected": {
+        "runtime_ms": 2769.7056000015436,
+        "strength": 2.0,
+        "combination": "unprotected",
+        "path": "results\\v3\\real\\opencv_period_input_v3_unprotected.npy",
+        "modification_mae": 0.0871728180069459
+      }
+    }
+  },
+  {
+    "id": "arpenos_canvas_carry_on_002",
+    "reference_available": false,
+    "source": {
+      "id": "arpenos_canvas_carry_on_002",
+      "filename": "arpenos_canvas_carry_on_002.jpg",
+      "url": "https://members.loria.fr/FSur/software/ACARPENOS/Rockwell%20-%20Carry%20On%20-%20002.jpg",
+      "source_page": "https://members.loria.fr/FSur/software/ARPENOS/",
+      "interpretation": "Author-provided painting canvas-pattern removal case; texture may be physical substrate/content, not paired sensor-noise truth.",
+      "use_terms": "ARPENOS author page permits academic research use; original painting image rights retained by their owners.",
+      "shape": [
+        1326,
+        1600
+      ],
+      "path": "third_party/real_examples/arpenos_canvas_carry_on_002.jpg",
+      "sha256": "1f36f4cacf444351bee051d105c650fcfa8c952bba4eab40fbfdb67328cee598",
+      "reference_available": false,
+      "evaluation": "qualitative fixed-configuration outputs only; no PSNR or SSIM",
+      "processing_recommendation": "shared float grayscale; optionally fix longest side512 for every real case, no per-image tuning"
+    },
+    "shape": [
+      424,
+      512
+    ],
+    "outputs": {
+      "input": {
+        "runtime_ms": 0.0,
+        "strength": 0.0,
+        "combination": "input",
+        "path": "results\\v3\\real\\arpenos_canvas_carry_on_002_input.npy",
+        "modification_mae": 0.0
+      },
+      "v2_frozen": {
+        "runtime_ms": 2860.931899998832,
+        "strength": 2.0,
+        "combination": "coupled_v2",
+        "path": "results\\v3\\real\\arpenos_canvas_carry_on_002_v2_frozen.npy",
+        "modification_mae": 0.0024598382768754794
+      },
+      "v3_coupled_P0": {
+        "runtime_ms": 3132.6166999970155,
+        "strength": 2.0,
+        "combination": "coupled",
+        "path": "results\\v3\\real\\arpenos_canvas_carry_on_002_v3_coupled_P0.npy",
+        "modification_mae": 0.002183648017275075
+      },
+      "v3_decoupled": {
+        "runtime_ms": 3131.9769999990967,
+        "strength": 2.0,
+        "combination": "decoupled",
+        "path": "results\\v3\\real\\arpenos_canvas_carry_on_002_v3_decoupled.npy",
+        "modification_mae": 0.0019442767859118545
+      },
+      "v3_unprotected": {
+        "runtime_ms": 3133.0011999980343,
+        "strength": 2.0,
+        "combination": "unprotected",
+        "path": "results\\v3\\real\\arpenos_canvas_carry_on_002_v3_unprotected.npy",
+        "modification_mae": 0.010849318185300265
+      }
+    }
+  }
+]

@@ -1,0 +1,2 @@
+# Scientific snapshots hash exact file bytes. Never normalize LF/CRLF on checkout.
+* -text

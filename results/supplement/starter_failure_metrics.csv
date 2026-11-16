@@ -1,0 +1,5 @@
+﻿case,method,mse,psnr_db,modification_mae
+starter_failure_exact,input,0.0,inf,0.0
+starter_failure_exact,starter_global_adaptive,0.01125,19.48847477552619,0.0954953505769152
+starter_failure_exact,conservative,0.0,inf,0.0
+starter_failure_exact,without_conservative,0.011249999999999996,19.48847477552619,0.09549535057691519

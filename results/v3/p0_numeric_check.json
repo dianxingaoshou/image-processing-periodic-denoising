@@ -1,0 +1,16 @@
+{
+  "shape": [
+    64,
+    64
+  ],
+  "frequency_cycles_per_pixel": 0.25,
+  "phase_radians": 0,
+  "amplitude": 0.1,
+  "old_even_subgrid_rmse": 0.07071067811865474,
+  "new_full_pixels_rmse": 4.2207643840401625e-16,
+  "effective_analysis_windows": 1,
+  "max_window_count_per_tile": 1,
+  "different_window_support": [
+    false
+  ]
+}

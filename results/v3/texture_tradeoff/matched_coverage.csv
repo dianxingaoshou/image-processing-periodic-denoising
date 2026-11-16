@@ -1,0 +1,49 @@
+﻿image_id,kind,comparison,matched_points,decoupled_best_whole_image_mse_reduction,comparator_best_whole_image_mse_reduction,reason
+dtd_banded_0105,global,decoupled_vs_coupled,0,0.0,0.0,no positive common whole-image removal interval
+dtd_banded_0105,global,decoupled_vs_unprotected,0,0.0,0.0,no positive common whole-image removal interval
+dtd_banded_0105,chirp,decoupled_vs_coupled,0,0.0,0.0,no positive common whole-image removal interval
+dtd_banded_0105,chirp,decoupled_vs_unprotected,0,0.0,0.0,no positive common whole-image removal interval
+dtd_braided_0179,global,decoupled_vs_coupled,21,0.6506632103325614,0.7067126126987013,positive common removal interval
+dtd_braided_0179,global,decoupled_vs_unprotected,21,0.6506632103325614,0.7996922769747786,positive common removal interval
+dtd_braided_0179,chirp,decoupled_vs_coupled,21,0.5674546435603098,0.6649030376043967,positive common removal interval
+dtd_braided_0179,chirp,decoupled_vs_unprotected,21,0.5674546435603098,0.6813278937559173,positive common removal interval
+dtd_chequered_0195,global,decoupled_vs_coupled,21,0.8335538067033281,0.9888403512612992,positive common removal interval
+dtd_chequered_0195,global,decoupled_vs_unprotected,21,0.8335538067033281,0.9888932649647721,positive common removal interval
+dtd_chequered_0195,chirp,decoupled_vs_coupled,21,0.7655319872200065,0.9301537700337233,positive common removal interval
+dtd_chequered_0195,chirp,decoupled_vs_unprotected,21,0.7655319872200065,0.9761471907310711,positive common removal interval
+dtd_crosshatched_0165,global,decoupled_vs_coupled,21,0.7222373300304337,0.9803839705562226,positive common removal interval
+dtd_crosshatched_0165,global,decoupled_vs_unprotected,21,0.7222373300304337,0.9838987160252288,positive common removal interval
+dtd_crosshatched_0165,chirp,decoupled_vs_coupled,21,0.25887259221380754,0.32309605900252436,positive common removal interval
+dtd_crosshatched_0165,chirp,decoupled_vs_unprotected,21,0.25887259221380754,0.6403351409636524,positive common removal interval
+dtd_grid_0064,global,decoupled_vs_coupled,21,0.4909042697047198,0.654395020105925,positive common removal interval
+dtd_grid_0064,global,decoupled_vs_unprotected,21,0.4909042697047198,0.6602518873163927,positive common removal interval
+dtd_grid_0064,chirp,decoupled_vs_coupled,21,0.3705985921553079,0.4705483841172402,positive common removal interval
+dtd_grid_0064,chirp,decoupled_vs_unprotected,21,0.3705985921553079,0.5983546439772274,positive common removal interval
+dtd_grooved_0048,global,decoupled_vs_coupled,21,0.005972787079080222,0.005972787079080222,positive common removal interval
+dtd_grooved_0048,global,decoupled_vs_unprotected,0,0.005972787079080222,0.0,no positive common whole-image removal interval
+dtd_grooved_0048,chirp,decoupled_vs_coupled,0,0.0,0.0,no positive common whole-image removal interval
+dtd_grooved_0048,chirp,decoupled_vs_unprotected,0,0.0,0.0,no positive common whole-image removal interval
+dtd_honeycombed_0065,global,decoupled_vs_coupled,21,0.8155796483299104,0.9567791448655514,positive common removal interval
+dtd_honeycombed_0065,global,decoupled_vs_unprotected,21,0.8155796483299104,0.957391015227152,positive common removal interval
+dtd_honeycombed_0065,chirp,decoupled_vs_coupled,21,0.7814195670013766,0.9509589851166462,positive common removal interval
+dtd_honeycombed_0065,chirp,decoupled_vs_unprotected,21,0.7814195670013766,0.9791859564496143,positive common removal interval
+dtd_knitted_0108,global,decoupled_vs_coupled,21,0.9167642527023734,0.978750098198594,positive common removal interval
+dtd_knitted_0108,global,decoupled_vs_unprotected,21,0.9167642527023734,0.978750098198594,positive common removal interval
+dtd_knitted_0108,chirp,decoupled_vs_coupled,21,0.8482135621126442,0.9348340136356124,positive common removal interval
+dtd_knitted_0108,chirp,decoupled_vs_unprotected,21,0.8482135621126442,0.9632477745923115,positive common removal interval
+dtd_lined_0172,global,decoupled_vs_coupled,21,0.667513887897314,0.9639358809160737,positive common removal interval
+dtd_lined_0172,global,decoupled_vs_unprotected,21,0.667513887897314,0.967041317174917,positive common removal interval
+dtd_lined_0172,chirp,decoupled_vs_coupled,21,0.14413346248657788,0.14413346248657788,positive common removal interval
+dtd_lined_0172,chirp,decoupled_vs_unprotected,21,0.14413346248657788,0.10574639090375226,positive common removal interval
+dtd_meshed_0162,global,decoupled_vs_coupled,0,0.0,0.0,no positive common whole-image removal interval
+dtd_meshed_0162,global,decoupled_vs_unprotected,0,0.0,0.0,no positive common whole-image removal interval
+dtd_meshed_0162,chirp,decoupled_vs_coupled,0,0.0,0.0,no positive common whole-image removal interval
+dtd_meshed_0162,chirp,decoupled_vs_unprotected,0,0.0,0.0,no positive common whole-image removal interval
+dtd_striped_0119,global,decoupled_vs_coupled,21,0.5928021464807784,0.7711727282164508,positive common removal interval
+dtd_striped_0119,global,decoupled_vs_unprotected,21,0.5928021464807784,0.6500017678612242,positive common removal interval
+dtd_striped_0119,chirp,decoupled_vs_coupled,21,0.2506448804078434,0.2827861622572595,positive common removal interval
+dtd_striped_0119,chirp,decoupled_vs_unprotected,21,0.2506448804078434,0.2763213189747473,positive common removal interval
+dtd_woven_0094,global,decoupled_vs_coupled,0,0.0,0.0,no positive common whole-image removal interval
+dtd_woven_0094,global,decoupled_vs_unprotected,0,0.0,0.0,no positive common whole-image removal interval
+dtd_woven_0094,chirp,decoupled_vs_coupled,0,0.0,0.0,no positive common whole-image removal interval
+dtd_woven_0094,chirp,decoupled_vs_unprotected,0,0.0,0.0,no positive common whole-image removal interval

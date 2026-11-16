@@ -1,0 +1,28 @@
+{
+  "split": "development_diagnostic",
+  "source_image_id": "140055",
+  "shapes": [
+    [
+      64,
+      64
+    ],
+    [
+      96,
+      96
+    ],
+    [
+      128,
+      256
+    ],
+    [
+      384,
+      512
+    ]
+  ],
+  "frequencies": [
+    0.03,
+    0.25,
+    0.38
+  ],
+  "interpretation": "Boundary diagnostic on an already-used development image; not new independent performance evidence"
+}

@@ -1,0 +1,43 @@
+ARPENOS Python baseline provenance and limits
+===========================================
+
+Author code: Frederic Sur and Michel Grediac, ARPENOS v1.2, August 2016.
+Author page: https://members.loria.fr/FSur/software/ARPENOS/
+Original files: ARPENOS.m, sym_conv2.m, ARPENOS_example.m.
+Downloaded: 2026-11-16. author_page.html preserves the public usage terms.
+Usage condition on the author page: "The following codes can be used for
+academic research only". Retain this restriction and cite the original authors
+when using or redistributing the derivative for this course project. This is
+not an unrestricted open-source license. No authors' photographs are bundled.
+
+Citation:
+F. Sur and M. Grediac. Automated removal of quasiperiodic noise using frequency
+domain statistics. Journal of Electronic Imaging 24(1), 013003 (2015).
+DOI: 10.1117/1.JEI.24.1.013003.
+
+published_baseline.py ports the default reg=0 path of the author code. It keeps
+the patch Hanning window, 1/8 stride, geometric mean power spectrum, f0=2/L,
+f1=0.2, f2=8/L, 3-sigma detection, bilinear frequency interpolation, Gaussian
+notch construction, conjugate symmetrization and noise-subtraction pipeline.
+The original patch-loop endpoint convention is retained.
+
+Explicit differences:
+1. MATLAB robustfit (default bisquare) and its stats.s are replaced by a
+   documented bisquare IRLS implementation with leverage adjustment and MAD
+   scale. This can change the outlier set and the final output. The port has
+   NOT been numerically compared to MATLAB and must not be called bitwise
+   equivalent or used to claim replication of the paper's reported numbers.
+2. The optional TV regularization path (reg=1) is not included. Baseline names
+   must say ARPENOS Python reg0 or ARPENOS source-guided port, not AC-ARPENOS.
+3. Plotting and console statements are omitted; diagnostics are returned.
+4. A positive float floor prevents log(0), a common-power scaling prevents
+   exponent overflow, and constant images return unchanged. These safeguards
+   differ from the original's possible nonfinite behavior.
+5. Odd-sized images use true FFT coordinates; the original centered frequency
+   axis assumes even dimensions. Experiments use even dimensions.
+6. Returned images are not clipped or contrast-normalized. The caller chooses
+   evaluation clipping consistently across all compared methods.
+
+The original example uses patch size 128. At 256-pixel input size, patch size
+64 is an experiment setting, not a paper default. f2=8/L prevents detection
+below 0.125 cycles/pixel when L=64, so L=128 is preferable if the input permits.

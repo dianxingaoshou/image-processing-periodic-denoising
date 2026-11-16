@@ -1,0 +1,239 @@
+{
+  "exploratory": true,
+  "posthoc": true,
+  "used_for_parameter_selection": false,
+  "new_operating_point_selected": false,
+  "original_frozen_alpha": 2.0,
+  "config_sha256": "4917b8943005eaa1a3eb0958b63af2056e7b6301de3f1cfaa96d971165d7c120",
+  "frozen_snapshot_sha256": "0c104ceea36dfa11336ca0fe73f7e07a9061b5f345d14e4fa2f50cef922e401a",
+  "source_hashes": {
+    "texture_tradeoff_v3.py": "f0f5068e7bf62f5435f7b0e6e1c2e22024284f7b95ced24cdb06308992e1cd59",
+    "v3_evidence.py": "c6657db0d94fd626f794120d391984a744e96ed5ea74a516cb9e2ed0a5d4c70e",
+    "v3_experiments.py": "03c4af619d323b63a6d847563653dc8d3bf2f36f2964e580c556ea89912c0ac3",
+    "denoiser_v3.py": "897c0d398e59ae67a1d93af54cc0d0d314609b41d99be71a2b021de88c894a8f",
+    "local_estimation_v3.py": "3ecd99654b584600ef17b9f1baebe32e28794c0e5d2983fe53f53774ce2c449d",
+    "texture_guard_v3.py": "dc526c95fc84151396f6ac56e7ca38e9dba2e8171a76b7b54ecd584ad7f1d8e8",
+    "validation_data_v3.py": "5b570272d470c35771da779a4a8dc0b7453eef98fe1a1f1007db7eb4c2110627",
+    "evaluation_v3.py": "bd907b1f51a44eb6baff9a1a01fd0f5aa2115f15fc1bcdb17fb0e77a867ce31b",
+    "image_io_v3.py": "f39d084a36c9dcc8a5d9ac678fe91ffa182001b4b4129995a6d8996eff77b6e8"
+  },
+  "ids": [
+    "dtd_banded_0105",
+    "dtd_braided_0179",
+    "dtd_chequered_0195",
+    "dtd_crosshatched_0165",
+    "dtd_grid_0064",
+    "dtd_grooved_0048",
+    "dtd_honeycombed_0065",
+    "dtd_knitted_0108",
+    "dtd_lined_0172",
+    "dtd_meshed_0162",
+    "dtd_striped_0119",
+    "dtd_woven_0094"
+  ],
+  "conditions": [
+    "clean",
+    "global.12",
+    "chirp.12"
+  ],
+  "input_preparations": 36,
+  "structure_strength_grid": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0,
+    1.25,
+    1.5,
+    2.0
+  ],
+  "axis_definition": {
+    "contaminated_mse": "whole-image noisy restoration MSE against original photo; not a local region loss",
+    "clean_mse": "modification MSE on the paired original photo, same mode and alpha",
+    "input_contaminated_mse": "whole-image added-noise input MSE against original photo"
+  },
+  "reference_boundary": "Original natural photos contain no newly added noise, but are not guaranteed physically noise-free.",
+  "matching": "Reuse frozen v3_evidence.frontier/match; finite-grid Pareto interpolation only in positive common removal intervals.",
+  "input_array_hashes": [
+    {
+      "image_id": "dtd_banded_0105",
+      "kind": "clean",
+      "input_array_sha256": "c3bb5e019225c1c8ad58a118f867ac7310d21bd0c9ff93722dc6f72bc9f6dc65"
+    },
+    {
+      "image_id": "dtd_banded_0105",
+      "kind": "global",
+      "input_array_sha256": "97bee0cdc5887efccae172f0355d8138ae24a59fdf3b441bf6dfb9ef46c14be9"
+    },
+    {
+      "image_id": "dtd_banded_0105",
+      "kind": "chirp",
+      "input_array_sha256": "0e012d758f11662ba6bb0e3d21341bb2ada8e769d569c5f5f510c8b0e623532d"
+    },
+    {
+      "image_id": "dtd_braided_0179",
+      "kind": "clean",
+      "input_array_sha256": "9db45a31dcf17bce4e1cb266e0374e6b491989fd9c80c3ad753d37a40c9a129a"
+    },
+    {
+      "image_id": "dtd_braided_0179",
+      "kind": "global",
+      "input_array_sha256": "bee6f28b2aa80b4ee34af92b92038186db0bf1a9438165e89599c846a417c146"
+    },
+    {
+      "image_id": "dtd_braided_0179",
+      "kind": "chirp",
+      "input_array_sha256": "22a382cb59953c452480ae2d775c92a3755770c71ae2a0eac186d7f4bcbe3ecd"
+    },
+    {
+      "image_id": "dtd_chequered_0195",
+      "kind": "clean",
+      "input_array_sha256": "c91540ce69c08d5e266fbdf1c753879ec094f9860355bca44fb6ed0cc46e7807"
+    },
+    {
+      "image_id": "dtd_chequered_0195",
+      "kind": "global",
+      "input_array_sha256": "240a53d8e783ac17ad53f73d3bb6b0e3fa35762676573da8a7f24c902d1acafb"
+    },
+    {
+      "image_id": "dtd_chequered_0195",
+      "kind": "chirp",
+      "input_array_sha256": "68cf7c0479ad0d7995fa83689dbe1261090b9bc53ce9f7b053ab2fa61f3a27ad"
+    },
+    {
+      "image_id": "dtd_crosshatched_0165",
+      "kind": "clean",
+      "input_array_sha256": "82bdb07b7391ec31277e1eddf290d04774359b1251dd324cfde4237fe42561ae"
+    },
+    {
+      "image_id": "dtd_crosshatched_0165",
+      "kind": "global",
+      "input_array_sha256": "2d385936cb611f6c5e25134290ddeaa22e6076f4c18f5552d1a957fcc14433f4"
+    },
+    {
+      "image_id": "dtd_crosshatched_0165",
+      "kind": "chirp",
+      "input_array_sha256": "3b8cfc0bacdc2b1a80e46d761a361e316a138dee85f983eddcf5e370632e1d44"
+    },
+    {
+      "image_id": "dtd_grid_0064",
+      "kind": "clean",
+      "input_array_sha256": "7c10609bfdf9c3762d5d6853e5526f5827a19f606e38da6f64fc1f647c4e0081"
+    },
+    {
+      "image_id": "dtd_grid_0064",
+      "kind": "global",
+      "input_array_sha256": "57a0a1adf6fd91a79037377c7dd7f62766d803f5043dbc58f41d24d09e537786"
+    },
+    {
+      "image_id": "dtd_grid_0064",
+      "kind": "chirp",
+      "input_array_sha256": "4f12b36dd9ed2ebc5138f7c93a286ef5ee040e232efa8fbbfbc9df24b16b51d1"
+    },
+    {
+      "image_id": "dtd_grooved_0048",
+      "kind": "clean",
+      "input_array_sha256": "15ee3769c5af8ff59660c3799efc6adc0629d6d49309f382cf102dac380ce2db"
+    },
+    {
+      "image_id": "dtd_grooved_0048",
+      "kind": "global",
+      "input_array_sha256": "eac3cd942521c24949aabb2607900139b4cae24522623142d8b297adf76d29bd"
+    },
+    {
+      "image_id": "dtd_grooved_0048",
+      "kind": "chirp",
+      "input_array_sha256": "d3f9ad15d50f5f577ef2a07669e5288d1f8cfdf7bb8c35b972c5c798c86d2eb8"
+    },
+    {
+      "image_id": "dtd_honeycombed_0065",
+      "kind": "clean",
+      "input_array_sha256": "75362b7af82f60644299eaf2eb26d77974f9982c6aabc067450e9fc9fdc703ba"
+    },
+    {
+      "image_id": "dtd_honeycombed_0065",
+      "kind": "global",
+      "input_array_sha256": "207c38a1f4bb6de1e003155ed5b80ca4dca02d6598095216dfd151feea09eca4"
+    },
+    {
+      "image_id": "dtd_honeycombed_0065",
+      "kind": "chirp",
+      "input_array_sha256": "e1ec8b7ff15015b248ab3ee38e3741adef43676fe478e5eb7e6d718b196f713c"
+    },
+    {
+      "image_id": "dtd_knitted_0108",
+      "kind": "clean",
+      "input_array_sha256": "6b0e47abe4007c0c7517e634274f9bb024090e10541ef5f74da126a2dde8a7bf"
+    },
+    {
+      "image_id": "dtd_knitted_0108",
+      "kind": "global",
+      "input_array_sha256": "492868d2586f6dd6fa5b19df53fa848e03161367ab634f391fa5bcd02ad0ed92"
+    },
+    {
+      "image_id": "dtd_knitted_0108",
+      "kind": "chirp",
+      "input_array_sha256": "225931c385b5c6cefc76b540acb3d2a0c4a7f175323fd15b88f9b2b43bc7c2ab"
+    },
+    {
+      "image_id": "dtd_lined_0172",
+      "kind": "clean",
+      "input_array_sha256": "fd83fe833ff075e77297729a8b590a7066b22da24fe0788e412cda95b9781b29"
+    },
+    {
+      "image_id": "dtd_lined_0172",
+      "kind": "global",
+      "input_array_sha256": "16d8c106678d6c498c1e4cc0819eccf8ef9719660f2eeef743204dc0cc39fe0b"
+    },
+    {
+      "image_id": "dtd_lined_0172",
+      "kind": "chirp",
+      "input_array_sha256": "6ca69c4994b6f36c06a5fb5a0810d4a32882c6c42489f489569173bd4b22f442"
+    },
+    {
+      "image_id": "dtd_meshed_0162",
+      "kind": "clean",
+      "input_array_sha256": "9da9a83eaada44907021a59fd7d6f4f95b6098f86033ecca991d7d31c71622f0"
+    },
+    {
+      "image_id": "dtd_meshed_0162",
+      "kind": "global",
+      "input_array_sha256": "d838ccc97f2068d0f47a356735c2dd5c2f90037e4b5dea5c4ec2283561f23af5"
+    },
+    {
+      "image_id": "dtd_meshed_0162",
+      "kind": "chirp",
+      "input_array_sha256": "97e205602fe6a2df9a826119d16909bfa4ae6fe6024c6299012a02057f7a5843"
+    },
+    {
+      "image_id": "dtd_striped_0119",
+      "kind": "clean",
+      "input_array_sha256": "809c35360705f7755fef4b0299735acfd278e95afff42e5acaa88442240ab136"
+    },
+    {
+      "image_id": "dtd_striped_0119",
+      "kind": "global",
+      "input_array_sha256": "bcaf96bfce42b6e198e49b382c192929a097b9140aba38544948313419e2624a"
+    },
+    {
+      "image_id": "dtd_striped_0119",
+      "kind": "chirp",
+      "input_array_sha256": "5a26f909942844216319cbf25689f44ab45c55bd612262781232ebba446377af"
+    },
+    {
+      "image_id": "dtd_woven_0094",
+      "kind": "clean",
+      "input_array_sha256": "47686f3a8e6817528165c1932c540dd3de9f456ac22ed9533ae00b69bc6837f7"
+    },
+    {
+      "image_id": "dtd_woven_0094",
+      "kind": "global",
+      "input_array_sha256": "27039291596b617fea06e37145957d8791e53edf4f61fb52de1bdb7fb6f81fdb"
+    },
+    {
+      "image_id": "dtd_woven_0094",
+      "kind": "chirp",
+      "input_array_sha256": "6372e201afc375b00fba626543611f4297b155731ec27e61e2735d776859cb52"
+    }
+  ]
+}

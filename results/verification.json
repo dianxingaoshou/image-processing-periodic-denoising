@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "verified_at_utc": "2026-11-16T01:27:15.247585+00:00",
+  "all_passed": true,
+  "checks_passed": 11,
+  "checks_total": 11,
+  "paths": {
+    "data": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\data",
+    "main": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\results\\main",
+    "supplement": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\results\\supplement",
+    "frozen_config": "C:\\Users\\Administrator\\Desktop\\结课大作业\\图像处理\\configs\\frozen.json"
+  },
+  "verifier_sha256": "345f4d43ba335933a635a50216efcb4b76808e415500bf2485ae7eed16b05103",
+  "scope": "Artifact consistency and five deterministic failure-case reruns; no parameter tuning or claims of superiority.",
+  "checks": [
+    {
+      "check": "load_artifacts",
+      "passed": true,
+      "details": {
+        "metrics_rows": 6240,
+        "synthesis_rows": 780
+      }
+    },
+    {
+      "check": "image_level_splits",
+      "passed": true,
+      "details": {
+        "development_images": 30,
+        "test_images": 60,
+        "overlap": 0
+      }
+    },
+    {
+      "check": "frozen_configuration",
+      "passed": true,
+      "details": {
+        "frozen_file_sha256": "4aa7d5d2ea243db0850e5f95900f4dec52c1d5dec04963c6642dbcec5e5c7cb6",
+        "frozen_canonical_sha256": "363bd84bdaf47aeb5b041794bd4e18b2dbff70d0dbb526173ccf3176f890330d",
+        "run_embedded_canonical_sha256": "363bd84bdaf47aeb5b041794bd4e18b2dbff70d0dbb526173ccf3176f890330d",
+        "supplement_frozen_file_sha256": "4aa7d5d2ea243db0850e5f95900f4dec52c1d5dec04963c6642dbcec5e5c7cb6"
+      }
+    },
+    {
+      "check": "recorded_source_hashes",
+      "passed": true,
+      "details": {
+        "data_pipeline.py": "8ca63faf157dd1e169bd7e876a3466fa66672ec68d191a756027b57aafca35b5",
+        "local_spectral.py": "d59c6ee82543c392b27938f544205d28d314c9a138aa5dc5f861dad793f0fcec",
+        "published_baseline.py": "765b9bcd0376ee47e187ba5609da55eb809da8c6057a76eb5e802b72c412e32c",
+        "run_experiments.py": "58d6b1bf6176319f7f4e2b5de3e691d1d573755511cbdcccd5c43207f2c316dc"
+      }
+    },
+    {
+      "check": "reference_and_source_data_hashes",
+      "passed": true,
+      "details": {
+        "clean_references_checked": 90,
+        "source_jpegs_checked": 90,
+        "archive_sha256": "97e49d31764f3912f0c4122707d53062ac9e783ba0f095e447a4d53c1a41af8e"
+      }
+    },
+    {
+      "check": "main_complete_unique_inventory",
+      "passed": true,
+      "details": {
+        "rows": 6240,
+        "unique_keys": 6240,
+        "method_counts": {
+          "global_adaptive": 780,
+          "global_fixed": 780,
+          "input": 780,
+          "local_adaptive": 780,
+          "local_fixed128": 780,
+          "published_arpenos": 780,
+          "without_conservative": 780,
+          "without_scale_selection": 780
+        }
+      }
+    },
+    {
+      "check": "main_numeric_metrics_and_exceptions",
+      "passed": true,
+      "details": {
+        "numeric_rows_checked": 6240,
+        "ssim_range": "[-1,1]",
+        "psnr_data_range": 1,
+        "exception_count": 0
+      }
+    },
+    {
+      "check": "paired_amplitudes_and_synthesis_reproduction",
+      "passed": true,
+      "details": {
+        "synthesis_records": 780,
+        "paired_amplitude_groups": 240,
+        "metadata_records_reproduced": 780
+      }
+    },
+    {
+      "check": "supplementary_sweep_and_main_consistency",
+      "passed": true,
+      "details": {
+        "sweep_rows": 720,
+        "unique_keys": 720,
+        "test_images": 10,
+        "frozen_operating_point_matches_main": true
+      }
+    },
+    {
+      "check": "identical_pixels_dual_interpretation",
+      "passed": true,
+      "details": {
+        "texture_rows": 18,
+        "identical_pixel_and_output_interpretation_pairs": 8
+      }
+    },
+    {
+      "check": "failure_audit_frozen_rerun",
+      "passed": true,
+      "details": {
+        "rerun_cases": [
+          {
+            "kind": "global",
+            "image_id": "100039",
+            "amplitude": 0.06,
+            "rerun_mse": 0.0017607660134514344,
+            "output_sha256": "df9c9be7a24490a5fe79ee3569a24081aa9cd2c1c23299c1d0723ebe598b718a"
+          },
+          {
+            "kind": "local",
+            "image_id": "69007",
+            "amplitude": 0.06,
+            "rerun_mse": 0.00011534959942322332,
+            "output_sha256": "397234f782ff8e1b83cd643b341cc39ccb9c88220381b4b309a1a6ba85112988"
+          },
+          {
+            "kind": "chirp",
+            "image_id": "101084",
+            "amplitude": 0.06,
+            "rerun_mse": 0.0012378812199295747,
+            "output_sha256": "2c98765e1b0bb256fc1a57ba52a743461ccbff288ea62bcc9884467f8bea834e"
+          },
+          {
+            "kind": "orientation",
+            "image_id": "101084",
+            "amplitude": 0.06,
+            "rerun_mse": 0.0013731448829814273,
+            "output_sha256": "c5be4ba7e48fd12abbb05a1389b77665542110c764d395d06603b3a00b0eee6c"
+          },
+          {
+            "kind": "clean",
+            "image_id": "69007",
+            "amplitude": 0.0,
+            "rerun_mse": 4.202759076097831e-06,
+            "output_sha256": "e8f8ae8406937907dc899450ed687c31b135acec383a947b931bb11b7a2b3c72"
+          }
+        ],
+        "configuration_changed": false
+      }
+    }
+  ]
+}

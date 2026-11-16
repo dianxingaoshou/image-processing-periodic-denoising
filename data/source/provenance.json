@@ -1,0 +1,16 @@
+{
+  "dataset": "Berkeley Segmentation Data Set and Benchmarks 500 (BSDS500)",
+  "download_url": "https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/BSR/BSR_bsds500.tgz",
+  "official_page": "https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html",
+  "downloaded_utc_date": "2026-11-16",
+  "archive_bytes": 70763455,
+  "sha256": "97e49d31764f3912f0c4122707d53062ac9e783ba0f095e447a4d53c1a41af8e",
+  "extracted_content": "500 original JPEG images only; no segmentation annotations or executable benchmark code",
+  "usage_context": "Non-commercial educational image processing course project",
+  "usage_notice_source": "https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/segbench/",
+  "usage_notice_scope": "The earlier BSDS300 page describes downloads for non-commercial research and educational purposes. The BSDS500 resources page provides the dataset and asks users to cite Arbelaez et al. (2011); no separate permissive license is asserted here.",
+  "citation": "P. Arbelaez, M. Maire, C. Fowlkes, J. Malik. Contour Detection and Hierarchical Image Segmentation. IEEE TPAMI 33(5):898-916, 2011.",
+  "legacy_citation": "D. Martin, C. Fowlkes, D. Tal, J. Malik. A Database of Human Segmented Natural Images and its Application to Evaluating Segmentation Algorithms and Measuring Ecological Statistics. ICCV 2001, 2:416-423.",
+  "selection": "Seed 20261116; 30 development images from official train/val; 60 test images from official test; selected IDs in data/manifest.json",
+  "evaluation": "Synthetic periodic-noise evaluation uses no segmentation-task benchmark metrics."
+}

@@ -1,0 +1,420 @@
+{
+  "schema_version": 1,
+  "created_on": "2026-11-16",
+  "scope": "v2 algorithm optimization with a newly untouched image-level audit set",
+  "selection_frozen_before_image_preprocessing": true,
+  "audit_selection": {
+    "seed": 2026111602,
+    "method": "numpy.default_rng(seed).choice over lexicographically sorted unused official-test filenames, without replacement; sorted chosen names for processing",
+    "official_test_count": 200,
+    "unused_pool_count": 140,
+    "n_audit_test": 60,
+    "audit_test_ids": [
+      "101027",
+      "103029",
+      "103078",
+      "108036",
+      "118015",
+      "118031",
+      "120093",
+      "123057",
+      "130066",
+      "134049",
+      "146074",
+      "147077",
+      "15011",
+      "157032",
+      "159002",
+      "161045",
+      "163096",
+      "168084",
+      "176051",
+      "181021",
+      "188025",
+      "189006",
+      "189013",
+      "196027",
+      "196062",
+      "196088",
+      "198087",
+      "20069",
+      "2018",
+      "206062",
+      "206097",
+      "217013",
+      "223004",
+      "223060",
+      "225022",
+      "226022",
+      "246009",
+      "247003",
+      "249021",
+      "250047",
+      "250087",
+      "257098",
+      "258089",
+      "268074",
+      "285022",
+      "290035",
+      "302022",
+      "376086",
+      "385022",
+      "388018",
+      "388067",
+      "41006",
+      "43051",
+      "5096",
+      "71076",
+      "77062",
+      "79073",
+      "80085",
+      "8068",
+      "81090"
+    ]
+  },
+  "splits": {
+    "dev": {
+      "n_images": 30,
+      "purpose": "All algorithm design, model choices, thresholds and suppression calibration. References and truth may be used only by evaluation/calibration code."
+    },
+    "regression": {
+      "n_images": 60,
+      "purpose": "Previously inspected v1 official-test images. Regression diagnostic only; no longer called unseen or independent test."
+    },
+    "audit_test": {
+      "n_images": 60,
+      "purpose": "Run only after v2 source and operating points are frozen on dev. No parameter/model changes based on these outcomes."
+    }
+  },
+  "data_contract": {
+    "source_manifest": "data/manifest.json",
+    "source_manifest_sha256": "23f3dd2d5f8c4f309b5a06f157823ce801bb33cc9d7c1e2e61cea8df65fd88df",
+    "output_manifest": "data/optimization_manifest.json",
+    "preprocessing": "RGB short-side Lanczos resize; centered square crop; float luminance 0.2125R+0.7154G+0.0721B; no contrast normalization",
+    "frequency_unit": "cycles/pixel",
+    "seed_for_synthesis": "run_experiments.make_sample / image_id+kind only; amplitudes paired",
+    "kinds": [
+      "global",
+      "local",
+      "chirp",
+      "orientation"
+    ],
+    "amplitudes": [
+      0.06,
+      0.12,
+      0.18
+    ],
+    "clean_controls": true,
+    "expected_samples_per_split": {
+      "dev": 390,
+      "regression": 780,
+      "audit_test": 780
+    },
+    "truth_firewall": "Denoiser gets observed image and frozen config only. All reference images, envelopes, true frequencies and masks remain evaluation-only."
+  },
+  "primary_questions": [
+    {
+      "id": "scale_selection",
+      "question": "Does selecting a scale help compared with forced128 while preserving all cross-scale evidence?",
+      "primary_conditions": [
+        "chirp",
+        "orientation"
+      ],
+      "metric": "Per-image mean PSNR difference, contaminated-region MSE; bootstrap by image not individual variants."
+    },
+    {
+      "id": "conservative_decision",
+      "question": "At a matched amount of removal, is the clean-region damage smaller?",
+      "primary_conditions": [
+        "local",
+        "clean"
+      ],
+      "metric": "Contaminated MSE versus clean-region MSE Pareto curves over a development-frozen strength grid; match only common positive-removal interval; report coverage and exclusions."
+    },
+    {
+      "id": "residual_model",
+      "question": "Do local amplitude and quadratic phase models improve the intended nonstationarity without overfitting clean textures?",
+      "primary_conditions": [
+        "local",
+        "chirp",
+        "orientation",
+        "clean"
+      ],
+      "metric": "paired PSNR/MSE and clean control MAE; runtime, fail rate, phase/amplitude maps, model selection counts."
+    }
+  ],
+  "required_comparisons": [
+    "v1 frozen complete method",
+    "v2 complete method with operating point chosen solely on dev",
+    "v2 forced128 preserving candidates, cross-scale and guard evidence",
+    "v2 conservative decision disabled while preserving residual/model estimates",
+    "v2 quadratic phase disabled while preserving amplitude model and decision",
+    "v2 amplitude variation disabled while preserving phase model and decision",
+    "global adaptive and ARPENOS source-guided port on the five-method primary audit; existing v1 global-fixed and native fixed128 results remain contextual regression references, not new60-audit estimates",
+    "v2 local texture-complexity risk disabled alone, retaining candidate residuals and global guard",
+    "v2 peak-only decision: retain global ambiguity guard and residual estimates, disable neighbor/cross-scale scoring and local texture risk",
+    "v2 candidate energy eligibility gate disabled alone, retaining all other decisions"
+  ],
+  "freeze_before_audit": [
+    "v2 source SHA256, configuration SHA256, calibration record and protocol SHA256",
+    "all method names and ablation semantics, including whether residual/guard prepare time is charged",
+    "operating-point grid and exact dev objective including clean-damage penalty",
+    "strength sweep values and IDs: audit aggregate can use all60; any subset must be fixed by ID before metrics",
+    "example IDs selected by stored order; worst-case gallery deliberately selected by error and labeled as such"
+  ],
+  "validation_gates": [
+    "30 dev / 60 regression / 60 audit IDs are pairwise disjoint, and source official splits are respected",
+    "all variants of one image stay in the same split; amplitude variants share geometry, frequency and phase",
+    "every planned method has one result or an explicit exception row for each sample, with Cartesian-key completeness",
+    "finite bounded output, PSNR/SSIM data_range=1, no per-image contrast stretching, common feasible projection",
+    "clean-region errors are blank when region is absent; program exceptions and quality regressions are separate",
+    "conjugate frequency equivalence, positive overlap weight sum, odd rectangular boundaries, zero-strength identity",
+    "ambiguous identical-pixel dual interpretations and multi-periodic/chirped legitimate texture failures are retained"
+  ],
+  "acceptance_interpretation": {
+    "implementation": "All explicit algorithm switches and diagnostics work and pass the numerical invariants.",
+    "effectiveness": "An optimization is supported only where the frozen audit difference and clean-damage/removal trade-off support it. Zero or negative contributions must be reported. Implementation alone is not evidence of improvement.",
+    "texture_boundary": "A guard may abstain on globally explainable periodic inputs, including equivalent flat-field-plus-interference interpretations; it must not claim unique separation."
+  },
+  "frozen_evaluation_budget": {
+    "status": "specified before evaluating new audit images; algorithm/configuration freeze recorded separately",
+    "primary_audit": {
+      "split": "audit_test",
+      "image_ids": [
+        "101027",
+        "103029",
+        "103078",
+        "108036",
+        "118015",
+        "118031",
+        "120093",
+        "123057",
+        "130066",
+        "134049",
+        "146074",
+        "147077",
+        "15011",
+        "157032",
+        "159002",
+        "161045",
+        "163096",
+        "168084",
+        "176051",
+        "181021",
+        "188025",
+        "189006",
+        "189013",
+        "196027",
+        "196062",
+        "196088",
+        "198087",
+        "20069",
+        "2018",
+        "206062",
+        "206097",
+        "217013",
+        "223004",
+        "223060",
+        "225022",
+        "226022",
+        "246009",
+        "247003",
+        "249021",
+        "250047",
+        "250087",
+        "257098",
+        "258089",
+        "268074",
+        "285022",
+        "290035",
+        "302022",
+        "376086",
+        "385022",
+        "388018",
+        "388067",
+        "41006",
+        "43051",
+        "5096",
+        "71076",
+        "77062",
+        "79073",
+        "80085",
+        "8068",
+        "81090"
+      ],
+      "n_images": 60,
+      "kinds": [
+        "global",
+        "local",
+        "chirp",
+        "orientation"
+      ],
+      "amplitudes": [
+        0.06,
+        0.12,
+        0.18
+      ],
+      "include_clean_controls": true,
+      "n_samples": 780,
+      "method_roles": [
+        "input",
+        "v1_full",
+        "global_adaptive",
+        "published_arpenos",
+        "v2_full"
+      ],
+      "n_methods": 5,
+      "expected_rows": 3900
+    },
+    "controlled_ablation": {
+      "split": "audit_test",
+      "image_ids": [
+        "101027",
+        "103029",
+        "103078",
+        "108036",
+        "118015",
+        "118031",
+        "120093",
+        "123057",
+        "130066",
+        "134049",
+        "146074",
+        "147077",
+        "15011",
+        "157032",
+        "159002",
+        "161045",
+        "163096",
+        "168084",
+        "176051",
+        "181021"
+      ],
+      "selection": "first20 in stored manifest order, fixed before algorithm evaluation",
+      "n_images": 20,
+      "kinds": [
+        "global",
+        "local",
+        "chirp",
+        "orientation"
+      ],
+      "amplitudes": [
+        0.12
+      ],
+      "include_clean_controls": true,
+      "n_samples_per_method": 100,
+      "full_reference": "v2_full at identical samples from primary_audit",
+      "variants_to_test": [
+        "force128 with cross-scale and guard evidence preserved",
+        "disable conservative decision with same selected residuals",
+        "disable quadratic phase preserving amplitude model and decision",
+        "disable amplitude variation preserving phase model and decision"
+      ],
+      "reporting": "Report every planned switch separately. If a proposed model is not implemented or rejected on dev, record that fact and omit its audit variant explicitly; do not silently relabel overlapping variants.",
+      "n_methods_including_full": 5,
+      "expected_rows": 500,
+      "combined_disable_note": "Quadratic phase and amplitude variation are each disabled independently. Simultaneously disabling both is not included in this fixed budget, so their interaction is not separately identified."
+    },
+    "matched_removal": {
+      "split": "audit_test",
+      "image_ids": [
+        "101027",
+        "103029",
+        "103078",
+        "108036",
+        "118015",
+        "118031",
+        "120093",
+        "123057",
+        "130066",
+        "134049"
+      ],
+      "selection": "first10 in stored manifest order, fixed before algorithm evaluation",
+      "n_images": 10,
+      "kinds": [
+        "local"
+      ],
+      "amplitudes": [
+        0.12
+      ],
+      "comparison": "v2 conservative versus same v2 residual estimates with decision disabled",
+      "strength_grid": "must be fixed from development before audit; no new operating point selected from audit curves",
+      "matching": "Pareto envelope and finite-grid linear interpolation only inside overlapping positive-removal interval; report per-image coverage and pooled mean curves separately",
+      "warnings": [
+        "Ten images is a diagnostic subset, not full-audit evidence.",
+        "Images with no positive removal common interval must be counted, not silently discarded.",
+        "Averaging curves can hide cases with no benefit; report individual coverage."
+      ]
+    },
+    "texture_and_ambiguity_suite": {
+      "source": "same preexisting deterministic supplemental texture definitions plus any development-defined suite frozen before audit",
+      "purpose": "stress test and ambiguity demonstration, not independent natural-image evidence",
+      "record": [
+        "input/output hash",
+        "modification MAE",
+        "MSE against legitimate reference",
+        "MSE against alternate flat-field interpretation",
+        "global abstention/risk score"
+      ]
+    },
+    "decision_ablation": {
+      "split": "audit_test",
+      "image_ids": [
+        "101027",
+        "103029",
+        "103078",
+        "108036",
+        "118015",
+        "118031",
+        "120093",
+        "123057",
+        "130066",
+        "134049",
+        "146074",
+        "147077",
+        "15011",
+        "157032",
+        "159002",
+        "161045",
+        "163096",
+        "168084",
+        "176051",
+        "181021"
+      ],
+      "selection": "same predetermined first20 audit IDs as residual/scale ablation",
+      "n_images": 20,
+      "kinds": [
+        "global",
+        "local",
+        "chirp",
+        "orientation"
+      ],
+      "amplitudes": [
+        0.12
+      ],
+      "include_clean_controls": true,
+      "n_samples_per_method": 100,
+      "n_methods": 4,
+      "expected_rows": 400,
+      "methods": {
+        "v2_full": "Full frozen v2",
+        "v2_without_texture_risk": "Only local structural-complexity risk disabled; global guard, candidate estimates and other evidence retained",
+        "v2_peak_only": "Only peak evidence for local score; global ambiguity guard and residual estimates retained; neighbor/cross-scale scoring and local texture risk disabled",
+        "v2_without_candidate_gate": "Only candidate energy eligibility gate disabled; residual/model/scales and other guard evidence retained"
+      },
+      "reuse": "Reuse identical candidate residual estimates across these decisions so the comparison concerns decision logic rather than a changed fitted residual."
+    }
+  },
+  "additional_quality_reporting": {
+    "psnr_gain_is_not_sufficient": [
+      "Compare new v2 against v1 on the same samples and report both per-image PSNR gain and clean-region MSE/MAE.",
+      "All60 clean controls must report mean, median,95th percentile and maximum modification MAE, and count of nontrivially modified images.",
+      "Separate program exceptions from quality regressions; show condition-level regression proportions and worst examples.",
+      "Any lower clean damage achieved solely by near-zero removal is excluded from protection claims via matched-removal curves.",
+      "Global/chirp/orientation currently have no true clean region, so texture protection cannot be claimed from their absent region metrics."
+    ],
+    "primary_decision": "Whether practical gains are worth added damage should be stated as a measured trade-off. No universal dominance claim if v2 improves noise removal but increases clean/legitimate-texture damage.",
+    "confidence": "Scores are heuristic reliability values, not calibrated probabilities.",
+    "uncertainty": "Bootstrap original-image units. Average the three amplitude variants within an image before resampling; do not treat720 variants as independent subjects."
+  }
+}

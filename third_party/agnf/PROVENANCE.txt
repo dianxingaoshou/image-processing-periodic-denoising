@@ -1,0 +1,12 @@
+AGNF literature and license record only
+======================================
+AGNF is not the implemented published baseline in this project. The baseline is
+ARPENOS, whose author source is available under ../arpenos/.
+
+AGNF author landing page:
+https://www.mathworks.com/matlabcentral/fileexchange/74473-adaptive-gaussian-notch-filter-for-removing-periodic-noise
+License URL:
+https://addons.mathworks.com/downloads/5f/5f7536a2-2731-44a4-bc90-458d67ad4707/1.0.0/license.txt
+The license was downloaded on 2026-11-16. The current ordinary download link
+redirects to MathWorks sign-in. No AGNF MATLAB source was obtained or executed.
+Do not describe the user's starter adaptive notch code as this published AGNF.

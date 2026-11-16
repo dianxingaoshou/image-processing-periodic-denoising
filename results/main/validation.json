@@ -1,0 +1,21 @@
+{
+  "expected_rows": 6240,
+  "actual_rows": 6240,
+  "unique_rows": 6240,
+  "complete": true,
+  "method_counts": {
+    "input": 780,
+    "global_fixed": 780,
+    "global_adaptive": 780,
+    "published_arpenos": 780,
+    "local_adaptive": 780,
+    "without_conservative": 780,
+    "local_fixed128": 780,
+    "without_scale_selection": 780
+  },
+  "algorithm_exceptions": 0,
+  "noisy_samples": 720,
+  "clean_controls": 60,
+  "degraded_definition": "output MSE > input MSE + 1e-8; separate clean MAE also reported",
+  "timing_note": "single-run wall time on this machine, shared cached preparation charged to each method; not a speed benchmark"
+}

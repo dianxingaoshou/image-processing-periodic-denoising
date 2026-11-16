@@ -1,0 +1,7 @@
+numpy>=1.26,<3
+scipy>=1.11,<2
+scikit-image>=0.22,<1
+Pillow>=10,<14
+matplotlib>=3.8,<4
+pytest>=8,<10
+requests>=2.31,<3

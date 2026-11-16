@@ -1,0 +1,41 @@
+{
+  "records": [
+    {
+      "id": "opencv_period_input",
+      "filename": "opencv_period_input.jpg",
+      "url": "https://raw.githubusercontent.com/opencv/opencv/4.x/doc/tutorials/imgproc/periodic_noise_removing_filter/images/period_input.jpg",
+      "source_page": "https://docs.opencv.org/4.13.0/d2/d0b/tutorial_periodic_noise_removing_filter.html",
+      "interpretation": "Official OpenCV tutorial explicitly describes this as a real-world periodic-noise image.",
+      "use_terms": "Official OpenCV repository sample; repository Apache2.0 terms do not establish ownership of every photographed subject.",
+      "shape": [
+        471,
+        640
+      ],
+      "path": "third_party/real_examples/opencv_period_input.jpg",
+      "sha256": "cc702df3ae80b441f33aebe3a475509f18e8d92c6b8c9bf9b02cc9622b4dba10",
+      "reference_available": false,
+      "evaluation": "qualitative fixed-configuration outputs only; no PSNR or SSIM",
+      "processing_recommendation": "shared float grayscale; optionally fix longest side512 for every real case, no per-image tuning"
+    },
+    {
+      "id": "arpenos_canvas_carry_on_002",
+      "filename": "arpenos_canvas_carry_on_002.jpg",
+      "url": "https://members.loria.fr/FSur/software/ACARPENOS/Rockwell%20-%20Carry%20On%20-%20002.jpg",
+      "source_page": "https://members.loria.fr/FSur/software/ARPENOS/",
+      "interpretation": "Author-provided painting canvas-pattern removal case; texture may be physical substrate/content, not paired sensor-noise truth.",
+      "use_terms": "ARPENOS author page permits academic research use; original painting image rights retained by their owners.",
+      "shape": [
+        1326,
+        1600
+      ],
+      "path": "third_party/real_examples/arpenos_canvas_carry_on_002.jpg",
+      "sha256": "1f36f4cacf444351bee051d105c650fcfa8c952bba4eab40fbfdb67328cee598",
+      "reference_available": false,
+      "evaluation": "qualitative fixed-configuration outputs only; no PSNR or SSIM",
+      "processing_recommendation": "shared float grayscale; optionally fix longest side512 for every real case, no per-image tuning"
+    }
+  ],
+  "matlab_or_octave_available": false,
+  "baseline_equivalence": "No MATLAB/Octave runtime found. Original-versus-port numerical comparison is not claimed completed.",
+  "original_example_warning": "mandril_gray.tif and boat.png are clean example references with synthesized noise in ARPENOS_example.m; they are not labeled real-noisy cases."
+}

@@ -1,0 +1,29 @@
+{
+  "ids": [
+    "101027",
+    "103029",
+    "103078",
+    "108036",
+    "118015",
+    "118031",
+    "120093",
+    "123057",
+    "130066",
+    "134049"
+  ],
+  "config_sha256": "0ecfa9e02174db731c5d7b3484eb265f9fc1c2001db85cdeaddd73f315659584",
+  "strengths": [
+    0.0,
+    0.125,
+    0.25,
+    0.375,
+    0.5,
+    0.75,
+    1.0,
+    1.25,
+    1.5,
+    2.0
+  ],
+  "matching": "Finite sweep Pareto frontier then interpolate clean MSE only in common contaminated-MSE reduction interval.",
+  "ambiguity": "Pixel-identical texture/noise interpretations must produce identical output; abstention is a conservative policy."
+}

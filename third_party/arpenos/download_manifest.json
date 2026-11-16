@@ -1,0 +1,11 @@
+{
+  "download_date": "2026-11-16",
+  "source_base_url": "https://members.loria.fr/FSur/software/ARPENOS/",
+  "sha256": {
+    "ARPENOS.m": "0f21fbf3e806439d16799e26f4749c0b6fc25f9328281d69314ab875510f5ada",
+    "sym_conv2.m": "d431399d8bd5fd05d6f0b7833e6e3d0de61a0f375c87b47eec0ec209ef84a4d7",
+    "ARPENOS_example.m": "8d8db62766414d7511ba1a00a89e9c586750414579b46a14c72d1b0f6918984b",
+    "sur15automated.bib": "aa91309725ecd79b3cb8eea84e2e7fe87750ada4db6151b06863adc5135e728f",
+    "author_page.html": "55eaa1b1baaa852890d1ac2cd075df064876353907fb21362bdd91307712d593"
+  }
+}

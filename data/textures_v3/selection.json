@@ -1,0 +1,34 @@
+{
+  "seed": 2026111603,
+  "classes": [
+    "banded",
+    "braided",
+    "chequered",
+    "crosshatched",
+    "grid",
+    "grooved",
+    "honeycombed",
+    "knitted",
+    "lined",
+    "meshed",
+    "striped",
+    "woven"
+  ],
+  "official_split": "test1",
+  "selected": [
+    "banded/banded_0105.jpg",
+    "braided/braided_0179.jpg",
+    "chequered/chequered_0195.jpg",
+    "crosshatched/crosshatched_0165.jpg",
+    "grid/grid_0064.jpg",
+    "grooved/grooved_0048.jpg",
+    "honeycombed/honeycombed_0065.jpg",
+    "knitted/knitted_0108.jpg",
+    "lined/lined_0172.jpg",
+    "meshed/meshed_0162.jpg",
+    "striped/striped_0119.jpg",
+    "woven/woven_0094.jpg"
+  ],
+  "selection_before_download": true,
+  "source": "https://www.robots.ox.ac.uk/~vgg/data/dtd/index.html"
+}
