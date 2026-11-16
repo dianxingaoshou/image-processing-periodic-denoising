@@ -63,9 +63,9 @@ def test_generator_preserves_global_rng():
     np.testing.assert_array_equal(state[1],after[1])
 
 
+@pytest.mark.requires_bsds(dataset='v3')
 def test_new_audit_is_disjoint_and_frozen_legacy_manifests_unchanged():
     root=Path('data')
-    if not (root/'v3_manifest.json').exists():pytest.skip('v3 data not built')
     m=json.loads((root/'v3_manifest.json').read_text(encoding='utf-8'))
     groups={s:{r['id'] for r in m['images'] if r['split']==s} for s in ('dev','regression_v1','regression_v2','audit_v3')}
     assert [len(groups[s]) for s in groups]==[30,60,60,60]

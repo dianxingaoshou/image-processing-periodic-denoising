@@ -34,6 +34,7 @@ third_party/real_examples/*.png
 results/**/examples/
 results/own_image*/
 results/cli_smoke/
+results/refinement_pilot/
 results/**/*.png
 original/periodic_notch_starter/snapshot/**/*.png
 

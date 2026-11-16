@@ -26,4 +26,4 @@ jobs:
       - name: Run analytical and numerical unit tests
         run: >-
           python -m pytest -q tests original/periodic_notch_starter/test_demo.py
-          -k "not official_split_and_unique_images and not new_audit_is_disjoint_and_frozen_legacy_manifests_unchanged"
+          -m "not requires_bsds"

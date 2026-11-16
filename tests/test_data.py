@@ -7,6 +7,7 @@ import unittest
 from pathlib import Path
 
 import numpy as np
+import pytest
 
 from data_pipeline import KINDS, _extract_images, load_manifest, sample_seed, sha256, synthesize
 
@@ -78,7 +79,7 @@ class SynthesisTests(unittest.TestCase):
             self.assertFalse((base / "escaped.jpg").exists())
 
 
-@unittest.skipUnless(Path("data/manifest.json").exists(), "BSDS500 data not prepared")
+@pytest.mark.requires_bsds(dataset='legacy')
 class DatasetIntegrityTests(unittest.TestCase):
     def test_official_split_and_unique_images(self):
         manifest = load_manifest()

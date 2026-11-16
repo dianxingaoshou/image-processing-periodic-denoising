@@ -1,0 +1,1429 @@
+[
+  {
+    "stage": "regression",
+    "image_id": "dtd_banded_0105",
+    "kind": "clean",
+    "amplitude": 0.0,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "c3bb5e019225c1c8ad58a118f867ac7310d21bd0c9ff93722dc6f72bc9f6dc65",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_banded_0105.npy",
+      "reference_sha256": "d117aacd40677a862a5315b65fd3306c8833a1f564a02ec3ab6cc8b8f2669472"
+    },
+    "synthesis": {
+      "kind": "clean",
+      "seed": 0,
+      "clipping_fraction": 0.0
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "dtd_banded_0105",
+    "kind": "global",
+    "amplitude": 0.12,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "97bee0cdc5887efccae172f0355d8138ae24a59fdf3b441bf6dfb9ef46c14be9",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_banded_0105.npy",
+      "reference_sha256": "d117aacd40677a862a5315b65fd3306c8833a1f564a02ec3ab6cc8b8f2669472"
+    },
+    "synthesis": {
+      "kind": "global",
+      "amplitude": 0.12,
+      "seed": 21164577,
+      "shape": [
+        256,
+        256
+      ],
+      "frequency_unit": "cycles/pixel",
+      "parameters": {
+        "base_frequency_cycles_per_pixel": 0.12308933418724302,
+        "angle_radians": 1.3347035143192032,
+        "fx_cycles_per_pixel": 0.028791287283347105,
+        "fy_cycles_per_pixel": 0.11967475075063481,
+        "phase_offset_radians": 0.6193974125082247
+      },
+      "clipping_fraction": 0.103607177734375,
+      "contaminated_fraction": 1.0,
+      "clean_fraction": 0.0,
+      "transition_fraction": 0.0,
+      "preclip_noise_rms": 0.08485553435550822,
+      "postclip_noise_rms": 0.08084148406312422,
+      "mask_definition": "contaminated: envelope>0.01; clean: envelope<1e-6; transition: neither; all masks evaluation only"
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "dtd_banded_0105",
+    "kind": "chirp",
+    "amplitude": 0.12,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "0e012d758f11662ba6bb0e3d21341bb2ada8e769d569c5f5f510c8b0e623532d",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_banded_0105.npy",
+      "reference_sha256": "d117aacd40677a862a5315b65fd3306c8833a1f564a02ec3ab6cc8b8f2669472"
+    },
+    "synthesis": {
+      "kind": "chirp",
+      "amplitude": 0.12,
+      "seed": 1834888014,
+      "shape": [
+        256,
+        256
+      ],
+      "frequency_unit": "cycles/pixel",
+      "parameters": {
+        "base_frequency_cycles_per_pixel": 0.09936028684552403,
+        "angle_radians": 0.6907774959642364,
+        "fx_cycles_per_pixel": 0.07658202821001849,
+        "fy_cycles_per_pixel": -0.0633060783595442,
+        "phase_offset_radians": 1.6581926333351218,
+        "delta_fx_cycles_per_pixel": -0.06260144462441251,
+        "envelope": "row-dependent 0.65 to 1 cosine amplitude"
+      },
+      "clipping_fraction": 0.0842437744140625,
+      "contaminated_fraction": 1.0,
+      "clean_fraction": 0.0,
+      "transition_fraction": 0.0,
+      "preclip_noise_rms": 0.07084847188430247,
+      "postclip_noise_rms": 0.06815199140687717,
+      "mask_definition": "contaminated: envelope>0.01; clean: envelope<1e-6; transition: neither; all masks evaluation only"
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "dtd_braided_0179",
+    "kind": "clean",
+    "amplitude": 0.0,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "9db45a31dcf17bce4e1cb266e0374e6b491989fd9c80c3ad753d37a40c9a129a",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_braided_0179.npy",
+      "reference_sha256": "5b52d7bd8cdb70d53868e97636bd174ac03de99cc5d897982ed64fee1f2d2db3"
+    },
+    "synthesis": {
+      "kind": "clean",
+      "seed": 0,
+      "clipping_fraction": 0.0
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "dtd_braided_0179",
+    "kind": "global",
+    "amplitude": 0.12,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "bee6f28b2aa80b4ee34af92b92038186db0bf1a9438165e89599c846a417c146",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_braided_0179.npy",
+      "reference_sha256": "5b52d7bd8cdb70d53868e97636bd174ac03de99cc5d897982ed64fee1f2d2db3"
+    },
+    "synthesis": {
+      "kind": "global",
+      "amplitude": 0.12,
+      "seed": 1751599358,
+      "shape": [
+        256,
+        256
+      ],
+      "frequency_unit": "cycles/pixel",
+      "parameters": {
+        "base_frequency_cycles_per_pixel": 0.06918676513386408,
+        "angle_radians": 1.215057980378407,
+        "fx_cycles_per_pixel": 0.02409654494868773,
+        "fy_cycles_per_pixel": 0.06485495348255477,
+        "phase_offset_radians": 2.2820240758902024
+      },
+      "clipping_fraction": 0.058929443359375,
+      "contaminated_fraction": 1.0,
+      "clean_fraction": 0.0,
+      "transition_fraction": 0.0,
+      "preclip_noise_rms": 0.08484802781457917,
+      "postclip_noise_rms": 0.08266321631503218,
+      "mask_definition": "contaminated: envelope>0.01; clean: envelope<1e-6; transition: neither; all masks evaluation only"
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "dtd_braided_0179",
+    "kind": "chirp",
+    "amplitude": 0.12,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "22a382cb59953c452480ae2d775c92a3755770c71ae2a0eac186d7f4bcbe3ecd",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_braided_0179.npy",
+      "reference_sha256": "5b52d7bd8cdb70d53868e97636bd174ac03de99cc5d897982ed64fee1f2d2db3"
+    },
+    "synthesis": {
+      "kind": "chirp",
+      "amplitude": 0.12,
+      "seed": 1673315368,
+      "shape": [
+        256,
+        256
+      ],
+      "frequency_unit": "cycles/pixel",
+      "parameters": {
+        "base_frequency_cycles_per_pixel": 0.1447808191609427,
+        "angle_radians": 1.3142112940256843,
+        "fx_cycles_per_pixel": 0.0367423125632635,
+        "fy_cycles_per_pixel": 0.1400410227912416,
+        "phase_offset_radians": -2.9658325526493816,
+        "delta_fx_cycles_per_pixel": 0.051749371775763095,
+        "envelope": "row-dependent 0.65 to 1 cosine amplitude"
+      },
+      "clipping_fraction": 0.04217529296875,
+      "contaminated_fraction": 1.0,
+      "clean_fraction": 0.0,
+      "transition_fraction": 0.0,
+      "preclip_noise_rms": 0.07084496125195645,
+      "postclip_noise_rms": 0.06917908431287975,
+      "mask_definition": "contaminated: envelope>0.01; clean: envelope<1e-6; transition: neither; all masks evaluation only"
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "dtd_chequered_0195",
+    "kind": "clean",
+    "amplitude": 0.0,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "c91540ce69c08d5e266fbdf1c753879ec094f9860355bca44fb6ed0cc46e7807",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_chequered_0195.npy",
+      "reference_sha256": "f410d9f6788cd9ac03437bca84a8ba4afa431a9949c586ccf613fdf288a1bda9"
+    },
+    "synthesis": {
+      "kind": "clean",
+      "seed": 0,
+      "clipping_fraction": 0.0
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "dtd_chequered_0195",
+    "kind": "global",
+    "amplitude": 0.12,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "240a53d8e783ac17ad53f73d3bb6b0e3fa35762676573da8a7f24c902d1acafb",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_chequered_0195.npy",
+      "reference_sha256": "f410d9f6788cd9ac03437bca84a8ba4afa431a9949c586ccf613fdf288a1bda9"
+    },
+    "synthesis": {
+      "kind": "global",
+      "amplitude": 0.12,
+      "seed": 2312362857,
+      "shape": [
+        256,
+        256
+      ],
+      "frequency_unit": "cycles/pixel",
+      "parameters": {
+        "base_frequency_cycles_per_pixel": 0.09023221670140749,
+        "angle_radians": 0.9965490149452825,
+        "fx_cycles_per_pixel": 0.049014409598789485,
+        "fy_cycles_per_pixel": 0.07575909570825047,
+        "phase_offset_radians": -2.267794937947422
+      },
+      "clipping_fraction": 0.0074310302734375,
+      "contaminated_fraction": 1.0,
+      "clean_fraction": 0.0,
+      "transition_fraction": 0.0,
+      "preclip_noise_rms": 0.08485351376426561,
+      "postclip_noise_rms": 0.08474538046938601,
+      "mask_definition": "contaminated: envelope>0.01; clean: envelope<1e-6; transition: neither; all masks evaluation only"
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "dtd_chequered_0195",
+    "kind": "chirp",
+    "amplitude": 0.12,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "68cf7c0479ad0d7995fa83689dbe1261090b9bc53ce9f7b053ab2fa61f3a27ad",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_chequered_0195.npy",
+      "reference_sha256": "f410d9f6788cd9ac03437bca84a8ba4afa431a9949c586ccf613fdf288a1bda9"
+    },
+    "synthesis": {
+      "kind": "chirp",
+      "amplitude": 0.12,
+      "seed": 253248961,
+      "shape": [
+        256,
+        256
+      ],
+      "frequency_unit": "cycles/pixel",
+      "parameters": {
+        "base_frequency_cycles_per_pixel": 0.11165946387950862,
+        "angle_radians": 1.352626775262318,
+        "fx_cycles_per_pixel": 0.02416790135618414,
+        "fy_cycles_per_pixel": 0.10901260669251535,
+        "phase_offset_radians": -2.7623599465224244,
+        "delta_fx_cycles_per_pixel": 0.04028804463712528,
+        "envelope": "row-dependent 0.65 to 1 cosine amplitude"
+      },
+      "clipping_fraction": 0.0032806396484375,
+      "contaminated_fraction": 1.0,
+      "clean_fraction": 0.0,
+      "transition_fraction": 0.0,
+      "preclip_noise_rms": 0.0708415133984666,
+      "postclip_noise_rms": 0.07079583763952124,
+      "mask_definition": "contaminated: envelope>0.01; clean: envelope<1e-6; transition: neither; all masks evaluation only"
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "dtd_crosshatched_0165",
+    "kind": "clean",
+    "amplitude": 0.0,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "82bdb07b7391ec31277e1eddf290d04774359b1251dd324cfde4237fe42561ae",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_crosshatched_0165.npy",
+      "reference_sha256": "b6928e151f68014506287bc0fa3cbcc1d52b82655f8ce5225ccc35faf55c2c68"
+    },
+    "synthesis": {
+      "kind": "clean",
+      "seed": 0,
+      "clipping_fraction": 0.0
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "dtd_crosshatched_0165",
+    "kind": "global",
+    "amplitude": 0.12,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "2d385936cb611f6c5e25134290ddeaa22e6076f4c18f5552d1a957fcc14433f4",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_crosshatched_0165.npy",
+      "reference_sha256": "b6928e151f68014506287bc0fa3cbcc1d52b82655f8ce5225ccc35faf55c2c68"
+    },
+    "synthesis": {
+      "kind": "global",
+      "amplitude": 0.12,
+      "seed": 3168251171,
+      "shape": [
+        256,
+        256
+      ],
+      "frequency_unit": "cycles/pixel",
+      "parameters": {
+        "base_frequency_cycles_per_pixel": 0.11598224408315755,
+        "angle_radians": 1.2494158811292244,
+        "fx_cycles_per_pixel": 0.03663608021465123,
+        "fy_cycles_per_pixel": 0.11004398470189443,
+        "phase_offset_radians": -2.963991973113719
+      },
+      "clipping_fraction": 0.058563232421875,
+      "contaminated_fraction": 1.0,
+      "clean_fraction": 0.0,
+      "transition_fraction": 0.0,
+      "preclip_noise_rms": 0.08485543022995823,
+      "postclip_noise_rms": 0.08292807824671565,
+      "mask_definition": "contaminated: envelope>0.01; clean: envelope<1e-6; transition: neither; all masks evaluation only"
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "dtd_crosshatched_0165",
+    "kind": "chirp",
+    "amplitude": 0.12,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "3b8cfc0bacdc2b1a80e46d761a361e316a138dee85f983eddcf5e370632e1d44",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_crosshatched_0165.npy",
+      "reference_sha256": "b6928e151f68014506287bc0fa3cbcc1d52b82655f8ce5225ccc35faf55c2c68"
+    },
+    "synthesis": {
+      "kind": "chirp",
+      "amplitude": 0.12,
+      "seed": 2136492835,
+      "shape": [
+        256,
+        256
+      ],
+      "frequency_unit": "cycles/pixel",
+      "parameters": {
+        "base_frequency_cycles_per_pixel": 0.13119292854535564,
+        "angle_radians": 0.7455788430431395,
+        "fx_cycles_per_pixel": 0.09638683324169414,
+        "fy_cycles_per_pixel": -0.08900091503992887,
+        "phase_offset_radians": -0.6851784612631269,
+        "delta_fx_cycles_per_pixel": -0.06652383682020614,
+        "envelope": "row-dependent 0.65 to 1 cosine amplitude"
+      },
+      "clipping_fraction": 0.038665771484375,
+      "contaminated_fraction": 1.0,
+      "clean_fraction": 0.0,
+      "transition_fraction": 0.0,
+      "preclip_noise_rms": 0.07084874546794842,
+      "postclip_noise_rms": 0.06987774258459684,
+      "mask_definition": "contaminated: envelope>0.01; clean: envelope<1e-6; transition: neither; all masks evaluation only"
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "dtd_grid_0064",
+    "kind": "clean",
+    "amplitude": 0.0,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "7c10609bfdf9c3762d5d6853e5526f5827a19f606e38da6f64fc1f647c4e0081",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_grid_0064.npy",
+      "reference_sha256": "e0a99a5f978ae3a059396b0e33a39f7f15922789af8de39670013249b4b964c2"
+    },
+    "synthesis": {
+      "kind": "clean",
+      "seed": 0,
+      "clipping_fraction": 0.0
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "dtd_grid_0064",
+    "kind": "global",
+    "amplitude": 0.12,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "57a0a1adf6fd91a79037377c7dd7f62766d803f5043dbc58f41d24d09e537786",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_grid_0064.npy",
+      "reference_sha256": "e0a99a5f978ae3a059396b0e33a39f7f15922789af8de39670013249b4b964c2"
+    },
+    "synthesis": {
+      "kind": "global",
+      "amplitude": 0.12,
+      "seed": 275233319,
+      "shape": [
+        256,
+        256
+      ],
+      "frequency_unit": "cycles/pixel",
+      "parameters": {
+        "base_frequency_cycles_per_pixel": 0.0800043090787843,
+        "angle_radians": 0.4598551065394363,
+        "fx_cycles_per_pixel": 0.07169320650170159,
+        "fy_cycles_per_pixel": 0.035507374060580986,
+        "phase_offset_radians": 1.03150580690986
+      },
+      "clipping_fraction": 0.378387451171875,
+      "contaminated_fraction": 1.0,
+      "clean_fraction": 0.0,
+      "transition_fraction": 0.0,
+      "preclip_noise_rms": 0.08485427924262606,
+      "postclip_noise_rms": 0.06710737723600979,
+      "mask_definition": "contaminated: envelope>0.01; clean: envelope<1e-6; transition: neither; all masks evaluation only"
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "dtd_grid_0064",
+    "kind": "chirp",
+    "amplitude": 0.12,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "4f12b36dd9ed2ebc5138f7c93a286ef5ee040e232efa8fbbfbc9df24b16b51d1",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_grid_0064.npy",
+      "reference_sha256": "e0a99a5f978ae3a059396b0e33a39f7f15922789af8de39670013249b4b964c2"
+    },
+    "synthesis": {
+      "kind": "chirp",
+      "amplitude": 0.12,
+      "seed": 228676169,
+      "shape": [
+        256,
+        256
+      ],
+      "frequency_unit": "cycles/pixel",
+      "parameters": {
+        "base_frequency_cycles_per_pixel": 0.1434408129144789,
+        "angle_radians": 0.802659793952229,
+        "fx_cycles_per_pixel": 0.0996621357225344,
+        "fy_cycles_per_pixel": 0.10316358617646865,
+        "phase_offset_radians": 1.0508371079283378,
+        "delta_fx_cycles_per_pixel": 0.04169835147851386,
+        "envelope": "row-dependent 0.65 to 1 cosine amplitude"
+      },
+      "clipping_fraction": 0.36663818359375,
+      "contaminated_fraction": 1.0,
+      "clean_fraction": 0.0,
+      "transition_fraction": 0.0,
+      "preclip_noise_rms": 0.07084724261834255,
+      "postclip_noise_rms": 0.05639345272506163,
+      "mask_definition": "contaminated: envelope>0.01; clean: envelope<1e-6; transition: neither; all masks evaluation only"
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "dtd_grooved_0048",
+    "kind": "clean",
+    "amplitude": 0.0,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "15ee3769c5af8ff59660c3799efc6adc0629d6d49309f382cf102dac380ce2db",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_grooved_0048.npy",
+      "reference_sha256": "2e5e40efed1e9b4690df348b7c8c0221c623c164ec9ae37a784230c082fd51cf"
+    },
+    "synthesis": {
+      "kind": "clean",
+      "seed": 0,
+      "clipping_fraction": 0.0
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "dtd_grooved_0048",
+    "kind": "global",
+    "amplitude": 0.12,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "eac3cd942521c24949aabb2607900139b4cae24522623142d8b297adf76d29bd",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_grooved_0048.npy",
+      "reference_sha256": "2e5e40efed1e9b4690df348b7c8c0221c623c164ec9ae37a784230c082fd51cf"
+    },
+    "synthesis": {
+      "kind": "global",
+      "amplitude": 0.12,
+      "seed": 491980309,
+      "shape": [
+        256,
+        256
+      ],
+      "frequency_unit": "cycles/pixel",
+      "parameters": {
+        "base_frequency_cycles_per_pixel": 0.08404506966342737,
+        "angle_radians": 0.580902814581774,
+        "fx_cycles_per_pixel": 0.07025895056358579,
+        "fy_cycles_per_pixel": -0.046122159537840025,
+        "phase_offset_radians": -1.9945127955081814
+      },
+      "clipping_fraction": 0.0,
+      "contaminated_fraction": 1.0,
+      "clean_fraction": 0.0,
+      "transition_fraction": 0.0,
+      "preclip_noise_rms": 0.08485323731377466,
+      "postclip_noise_rms": 0.08485323731377466,
+      "mask_definition": "contaminated: envelope>0.01; clean: envelope<1e-6; transition: neither; all masks evaluation only"
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "dtd_grooved_0048",
+    "kind": "chirp",
+    "amplitude": 0.12,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "d3f9ad15d50f5f577ef2a07669e5288d1f8cfdf7bb8c35b972c5c798c86d2eb8",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_grooved_0048.npy",
+      "reference_sha256": "2e5e40efed1e9b4690df348b7c8c0221c623c164ec9ae37a784230c082fd51cf"
+    },
+    "synthesis": {
+      "kind": "chirp",
+      "amplitude": 0.12,
+      "seed": 2109991715,
+      "shape": [
+        256,
+        256
+      ],
+      "frequency_unit": "cycles/pixel",
+      "parameters": {
+        "base_frequency_cycles_per_pixel": 0.12176311764215086,
+        "angle_radians": 1.2980934787363712,
+        "fx_cycles_per_pixel": 0.03279511623294727,
+        "fy_cycles_per_pixel": 0.11726353725350327,
+        "phase_offset_radians": -0.8332884341034941,
+        "delta_fx_cycles_per_pixel": 0.042993048611861456,
+        "envelope": "row-dependent 0.65 to 1 cosine amplitude"
+      },
+      "clipping_fraction": 0.0,
+      "contaminated_fraction": 1.0,
+      "clean_fraction": 0.0,
+      "transition_fraction": 0.0,
+      "preclip_noise_rms": 0.07084764241223776,
+      "postclip_noise_rms": 0.07084764241223776,
+      "mask_definition": "contaminated: envelope>0.01; clean: envelope<1e-6; transition: neither; all masks evaluation only"
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "dtd_honeycombed_0065",
+    "kind": "clean",
+    "amplitude": 0.0,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "75362b7af82f60644299eaf2eb26d77974f9982c6aabc067450e9fc9fdc703ba",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_honeycombed_0065.npy",
+      "reference_sha256": "25b8d55aac819488b3cc023b03e3b237d6013bccaffc8f1fd32facf4aa27ba43"
+    },
+    "synthesis": {
+      "kind": "clean",
+      "seed": 0,
+      "clipping_fraction": 0.0
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "dtd_honeycombed_0065",
+    "kind": "global",
+    "amplitude": 0.12,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "207c38a1f4bb6de1e003155ed5b80ca4dca02d6598095216dfd151feea09eca4",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_honeycombed_0065.npy",
+      "reference_sha256": "25b8d55aac819488b3cc023b03e3b237d6013bccaffc8f1fd32facf4aa27ba43"
+    },
+    "synthesis": {
+      "kind": "global",
+      "amplitude": 0.12,
+      "seed": 905733172,
+      "shape": [
+        256,
+        256
+      ],
+      "frequency_unit": "cycles/pixel",
+      "parameters": {
+        "base_frequency_cycles_per_pixel": 0.11249642077222702,
+        "angle_radians": 0.8173943328088958,
+        "fx_cycles_per_pixel": 0.0769615026988782,
+        "fy_cycles_per_pixel": 0.08205103161382259,
+        "phase_offset_radians": -0.26026944409086017
+      },
+      "clipping_fraction": 0.0135955810546875,
+      "contaminated_fraction": 1.0,
+      "clean_fraction": 0.0,
+      "transition_fraction": 0.0,
+      "preclip_noise_rms": 0.0848527299493831,
+      "postclip_noise_rms": 0.08448585437534727,
+      "mask_definition": "contaminated: envelope>0.01; clean: envelope<1e-6; transition: neither; all masks evaluation only"
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "dtd_honeycombed_0065",
+    "kind": "chirp",
+    "amplitude": 0.12,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "e1ec8b7ff15015b248ab3ee38e3741adef43676fe478e5eb7e6d718b196f713c",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_honeycombed_0065.npy",
+      "reference_sha256": "25b8d55aac819488b3cc023b03e3b237d6013bccaffc8f1fd32facf4aa27ba43"
+    },
+    "synthesis": {
+      "kind": "chirp",
+      "amplitude": 0.12,
+      "seed": 3787974174,
+      "shape": [
+        256,
+        256
+      ],
+      "frequency_unit": "cycles/pixel",
+      "parameters": {
+        "base_frequency_cycles_per_pixel": 0.14092846788652635,
+        "angle_radians": 1.2170950167565953,
+        "fx_cycles_per_pixel": 0.04881372606564592,
+        "fy_cycles_per_pixel": -0.13220458845453048,
+        "phase_offset_radians": -1.352211334169516,
+        "delta_fx_cycles_per_pixel": -0.03786382637394148,
+        "envelope": "row-dependent 0.65 to 1 cosine amplitude"
+      },
+      "clipping_fraction": 0.007781982421875,
+      "contaminated_fraction": 1.0,
+      "clean_fraction": 0.0,
+      "transition_fraction": 0.0,
+      "preclip_noise_rms": 0.07084799011931206,
+      "postclip_noise_rms": 0.07063721391382315,
+      "mask_definition": "contaminated: envelope>0.01; clean: envelope<1e-6; transition: neither; all masks evaluation only"
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "dtd_knitted_0108",
+    "kind": "clean",
+    "amplitude": 0.0,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "6b0e47abe4007c0c7517e634274f9bb024090e10541ef5f74da126a2dde8a7bf",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_knitted_0108.npy",
+      "reference_sha256": "849a46d3d8921e89a484b9d05552aa7c05daa3d73182fa64d9fea4bc79a3ec28"
+    },
+    "synthesis": {
+      "kind": "clean",
+      "seed": 0,
+      "clipping_fraction": 0.0
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "dtd_knitted_0108",
+    "kind": "global",
+    "amplitude": 0.12,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "492868d2586f6dd6fa5b19df53fa848e03161367ab634f391fa5bcd02ad0ed92",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_knitted_0108.npy",
+      "reference_sha256": "849a46d3d8921e89a484b9d05552aa7c05daa3d73182fa64d9fea4bc79a3ec28"
+    },
+    "synthesis": {
+      "kind": "global",
+      "amplitude": 0.12,
+      "seed": 3083693998,
+      "shape": [
+        256,
+        256
+      ],
+      "frequency_unit": "cycles/pixel",
+      "parameters": {
+        "base_frequency_cycles_per_pixel": 0.07744481670062833,
+        "angle_radians": 1.3035588608199822,
+        "fx_cycles_per_pixel": 0.020450695718194953,
+        "fy_cycles_per_pixel": -0.0746958411053502,
+        "phase_offset_radians": 1.4974064692910893
+      },
+      "clipping_fraction": 0.0037841796875,
+      "contaminated_fraction": 1.0,
+      "clean_fraction": 0.0,
+      "transition_fraction": 0.0,
+      "preclip_noise_rms": 0.08485757998146297,
+      "postclip_noise_rms": 0.08478620545883475,
+      "mask_definition": "contaminated: envelope>0.01; clean: envelope<1e-6; transition: neither; all masks evaluation only"
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "dtd_knitted_0108",
+    "kind": "chirp",
+    "amplitude": 0.12,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "225931c385b5c6cefc76b540acb3d2a0c4a7f175323fd15b88f9b2b43bc7c2ab",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_knitted_0108.npy",
+      "reference_sha256": "849a46d3d8921e89a484b9d05552aa7c05daa3d73182fa64d9fea4bc79a3ec28"
+    },
+    "synthesis": {
+      "kind": "chirp",
+      "amplitude": 0.12,
+      "seed": 2835700985,
+      "shape": [
+        256,
+        256
+      ],
+      "frequency_unit": "cycles/pixel",
+      "parameters": {
+        "base_frequency_cycles_per_pixel": 0.07124238519454779,
+        "angle_radians": 0.8174020016819156,
+        "fx_cycles_per_pixel": 0.04873822788443737,
+        "fy_cycles_per_pixel": 0.051962126504724315,
+        "phase_offset_radians": -1.9065589682104083,
+        "delta_fx_cycles_per_pixel": 0.06632933387227714,
+        "envelope": "row-dependent 0.65 to 1 cosine amplitude"
+      },
+      "clipping_fraction": 0.0016632080078125,
+      "contaminated_fraction": 1.0,
+      "clean_fraction": 0.0,
+      "transition_fraction": 0.0,
+      "preclip_noise_rms": 0.07083951196455027,
+      "postclip_noise_rms": 0.07080454454101036,
+      "mask_definition": "contaminated: envelope>0.01; clean: envelope<1e-6; transition: neither; all masks evaluation only"
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "dtd_lined_0172",
+    "kind": "clean",
+    "amplitude": 0.0,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "fd83fe833ff075e77297729a8b590a7066b22da24fe0788e412cda95b9781b29",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_lined_0172.npy",
+      "reference_sha256": "258ce0df97bb742f5d6ba113afda34f21f5ebc0d49f4b4ca80145090a4bb67d6"
+    },
+    "synthesis": {
+      "kind": "clean",
+      "seed": 0,
+      "clipping_fraction": 0.0
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "dtd_lined_0172",
+    "kind": "global",
+    "amplitude": 0.12,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "16d8c106678d6c498c1e4cc0819eccf8ef9719660f2eeef743204dc0cc39fe0b",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_lined_0172.npy",
+      "reference_sha256": "258ce0df97bb742f5d6ba113afda34f21f5ebc0d49f4b4ca80145090a4bb67d6"
+    },
+    "synthesis": {
+      "kind": "global",
+      "amplitude": 0.12,
+      "seed": 1783806779,
+      "shape": [
+        256,
+        256
+      ],
+      "frequency_unit": "cycles/pixel",
+      "parameters": {
+        "base_frequency_cycles_per_pixel": 0.06695048473867676,
+        "angle_radians": 1.2630620890906648,
+        "fx_cycles_per_pixel": 0.020279308104476777,
+        "fy_cycles_per_pixel": -0.06380530596703923,
+        "phase_offset_radians": 2.134984006213471
+      },
+      "clipping_fraction": 0.0446929931640625,
+      "contaminated_fraction": 1.0,
+      "clean_fraction": 0.0,
+      "transition_fraction": 0.0,
+      "preclip_noise_rms": 0.0848620162547365,
+      "postclip_noise_rms": 0.08339637634798178,
+      "mask_definition": "contaminated: envelope>0.01; clean: envelope<1e-6; transition: neither; all masks evaluation only"
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "dtd_lined_0172",
+    "kind": "chirp",
+    "amplitude": 0.12,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "6ca69c4994b6f36c06a5fb5a0810d4a32882c6c42489f489569173bd4b22f442",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_lined_0172.npy",
+      "reference_sha256": "258ce0df97bb742f5d6ba113afda34f21f5ebc0d49f4b4ca80145090a4bb67d6"
+    },
+    "synthesis": {
+      "kind": "chirp",
+      "amplitude": 0.12,
+      "seed": 4257870855,
+      "shape": [
+        256,
+        256
+      ],
+      "frequency_unit": "cycles/pixel",
+      "parameters": {
+        "base_frequency_cycles_per_pixel": 0.0918557858360319,
+        "angle_radians": 0.9276195101888582,
+        "fx_cycles_per_pixel": 0.05508963811306112,
+        "fy_cycles_per_pixel": -0.07350249767271125,
+        "phase_offset_radians": 2.2588625765864805,
+        "delta_fx_cycles_per_pixel": -0.037803764208202285,
+        "envelope": "row-dependent 0.65 to 1 cosine amplitude"
+      },
+      "clipping_fraction": 0.0316619873046875,
+      "contaminated_fraction": 1.0,
+      "clean_fraction": 0.0,
+      "transition_fraction": 0.0,
+      "preclip_noise_rms": 0.07084358879258904,
+      "postclip_noise_rms": 0.06998679271238935,
+      "mask_definition": "contaminated: envelope>0.01; clean: envelope<1e-6; transition: neither; all masks evaluation only"
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "dtd_meshed_0162",
+    "kind": "clean",
+    "amplitude": 0.0,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "9da9a83eaada44907021a59fd7d6f4f95b6098f86033ecca991d7d31c71622f0",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_meshed_0162.npy",
+      "reference_sha256": "06ea1c37b391ec1add1936f9bce59ad5094ea156732844659948c5e5ee40f830"
+    },
+    "synthesis": {
+      "kind": "clean",
+      "seed": 0,
+      "clipping_fraction": 0.0
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "dtd_meshed_0162",
+    "kind": "global",
+    "amplitude": 0.12,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "d838ccc97f2068d0f47a356735c2dd5c2f90037e4b5dea5c4ec2283561f23af5",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_meshed_0162.npy",
+      "reference_sha256": "06ea1c37b391ec1add1936f9bce59ad5094ea156732844659948c5e5ee40f830"
+    },
+    "synthesis": {
+      "kind": "global",
+      "amplitude": 0.12,
+      "seed": 2820377318,
+      "shape": [
+        256,
+        256
+      ],
+      "frequency_unit": "cycles/pixel",
+      "parameters": {
+        "base_frequency_cycles_per_pixel": 0.1253406070813872,
+        "angle_radians": 1.392553434338537,
+        "fx_cycles_per_pixel": 0.022222962179003464,
+        "fy_cycles_per_pixel": 0.12335480426607336,
+        "phase_offset_radians": -0.22160708643179872
+      },
+      "clipping_fraction": 0.08026123046875,
+      "contaminated_fraction": 1.0,
+      "clean_fraction": 0.0,
+      "transition_fraction": 0.0,
+      "preclip_noise_rms": 0.0848500367582001,
+      "postclip_noise_rms": 0.08216481878124532,
+      "mask_definition": "contaminated: envelope>0.01; clean: envelope<1e-6; transition: neither; all masks evaluation only"
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "dtd_meshed_0162",
+    "kind": "chirp",
+    "amplitude": 0.12,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "97e205602fe6a2df9a826119d16909bfa4ae6fe6024c6299012a02057f7a5843",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_meshed_0162.npy",
+      "reference_sha256": "06ea1c37b391ec1add1936f9bce59ad5094ea156732844659948c5e5ee40f830"
+    },
+    "synthesis": {
+      "kind": "chirp",
+      "amplitude": 0.12,
+      "seed": 3739778625,
+      "shape": [
+        256,
+        256
+      ],
+      "frequency_unit": "cycles/pixel",
+      "parameters": {
+        "base_frequency_cycles_per_pixel": 0.14292270084479414,
+        "angle_radians": 1.212743555206724,
+        "fx_cycles_per_pixel": 0.05008742654186218,
+        "fy_cycles_per_pixel": -0.13385868712632765,
+        "phase_offset_radians": -0.8654120595102293,
+        "delta_fx_cycles_per_pixel": -0.03796457493326188,
+        "envelope": "row-dependent 0.65 to 1 cosine amplitude"
+      },
+      "clipping_fraction": 0.0570831298828125,
+      "contaminated_fraction": 1.0,
+      "clean_fraction": 0.0,
+      "transition_fraction": 0.0,
+      "preclip_noise_rms": 0.07085042915498414,
+      "postclip_noise_rms": 0.06925196732218991,
+      "mask_definition": "contaminated: envelope>0.01; clean: envelope<1e-6; transition: neither; all masks evaluation only"
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "dtd_striped_0119",
+    "kind": "clean",
+    "amplitude": 0.0,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "809c35360705f7755fef4b0299735acfd278e95afff42e5acaa88442240ab136",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_striped_0119.npy",
+      "reference_sha256": "ef7c97b385ee7c683929f938d99af536b4764fff07a79cac8a1b0ed527f9b567"
+    },
+    "synthesis": {
+      "kind": "clean",
+      "seed": 0,
+      "clipping_fraction": 0.0
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "dtd_striped_0119",
+    "kind": "global",
+    "amplitude": 0.12,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "bcaf96bfce42b6e198e49b382c192929a097b9140aba38544948313419e2624a",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_striped_0119.npy",
+      "reference_sha256": "ef7c97b385ee7c683929f938d99af536b4764fff07a79cac8a1b0ed527f9b567"
+    },
+    "synthesis": {
+      "kind": "global",
+      "amplitude": 0.12,
+      "seed": 1742066918,
+      "shape": [
+        256,
+        256
+      ],
+      "frequency_unit": "cycles/pixel",
+      "parameters": {
+        "base_frequency_cycles_per_pixel": 0.12775131783388557,
+        "angle_radians": 0.9287614376274178,
+        "fx_cycles_per_pixel": 0.07650085917055803,
+        "fy_cycles_per_pixel": 0.10231333126460548,
+        "phase_offset_radians": -0.9219562056739874
+      },
+      "clipping_fraction": 0.16900634765625,
+      "contaminated_fraction": 1.0,
+      "clean_fraction": 0.0,
+      "transition_fraction": 0.0,
+      "preclip_noise_rms": 0.08485244593828825,
+      "postclip_noise_rms": 0.07765407926527104,
+      "mask_definition": "contaminated: envelope>0.01; clean: envelope<1e-6; transition: neither; all masks evaluation only"
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "dtd_striped_0119",
+    "kind": "chirp",
+    "amplitude": 0.12,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "5a26f909942844216319cbf25689f44ab45c55bd612262781232ebba446377af",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_striped_0119.npy",
+      "reference_sha256": "ef7c97b385ee7c683929f938d99af536b4764fff07a79cac8a1b0ed527f9b567"
+    },
+    "synthesis": {
+      "kind": "chirp",
+      "amplitude": 0.12,
+      "seed": 587951199,
+      "shape": [
+        256,
+        256
+      ],
+      "frequency_unit": "cycles/pixel",
+      "parameters": {
+        "base_frequency_cycles_per_pixel": 0.08842552880121003,
+        "angle_radians": 0.3982565528910075,
+        "fx_cycles_per_pixel": 0.08150521641089827,
+        "fy_cycles_per_pixel": -0.03429247499942612,
+        "phase_offset_radians": -0.628327193710617,
+        "delta_fx_cycles_per_pixel": -0.06093412111833926,
+        "envelope": "row-dependent 0.65 to 1 cosine amplitude"
+      },
+      "clipping_fraction": 0.1497344970703125,
+      "contaminated_fraction": 1.0,
+      "clean_fraction": 0.0,
+      "transition_fraction": 0.0,
+      "preclip_noise_rms": 0.07084053791320488,
+      "postclip_noise_rms": 0.06563507176774744,
+      "mask_definition": "contaminated: envelope>0.01; clean: envelope<1e-6; transition: neither; all masks evaluation only"
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "dtd_woven_0094",
+    "kind": "clean",
+    "amplitude": 0.0,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "47686f3a8e6817528165c1932c540dd3de9f456ac22ed9533ae00b69bc6837f7",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_woven_0094.npy",
+      "reference_sha256": "1fcd1699bdaf7145d2662b861608694566fbdb401503c78a251f2f538959352b"
+    },
+    "synthesis": {
+      "kind": "clean",
+      "seed": 0,
+      "clipping_fraction": 0.0
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "dtd_woven_0094",
+    "kind": "global",
+    "amplitude": 0.12,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "27039291596b617fea06e37145957d8791e53edf4f61fb52de1bdb7fb6f81fdb",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_woven_0094.npy",
+      "reference_sha256": "1fcd1699bdaf7145d2662b861608694566fbdb401503c78a251f2f538959352b"
+    },
+    "synthesis": {
+      "kind": "global",
+      "amplitude": 0.12,
+      "seed": 2939790546,
+      "shape": [
+        256,
+        256
+      ],
+      "frequency_unit": "cycles/pixel",
+      "parameters": {
+        "base_frequency_cycles_per_pixel": 0.14066513411145165,
+        "angle_radians": 0.3127374374483527,
+        "fx_cycles_per_pixel": 0.1338421610640113,
+        "fy_cycles_per_pixel": -0.04327766024530361,
+        "phase_offset_radians": 0.7842433621715035
+      },
+      "clipping_fraction": 0.0536346435546875,
+      "contaminated_fraction": 1.0,
+      "clean_fraction": 0.0,
+      "transition_fraction": 0.0,
+      "preclip_noise_rms": 0.08485366575662158,
+      "postclip_noise_rms": 0.08340272952103626,
+      "mask_definition": "contaminated: envelope>0.01; clean: envelope<1e-6; transition: neither; all masks evaluation only"
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "dtd_woven_0094",
+    "kind": "chirp",
+    "amplitude": 0.12,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "6372e201afc375b00fba626543611f4297b155731ec27e61e2735d776859cb52",
+    "preprocessing": {
+      "reference_npy": "textures_v3/clean/dtd_woven_0094.npy",
+      "reference_sha256": "1fcd1699bdaf7145d2662b861608694566fbdb401503c78a251f2f538959352b"
+    },
+    "synthesis": {
+      "kind": "chirp",
+      "amplitude": 0.12,
+      "seed": 3750289692,
+      "shape": [
+        256,
+        256
+      ],
+      "frequency_unit": "cycles/pixel",
+      "parameters": {
+        "base_frequency_cycles_per_pixel": 0.12007991805585508,
+        "angle_radians": 0.16674057180099025,
+        "fx_cycles_per_pixel": 0.1184145258650634,
+        "fy_cycles_per_pixel": 0.01992954551546777,
+        "phase_offset_radians": 2.6724096459298394,
+        "delta_fx_cycles_per_pixel": 0.065847016733763,
+        "envelope": "row-dependent 0.65 to 1 cosine amplitude"
+      },
+      "clipping_fraction": 0.0321197509765625,
+      "contaminated_fraction": 1.0,
+      "clean_fraction": 0.0,
+      "transition_fraction": 0.0,
+      "preclip_noise_rms": 0.07085006041410662,
+      "postclip_noise_rms": 0.06998448461562812,
+      "mask_definition": "contaminated: envelope>0.01; clean: envelope<1e-6; transition: neither; all masks evaluation only"
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "10081",
+    "kind": "edge_strip",
+    "amplitude": 0.12,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "4f4bf61d1ac72fd8e6e421bc0002925d88327f0cb8bee9845d8b90863eb6504c",
+    "preprocessing": {
+      "reference_npy": "clean/audit_v3/10081.npy",
+      "reference_sha256": "fc8554bda3e9bd732fa9d23f3dd7a87a571b848838b48683380466c4cc3828db"
+    },
+    "synthesis": {
+      "kind": "edge_strip",
+      "amplitude": 0.12,
+      "seed": 1842268108,
+      "variant": 0,
+      "shape": [
+        256,
+        256
+      ],
+      "parameters": {
+        "base_frequency_cycles_per_pixel": 0.1436929735585414,
+        "angle_radians": 0.7221208252937545,
+        "fx_cycles_per_pixel": 0.10782801199957658,
+        "fy_cycles_per_pixel": -0.09497784203862947,
+        "phase_offset_radians": -1.3541093769734627,
+        "edge": "left",
+        "edge_index": 0,
+        "strip_center_pixels": 6.375,
+        "strip_halfwidth_pixels": 28.12810173378164
+      },
+      "frequency_unit": "cycles/pixel",
+      "frequency_min": 0.1436929735585414,
+      "frequency_max": 0.1436929735585414,
+      "clipping_fraction": 6.103515625e-05,
+      "contaminated_fraction": 0.12890625,
+      "clean_fraction": 0.86328125,
+      "transition_fraction": 0.0078125,
+      "preclip_noise_rms": 0.019137534218565212,
+      "postclip_noise_rms": 0.019137035977964366,
+      "model_mismatch": false,
+      "mask_definition": "contaminated envelope>0.01; clean envelope==0; transition remainder; truth evaluation only"
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "102062",
+    "kind": "edge_strip",
+    "amplitude": 0.12,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "bfb300ae9fe1d5fea2721a5f4c652b58ebf39e127e7981d5ef91dd313be27afa",
+    "preprocessing": {
+      "reference_npy": "clean/audit_v3/102062.npy",
+      "reference_sha256": "3d4bb7a4cb94c5c2afba545d79a164177890fdfe22e3b3e84870ef85e7d89c71"
+    },
+    "synthesis": {
+      "kind": "edge_strip",
+      "amplitude": 0.12,
+      "seed": 2525609754,
+      "variant": 1,
+      "shape": [
+        256,
+        256
+      ],
+      "parameters": {
+        "base_frequency_cycles_per_pixel": 0.09415788231248572,
+        "angle_radians": 0.5109972971415546,
+        "fx_cycles_per_pixel": 0.08212989228441879,
+        "fy_cycles_per_pixel": -0.046047666552407156,
+        "phase_offset_radians": 0.3105278076372686,
+        "edge": "right",
+        "edge_index": 1,
+        "strip_center_pixels": 248.625,
+        "strip_halfwidth_pixels": 27.459867897132717
+      },
+      "frequency_unit": "cycles/pixel",
+      "frequency_min": 0.09415788231248572,
+      "frequency_max": 0.09415788231248572,
+      "clipping_fraction": 0.0008697509765625,
+      "contaminated_fraction": 0.126617431640625,
+      "clean_fraction": 0.8671875,
+      "transition_fraction": 0.006195068359375,
+      "preclip_noise_rms": 0.01898233811133082,
+      "postclip_noise_rms": 0.018887146366360404,
+      "model_mismatch": false,
+      "mask_definition": "contaminated envelope>0.01; clean envelope==0; transition remainder; truth evaluation only"
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "104010",
+    "kind": "edge_strip",
+    "amplitude": 0.12,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "514f12ba3f7725638c4b8ae2632c08b6af8e6b5eb64bc4611ab33082e400ece8",
+    "preprocessing": {
+      "reference_npy": "clean/audit_v3/104010.npy",
+      "reference_sha256": "014bd228a6624c4b4ab0a57fd2104a0237cf5c4970b50a92e07a43180ca9463a"
+    },
+    "synthesis": {
+      "kind": "edge_strip",
+      "amplitude": 0.12,
+      "seed": 2832428157,
+      "variant": 2,
+      "shape": [
+        256,
+        256
+      ],
+      "parameters": {
+        "base_frequency_cycles_per_pixel": 0.1298297291971675,
+        "angle_radians": 0.9076361119405321,
+        "fx_cycles_per_pixel": 0.07992452261913463,
+        "fy_cycles_per_pixel": -0.10231241013441766,
+        "phase_offset_radians": 2.0376005528484864,
+        "edge": "top",
+        "edge_index": 2,
+        "strip_center_pixels": 6.375,
+        "strip_halfwidth_pixels": 36.30408268370154
+      },
+      "frequency_unit": "cycles/pixel",
+      "frequency_min": 0.12982972919716754,
+      "frequency_max": 0.12982972919716754,
+      "clipping_fraction": 0.0002288818359375,
+      "contaminated_fraction": 0.16015625,
+      "clean_fraction": 0.83203125,
+      "transition_fraction": 0.0078125,
+      "preclip_noise_rms": 0.020928378325010998,
+      "postclip_noise_rms": 0.020909808234904768,
+      "model_mismatch": false,
+      "mask_definition": "contaminated envelope>0.01; clean envelope==0; transition remainder; truth evaluation only"
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "104055",
+    "kind": "edge_strip",
+    "amplitude": 0.12,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "33a9ebcbc196f4ff0c51a6d06fe05360716e5214bd876dbbe229080e0f9c8688",
+    "preprocessing": {
+      "reference_npy": "clean/audit_v3/104055.npy",
+      "reference_sha256": "b3b41217c42cf93d0f18489fddb33160ca2177e279fae5fb57b5764396425099"
+    },
+    "synthesis": {
+      "kind": "edge_strip",
+      "amplitude": 0.12,
+      "seed": 1986231434,
+      "variant": 3,
+      "shape": [
+        256,
+        256
+      ],
+      "parameters": {
+        "base_frequency_cycles_per_pixel": 0.0929467875452225,
+        "angle_radians": 0.27103246050928387,
+        "fx_cycles_per_pixel": 0.08955376442103785,
+        "fy_cycles_per_pixel": 0.02488430414936257,
+        "phase_offset_radians": -3.127580903749694,
+        "edge": "bottom",
+        "edge_index": 3,
+        "strip_center_pixels": 248.625,
+        "strip_halfwidth_pixels": 39.63720716813138
+      },
+      "frequency_unit": "cycles/pixel",
+      "frequency_min": 0.0929467875452225,
+      "frequency_max": 0.0929467875452225,
+      "clipping_fraction": 0.0,
+      "contaminated_fraction": 0.171875,
+      "clean_fraction": 0.8203125,
+      "transition_fraction": 0.0078125,
+      "preclip_noise_rms": 0.021597926618847373,
+      "postclip_noise_rms": 0.021597926618847373,
+      "model_mismatch": false,
+      "mask_definition": "contaminated envelope>0.01; clean envelope==0; transition remainder; truth evaluation only"
+    }
+  },
+  {
+    "stage": "regression",
+    "image_id": "10081",
+    "kind": "global",
+    "amplitude": 0.12,
+    "shape": [
+      256,
+      256
+    ],
+    "float_input_sha256": "c73af2092d598d3bc17c4b8c23bc2b76e03ef1db8746e4ed7bd6842ddfb8dd85",
+    "preprocessing": {
+      "reference_npy": "clean/audit_v3/10081.npy",
+      "reference_sha256": "fc8554bda3e9bd732fa9d23f3dd7a87a571b848838b48683380466c4cc3828db"
+    },
+    "synthesis": {
+      "kind": "global",
+      "amplitude": 0.12,
+      "seed": 1314004086,
+      "shape": [
+        256,
+        256
+      ],
+      "frequency_unit": "cycles/pixel",
+      "parameters": {
+        "base_frequency_cycles_per_pixel": 0.12827061363251377,
+        "angle_radians": 1.1837903077712868,
+        "fx_cycles_per_pixel": 0.04841158139371566,
+        "fy_cycles_per_pixel": -0.11878412818479273,
+        "phase_offset_radians": -2.269055586966405
+      },
+      "clipping_fraction": 0.003662109375,
+      "contaminated_fraction": 1.0,
+      "clean_fraction": 0.0,
+      "transition_fraction": 0.0,
+      "preclip_noise_rms": 0.0848533465110413,
+      "postclip_noise_rms": 0.08472419429605928,
+      "mask_definition": "contaminated: envelope>0.01; clean: envelope<1e-6; transition: neither; all masks evaluation only"
+    }
+  }
+]

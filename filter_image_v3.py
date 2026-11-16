@@ -32,7 +32,9 @@ def main(argv=None):
     p.add_argument('input', type=Path)
     p.add_argument('--out', type=Path, default=Path('results/own_image_v3'))
     config_choice = p.add_mutually_exclusive_group()
-    config_choice.add_argument('--config', type=Path, default=Path('configs/v3_frozen.json'))
+    config_choice.add_argument('--config', type=Path, default=Path('configs/v3_p0_coupled.json'),
+                   help='Configuration file (default: configs/v3_p0_coupled.json). '
+                        'configs/v3_frozen.json selects the experimental decoupled branch.')
     config_choice.add_argument('--use-default-config', action='store_true',
                    help='Explicitly use uncalibrated defaults instead of loading a frozen file')
     args = p.parse_args(argv)

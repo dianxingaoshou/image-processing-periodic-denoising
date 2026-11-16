@@ -93,6 +93,24 @@ def test_cli_output_records_shared_preprocessing_and_config_origin(tmp_path, mon
     assert 'psnr' not in result and 'ssim' not in result
 
 
+def test_cli_without_config_uses_coupled_profile(tmp_path,monkeypatch):
+    import types
+    from filter_image_v3 import main
+    # Different strengths expose accidental fallback to the experimental file.
+    configs=tmp_path/'configs';configs.mkdir()
+    (configs/'v3_p0_coupled.json').write_text(json.dumps({'configuration':{'strength':.75,'combination':'coupled'}}),encoding='utf-8')
+    (configs/'v3_frozen.json').write_text(json.dumps({'configuration':{'strength':2.,'combination':'decoupled'}}),encoding='utf-8')
+    fake=types.SimpleNamespace(Config=lambda:None,config_from_dict=lambda d:d,config_dict=lambda c:c,
+        denoise=lambda a,c,return_diagnostics:(a.copy(),{'global_assessment':{},'tiles':[]}))
+    monkeypatch.setitem(sys.modules,'denoiser_v3',fake)
+    image=tmp_path/'input.png';Image.fromarray(np.full((32,32),128,dtype=np.uint8)).save(image)
+    monkeypatch.chdir(tmp_path)
+    main([str(image),'--out','output'])
+    result=json.loads((tmp_path/'output/decisions.json').read_text(encoding='utf-8'))
+    assert result['configuration']=={'strength':.75,'combination':'coupled'}
+    assert result['configuration_provenance']['path']==str((configs/'v3_p0_coupled.json').resolve())
+
+
 def test_structure_seed_and_executed_v2_amplitude_pairing():
     from run_experiments import sample_seed, make_sample
     clean = np.full((64, 64), .5)

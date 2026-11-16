@@ -39,8 +39,14 @@ class GuardConfig:
     amplitude_low: float = .006
     amplitude_high: float = .024
     gradient_scale: float = .025
+    risk_mode: str = 'legacy'
+    local_ambiguity_low: float = .80
+    local_ambiguity_high: float = .98
+    harmonic_reference: float = .20
 
     def __post_init__(self):
+        if self.risk_mode not in ('legacy', 'structure'):
+            raise ValueError("risk_mode must be 'legacy' or 'structure'")
         if not 0 <= self.reliability_low < self.reliability_high <= 1:
             raise ValueError('Invalid reliability ramp')
         if not 0 <= self.ambiguity_low < self.ambiguity_high <= 1:
@@ -57,6 +63,14 @@ class GuardConfig:
             raise ValueError('Invalid protected frequency')
         if not 0 <= self.amplitude_low < self.amplitude_high or self.gradient_scale <= 0:
             raise ValueError('Invalid intensity scales')
+        if not 0 <= self.local_ambiguity_low < self.local_ambiguity_high <= 1:
+            raise ValueError('Invalid local ambiguity ramp')
+        if not np.isfinite(self.harmonic_reference) or not 0 < self.harmonic_reference <= 1:
+            raise ValueError('harmonic_reference must be finite and in (0,1]')
+        if not all(np.isfinite(value) for value in (
+                self.amplitude_low, self.amplitude_high, self.gradient_scale,
+                self.band_radius_bins, self.min_frequency)):
+            raise ValueError('Intensity and spectral scales must be finite')
 
 
 def _checked(image):
@@ -131,6 +145,63 @@ def structural_complexity(image,gradient_scale=.025):
     return dict(gradient_rms=gradient_rms,score=float(np.clip(gradient_rms/gradient_scale,0,1)))
 
 
+def _harmonic_support(image, candidate, cfg):
+    """Observed excess power near harmonics of the candidate's dominant band.
+
+    This is ambiguity evidence, not proof of texture. The residual determines
+    the fundamental location; all measured harmonic energy comes from the
+    observed patch. A median spectral floor limits the influence of broadband
+    power. Aliased harmonics and overlapping disks are merged rather than
+    counted twice. A zero residual has no harmonic evidence.
+    """
+    h,w=image.shape
+    window=np.outer(np.hanning(h),np.hanning(w))
+    observed_power=np.abs(np.fft.fft2(_detrend(image)*window))**2
+    candidate_power=np.abs(np.fft.fft2(_detrend(candidate)*window))**2
+    fy=np.fft.fftfreq(h)[:,None];fx=np.fft.fftfreq(w)[None,:]
+    valid=np.hypot(fy,fx)>=cfg.min_frequency
+    candidate_power=np.where(valid,candidate_power,0.)
+    if float(candidate_power.max())<1e-20:
+        return 0.
+    iy,ix=np.unravel_index(np.argmax(candidate_power),candidate_power.shape)
+    yy,xx=np.indices(image.shape)
+
+    def disks(multiplier):
+        selected=np.zeros(image.shape,dtype=bool)
+        for sign in (-1,1):
+            cy,cx=(sign*multiplier*iy)%h,(sign*multiplier*ix)%w
+            dy=np.minimum(np.abs(yy-cy),h-np.abs(yy-cy))
+            dx=np.minimum(np.abs(xx-cx),w-np.abs(xx-cx))
+            selected|=dy*dy+dx*dx<=cfg.band_radius_bins**2
+        return selected&valid
+
+    fundamental=disks(1)
+    harmonics=(disks(2)|disks(3))&~fundamental
+    excess=np.maximum(observed_power-float(np.median(observed_power[valid])),0.)
+    fraction=float(excess[harmonics].sum()/max(float(excess.sum()),1e-20))
+    return float(np.clip(fraction/cfg.harmonic_reference,0.,1.))
+
+
+def _structure_risk_features(image,candidate,before,after,cfg):
+    """Measure ambiguity and what subtraction removes, not what remains.
+
+    The structure variant is intentionally conservative about locally sparse
+    periodic content. Strong periodic interference on a smooth background can
+    receive the same score as genuine texture: this is an unresolved single-
+    image ambiguity, not a calibrated noise classifier.
+    """
+    fraction,_=_band_fraction(image,cfg.local_pairs,cfg.band_radius_bins,cfg.min_frequency)
+    ambiguity=_ramp(fraction,cfg.local_ambiguity_low,cfg.local_ambiguity_high)
+    before_energy=float(before['gradient_rms']**2)
+    after_energy=float(after['gradient_rms']**2)
+    loss=float(np.clip((before_energy-after_energy)/max(before_energy,1e-20),0.,1.))
+    harmonic=_harmonic_support(image,candidate,cfg)
+    risk=float(cfg.texture_penalty*loss*max(ambiguity,harmonic))
+    return dict(local_periodic_fraction=fraction,local_ambiguity=ambiguity,
+                harmonic_support=harmonic,structure_loss=loss,
+                structure_texture_risk=risk)
+
+
 def assess_global(image,config:GuardConfig|None=None):
     """Assess near-pure periodic ambiguity using only the observed image.
 
@@ -171,15 +242,21 @@ def score_tile(image_tile,candidate_residual,*,evidence=0.,peak_score=None,
                config:GuardConfig|None=None):
     """Return an explicit reliability/risk decision for one candidate residual.
 
-    Subtractive candidates that leave strong structure receive a penalty unless
-    they explain a substantial part of the detrended patch.  This spatially
-    varying risk permits a matched-removal comparison, unlike a constant gain.
+    ``legacy`` preserves the previous remaining-complexity/fit formula.
+    ``structure`` is an opt-in mechanism experiment: it combines local periodic
+    ambiguity with the positive gradient-energy loss caused by subtraction.
+    It does not use fit improvement to authorize deletion. Both modes use the
+    same fitting reliability q; neither score is a noise probability.
     """
     cfg=config or GuardConfig()
     a=_checked(image_tile)
     n=np.asarray(candidate_residual,dtype=np.float64)
     if n.shape!=a.shape or not np.isfinite(n).all():
         raise ValueError('Candidate residual must be finite and match image shape')
+    scalars=[evidence,neighbor_consistency,cross_scale_consistency]
+    scalars.extend(value for value in (peak_score,amplitude,fit_improvement) if value is not None)
+    if not all(np.isfinite(value) for value in scalars):
+        raise ValueError('Candidate evidence and fitting scalars must be finite')
     b=a-n
     complexity_before=structural_complexity(a,cfg.gradient_scale)
     complexity_after=structural_complexity(b,cfg.gradient_scale)
@@ -207,14 +284,19 @@ def score_tile(image_tile,candidate_residual,*,evidence=0.,peak_score=None,
     # A residual that explains a window-center fit but damages its spatial
     # support is not granted a high weight merely for being spectrally strong.
     extrapolation_gate=float(np.clip(improvement/.02,0,1))
-    texture_risk=(cfg.texture_penalty*complexity_after['score']*(1-model_improvement)
-                  if cfg.use_texture_risk else 0.)
+    legacy_risk=float(cfg.texture_penalty*complexity_after['score']*(1-model_improvement))
+    features=_structure_risk_features(a,n,complexity_before,complexity_after,cfg)
+    raw_risk=legacy_risk if cfg.risk_mode=='legacy' else features['structure_texture_risk']
+    texture_risk=raw_risk if cfg.use_texture_risk else 0.
     global_risk=float((global_assessment or {}).get('ambiguity_risk',0.))
+    if not np.isfinite(global_risk) or not 0 <= global_risk <= 1:
+        raise ValueError('Global ambiguity risk must be finite and in [0,1]')
     fit_weight=float(np.clip(reliability_weight*amp_gate*extrapolation_gate,0,1))
     safety_weight=float(np.clip((1-texture_risk)*(1-global_risk),0,1))
     weight=fit_weight*safety_weight if eligible else 0.
     return dict(reliability=float(reliability),reliability_weight=reliability_weight,
-                texture_risk=float(texture_risk),global_ambiguity_risk=global_risk,
+                texture_risk=float(texture_risk),risk_mode=cfg.risk_mode,
+                legacy_texture_risk=legacy_risk,**features,global_ambiguity_risk=global_risk,
                 amplitude_gate=amp_gate,extrapolation_gate=extrapolation_gate,
                 fit_improvement=model_improvement,unweighted_improvement=improvement,
                 complexity_before=complexity_before,complexity_after=complexity_after,

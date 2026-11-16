@@ -1,0 +1,13 @@
+﻿image_id,kind,matched,target_dirty_mse,baseline_clean_mse,structure_clean_mse,clean_mse_difference,reason
+118072,local,True,0.0005648512894627048,0.0,0.0,0.0,
+118072,edge_strip,False,,,,,duplicate recovery level; no unique interpolated damage
+118072,irregular,False,,,,,duplicate recovery level; no unique interpolated damage
+156054,local,True,0.0004716728627522593,0.0,0.0,0.0,
+156054,edge_strip,True,0.001757490797146242,2.3148048901779357e-07,1.7584007560817588e-07,-5.56404134096177e-08,
+156054,irregular,False,,,,,duplicate recovery level; no unique interpolated damage
+160006,local,True,0.0011493324463571447,1.0392465447886209e-15,1.1099023000952058e-15,7.06557553065849e-17,
+160006,edge_strip,True,0.00243457590450626,2.8847731812071472e-08,2.353163067664426e-08,-5.316101135427213e-09,
+160006,irregular,True,0.0007016864383870033,0.0,0.0,0.0,
+208078,local,False,,,,,duplicate recovery level; no unique interpolated damage
+208078,edge_strip,False,,,,,duplicate recovery level; no unique interpolated damage
+208078,irregular,False,,,,,duplicate recovery level; no unique interpolated damage

@@ -4,7 +4,7 @@ Set-Location -LiteralPath $PSScriptRoot
 if (-not (Test-Path -LiteralPath $Python)) { throw "Install requirements-lock.txt in the matching Python runtime first." }
 $steps = @(
     @("prepare_v3_data.py"),
-    @("-m", "pytest", "-q", "tests", "original/periodic_notch_starter/test_demo.py", "--junitxml=results/v3/tests.xml"),
+    @("-m", "pytest", "-q", "tests", "original/periodic_notch_starter/test_demo.py", "--require-bsds", "--junitxml=results/v3/tests.xml"),
     @("v3_experiments.py", "calibrate"),
     @("v3_experiments.py", "audit"),
     @("v3_experiments.py", "stress"),

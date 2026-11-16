@@ -258,21 +258,29 @@ def fit_candidate(a,candidate,cfg,*,fit_mask=None,force_model=None):
     params=best['parameters']
     # Curvature has normalized coordinates; convert Hessian to cycles/pixel^2.
     h,w=a.shape
-    cy=np.array([-.5,-.5,.5,.5]);cx=np.array([-.5,.5,-.5,.5])
-    corner_fy=best['fy']+(params[2]*cy+params[3]*cx)/h
-    corner_fx=best['fx']+(params[3]*cy+params[4]*cx)/w
-    corner_radius=np.hypot(corner_fy,corner_fx)
-    if np.any((corner_radius<cfg.min_frequency)|(corner_radius>cfg.max_frequency)):
-        # Refuse a fitted model that crosses the configured spectral band.
+    # The norm of an affine frequency field can attain its minimum inside
+    # the tile even when every corner is in band. Check every actual pixel,
+    # using the same coordinates as the phase fit (not an enlarged +/- .5
+    # rectangle). This is a discrete-pixel constraint, not a proof about all
+    # points in the continuous window.
+    frequency_y=best['fy']+(params[2]*u+params[3]*v)/h
+    frequency_x=best['fx']+(params[3]*u+params[4]*v)/w
+    frequency_radius=np.hypot(frequency_y,frequency_x)
+    frequency_min=float(frequency_radius.min());frequency_max=float(frequency_radius.max())
+    if np.any((frequency_radius<cfg.min_frequency)|(frequency_radius>cfg.max_frequency)):
+        # The diagnostic prediction and SSE must describe the same fallback.
         noise=np.zeros_like(a);fit_ratio=0.;improvement=0.;amplitude=0.;envelope[:]=0.
         model='rejected_frequency_range'
         prediction=plane@baseline_coef
+        final_sse=baseline_sse
     return dict(residual=noise,prediction=prediction,amplitude=float(np.sqrt(np.sum(weight*envelope**2)/weight.sum())),
                 fit_ratio=fit_ratio,fit_improvement=improvement,
                 fy=best['fy'],fx=best['fx'],model=model,
                 chirp_gain=chirp_gain,amplitude_gain=amplitude_gain,
                 hessian_yy=float(params[2]/h**2),hessian_yx=float(params[3]/(h*w)),hessian_xx=float(params[4]/w**2),
-                final_sse=float(final_sse),baseline_sse=baseline_sse)
+                final_sse=float(final_sse),baseline_sse=baseline_sse,
+                frequency_min=frequency_min,frequency_max=frequency_max,
+                frequency_range_scope='all discrete pixel centres')
 
 
 @lru_cache(maxsize=32)
