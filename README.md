@@ -2,25 +2,79 @@
 
 [![Unit tests](https://github.com/dianxingaoshou/image-processing-periodic-denoising/actions/workflows/tests.yml/badge.svg)](https://github.com/dianxingaoshou/image-processing-periodic-denoising/actions/workflows/tests.yml)
 
-一个图像处理课程研究项目，研究如何去除**只出现在局部、频率或方向随位置变化的周期条纹**，同时减少对干净区域和真实规则纹理的误改。
+输入一张图片，程序根据条纹的空间范围和波形证据，自动选择**窄条修复、多尺度区域修复或保留原图**。输出包含恢复图、实际减掉的信号、允许修改的位置和选择原因。项目处理灰度亮度，采用频谱分析与局部相位拟合，无需训练模型。
 
-项目包含可运行的灰度图去噪算法、可控退化生成器、对照方法、模块消融及可复现实验。算法以局部周期残差拟合和加权减除为主，无需训练神经网络；少量运行参数在开发集校准。干净参考图、真实频率与干扰掩膜只用于校准和评价，不传给去噪器。
+[运行自己的图片](#快速运行自己的图片) · [统一流程](#项目做了什么) · [整体验证](#统一流程的实测表现) · [消融与历史结果](#实验结果) · [目前的不足](#目前的不足) · [维护说明](MAINTENANCE.md)
 
-**当前结论：**已修复“把未通过资格的条纹行误当作外部背景”的上下文问题，可靠性门槛和实际输出资格不变。69022的8／16像素条纹在回归中改善；新4图额外恢复2个32像素边缘输入，本批未增加自然图、DTD及相邻区损伤。仍有拒绝与合法窄纹理歧义，不能推广为普遍安全保证。
+## 快速运行自己的图片
 
-快速入口：[运行自己的图片](#快速运行自己的图片) · [复现实验](#测试与实验复现) · [实验结果](#实验结果) · [目前的不足](#目前的不足) · [维护说明](MAINTENANCE.md)
+已验证环境为 Windows PowerShell、Python 3.14。安装后，处理自己的图片只需最后一条命令。
+
+```powershell
+git clone https://github.com/dianxingaoshou/image-processing-periodic-denoising.git
+cd image-processing-periodic-denoising
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements-lock.txt
+.\.venv\Scripts\python.exe filter_project.py "input.png" --out results/own_image_project
+```
+
+用实际文件路径替换 `input.png`。图片宽高至少各32像素；程序保留原始尺寸，将RGB转换为浮点灰度，RGBA先合成背景再转换。推理只读取输入图片和仓库内两份参数，不需要实验数据。终端会显示选中的路径及原因。
+
+| 查看哪个文件 | 可以回答什么问题 |
+|---|---|
+| `restored.png`、`restored.npy` | 恢复图是什么样？PNG用于查看，NPY保存未量化的浮点结果。 |
+| `diagnostics.npz` | `residual` 是输入亮度减恢复亮度，`support_mask` 为允许修改的位置，掩膜外的像素与输入逐值相同。 |
+| `decisions.json` | `route` 和 `reason` 给出处理路径和原因，`accepted_regions` 记录窄条区间或通用图块及其频率，还可核对输入与配置哈希。 |
 
 ## 项目做了什么
 
 ```mermaid
 flowchart LR
-    A[含噪灰度图] --> B[重叠分块与多尺度频谱]
-    B --> C[候选频率与分析尺度选择]
-    C --> D[局部相位和幅度拟合]
-    D --> E[可靠性与纹理风险决策]
-    E --> F[加权减除与重叠融合]
-    F --> G[恢复图与诊断记录]
+    A[输入图片] --> B[浮点灰度和方向剖面分析]
+    B --> C{整图周期歧义保护触发？}
+    C -->|是| U[保留原图]
+    C -->|否| D{有可靠的紧窄条带？}
+    D -->|有| N[仅在合格行或列减去估计条纹]
+    D -->|无| G[多尺度局部频谱与相位拟合]
+    G --> H{候选通过保护且在二维空间相互印证？}
+    H -->|是| W[合格图块加权重叠复原]
+    H -->|否| U
+    N --> O[恢复图、实际残差、区域与决策记录]
+    W --> O
+    U --> O
 ```
+
+窄条路径使用修复后的幅度上下文选取参考邻带，同时保留逐行幅度、稳定性和拟合收益门槛。通用路径沿用P0配置的64／128／256像素分析窗口，再检查相邻复原块对重叠像素估计的波形。设两块在重叠区的残差为 `u,v`，当能量大于零且 `2⟨u,v⟩/(‖u‖²+‖v‖²) ≥ 0.8` 时，连接这两个上下或左右相邻的图块。一个连通区域的图块起点在高、宽两个方向上均须跨越至少一个复原块的尺寸。只给达标区域的图块保留原减除权重。0.8是本次集成采用的固定规则。
+
+一张图只输出一个分支的恢复结果。窄条路径成立时，通用路径不会接着修改条带旁边的像素。两条路径都会遵守整图的周期纹理歧义判断。项目的实验环节从清晰图生成可控退化，用同一观测图分别运行输入对照、两个单独分支及统一流程，最后用参考图、已知干扰区及相邻干净区计算误差。真值只进入评价端。
+
+各阶段围绕同一个问题展开：条纹在哪里，应该减去多少？全局陷波和已发表方法提供比较起点；变频、变向案例引出了多尺度局部相位估计；32像素窗口和网格包络的消融暴露了窄条漏检；逐行拟合及69022邻带诊断解决了其中一部分漏检。统一入口复用这些经过检验的处理路径，消融开关保留在实验入口，便于逐项追溯改动的效果。
+
+### 统一流程的实测表现
+
+以下使用2张既有BSDS开发图、旧回归图69022、12张DTD纹理照片及2个解析纹理控制，共30个输入、120行配对记录。各次退化复用同一原图，本轮验证的是整合后的行为。
+
+| 输入 | 统一流程的结果 |
+|---|---|
+| 全局定频、频率渐变、方向变化 | 两张开发图的6个输入均走通用路径，整体MSE均低于含噪输入。 |
+| 边缘窄条 | 69022的8／16像素条纹走窄条路径，含噪区MSE分别降低64.9%／59.9%；相邻及全部干净区MSE均为0。 |
+| 普通局部干扰 | 两张开发图都保留了输入，单独运行原通用方法在这两例有收益。二维支撑要求会漏掉部分局部干扰。 |
+| 同图叠加局部宽干扰与16像素窄条 | 2例均走窄条路径。只有窄条的区域误差下降，只有宽干扰的区域误差与输入相同。 |
+| 无新增干扰的DTD纹理 | 12张中，通用分支单独修改8张，窄条分支单独修改0张，统一流程修改6张；对应平均修改MAE为0.054074、0和0.042984。合法紧窄条纹及部分宽周期纹理仍会被误删。 |
+
+图中从左到右为输入、恢复结果、实际减除的信号和允许修改的范围（白色）。中行只放大69022底部64×64像素，指标使用完整图像。第三行是同一张开发图未加干扰时的结果。
+
+![统一入口在全局条纹、边缘窄条和无新增干扰输入上的结果](docs/figures/project-overview.png)
+
+复现实验及示例图可运行以下命令。比较程序要求新输出目录。逐图数据见[配对指标](results/project/metrics.csv)和[输入哈希与路径记录](results/project/run.json)。
+
+```powershell
+.\.venv\Scripts\python.exe prepare_v3_data.py
+.\.venv\Scripts\python.exe project_comparison.py --out results/project_reproduction
+.\.venv\Scripts\python.exe plot_project.py --examples results/project_reproduction/examples --out results/project_reproduction/overview.png
+```
+
+### 算法组件与既有对照
 
 - **多尺度分析：**默认使用64、128、256像素分析窗口，可增加32窗口。32候选须满足至少3个径向周期与0.8分层拟合稳定性，否则继续使用大窗口候选。频率统一为周期／像素，考虑正负共轭等价；默认每尺度最多3个初筛候选，精拟合一个。
 - **非平稳残差建模：**实现连续频率细化、二次相位和非负变幅模型，表示条纹频率、方向及幅度的局部变化。拟合改善与复杂度约束共同控制模型选择。
@@ -80,7 +134,8 @@ flowchart LR
 |---|---|---|
 | v1：`local_spectral.py` | 多尺度局部正弦估计与保守减除 | 历史基线 |
 | v2：`optimized_denoiser.py` | 多候选初筛、连续频率、二次相位、变幅模型与风险评分 | 冻结研究基线，原入口保留 |
-| 当前默认：`configs/v3_p0_coupled.json` | 原P0耦合参数，含离散频率范围修复 | 自有图片默认入口；旧表不能直接充当当前修订的全量结果 |
+| 项目入口 `filter_project.py` | 自动选择紧窄支撑、空间一致的通用复原或保留输入 | 日常单图处理，自动加载P0与窄条上下文修复两份配置 |
+| 通用分支 `configs/v3_p0_coupled.json` | 原P0耦合参数，含离散频率范围修复 | 可单独运行，保留未加整合规则的通用对照 |
 | v3：`configs/v3_frozen.json` | 在同一P0残差上将拟合强度与安全上限解耦 | 实验配置，不作为已证实更优的v2替代 |
 | 风险实验：`configs/refined_risk.json` | 相同估计器与耦合增益，仅替换纹理风险评分 | 固定粗参数、未校准；显式启用，未升级为默认 |
 | 支撑实验：`configs/support_*.json` | 32分析、32复原及非负包络的8种因子组合 | 同一保护配置与强度，独立比较各开关及组合 |
@@ -100,30 +155,13 @@ P0还修复了固定隔点拟合在0.25周期／像素附近的退化，以及�
 
 新风险分支使用 `r = texture_penalty × L × max(A, H)`：`L` 为平滑梯度能量的正向损失比例，`A` 为输入局部少频带集中度映射，`H` 为候选基频二／三次谐波的输入能量支撑。它不再通过拟合解释率降低纹理风险；这些特征仍可能同时响应合法纹理和真实干扰，属于启发式歧义证据。
 
-## 快速运行自己的图片
+## 单独运行研究分支
 
-已验证环境为 **Windows PowerShell、Python 3.14**。以下命令中，`python` 应指向Python3.14；自有图像处理不需要先下载实验数据。
+如需和统一结果做对照，下列入口可独立运行原算法。没有配对参考图时不计算PSNR或SSIM。
 
 ```powershell
-git clone https://github.com/dianxingaoshou/image-processing-periodic-denoising.git
-cd image-processing-periodic-denoising
-python -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r requirements-lock.txt
-
-# 把input.png替换成实际图片路径
 .\.venv\Scripts\python.exe filter_image_v3.py "input.png" --config configs/v3_p0_coupled.json --out results/own_image_v3
 ```
-
-输入至少32×32像素。RGB／RGBA输入会按共享规则转换为浮点灰度；RGBA先与明确背景合成，当前输出是灰度恢复图。
-
-| 输出文件 | 内容 |
-|---|---|
-| `restored.png` | 用于查看的8位恢复图 |
-| `restored.npy` | 浮点恢复数组，避免PNG量化影响后续评价 |
-| `diagnostics.npz` | 频率、尺度、强度及其他诊断数组 |
-| `decisions.json` | 逐块决策、输入与配置来源、SHA256及预处理记录 |
-
-没有参考图时，入口不会生成PSNR或SSIM。诊断频率图是块中心频率的重叠加权显示，不是完整逐像素频率场。
 
 要检查解耦研究配置，请显式指定：
 
@@ -166,7 +204,7 @@ python -m venv .venv
 
 诊断区间增加`context_start / context_stop / context_width`，它们表示对比背景的范围，不等于实际输出范围。`context_ratio_relaxed.json`与`context_context_no_width.json`仅用于消融，不是推荐预设。
 
-**注意配置选择：**省略 `--config` 时默认加载 `configs/v3_p0_coupled.json`。配置文件缺失会报错；只有显式 `--use-default-config` 才允许使用未经校准的程序默认参数，这不等于推荐配置。
+单独运行 `filter_image_v3.py` 时，省略 `--config` 会加载 `configs/v3_p0_coupled.json`；只有该入口的 `--use-default-config` 会选择未经校准的参数。统一入口直接加载项目内的两份配置。
 
 ## 测试与实验复现
 
@@ -176,7 +214,7 @@ python -m venv .venv
 .\.venv\Scripts\python.exe -m pytest -q tests original/periodic_notch_starter/test_demo.py -m "not requires_bsds"
 ```
 
-本轮为 **346项通过、2项数据集成测试按标记排除**。GitHub Actions使用这条命令，仅检验数值与接口行为，不代表重新完成全部图像实验。也可直接运行 `pytest -q -rs`，缺少数据时会明确显示跳过原因。
+GitHub Actions使用这条命令检验数值与接口行为。当前离线测试371项通过，2项数据集成测试按标记排除。也可直接运行 `pytest -q -rs` 查看数据缺失时的跳过原因。
 
 ### 2. 重建固定数据并运行完整测试
 
@@ -185,7 +223,7 @@ python -m venv .venv
 .\.venv\Scripts\python.exe -m pytest -q tests original/periodic_notch_starter/test_demo.py --require-bsds
 ```
 
-首次需要下载官方BSDS500归档及固定图片。脚本按已有清单和哈希重建210张BSDS参考、12张DTD参考及2个无配对实例，不重新选择审计图。本轮完整测试为 **348项通过**，记录在 [测试日志](results/context/tests.xml)；窄条轮291项及更早记录保留在对应旧结果目录。
+首次需要下载官方BSDS500归档及固定图片。脚本按已有清单和哈希重建210张BSDS参考、12张DTD参考及2个无配对实例。当前完整测试373项通过，包含25项新增的统一流程与入口测试。上一轮上下文修复的348项见[历史测试日志](results/context/tests.xml)。
 
 原图和NPY未纳入Git。无数据时跳过表示“未验证”，不是测试通过；完整验收必须使用 `--require-bsds`。
 
@@ -439,11 +477,14 @@ v3主数据清单共210张BSDS图：30开发、120过往验证回归、60当轮�
 6. **已发表方法仅完成源码指导移植。** ARPENOS使用IRLS/MAD替代MATLAB `robustfit`，仅包含 `reg=0` 路径；未完成MATLAB／Octave原版逐输入数值核验，不冒称原论文指标复现。
 7. **当前是灰度研究原型。** 不提供彩色联合复原；运行时间为本机单次测量，不能据此建立严格速度排名。
 8. **局部空间支撑仍受限。** 上一轮通用网格受控制点间距和幅度稀释限制。新专用通道改善了部分8／16像素条纹，但要求长方向近似定频、足够延展；弯曲条纹、短斑块、邻带同样含强周期纹理及证据不足案例仍可能失败或拒绝处理。观测支撑不是语义真值。
+9. **统一流程一次只采用一条处理路径。** 混合干扰可能留下另一种条纹；小区域或任一维度不足128像素的图片在默认64像素复原块下无法满足通用路径的双向跨度。规则纹理如果也在相邻块呈现一致波形，仍可能被当成干扰。本次整合使用已用材料做配对回归，尚无独立数据上的统一流程性能估计。
 
 ## 代码与产物导航
 
 | 路径 | 作用 |
 |---|---|
+| [filter_project.py](filter_project.py)、[project_pipeline.py](project_pipeline.py) | 单图统一入口、纹理歧义检查、窄带与通用路径选择、获准区域和实际残差 |
+| [project_comparison.py](project_comparison.py)、[plot_project.py](plot_project.py) | 在同一组输入上比较统一流程和独立分支，生成逐图记录与示例图 |
 | [denoiser_v3.py](denoiser_v3.py) | 组合估计器与保护模块，提供 `prepare / restore / denoise` |
 | [local_estimation_v3.py](local_estimation_v3.py) | 候选、有效窗口、相位／幅度拟合及可选重排 |
 | [texture_guard_v3.py](texture_guard_v3.py) | 拟合／安全权重、候选资格与纹理风险 |

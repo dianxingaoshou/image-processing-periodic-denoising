@@ -28,6 +28,16 @@ GitHub Actions通过 `-m "not requires_bsds"` 执行不依赖下载数据的测�
 
 ## 处理自己的图片
 
+`filter_project.py` 是项目面向单图的统一入口。两份默认配置由 `project_pipeline.load_config()` 从仓库内加载；判断规则及波形一致性门槛在 `project_pipeline.py`。修改这里以后，用两条独立路径和输入做同图回归，检查窄条资格孔、支撑外像素、宽干扰残留和真实纹理误改。
+
+```powershell
+.\.venv\Scripts\python.exe filter_project.py "input.png" --out results/own_image_project
+.\.venv\Scripts\python.exe project_comparison.py --out results/project_reproduction
+.\.venv\Scripts\python.exe plot_project.py --examples results/project_reproduction/examples --out results/project_reproduction/overview.png
+```
+
+单图推理不依赖数据集。第二条命令需要先按上节重建数据，并保留官方BSDS归档中 `test/69022.jpg` 的提取件。它将已用开发、回归及固定纹理输入的逐图指标、哈希、处理路径写入新的输出目录，示例数组供第三条命令直接绘图。首次集成对照见 [results/project](results/project/)。历史独立入口供重现分支和各项消融：
+
 ```powershell
 # P0数值修复，保留已测量的耦合权重行为
 .\.venv\Scripts\python.exe filter_image_v3.py "input.png" --config configs/v3_p0_coupled.json --out results/own_image_v3
@@ -52,7 +62,7 @@ GitHub Actions通过 `-m "not requires_bsds"` 执行不依赖下载数据的测�
 
 当前证据未支持把解耦版视为普遍更优替代。先读 `results/v3/DECISION.md`、`results/v3/RESULTS.md` 和 `results/v3/texture_tradeoff/EXPLORATORY.md`，其中保留性能损失、纹理净损伤和负面结果。
 
-当前CLI默认加载P0耦合参数。32窗口、32复原块及非负网格包络是独立开关，8种组合位于 `configs/support_*.json`；它们不改变风险模块设置。结果见 `results/support/RESULTS.md`。前一轮风险实验见 `results/refinement/RESULTS.md`，源码保存在 `risk-refinement-baseline` 标签；旧审计与DTD已作为回归材料。
+单独运行 `filter_image_v3.py` 默认加载P0耦合参数。32窗口、32复原块及非负网格包络是独立开关，8种组合位于 `configs/support_*.json`；它们不改变风险模块设置。结果见 `results/support/RESULTS.md`。前一轮风险实验见 `results/refinement/RESULTS.md`，源码保存在 `risk-refinement-baseline` 标签；旧审计与DTD已作为回归材料。
 
 ## 修改与提交
 
