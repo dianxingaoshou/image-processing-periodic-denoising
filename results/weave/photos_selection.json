@@ -1,0 +1,34 @@
+{
+  "seed": 20261118,
+  "rule": "PCG64; lexical test1 pool; exclude previous 12 filenames; choose two per category without replacement in order knitted, woven; sort chosen filenames within each category",
+  "selected": [
+    "knitted/knitted_0103.jpg",
+    "knitted/knitted_0140.jpg",
+    "woven/woven_0079.jpg",
+    "woven/woven_0083.jpg"
+  ],
+  "exclude": [
+    "banded/banded_0105.jpg",
+    "braided/braided_0179.jpg",
+    "chequered/chequered_0195.jpg",
+    "crosshatched/crosshatched_0165.jpg",
+    "grid/grid_0064.jpg",
+    "grooved/grooved_0048.jpg",
+    "honeycombed/honeycombed_0065.jpg",
+    "knitted/knitted_0108.jpg",
+    "lined/lined_0172.jpg",
+    "meshed/meshed_0162.jpg",
+    "striped/striped_0119.jpg",
+    "woven/woven_0094.jpg"
+  ],
+  "labels_sha256": "d95422715cd7a0d76cc34235b85b4b14002d6c1687e68d5aa3b3517651da57e1",
+  "inference_freeze_sha256": "5e55e2567088c188c1b572aee5ab7a8dbe6ce2ad09497a2878c3d6234d2ea225",
+  "amplitude": 0.12,
+  "conditions": [
+    "clean",
+    "global",
+    "chirp"
+  ],
+  "geometry": "short-side Lanczos resize and central crop 256; shared float grayscale",
+  "scope": "Four new photographs, two per category. Separate from the 92-input study."
+}

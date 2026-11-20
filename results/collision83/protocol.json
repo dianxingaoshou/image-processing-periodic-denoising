@@ -1,0 +1,18 @@
+{
+  "target": "dtd_woven_0083",
+  "previous": "project_peak",
+  "current": "project_collision",
+  "historical_inputs": 154,
+  "target_variants": ["axis_x_E@0.045", "axis_x_E@0.080"],
+  "new_phase_seeds": [741209, 741227, 741251],
+  "amplitudes": [0.045, 0.08],
+  "phase_generator": "Use the historical axis_x_E carrier with only the phase seed replaced. Each of the three new seeds is shared by its two amplitudes. Run these six additional samples after freezing inference. Previously reported phase samples form a separate cohort.",
+  "peak_groups": [5, 6],
+  "texture": "Report raw input/previous/current squared errors for all six published reference Fourier disks including conjugates. Report matched-gain MSE and matched-gain excess for both restorations: if both projections are positive, scale each removal down to a=min(a_previous,a_current), then compare errors against the same reference and against a times the true post-clipping injection. No upward scaling, clipping or reference-dependent changes in inference. MSE per peak uses all image pixels as the normalization.",
+  "regions": "For each axis_x_E observation, derive the earlier spatial taper from the old diagnostic carrier_wave divided by its reconstructed full fitted sinusoid (ignore |wave|<1e-8 of fitted amplitude). Identify all contiguous runs of at least eight columns whose median taper across rows is <=0.5. Score every pixel of each run against the reference and report absolute gain, MSE and sample count for previous/current/input. If an earlier route lacks a tapered wave or does not have two runs, disclose that fact. Independently score two fixed strips on every axial-x test: columns 38..111 and 199..255 inclusive, all rows. These are intersections of old-run strips on the two already known inputs, in the common 256px photo coordinates.",
+  "fixed_column_ranges_inclusive": [[38,111],[199,255]],
+  "minimum_visible_gain_change": 0.10,
+  "minimum_visible_regional_mse_reduction": 0.25,
+  "interpretation": "Use a gain increase of at least 0.10 and a decrease of at least 25% in MSE in both fixed strips as an explicit effect-size check, not as a statistical test. At peaks 5 and 6 report regressions against the previous method and against the noisy input separately (absolute tie tolerance 1e-18), including matched-gain excess. Report all failures. Whole-image MSE tie tolerance is 1e-12.",
+  "historical_checks": "Reproduce reference, observation, previous output, route and reason for all 154 old samples. Verify all 33 clean controls, original nine previous failures, the six prior phase conditions, and ten 69022 parity checks (8/16px bottom/left/top with extra bottom gains)."
+}

@@ -1,0 +1,6435 @@
+{
+  "inputs": 92,
+  "rows": 276,
+  "archived_outputs_verified": 76,
+  "freeze_sha256": "5e55e2567088c188c1b572aee5ab7a8dbe6ce2ad09497a2878c3d6234d2ea225",
+  "metrics_sha256": "1e4edde97621951f2bbf314a826101d94fa62561c9bb65c4357589ff837091f5",
+  "groups": {
+    "historical": {
+      "inputs": 76,
+      "better_than_previous": 4,
+      "tied_with_previous": 72,
+      "worse_than_previous": 0,
+      "exact_same_as_previous": 72,
+      "previous_net_improvements": 39,
+      "retained_net_improvements": 39,
+      "new_net_improvements": 2,
+      "current_net_improvements": 41,
+      "previous_worse_than_input": 4,
+      "current_worse_than_input": 0,
+      "input_mean_mse": 0.003218242321661408,
+      "previous_mean_mse": 0.0022989747368925817,
+      "current_mean_mse": 0.001349415225610957
+    },
+    "historical_others": {
+      "inputs": 70,
+      "better_than_previous": 0,
+      "tied_with_previous": 70,
+      "worse_than_previous": 0,
+      "exact_same_as_previous": 70,
+      "previous_net_improvements": 37,
+      "retained_net_improvements": 37,
+      "new_net_improvements": 0,
+      "current_net_improvements": 37,
+      "previous_worse_than_input": 0,
+      "current_worse_than_input": 0,
+      "input_mean_mse": 0.003150436984343217,
+      "previous_mean_mse": 0.0014117858926991419,
+      "current_mean_mse": 0.0014117858926991419
+    },
+    "historical_targets": {
+      "inputs": 6,
+      "better_than_previous": 4,
+      "tied_with_previous": 2,
+      "worse_than_previous": 0,
+      "exact_same_as_previous": 2,
+      "previous_net_improvements": 2,
+      "retained_net_improvements": 2,
+      "new_net_improvements": 2,
+      "current_net_improvements": 4,
+      "previous_worse_than_input": 4,
+      "current_worse_than_input": 0,
+      "input_mean_mse": 0.004009304590373647,
+      "previous_mean_mse": 0.012649511252482712,
+      "current_mean_mse": 0.000621757442915468
+    },
+    "new": {
+      "inputs": 16,
+      "better_than_previous": 10,
+      "tied_with_previous": 6,
+      "worse_than_previous": 0,
+      "exact_same_as_previous": 6,
+      "previous_net_improvements": 8,
+      "retained_net_improvements": 8,
+      "new_net_improvements": 7,
+      "current_net_improvements": 15,
+      "previous_worse_than_input": 8,
+      "current_worse_than_input": 0,
+      "input_mean_mse": 0.007733487020822849,
+      "previous_mean_mse": 0.012797791045634516,
+      "current_mean_mse": 0.0018690443984165353
+    },
+    "new_dtd_knitted_0108": {
+      "inputs": 8,
+      "better_than_previous": 2,
+      "tied_with_previous": 6,
+      "worse_than_previous": 0,
+      "exact_same_as_previous": 6,
+      "previous_net_improvements": 8,
+      "retained_net_improvements": 8,
+      "new_net_improvements": 0,
+      "current_net_improvements": 8,
+      "previous_worse_than_input": 0,
+      "current_worse_than_input": 0,
+      "input_mean_mse": 0.00796366292178249,
+      "previous_mean_mse": 0.00015061773106199645,
+      "current_mean_mse": 0.0001497338558033195
+    },
+    "new_dtd_woven_0094": {
+      "inputs": 8,
+      "better_than_previous": 8,
+      "tied_with_previous": 0,
+      "worse_than_previous": 0,
+      "exact_same_as_previous": 0,
+      "previous_net_improvements": 0,
+      "retained_net_improvements": 0,
+      "new_net_improvements": 7,
+      "current_net_improvements": 7,
+      "previous_worse_than_input": 8,
+      "current_worse_than_input": 0,
+      "input_mean_mse": 0.007503311119863208,
+      "previous_mean_mse": 0.02544496436020704,
+      "current_mean_mse": 0.0035883549410297513
+    }
+  },
+  "cases": [
+    {
+      "cohort": "development",
+      "image_id": "140055",
+      "kind": "clean",
+      "variant": "",
+      "reference_sha256": "1d78213d1b6d3d70e48556ce4b030aefcefbdaf001c260413298b643a2f996ca",
+      "observed_sha256": "1d78213d1b6d3d70e48556ce4b030aefcefbdaf001c260413298b643a2f996ca"
+    },
+    {
+      "cohort": "development",
+      "image_id": "140055",
+      "kind": "global",
+      "variant": "",
+      "reference_sha256": "1d78213d1b6d3d70e48556ce4b030aefcefbdaf001c260413298b643a2f996ca",
+      "observed_sha256": "50bc8ec314496c3d6818d83932e4ba971ab00dea01d9ec5ed250f7dfb1cc7f99"
+    },
+    {
+      "cohort": "development",
+      "image_id": "140055",
+      "kind": "local",
+      "variant": "",
+      "reference_sha256": "1d78213d1b6d3d70e48556ce4b030aefcefbdaf001c260413298b643a2f996ca",
+      "observed_sha256": "cbdc049d080a724b9d9ec0522ddf93c06ae0c56159c7999496ae5835f1076786"
+    },
+    {
+      "cohort": "development",
+      "image_id": "140055",
+      "kind": "chirp",
+      "variant": "",
+      "reference_sha256": "1d78213d1b6d3d70e48556ce4b030aefcefbdaf001c260413298b643a2f996ca",
+      "observed_sha256": "a5b20d9fb430f05b595359af1f342bea926c9ee32b87697654d5a5dfcce64cdd"
+    },
+    {
+      "cohort": "development",
+      "image_id": "140055",
+      "kind": "orientation",
+      "variant": "",
+      "reference_sha256": "1d78213d1b6d3d70e48556ce4b030aefcefbdaf001c260413298b643a2f996ca",
+      "observed_sha256": "425c7a682c81fe695309e30693c836351ca2e3dc7eef4ee54ab80e2b79ea4a11"
+    },
+    {
+      "cohort": "mixed",
+      "image_id": "140055",
+      "kind": "local+edge16",
+      "variant": "0",
+      "reference_sha256": "1d78213d1b6d3d70e48556ce4b030aefcefbdaf001c260413298b643a2f996ca",
+      "observed_sha256": "ce728dc20a274ad76d21766e2a4fb5b27698404660efe731490212f28fdc9fdb"
+    },
+    {
+      "cohort": "development",
+      "image_id": "145053",
+      "kind": "clean",
+      "variant": "",
+      "reference_sha256": "41f2063d6a9584d9ee83b4cca268fae845c035f77f9506b86ab9755ccc8b952d",
+      "observed_sha256": "41f2063d6a9584d9ee83b4cca268fae845c035f77f9506b86ab9755ccc8b952d"
+    },
+    {
+      "cohort": "development",
+      "image_id": "145053",
+      "kind": "global",
+      "variant": "",
+      "reference_sha256": "41f2063d6a9584d9ee83b4cca268fae845c035f77f9506b86ab9755ccc8b952d",
+      "observed_sha256": "ad3ddb434ba0626963c8665a76ddaeb402eb02265b17685c55b4577da116a349"
+    },
+    {
+      "cohort": "development",
+      "image_id": "145053",
+      "kind": "local",
+      "variant": "",
+      "reference_sha256": "41f2063d6a9584d9ee83b4cca268fae845c035f77f9506b86ab9755ccc8b952d",
+      "observed_sha256": "6d59f97f8474c3e7f108f203e0bab264b44c607fca8a57a88cd589d189b0d42c"
+    },
+    {
+      "cohort": "development",
+      "image_id": "145053",
+      "kind": "chirp",
+      "variant": "",
+      "reference_sha256": "41f2063d6a9584d9ee83b4cca268fae845c035f77f9506b86ab9755ccc8b952d",
+      "observed_sha256": "eec93567f31b56ccc0c29feb7115b9cd752144822e9ac92acfe45243694e24c1"
+    },
+    {
+      "cohort": "development",
+      "image_id": "145053",
+      "kind": "orientation",
+      "variant": "",
+      "reference_sha256": "41f2063d6a9584d9ee83b4cca268fae845c035f77f9506b86ab9755ccc8b952d",
+      "observed_sha256": "03db9fac7b55adb53d718f9371154d3708c54a370b6d10f84305e5a9eecbe323"
+    },
+    {
+      "cohort": "regression",
+      "image_id": "69022",
+      "kind": "clean",
+      "variant": "3",
+      "reference_sha256": "4923c33c5de7c30850e6488a318d592f99fdfee462ce918bb446e886700cb442",
+      "observed_sha256": "4923c33c5de7c30850e6488a318d592f99fdfee462ce918bb446e886700cb442"
+    },
+    {
+      "cohort": "regression",
+      "image_id": "69022",
+      "kind": "edge8",
+      "variant": "3",
+      "reference_sha256": "4923c33c5de7c30850e6488a318d592f99fdfee462ce918bb446e886700cb442",
+      "observed_sha256": "90c79de66f7b96accf2775f8a5b4e0a453148faf8c38206eef792fc661b0cc41"
+    },
+    {
+      "cohort": "regression",
+      "image_id": "69022",
+      "kind": "edge16",
+      "variant": "3",
+      "reference_sha256": "4923c33c5de7c30850e6488a318d592f99fdfee462ce918bb446e886700cb442",
+      "observed_sha256": "d064c3b6e7a66ff666b6eea42ca9b7711e733d05468ff7330b6c031b34835d64"
+    },
+    {
+      "cohort": "regression",
+      "image_id": "69022",
+      "kind": "edge32",
+      "variant": "3",
+      "reference_sha256": "4923c33c5de7c30850e6488a318d592f99fdfee462ce918bb446e886700cb442",
+      "observed_sha256": "ac0e4ec6273f91df89e2a9f8c7d99a31e3fdbadafc870aeba39643733538e556"
+    },
+    {
+      "cohort": "mixed",
+      "image_id": "69022",
+      "kind": "local+edge16",
+      "variant": "3",
+      "reference_sha256": "4923c33c5de7c30850e6488a318d592f99fdfee462ce918bb446e886700cb442",
+      "observed_sha256": "5a958153691c1215c58775568b13a1ca8654dbbd7a68b00c217592a4261b5da6"
+    },
+    {
+      "cohort": "DTD",
+      "image_id": "dtd_banded_0105",
+      "kind": "clean",
+      "variant": "",
+      "reference_sha256": "c3bb5e019225c1c8ad58a118f867ac7310d21bd0c9ff93722dc6f72bc9f6dc65",
+      "observed_sha256": "c3bb5e019225c1c8ad58a118f867ac7310d21bd0c9ff93722dc6f72bc9f6dc65"
+    },
+    {
+      "cohort": "DTD",
+      "image_id": "dtd_braided_0179",
+      "kind": "clean",
+      "variant": "",
+      "reference_sha256": "9db45a31dcf17bce4e1cb266e0374e6b491989fd9c80c3ad753d37a40c9a129a",
+      "observed_sha256": "9db45a31dcf17bce4e1cb266e0374e6b491989fd9c80c3ad753d37a40c9a129a"
+    },
+    {
+      "cohort": "DTD",
+      "image_id": "dtd_chequered_0195",
+      "kind": "clean",
+      "variant": "",
+      "reference_sha256": "c91540ce69c08d5e266fbdf1c753879ec094f9860355bca44fb6ed0cc46e7807",
+      "observed_sha256": "c91540ce69c08d5e266fbdf1c753879ec094f9860355bca44fb6ed0cc46e7807"
+    },
+    {
+      "cohort": "DTD",
+      "image_id": "dtd_crosshatched_0165",
+      "kind": "clean",
+      "variant": "",
+      "reference_sha256": "82bdb07b7391ec31277e1eddf290d04774359b1251dd324cfde4237fe42561ae",
+      "observed_sha256": "82bdb07b7391ec31277e1eddf290d04774359b1251dd324cfde4237fe42561ae"
+    },
+    {
+      "cohort": "DTD",
+      "image_id": "dtd_grid_0064",
+      "kind": "clean",
+      "variant": "",
+      "reference_sha256": "7c10609bfdf9c3762d5d6853e5526f5827a19f606e38da6f64fc1f647c4e0081",
+      "observed_sha256": "7c10609bfdf9c3762d5d6853e5526f5827a19f606e38da6f64fc1f647c4e0081"
+    },
+    {
+      "cohort": "DTD",
+      "image_id": "dtd_grooved_0048",
+      "kind": "clean",
+      "variant": "",
+      "reference_sha256": "15ee3769c5af8ff59660c3799efc6adc0629d6d49309f382cf102dac380ce2db",
+      "observed_sha256": "15ee3769c5af8ff59660c3799efc6adc0629d6d49309f382cf102dac380ce2db"
+    },
+    {
+      "cohort": "DTD",
+      "image_id": "dtd_honeycombed_0065",
+      "kind": "clean",
+      "variant": "",
+      "reference_sha256": "75362b7af82f60644299eaf2eb26d77974f9982c6aabc067450e9fc9fdc703ba",
+      "observed_sha256": "75362b7af82f60644299eaf2eb26d77974f9982c6aabc067450e9fc9fdc703ba"
+    },
+    {
+      "cohort": "DTD",
+      "image_id": "dtd_knitted_0108",
+      "kind": "clean",
+      "variant": "",
+      "reference_sha256": "6b0e47abe4007c0c7517e634274f9bb024090e10541ef5f74da126a2dde8a7bf",
+      "observed_sha256": "6b0e47abe4007c0c7517e634274f9bb024090e10541ef5f74da126a2dde8a7bf",
+      "lattice_screen": {
+        "detected": true,
+        "candidate_peaks": 16,
+        "lattice_tolerance_bins": 1.25,
+        "region_match_tolerance_tile_bins": 1.0,
+        "dominant_carrier_retained": false,
+        "measured_lattice_peaks": [
+          [
+            0.00045811340770861894,
+            0.10743155151335745
+          ],
+          [
+            0.07712344851069014,
+            -0.023229947703302757
+          ],
+          [
+            0.07622209068882528,
+            0.03098157013942636
+          ],
+          [
+            0.07562328651523614,
+            -0.07619342718901462
+          ],
+          [
+            0.004879246450528504,
+            0.05288530733155149
+          ],
+          [
+            0.07733615280786146,
+            0.0848207852965644
+          ],
+          [
+            0.0009181912816755737,
+            0.21118377842707517
+          ],
+          [
+            0.07680013855591494,
+            0.1345473840827181
+          ],
+          [
+            0.151904285145204,
+            0.11684945197614037
+          ],
+          [
+            0.039253284239121305,
+            0.042401594309350546
+          ],
+          [
+            0.15171632133928586,
+            0.16469535572315117
+          ],
+          [
+            0.038877597101683446,
+            -0.01302971871124357
+          ],
+          [
+            0.15191630507264442,
+            0.06041989350379191
+          ]
+        ],
+        "basis_cycles_per_pixel": [
+          [
+            0.03833993988163845,
+            0.042178041595202144
+          ],
+          [
+            0.03813735916143732,
+            -0.011764957256625436
+          ]
+        ],
+        "lattice_power_fraction": 0.42559522928820437,
+        "matched_regions": 37,
+        "dominant_amplitude_ratio": 1.8520875882309367,
+        "fraction_locked_to_dominant": 0.4594594594594595,
+        "protected_regions": [
+          {
+            "y": 0,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 128,
+            "frequency_y": 0.004849488451472577,
+            "frequency_x": -0.11271492337336013,
+            "gain": 0.8645154787705507
+          },
+          {
+            "y": 0,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 128,
+            "frequency_y": 0.004849488451472577,
+            "frequency_x": -0.11271492337336013,
+            "gain": 0.9834242183901468
+          },
+          {
+            "y": 0,
+            "x": 64,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.001503882233089178,
+            "frequency_x": -0.10526350909281462,
+            "gain": 0.9211812227934029
+          },
+          {
+            "y": 0,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 128,
+            "frequency_y": -0.0018207432171311075,
+            "frequency_x": -0.1035043810748261,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 128,
+            "frequency_y": 0.0013369891535907007,
+            "frequency_x": -0.10472439590253775,
+            "gain": 0.8384908886082922
+          },
+          {
+            "y": 0,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 128,
+            "frequency_y": 0.00464915489057545,
+            "frequency_x": -0.11161218806243907,
+            "gain": 0.6511481287493852
+          },
+          {
+            "y": 0,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.0008623532733897626,
+            "frequency_x": -0.1046643619423358,
+            "gain": 0.7395339249158179
+          },
+          {
+            "y": 32,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 128,
+            "frequency_y": 0.004849488451472577,
+            "frequency_x": -0.11271492337336013,
+            "gain": 0.8418167711568312
+          },
+          {
+            "y": 32,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 128,
+            "frequency_y": 0.004849488451472577,
+            "frequency_x": -0.11271492337336013,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 64,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.005943709514731257,
+            "frequency_x": -0.11032476196274153,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 128,
+            "frequency_y": 0.0021123484415206412,
+            "frequency_x": -0.10542318266425244,
+            "gain": 0.9913029984531117
+          },
+          {
+            "y": 32,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 128,
+            "frequency_y": 0.001721779142667236,
+            "frequency_x": -0.10135462248450618,
+            "gain": 0.831616404835451
+          },
+          {
+            "y": 32,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 128,
+            "frequency_y": 0.0036640053136159775,
+            "frequency_x": -0.11126669400200823,
+            "gain": 0.6211364814938236
+          },
+          {
+            "y": 32,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.00040022652135437536,
+            "frequency_x": -0.11162265656555563,
+            "gain": 0.7223005657184538
+          },
+          {
+            "y": 64,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.00544571573410993,
+            "frequency_x": -0.11100370927555227,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.00456774359069352,
+            "frequency_x": -0.11028616714477846,
+            "gain": 0.9714045222864642
+          },
+          {
+            "y": 64,
+            "x": 64,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.0012851520570024192,
+            "frequency_x": -0.11444918672313266,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 128,
+            "frequency_y": 0.00075649085923812,
+            "frequency_x": -0.1060929844831228,
+            "gain": 0.8511667541784013
+          },
+          {
+            "y": 64,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.0004531397565006635,
+            "frequency_x": -0.10163493096207125,
+            "gain": 0.9378809922327636
+          },
+          {
+            "y": 64,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 128,
+            "frequency_y": -0.0006362435686897488,
+            "frequency_x": -0.10978419579725308,
+            "gain": 0.6491140533944121
+          },
+          {
+            "y": 64,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 128,
+            "frequency_y": 0.0016117097075791765,
+            "frequency_x": -0.1147951898986854,
+            "gain": 0.6712372958970073
+          },
+          {
+            "y": 96,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.006089137390367622,
+            "frequency_x": -0.1060963378864405,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.008507178119246362,
+            "frequency_x": -0.1170586035935627,
+            "gain": 0.9501799413612828
+          },
+          {
+            "y": 96,
+            "x": 64,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.0011666579926823107,
+            "frequency_x": -0.1165260225009784,
+            "gain": 0.8678867544762514
+          },
+          {
+            "y": 96,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 128,
+            "frequency_y": 0.0007149111621213543,
+            "frequency_x": 0.10724422747070257,
+            "gain": 0.710639674101637
+          },
+          {
+            "y": 96,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.00235720638064984,
+            "frequency_x": 0.10157587414042604,
+            "gain": 0.9190170775421386
+          },
+          {
+            "y": 96,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.002307331848572502,
+            "frequency_x": 0.10876271441977758,
+            "gain": 0.9919240743229962
+          },
+          {
+            "y": 96,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 7.797368815617128e-05,
+            "frequency_x": 0.11181557723638702,
+            "gain": 0.8536872948513635
+          },
+          {
+            "y": 128,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 128,
+            "frequency_y": 0.0023739233876101606,
+            "frequency_x": 0.10550662489318278,
+            "gain": 0.8887341007743538
+          },
+          {
+            "y": 128,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 128,
+            "frequency_y": 0.0032770993878690115,
+            "frequency_x": 0.10769466672273338,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 128,
+            "frequency_y": 0.0032770993878690115,
+            "frequency_x": 0.10769466672273338,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 128,
+            "frequency_y": 0.0028940004667493587,
+            "frequency_x": 0.10589707617091387,
+            "gain": 0.6387308461235557
+          },
+          {
+            "y": 160,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 128,
+            "frequency_y": 0.0029302282698665514,
+            "frequency_x": 0.10787673791921747,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 128,
+            "frequency_y": 0.0029302282698665514,
+            "frequency_x": 0.10787673791921747,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": -0.00014741339232614826,
+            "frequency_x": 0.11093035856879864,
+            "gain": 0.7307063150797156
+          },
+          {
+            "y": 192,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 128,
+            "frequency_y": 0.0029302282698665514,
+            "frequency_x": 0.10787673791921747,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 128,
+            "frequency_y": 0.0029302282698665514,
+            "frequency_x": 0.10787673791921747,
+            "gain": 1.0
+          }
+        ]
+      },
+      "alternative_carrier": {
+        "proposed_models": 0,
+        "verified_models": 0,
+        "lattice_models_rejected": 0,
+        "patch_size": 64,
+        "reason": "no_unique_verified_carrier"
+      }
+    },
+    {
+      "cohort": "DTD",
+      "image_id": "dtd_lined_0172",
+      "kind": "clean",
+      "variant": "",
+      "reference_sha256": "fd83fe833ff075e77297729a8b590a7066b22da24fe0788e412cda95b9781b29",
+      "observed_sha256": "fd83fe833ff075e77297729a8b590a7066b22da24fe0788e412cda95b9781b29"
+    },
+    {
+      "cohort": "DTD",
+      "image_id": "dtd_meshed_0162",
+      "kind": "clean",
+      "variant": "",
+      "reference_sha256": "9da9a83eaada44907021a59fd7d6f4f95b6098f86033ecca991d7d31c71622f0",
+      "observed_sha256": "9da9a83eaada44907021a59fd7d6f4f95b6098f86033ecca991d7d31c71622f0"
+    },
+    {
+      "cohort": "DTD",
+      "image_id": "dtd_striped_0119",
+      "kind": "clean",
+      "variant": "",
+      "reference_sha256": "809c35360705f7755fef4b0299735acfd278e95afff42e5acaa88442240ab136",
+      "observed_sha256": "809c35360705f7755fef4b0299735acfd278e95afff42e5acaa88442240ab136"
+    },
+    {
+      "cohort": "DTD",
+      "image_id": "dtd_woven_0094",
+      "kind": "clean",
+      "variant": "",
+      "reference_sha256": "47686f3a8e6817528165c1932c540dd3de9f456ac22ed9533ae00b69bc6837f7",
+      "observed_sha256": "47686f3a8e6817528165c1932c540dd3de9f456ac22ed9533ae00b69bc6837f7",
+      "lattice_screen": {
+        "detected": true,
+        "candidate_peaks": 12,
+        "lattice_tolerance_bins": 1.25,
+        "region_match_tolerance_tile_bins": 1.0,
+        "dominant_carrier_retained": false,
+        "measured_lattice_peaks": [
+          [
+            0.05154432364948331,
+            0.05351673427376386
+          ],
+          [
+            0.050977738397597054,
+            -0.053053613637931145
+          ],
+          [
+            0.0006589418364558807,
+            0.10649167948396404
+          ],
+          [
+            0.20310922940840337,
+            0.0012260364862200209
+          ],
+          [
+            0.05076661269091433,
+            -0.15992627679701324
+          ],
+          [
+            0.0010418033627838418,
+            0.2130430501358743
+          ],
+          [
+            0.05258832030935689,
+            0.16038106708425576
+          ],
+          [
+            0.1538117486487966,
+            0.054095144089702195
+          ],
+          [
+            0.15310431757803805,
+            -0.05262410038797283
+          ],
+          [
+            0.001679199011190715,
+            0.3201272075813336
+          ],
+          [
+            0.3054281021705653,
+            0.0017085866451752075
+          ],
+          [
+            0.10000879310640459,
+            0.0006931764515346221
+          ]
+        ],
+        "basis_cycles_per_pixel": [
+          [
+            0.051204458217523535,
+            0.05361542935615217
+          ],
+          [
+            0.05063267795164753,
+            -0.053054581644683865
+          ]
+        ],
+        "lattice_power_fraction": 0.9380620708948726,
+        "matched_regions": 35,
+        "dominant_amplitude_ratio": 1.0361352810488114,
+        "fraction_locked_to_dominant": 0.2857142857142857,
+        "protected_regions": [
+          {
+            "y": 0,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092194049450654,
+            "frequency_x": -0.053106541403014344,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092194049450654,
+            "frequency_x": -0.053106541403014344,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092194049450654,
+            "frequency_x": -0.053106541403014344,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092194049450654,
+            "frequency_x": -0.053106541403014344,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092194049450654,
+            "frequency_x": -0.053106541403014344,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092194049450654,
+            "frequency_x": -0.053106541403014344,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092194049450654,
+            "frequency_x": -0.053106541403014344,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 64,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092194049450654,
+            "frequency_x": -0.053106541403014344,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092194049450654,
+            "frequency_x": -0.053106541403014344,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092194049450654,
+            "frequency_x": -0.053106541403014344,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092194049450654,
+            "frequency_x": -0.053106541403014344,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092194049450654,
+            "frequency_x": -0.053106541403014344,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092194049450654,
+            "frequency_x": -0.053106541403014344,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092194049450654,
+            "frequency_x": -0.053106541403014344,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051498260733704705,
+            "frequency_x": 0.053578671987325036,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051498260733704705,
+            "frequency_x": 0.053578671987325036,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051498260733704705,
+            "frequency_x": 0.053578671987325036,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092194049450654,
+            "frequency_x": -0.053106541403014344,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092194049450654,
+            "frequency_x": -0.053106541403014344,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092194049450654,
+            "frequency_x": -0.053106541403014344,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092194049450654,
+            "frequency_x": -0.053106541403014344,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051498260733704705,
+            "frequency_x": 0.053578671987325036,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092194049450654,
+            "frequency_x": -0.053106541403014344,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092194049450654,
+            "frequency_x": -0.053106541403014344,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092194049450654,
+            "frequency_x": -0.053106541403014344,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 64,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092194049450654,
+            "frequency_x": -0.053106541403014344,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092194049450654,
+            "frequency_x": -0.053106541403014344,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051498260733704705,
+            "frequency_x": 0.053578671987325036,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051498260733704705,
+            "frequency_x": 0.053578671987325036,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051498260733704705,
+            "frequency_x": 0.053578671987325036,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092194049450654,
+            "frequency_x": -0.053106541403014344,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092194049450654,
+            "frequency_x": -0.053106541403014344,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051498260733704705,
+            "frequency_x": 0.053578671987325036,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051498260733704705,
+            "frequency_x": 0.053578671987325036,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051498260733704705,
+            "frequency_x": 0.053578671987325036,
+            "gain": 1.0
+          }
+        ]
+      },
+      "alternative_carrier": {
+        "proposed_models": 2,
+        "verified_models": 0,
+        "lattice_models_rejected": 1,
+        "patch_size": 64,
+        "reason": "no_unique_verified_carrier"
+      }
+    },
+    {
+      "cohort": "analytic",
+      "image_id": "broad_phase_banded_clean",
+      "kind": "clean",
+      "variant": "",
+      "reference_sha256": "c600ca5b8031e3924d486cf601eaa9c55ed5c3efece8878ae636bd7c7581095b",
+      "observed_sha256": "c600ca5b8031e3924d486cf601eaa9c55ed5c3efece8878ae636bd7c7581095b"
+    },
+    {
+      "cohort": "analytic",
+      "image_id": "compact_legitimate_stripe_clean",
+      "kind": "clean",
+      "variant": "",
+      "reference_sha256": "6cfb689da8bba7f452b0684d1abb4b2429bf7260f486e74f678c6d1f14f4f2ae",
+      "observed_sha256": "6cfb689da8bba7f452b0684d1abb4b2429bf7260f486e74f678c6d1f14f4f2ae"
+    },
+    {
+      "cohort": "analytic_twin",
+      "image_id": "flat_with_true_edge8",
+      "kind": "edge8",
+      "variant": "",
+      "reference_sha256": "5478c1b28ec61c60a9120660a8f1a65d87f35f7807ac28c22d18375936f49f23",
+      "observed_sha256": "6cfb689da8bba7f452b0684d1abb4b2429bf7260f486e74f678c6d1f14f4f2ae"
+    },
+    {
+      "cohort": "analytic_positive",
+      "image_id": "smooth_background_edge16",
+      "kind": "edge16",
+      "variant": "",
+      "reference_sha256": "a2e50912f88a388824e37a2f6d0c47a962ee4d97cb38ed229da23d58fb661983",
+      "observed_sha256": "fb3732b0f90baf3ba1fb53ef013047617a3fb767ee44066acce02860488532d0"
+    },
+    {
+      "cohort": "DTD_paired",
+      "image_id": "dtd_banded_0105",
+      "kind": "global",
+      "variant": "",
+      "reference_sha256": "c3bb5e019225c1c8ad58a118f867ac7310d21bd0c9ff93722dc6f72bc9f6dc65",
+      "observed_sha256": "97bee0cdc5887efccae172f0355d8138ae24a59fdf3b441bf6dfb9ef46c14be9"
+    },
+    {
+      "cohort": "DTD_paired",
+      "image_id": "dtd_banded_0105",
+      "kind": "chirp",
+      "variant": "",
+      "reference_sha256": "c3bb5e019225c1c8ad58a118f867ac7310d21bd0c9ff93722dc6f72bc9f6dc65",
+      "observed_sha256": "0e012d758f11662ba6bb0e3d21341bb2ada8e769d569c5f5f510c8b0e623532d"
+    },
+    {
+      "cohort": "DTD_paired",
+      "image_id": "dtd_braided_0179",
+      "kind": "global",
+      "variant": "",
+      "reference_sha256": "9db45a31dcf17bce4e1cb266e0374e6b491989fd9c80c3ad753d37a40c9a129a",
+      "observed_sha256": "bee6f28b2aa80b4ee34af92b92038186db0bf1a9438165e89599c846a417c146"
+    },
+    {
+      "cohort": "DTD_paired",
+      "image_id": "dtd_braided_0179",
+      "kind": "chirp",
+      "variant": "",
+      "reference_sha256": "9db45a31dcf17bce4e1cb266e0374e6b491989fd9c80c3ad753d37a40c9a129a",
+      "observed_sha256": "22a382cb59953c452480ae2d775c92a3755770c71ae2a0eac186d7f4bcbe3ecd"
+    },
+    {
+      "cohort": "DTD_paired",
+      "image_id": "dtd_chequered_0195",
+      "kind": "global",
+      "variant": "",
+      "reference_sha256": "c91540ce69c08d5e266fbdf1c753879ec094f9860355bca44fb6ed0cc46e7807",
+      "observed_sha256": "240a53d8e783ac17ad53f73d3bb6b0e3fa35762676573da8a7f24c902d1acafb"
+    },
+    {
+      "cohort": "DTD_paired",
+      "image_id": "dtd_chequered_0195",
+      "kind": "chirp",
+      "variant": "",
+      "reference_sha256": "c91540ce69c08d5e266fbdf1c753879ec094f9860355bca44fb6ed0cc46e7807",
+      "observed_sha256": "68cf7c0479ad0d7995fa83689dbe1261090b9bc53ce9f7b053ab2fa61f3a27ad"
+    },
+    {
+      "cohort": "DTD_paired",
+      "image_id": "dtd_crosshatched_0165",
+      "kind": "global",
+      "variant": "",
+      "reference_sha256": "82bdb07b7391ec31277e1eddf290d04774359b1251dd324cfde4237fe42561ae",
+      "observed_sha256": "2d385936cb611f6c5e25134290ddeaa22e6076f4c18f5552d1a957fcc14433f4"
+    },
+    {
+      "cohort": "DTD_paired",
+      "image_id": "dtd_crosshatched_0165",
+      "kind": "chirp",
+      "variant": "",
+      "reference_sha256": "82bdb07b7391ec31277e1eddf290d04774359b1251dd324cfde4237fe42561ae",
+      "observed_sha256": "3b8cfc0bacdc2b1a80e46d761a361e316a138dee85f983eddcf5e370632e1d44"
+    },
+    {
+      "cohort": "DTD_paired",
+      "image_id": "dtd_grid_0064",
+      "kind": "global",
+      "variant": "",
+      "reference_sha256": "7c10609bfdf9c3762d5d6853e5526f5827a19f606e38da6f64fc1f647c4e0081",
+      "observed_sha256": "57a0a1adf6fd91a79037377c7dd7f62766d803f5043dbc58f41d24d09e537786"
+    },
+    {
+      "cohort": "DTD_paired",
+      "image_id": "dtd_grid_0064",
+      "kind": "chirp",
+      "variant": "",
+      "reference_sha256": "7c10609bfdf9c3762d5d6853e5526f5827a19f606e38da6f64fc1f647c4e0081",
+      "observed_sha256": "4f12b36dd9ed2ebc5138f7c93a286ef5ee040e232efa8fbbfbc9df24b16b51d1"
+    },
+    {
+      "cohort": "DTD_paired",
+      "image_id": "dtd_grooved_0048",
+      "kind": "global",
+      "variant": "",
+      "reference_sha256": "15ee3769c5af8ff59660c3799efc6adc0629d6d49309f382cf102dac380ce2db",
+      "observed_sha256": "eac3cd942521c24949aabb2607900139b4cae24522623142d8b297adf76d29bd"
+    },
+    {
+      "cohort": "DTD_paired",
+      "image_id": "dtd_grooved_0048",
+      "kind": "chirp",
+      "variant": "",
+      "reference_sha256": "15ee3769c5af8ff59660c3799efc6adc0629d6d49309f382cf102dac380ce2db",
+      "observed_sha256": "d3f9ad15d50f5f577ef2a07669e5288d1f8cfdf7bb8c35b972c5c798c86d2eb8"
+    },
+    {
+      "cohort": "DTD_paired",
+      "image_id": "dtd_honeycombed_0065",
+      "kind": "global",
+      "variant": "",
+      "reference_sha256": "75362b7af82f60644299eaf2eb26d77974f9982c6aabc067450e9fc9fdc703ba",
+      "observed_sha256": "207c38a1f4bb6de1e003155ed5b80ca4dca02d6598095216dfd151feea09eca4"
+    },
+    {
+      "cohort": "DTD_paired",
+      "image_id": "dtd_honeycombed_0065",
+      "kind": "chirp",
+      "variant": "",
+      "reference_sha256": "75362b7af82f60644299eaf2eb26d77974f9982c6aabc067450e9fc9fdc703ba",
+      "observed_sha256": "e1ec8b7ff15015b248ab3ee38e3741adef43676fe478e5eb7e6d718b196f713c"
+    },
+    {
+      "cohort": "DTD_paired",
+      "image_id": "dtd_knitted_0108",
+      "kind": "global",
+      "variant": "",
+      "reference_sha256": "6b0e47abe4007c0c7517e634274f9bb024090e10541ef5f74da126a2dde8a7bf",
+      "observed_sha256": "492868d2586f6dd6fa5b19df53fa848e03161367ab634f391fa5bcd02ad0ed92",
+      "lattice_screen": {
+        "detected": true,
+        "candidate_peaks": 6,
+        "lattice_tolerance_bins": 1.25,
+        "region_match_tolerance_tile_bins": 1.0,
+        "dominant_carrier_retained": true,
+        "measured_lattice_peaks": [
+          [
+            0.07466664967135894,
+            -0.020319573795478385
+          ],
+          [
+            0.0004576691611121669,
+            0.10742842844324797
+          ],
+          [
+            0.07622754339849662,
+            0.030990295966972704
+          ],
+          [
+            0.07562926766114823,
+            -0.07618495564552237
+          ],
+          [
+            0.004875484525493611,
+            0.05288339350216504
+          ],
+          [
+            0.07732209008249386,
+            0.08481081500900658
+          ]
+        ],
+        "basis_cycles_per_pixel": [
+          [
+            0.07641691287053964,
+            0.03156858744632864
+          ],
+          [
+            0.0773279632048702,
+            0.08505747157149662
+          ]
+        ],
+        "lattice_power_fraction": 0.6937830574000742,
+        "matched_regions": 0,
+        "dominant_amplitude_ratio": 3.2089349170509376,
+        "fraction_locked_to_dominant": 1.0
+      },
+      "alternative_carrier": null
+    },
+    {
+      "cohort": "DTD_paired",
+      "image_id": "dtd_knitted_0108",
+      "kind": "chirp",
+      "variant": "",
+      "reference_sha256": "6b0e47abe4007c0c7517e634274f9bb024090e10541ef5f74da126a2dde8a7bf",
+      "observed_sha256": "225931c385b5c6cefc76b540acb3d2a0c4a7f175323fd15b88f9b2b43bc7c2ab",
+      "lattice_screen": {
+        "detected": true,
+        "candidate_peaks": 10,
+        "lattice_tolerance_bins": 1.25,
+        "region_match_tolerance_tile_bins": 1.0,
+        "dominant_carrier_retained": false,
+        "measured_lattice_peaks": [
+          [
+            0.00045793454524011565,
+            0.10743073018589365
+          ],
+          [
+            0.0771236794255956,
+            -0.023229765852494852
+          ],
+          [
+            0.07623958496076405,
+            0.030975076590084232
+          ],
+          [
+            0.07562479410626967,
+            -0.07619257652269883
+          ],
+          [
+            0.00487986859459442,
+            0.05288530317764766
+          ],
+          [
+            0.07733388628105878,
+            0.08481787965598528
+          ],
+          [
+            0.0009170693666338706,
+            0.21118265793420674
+          ],
+          [
+            0.0768008695364203,
+            0.13455077178286712
+          ],
+          [
+            0.07294183552453479,
+            -0.12713352615268983
+          ]
+        ],
+        "basis_cycles_per_pixel": [
+          [
+            0.07640110638898621,
+            0.03042187911412312
+          ],
+          [
+            0.07718176922207758,
+            0.08333635084201835
+          ]
+        ],
+        "lattice_power_fraction": 0.24699005875078778,
+        "matched_regions": 0,
+        "dominant_amplitude_ratio": 1.22715604423521,
+        "fraction_locked_to_dominant": 0.15555555555555556
+      },
+      "alternative_carrier": null
+    },
+    {
+      "cohort": "DTD_paired",
+      "image_id": "dtd_lined_0172",
+      "kind": "global",
+      "variant": "",
+      "reference_sha256": "fd83fe833ff075e77297729a8b590a7066b22da24fe0788e412cda95b9781b29",
+      "observed_sha256": "16d8c106678d6c498c1e4cc0819eccf8ef9719660f2eeef743204dc0cc39fe0b"
+    },
+    {
+      "cohort": "DTD_paired",
+      "image_id": "dtd_lined_0172",
+      "kind": "chirp",
+      "variant": "",
+      "reference_sha256": "fd83fe833ff075e77297729a8b590a7066b22da24fe0788e412cda95b9781b29",
+      "observed_sha256": "6ca69c4994b6f36c06a5fb5a0810d4a32882c6c42489f489569173bd4b22f442"
+    },
+    {
+      "cohort": "DTD_paired",
+      "image_id": "dtd_meshed_0162",
+      "kind": "global",
+      "variant": "",
+      "reference_sha256": "9da9a83eaada44907021a59fd7d6f4f95b6098f86033ecca991d7d31c71622f0",
+      "observed_sha256": "d838ccc97f2068d0f47a356735c2dd5c2f90037e4b5dea5c4ec2283561f23af5"
+    },
+    {
+      "cohort": "DTD_paired",
+      "image_id": "dtd_meshed_0162",
+      "kind": "chirp",
+      "variant": "",
+      "reference_sha256": "9da9a83eaada44907021a59fd7d6f4f95b6098f86033ecca991d7d31c71622f0",
+      "observed_sha256": "97e205602fe6a2df9a826119d16909bfa4ae6fe6024c6299012a02057f7a5843"
+    },
+    {
+      "cohort": "DTD_paired",
+      "image_id": "dtd_striped_0119",
+      "kind": "global",
+      "variant": "",
+      "reference_sha256": "809c35360705f7755fef4b0299735acfd278e95afff42e5acaa88442240ab136",
+      "observed_sha256": "bcaf96bfce42b6e198e49b382c192929a097b9140aba38544948313419e2624a"
+    },
+    {
+      "cohort": "DTD_paired",
+      "image_id": "dtd_striped_0119",
+      "kind": "chirp",
+      "variant": "",
+      "reference_sha256": "809c35360705f7755fef4b0299735acfd278e95afff42e5acaa88442240ab136",
+      "observed_sha256": "5a26f909942844216319cbf25689f44ab45c55bd612262781232ebba446377af"
+    },
+    {
+      "cohort": "DTD_paired",
+      "image_id": "dtd_woven_0094",
+      "kind": "global",
+      "variant": "",
+      "reference_sha256": "47686f3a8e6817528165c1932c540dd3de9f456ac22ed9533ae00b69bc6837f7",
+      "observed_sha256": "27039291596b617fea06e37145957d8791e53edf4f61fb52de1bdb7fb6f81fdb",
+      "lattice_screen": {
+        "detected": true,
+        "candidate_peaks": 13,
+        "lattice_tolerance_bins": 1.25,
+        "region_match_tolerance_tile_bins": 1.0,
+        "dominant_carrier_retained": false,
+        "measured_lattice_peaks": [
+          [
+            0.05154749860407031,
+            0.05351080795414657
+          ],
+          [
+            0.050977711634888595,
+            -0.05304850694462086
+          ],
+          [
+            0.0006603391956114472,
+            0.10650112244532582
+          ],
+          [
+            0.20310421820467472,
+            0.0012212189155069528
+          ],
+          [
+            0.05076837513677229,
+            -0.15990826183497084
+          ],
+          [
+            0.0010406249290696309,
+            0.2130633138926733
+          ],
+          [
+            0.05260025034212359,
+            0.1603569046651128
+          ],
+          [
+            0.15383145588242056,
+            0.054072167380739486
+          ],
+          [
+            0.15311575974071806,
+            -0.052618804208481765
+          ],
+          [
+            0.001672909294090463,
+            0.32014713827224717
+          ],
+          [
+            0.30543241387428655,
+            0.0017053126384465587
+          ],
+          [
+            0.09998979944405982,
+            0.0006852929305754156
+          ]
+        ],
+        "basis_cycles_per_pixel": [
+          [
+            0.05063364993513879,
+            -0.05305674032529192
+          ],
+          [
+            0.0005718395538200534,
+            0.10667138759187358
+          ]
+        ],
+        "lattice_power_fraction": 0.8648449526899767,
+        "matched_regions": 34,
+        "dominant_amplitude_ratio": 1.0361083902126087,
+        "fraction_locked_to_dominant": 0.29411764705882354,
+        "protected_regions": [
+          {
+            "y": 0,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092220836894192,
+            "frequency_x": -0.053100996216486895,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092220836894192,
+            "frequency_x": -0.053100996216486895,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092220836894192,
+            "frequency_x": -0.053100996216486895,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092220836894192,
+            "frequency_x": -0.053100996216486895,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092220836894192,
+            "frequency_x": -0.053100996216486895,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092220836894192,
+            "frequency_x": -0.053100996216486895,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 64,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092220836894192,
+            "frequency_x": -0.053100996216486895,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092220836894192,
+            "frequency_x": -0.053100996216486895,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092220836894192,
+            "frequency_x": -0.053100996216486895,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092220836894192,
+            "frequency_x": -0.053100996216486895,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092220836894192,
+            "frequency_x": -0.053100996216486895,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092220836894192,
+            "frequency_x": -0.053100996216486895,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092220836894192,
+            "frequency_x": -0.053100996216486895,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150164933712719,
+            "frequency_x": 0.053572802175680646,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150164933712719,
+            "frequency_x": 0.053572802175680646,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150164933712719,
+            "frequency_x": 0.053572802175680646,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092220836894192,
+            "frequency_x": -0.053100996216486895,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092220836894192,
+            "frequency_x": -0.053100996216486895,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092220836894192,
+            "frequency_x": -0.053100996216486895,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092220836894192,
+            "frequency_x": -0.053100996216486895,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150164933712719,
+            "frequency_x": 0.053572802175680646,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092220836894192,
+            "frequency_x": -0.053100996216486895,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092220836894192,
+            "frequency_x": -0.053100996216486895,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092220836894192,
+            "frequency_x": -0.053100996216486895,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 64,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092220836894192,
+            "frequency_x": -0.053100996216486895,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092220836894192,
+            "frequency_x": -0.053100996216486895,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150164933712719,
+            "frequency_x": 0.053572802175680646,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150164933712719,
+            "frequency_x": 0.053572802175680646,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150164933712719,
+            "frequency_x": 0.053572802175680646,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092220836894192,
+            "frequency_x": -0.053100996216486895,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092220836894192,
+            "frequency_x": -0.053100996216486895,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150164933712719,
+            "frequency_x": 0.053572802175680646,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150164933712719,
+            "frequency_x": 0.053572802175680646,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150164933712719,
+            "frequency_x": 0.053572802175680646,
+            "gain": 1.0
+          }
+        ]
+      },
+      "alternative_carrier": {
+        "proposed_models": 3,
+        "verified_models": 1,
+        "lattice_models_rejected": 1,
+        "patch_size": 64,
+        "amplitude": 0.1172954148059405,
+        "fitting_patches": 8,
+        "checking_patches": 8,
+        "agreeing_patches": 8,
+        "median_relative_coefficient_error": 0.09025139770886621,
+        "reason": "verified_non_lattice_carrier",
+        "center_frequency": [
+          0.04326807219029085,
+          -0.13385281238136978
+        ],
+        "hessian": [
+          -2.816156244200274e-07,
+          7.199770416600106e-09,
+          2.6240229457990374e-06
+        ]
+      }
+    },
+    {
+      "cohort": "DTD_paired",
+      "image_id": "dtd_woven_0094",
+      "kind": "chirp",
+      "variant": "",
+      "reference_sha256": "47686f3a8e6817528165c1932c540dd3de9f456ac22ed9533ae00b69bc6837f7",
+      "observed_sha256": "6372e201afc375b00fba626543611f4297b155731ec27e61e2735d776859cb52",
+      "lattice_screen": {
+        "detected": true,
+        "candidate_peaks": 13,
+        "lattice_tolerance_bins": 1.25,
+        "region_match_tolerance_tile_bins": 1.0,
+        "dominant_carrier_retained": false,
+        "measured_lattice_peaks": [
+          [
+            0.05154585051666291,
+            0.053513376892257866
+          ],
+          [
+            0.050978472349992414,
+            -0.053050508636958635
+          ],
+          [
+            0.000659517834901744,
+            0.10649622670664996
+          ],
+          [
+            0.2031065621042669,
+            0.00122410816619484
+          ],
+          [
+            0.05076568164199296,
+            -0.1599196955222137
+          ],
+          [
+            0.0010430897537193186,
+            0.21304996812887153
+          ],
+          [
+            0.05259190041944032,
+            0.16037202649993923
+          ],
+          [
+            0.15382147729751558,
+            0.054083902806088685
+          ],
+          [
+            0.15310843618594183,
+            -0.052618538461108824
+          ],
+          [
+            0.0016805462893013728,
+            0.32013828950654816
+          ],
+          [
+            0.3054281510974874,
+            0.0017030052660048406
+          ],
+          [
+            0.10000471772090187,
+            0.0006957522762091448
+          ]
+        ],
+        "basis_cycles_per_pixel": [
+          [
+            0.05063259599732284,
+            -0.05305572172756099
+          ],
+          [
+            0.0005726602059250061,
+            0.10667086040592176
+          ]
+        ],
+        "lattice_power_fraction": 0.899140307704241,
+        "matched_regions": 32,
+        "dominant_amplitude_ratio": 1.0360544971289276,
+        "fraction_locked_to_dominant": 0.3125,
+        "protected_regions": [
+          {
+            "y": 0,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092338097898727,
+            "frequency_x": -0.05310337876230439,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092338097898727,
+            "frequency_x": -0.05310337876230439,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092338097898727,
+            "frequency_x": -0.05310337876230439,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092338097898727,
+            "frequency_x": -0.05310337876230439,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 64,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092338097898727,
+            "frequency_x": -0.05310337876230439,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092338097898727,
+            "frequency_x": -0.05310337876230439,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092338097898727,
+            "frequency_x": -0.05310337876230439,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092338097898727,
+            "frequency_x": -0.05310337876230439,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092338097898727,
+            "frequency_x": -0.05310337876230439,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092338097898727,
+            "frequency_x": -0.05310337876230439,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092338097898727,
+            "frequency_x": -0.05310337876230439,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150009293366957,
+            "frequency_x": 0.0535755339998975,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150009293366957,
+            "frequency_x": 0.0535755339998975,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150009293366957,
+            "frequency_x": 0.0535755339998975,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092338097898727,
+            "frequency_x": -0.05310337876230439,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092338097898727,
+            "frequency_x": -0.05310337876230439,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092338097898727,
+            "frequency_x": -0.05310337876230439,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092338097898727,
+            "frequency_x": -0.05310337876230439,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150009293366957,
+            "frequency_x": 0.0535755339998975,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092338097898727,
+            "frequency_x": -0.05310337876230439,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092338097898727,
+            "frequency_x": -0.05310337876230439,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092338097898727,
+            "frequency_x": -0.05310337876230439,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 64,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092338097898727,
+            "frequency_x": -0.05310337876230439,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092338097898727,
+            "frequency_x": -0.05310337876230439,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150009293366957,
+            "frequency_x": 0.0535755339998975,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150009293366957,
+            "frequency_x": 0.0535755339998975,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150009293366957,
+            "frequency_x": 0.0535755339998975,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092338097898727,
+            "frequency_x": -0.05310337876230439,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092338097898727,
+            "frequency_x": -0.05310337876230439,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150009293366957,
+            "frequency_x": 0.0535755339998975,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150009293366957,
+            "frequency_x": 0.0535755339998975,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150009293366957,
+            "frequency_x": 0.0535755339998975,
+            "gain": 1.0
+          }
+        ]
+      },
+      "alternative_carrier": {
+        "proposed_models": 3,
+        "verified_models": 1,
+        "lattice_models_rejected": 1,
+        "patch_size": 64,
+        "amplitude": 0.10220489114724765,
+        "fitting_patches": 6,
+        "checking_patches": 4,
+        "agreeing_patches": 4,
+        "median_relative_coefficient_error": 0.19578385139067295,
+        "reason": "verified_non_lattice_carrier",
+        "center_frequency": [
+          0.019851582315058746,
+          0.118296738243574
+        ],
+        "hessian": [
+          -1.5776567341928814e-06,
+          2.1418806561903206e-06,
+          0.00025814711557243326
+        ]
+      }
+    },
+    {
+      "cohort": "development_extension",
+      "image_id": "147021",
+      "kind": "clean",
+      "variant": "",
+      "reference_sha256": "401aa7a04f9250ea8cd82d01d08dbd7d731088cc707155752eec616bdbd8c302",
+      "observed_sha256": "401aa7a04f9250ea8cd82d01d08dbd7d731088cc707155752eec616bdbd8c302"
+    },
+    {
+      "cohort": "development_extension",
+      "image_id": "147021",
+      "kind": "global",
+      "variant": "",
+      "reference_sha256": "401aa7a04f9250ea8cd82d01d08dbd7d731088cc707155752eec616bdbd8c302",
+      "observed_sha256": "3084bae94bce57627a32d2e7297f26b3d3cf2a538e2e37a6b38e515ac5076849"
+    },
+    {
+      "cohort": "development_extension",
+      "image_id": "147021",
+      "kind": "local",
+      "variant": "",
+      "reference_sha256": "401aa7a04f9250ea8cd82d01d08dbd7d731088cc707155752eec616bdbd8c302",
+      "observed_sha256": "aeaefe6904ef97f7cb4e762ee6aa8d9b479c42a0b5e3af344eb0eb7644684883"
+    },
+    {
+      "cohort": "development_extension",
+      "image_id": "147021",
+      "kind": "chirp",
+      "variant": "",
+      "reference_sha256": "401aa7a04f9250ea8cd82d01d08dbd7d731088cc707155752eec616bdbd8c302",
+      "observed_sha256": "923991c2557f0f0b8bd1d13cef0c05e6b2ecdee70d35dca54919769e2bdb41f2"
+    },
+    {
+      "cohort": "development_extension",
+      "image_id": "147021",
+      "kind": "orientation",
+      "variant": "",
+      "reference_sha256": "401aa7a04f9250ea8cd82d01d08dbd7d731088cc707155752eec616bdbd8c302",
+      "observed_sha256": "5d147fbfa8b4d2acfcd201db07d6ccd0a83bf4366ad4c6096bb7260b39cd3cbb"
+    },
+    {
+      "cohort": "development_extension",
+      "image_id": "151087",
+      "kind": "clean",
+      "variant": "",
+      "reference_sha256": "05ade04fef24af5ad3a9991ad86c2f1fd0f603633271ed7a36675573d0dd28fd",
+      "observed_sha256": "05ade04fef24af5ad3a9991ad86c2f1fd0f603633271ed7a36675573d0dd28fd"
+    },
+    {
+      "cohort": "development_extension",
+      "image_id": "151087",
+      "kind": "global",
+      "variant": "",
+      "reference_sha256": "05ade04fef24af5ad3a9991ad86c2f1fd0f603633271ed7a36675573d0dd28fd",
+      "observed_sha256": "ae335ca795da1049cf7aa5f36d64d6080f72eaf747006d8602b427a0bc70e072"
+    },
+    {
+      "cohort": "development_extension",
+      "image_id": "151087",
+      "kind": "local",
+      "variant": "",
+      "reference_sha256": "05ade04fef24af5ad3a9991ad86c2f1fd0f603633271ed7a36675573d0dd28fd",
+      "observed_sha256": "44f5c2cbd094f5b2b0de229a7bcf08e5c9f73ea68aeaec88a1837d08a3bc62ca"
+    },
+    {
+      "cohort": "development_extension",
+      "image_id": "151087",
+      "kind": "chirp",
+      "variant": "",
+      "reference_sha256": "05ade04fef24af5ad3a9991ad86c2f1fd0f603633271ed7a36675573d0dd28fd",
+      "observed_sha256": "c6224e7186511411289bdb85a44cb8b971780ea31a5633974986a9a29bc982dd"
+    },
+    {
+      "cohort": "development_extension",
+      "image_id": "151087",
+      "kind": "orientation",
+      "variant": "",
+      "reference_sha256": "05ade04fef24af5ad3a9991ad86c2f1fd0f603633271ed7a36675573d0dd28fd",
+      "observed_sha256": "a314bb32fc3767a07b4a4904514e99ae2de8a289ed7a0a8b0ebd557d1c71fb36"
+    },
+    {
+      "cohort": "development_extension",
+      "image_id": "153093",
+      "kind": "clean",
+      "variant": "",
+      "reference_sha256": "bd25b3b506ab064d5abca82d98f1bddcb23f16c5e9a1da8abf9b57e870dfa545",
+      "observed_sha256": "bd25b3b506ab064d5abca82d98f1bddcb23f16c5e9a1da8abf9b57e870dfa545"
+    },
+    {
+      "cohort": "development_extension",
+      "image_id": "153093",
+      "kind": "global",
+      "variant": "",
+      "reference_sha256": "bd25b3b506ab064d5abca82d98f1bddcb23f16c5e9a1da8abf9b57e870dfa545",
+      "observed_sha256": "65abb6d7d4c82562678c48190e612b5ec3d3fe54e8ca457f9d891c8a2e08155b"
+    },
+    {
+      "cohort": "development_extension",
+      "image_id": "153093",
+      "kind": "local",
+      "variant": "",
+      "reference_sha256": "bd25b3b506ab064d5abca82d98f1bddcb23f16c5e9a1da8abf9b57e870dfa545",
+      "observed_sha256": "7d3358f427b7e10d87e5fcb9307de2029374c6d8019fe2cd194a204ebbd90f09"
+    },
+    {
+      "cohort": "development_extension",
+      "image_id": "153093",
+      "kind": "chirp",
+      "variant": "",
+      "reference_sha256": "bd25b3b506ab064d5abca82d98f1bddcb23f16c5e9a1da8abf9b57e870dfa545",
+      "observed_sha256": "f081717e5f4ddc9997bcf7a24b9a25e339427fd5f2dcb73242568d35bca23af2"
+    },
+    {
+      "cohort": "development_extension",
+      "image_id": "153093",
+      "kind": "orientation",
+      "variant": "",
+      "reference_sha256": "bd25b3b506ab064d5abca82d98f1bddcb23f16c5e9a1da8abf9b57e870dfa545",
+      "observed_sha256": "4defdfedc8c21ae5cff1c3aa2adf4ed81e579115eeface6bf3d7469186f6cab5"
+    },
+    {
+      "cohort": "development_extension",
+      "image_id": "156079",
+      "kind": "clean",
+      "variant": "",
+      "reference_sha256": "11ac3dc5ed1ed5b4d454dd01bf156ac5480e042baec8ea6c48664da6c01b36db",
+      "observed_sha256": "11ac3dc5ed1ed5b4d454dd01bf156ac5480e042baec8ea6c48664da6c01b36db"
+    },
+    {
+      "cohort": "development_extension",
+      "image_id": "156079",
+      "kind": "global",
+      "variant": "",
+      "reference_sha256": "11ac3dc5ed1ed5b4d454dd01bf156ac5480e042baec8ea6c48664da6c01b36db",
+      "observed_sha256": "db21483c87cbf62325fe819f7eaf7b719cd586945e347a47f2e1f0de0b031002"
+    },
+    {
+      "cohort": "development_extension",
+      "image_id": "156079",
+      "kind": "local",
+      "variant": "",
+      "reference_sha256": "11ac3dc5ed1ed5b4d454dd01bf156ac5480e042baec8ea6c48664da6c01b36db",
+      "observed_sha256": "617a4ca92db74e8f863b94af6765af1f1646371ee9a962c49a93aa7708ad4461"
+    },
+    {
+      "cohort": "development_extension",
+      "image_id": "156079",
+      "kind": "chirp",
+      "variant": "",
+      "reference_sha256": "11ac3dc5ed1ed5b4d454dd01bf156ac5480e042baec8ea6c48664da6c01b36db",
+      "observed_sha256": "988a5ff0a773b25dc6b7ff107c9f97e55449e60fe718754534d3320d6dd48d7a"
+    },
+    {
+      "cohort": "development_extension",
+      "image_id": "156079",
+      "kind": "orientation",
+      "variant": "",
+      "reference_sha256": "11ac3dc5ed1ed5b4d454dd01bf156ac5480e042baec8ea6c48664da6c01b36db",
+      "observed_sha256": "f9ceda1488576096ec76bf0a9a1bf34f9a3cd1ee3d7ec0fb8eafcbb567345858"
+    },
+    {
+      "cohort": "new_realization",
+      "image_id": "dtd_knitted_0108",
+      "kind": "global",
+      "variant": "fixed_a@0.08",
+      "reference_sha256": "6b0e47abe4007c0c7517e634274f9bb024090e10541ef5f74da126a2dde8a7bf",
+      "observed_sha256": "5af9f96138134d20767948e9722d39e0cf2005f3de6072c37dd1545f039ac5b2",
+      "lattice_screen": {
+        "detected": true,
+        "candidate_peaks": 8,
+        "lattice_tolerance_bins": 1.25,
+        "region_match_tolerance_tile_bins": 1.0,
+        "dominant_carrier_retained": true,
+        "measured_lattice_peaks": [
+          [
+            0.00045809916354186625,
+            0.10743144605448687
+          ],
+          [
+            0.07712332841131327,
+            -0.02322990761618444
+          ],
+          [
+            0.07622206757331246,
+            0.0309816448457028
+          ],
+          [
+            0.07562430848054791,
+            -0.07619145355039582
+          ],
+          [
+            0.0048791785625756125,
+            0.052885198477386736
+          ],
+          [
+            0.0773361953305835,
+            0.08482067202368146
+          ],
+          [
+            0.0009180175902753205,
+            0.21118365484183807
+          ]
+        ],
+        "basis_cycles_per_pixel": [
+          [
+            0.07618084611165367,
+            -0.02272336383322
+          ],
+          [
+            0.07538958843708245,
+            -0.076360569351062
+          ]
+        ],
+        "lattice_power_fraction": 0.26313140550495573,
+        "matched_regions": 0,
+        "dominant_amplitude_ratio": 2.2353305038991276,
+        "fraction_locked_to_dominant": 1.0
+      },
+      "alternative_carrier": null
+    },
+    {
+      "cohort": "new_realization",
+      "image_id": "dtd_knitted_0108",
+      "kind": "global",
+      "variant": "fixed_a@0.16",
+      "reference_sha256": "6b0e47abe4007c0c7517e634274f9bb024090e10541ef5f74da126a2dde8a7bf",
+      "observed_sha256": "93b906afc79d076ba06e8919e371b5cdcffdab08993e0f2ff64210e33142f02a",
+      "lattice_screen": {
+        "detected": false,
+        "candidate_peaks": 5,
+        "lattice_tolerance_bins": 1.25,
+        "region_match_tolerance_tile_bins": 1.0,
+        "dominant_carrier_retained": false
+      },
+      "alternative_carrier": null
+    },
+    {
+      "cohort": "new_realization",
+      "image_id": "dtd_knitted_0108",
+      "kind": "global",
+      "variant": "fixed_b@0.08",
+      "reference_sha256": "6b0e47abe4007c0c7517e634274f9bb024090e10541ef5f74da126a2dde8a7bf",
+      "observed_sha256": "041f6d249ec11f2481feb555c8376830646120d3b1580d75f3a81ca07ab23634",
+      "lattice_screen": {
+        "detected": true,
+        "candidate_peaks": 8,
+        "lattice_tolerance_bins": 1.25,
+        "region_match_tolerance_tile_bins": 1.0,
+        "dominant_carrier_retained": true,
+        "measured_lattice_peaks": [
+          [
+            0.00045784899716213277,
+            0.10743156917822948
+          ],
+          [
+            0.07712409268098974,
+            -0.02323014480479254
+          ],
+          [
+            0.07622207205115936,
+            0.030981541278502514
+          ],
+          [
+            0.07562442437479297,
+            -0.07619341052789583
+          ],
+          [
+            0.004879295818044004,
+            0.05288537264290856
+          ],
+          [
+            0.07733473061615408,
+            0.08482118309715049
+          ],
+          [
+            0.000916922556481685,
+            0.2111837007059416
+          ]
+        ],
+        "basis_cycles_per_pixel": [
+          [
+            0.07618085778779927,
+            -0.02272401996318806
+          ],
+          [
+            0.07538991350184983,
+            -0.07636164441104652
+          ]
+        ],
+        "lattice_power_fraction": 0.2525229239412225,
+        "matched_regions": 0,
+        "dominant_amplitude_ratio": 2.0423484234548703,
+        "fraction_locked_to_dominant": 1.0
+      },
+      "alternative_carrier": null
+    },
+    {
+      "cohort": "new_realization",
+      "image_id": "dtd_knitted_0108",
+      "kind": "global",
+      "variant": "fixed_b@0.16",
+      "reference_sha256": "6b0e47abe4007c0c7517e634274f9bb024090e10541ef5f74da126a2dde8a7bf",
+      "observed_sha256": "0668ea3e75113ddd1ffacbd2e09ac428f035cae521e5b11eb72b6f0adff75c13",
+      "lattice_screen": {
+        "detected": false,
+        "candidate_peaks": 6,
+        "lattice_tolerance_bins": 1.25,
+        "region_match_tolerance_tile_bins": 1.0,
+        "dominant_carrier_retained": false
+      },
+      "alternative_carrier": null
+    },
+    {
+      "cohort": "new_realization",
+      "image_id": "dtd_knitted_0108",
+      "kind": "chirp",
+      "variant": "varying_a@0.08",
+      "reference_sha256": "6b0e47abe4007c0c7517e634274f9bb024090e10541ef5f74da126a2dde8a7bf",
+      "observed_sha256": "e3216392f71d8758e8bf48f77458e1d56b4640c20370d2e1655d94179d290044",
+      "lattice_screen": {
+        "detected": true,
+        "candidate_peaks": 16,
+        "lattice_tolerance_bins": 1.25,
+        "region_match_tolerance_tile_bins": 1.0,
+        "dominant_carrier_retained": false,
+        "measured_lattice_peaks": [
+          [
+            0.00045822999350829814,
+            0.10743277816630954
+          ],
+          [
+            0.07712315460770627,
+            -0.023230147587662828
+          ],
+          [
+            0.07622196114709219,
+            0.030981758701951904
+          ],
+          [
+            0.0756270490018455,
+            -0.07618988727578058
+          ],
+          [
+            0.00487929359181748,
+            0.05288524997353514
+          ],
+          [
+            0.07733671997329972,
+            0.08482112092741045
+          ],
+          [
+            0.0009176973018007034,
+            0.21118328542077155
+          ],
+          [
+            0.07680039753143778,
+            0.13454801592377608
+          ],
+          [
+            0.15190586659370842,
+            0.11685071857231369
+          ],
+          [
+            0.039253213753864646,
+            0.04240143961886053
+          ],
+          [
+            0.15171739800098274,
+            0.16469645306803102
+          ],
+          [
+            0.03887949700513996,
+            -0.013026046297616467
+          ],
+          [
+            0.15191470344486804,
+            0.060419334813130075
+          ]
+        ],
+        "basis_cycles_per_pixel": [
+          [
+            0.03833980528138442,
+            0.042178188694156536
+          ],
+          [
+            0.03813720778492715,
+            -0.011764975583678979
+          ]
+        ],
+        "lattice_power_fraction": 0.26070396838843773,
+        "matched_regions": 0,
+        "dominant_amplitude_ratio": 1.6264852242978318,
+        "fraction_locked_to_dominant": 0.0
+      },
+      "alternative_carrier": null
+    },
+    {
+      "cohort": "new_realization",
+      "image_id": "dtd_knitted_0108",
+      "kind": "chirp",
+      "variant": "varying_a@0.16",
+      "reference_sha256": "6b0e47abe4007c0c7517e634274f9bb024090e10541ef5f74da126a2dde8a7bf",
+      "observed_sha256": "946ebe95f6b649c009d5e9bd1ed81a7d2adcf38baa40bf1ea37af265b21de2be",
+      "lattice_screen": {
+        "detected": false,
+        "candidate_peaks": 9,
+        "lattice_tolerance_bins": 1.25,
+        "region_match_tolerance_tile_bins": 1.0,
+        "dominant_carrier_retained": false
+      },
+      "alternative_carrier": null
+    },
+    {
+      "cohort": "new_realization",
+      "image_id": "dtd_knitted_0108",
+      "kind": "chirp",
+      "variant": "varying_b@0.08",
+      "reference_sha256": "6b0e47abe4007c0c7517e634274f9bb024090e10541ef5f74da126a2dde8a7bf",
+      "observed_sha256": "a38e9b8511f5dbb163acbcd02a4d5f074df897efd7e0d3384fccdda1f004a912",
+      "lattice_screen": {
+        "detected": true,
+        "candidate_peaks": 17,
+        "lattice_tolerance_bins": 1.25,
+        "region_match_tolerance_tile_bins": 1.0,
+        "dominant_carrier_retained": false,
+        "measured_lattice_peaks": [
+          [
+            0.0004578420810382774,
+            0.10743160126747474
+          ],
+          [
+            0.14885340561028607,
+            -0.04715439919518453
+          ],
+          [
+            0.07712405028138576,
+            -0.023230331279355688
+          ],
+          [
+            0.07622206149514793,
+            0.0309815569501697
+          ],
+          [
+            0.07562458389218811,
+            -0.07619313786481392
+          ],
+          [
+            0.0048792467171601805,
+            0.05288546218121051
+          ],
+          [
+            0.07733494871018529,
+            0.08482147643772733
+          ],
+          [
+            0.0009164727135036461,
+            0.21118352933913298
+          ],
+          [
+            0.0768033346221869,
+            0.13454822141901848
+          ],
+          [
+            0.15190272463460802,
+            0.1168506752378753
+          ],
+          [
+            0.03925103908548851,
+            0.042402689548634256
+          ],
+          [
+            0.15172261243615945,
+            0.1646938843054953
+          ],
+          [
+            0.038883079708368955,
+            -0.013029655481822514
+          ],
+          [
+            0.15191597782325791,
+            0.060416990358712425
+          ]
+        ],
+        "basis_cycles_per_pixel": [
+          [
+            0.03833948418504443,
+            0.04217784276759359
+          ],
+          [
+            0.03813785921897739,
+            -0.01176541611967733
+          ]
+        ],
+        "lattice_power_fraction": 0.397864917258036,
+        "matched_regions": 13,
+        "dominant_amplitude_ratio": 1.3996043974250139,
+        "fraction_locked_to_dominant": 0.0,
+        "protected_regions": [
+          {
+            "y": 64,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.1621480168225429,
+            "frequency_x": -0.05420696610455161,
+            "gain": 0.8535073028220475
+          },
+          {
+            "y": 64,
+            "x": 64,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.15876804478791715,
+            "frequency_x": -0.048933372114626915,
+            "gain": 0.951601820654362
+          },
+          {
+            "y": 64,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.15592491431915503,
+            "frequency_x": -0.04420685755185092,
+            "gain": 0.9207289851324306
+          },
+          {
+            "y": 64,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.1528298126049704,
+            "frequency_x": -0.03842386092805414,
+            "gain": 0.9616280149791561
+          },
+          {
+            "y": 64,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.14942398213894834,
+            "frequency_x": -0.03282130971248309,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.15495425426352516,
+            "frequency_x": -0.05773969303738916,
+            "gain": 0.5892184342475353
+          },
+          {
+            "y": 96,
+            "x": 64,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.15135881421669856,
+            "frequency_x": -0.052226658556817226,
+            "gain": 0.8206970777994947
+          },
+          {
+            "y": 96,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.14820362922225158,
+            "frequency_x": -0.04684857468366722,
+            "gain": 0.9448802958677408
+          },
+          {
+            "y": 96,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.1445745098963101,
+            "frequency_x": -0.04223396550845927,
+            "gain": 0.8228861334846599
+          },
+          {
+            "y": 96,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.14162886433363342,
+            "frequency_x": -0.035898666025441436,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 64,
+            "height": 64,
+            "width": 64,
+            "scale": 128,
+            "frequency_y": 0.14378472863274658,
+            "frequency_x": -0.05579752265855442,
+            "gain": 0.9124337325895999
+          },
+          {
+            "y": 128,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.13992473127649338,
+            "frequency_x": -0.05025231631669118,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.1369619721290125,
+            "frequency_x": -0.044814200149912706,
+            "gain": 1.0
+          }
+        ]
+      },
+      "alternative_carrier": {
+        "proposed_models": 1,
+        "verified_models": 1,
+        "lattice_models_rejected": 0,
+        "patch_size": 64,
+        "amplitude": 0.08067679277794582,
+        "fitting_patches": 4,
+        "checking_patches": 4,
+        "agreeing_patches": 4,
+        "median_relative_coefficient_error": 0.043922728452835666,
+        "reason": "verified_non_lattice_carrier",
+        "center_frequency": [
+          0.14796638850114152,
+          -0.04695820798939033
+        ],
+        "hessian": [
+          -0.0002481947377984813,
+          -0.00010111802374378728,
+          0.0001623503264974801
+        ]
+      }
+    },
+    {
+      "cohort": "new_realization",
+      "image_id": "dtd_knitted_0108",
+      "kind": "chirp",
+      "variant": "varying_b@0.16",
+      "reference_sha256": "6b0e47abe4007c0c7517e634274f9bb024090e10541ef5f74da126a2dde8a7bf",
+      "observed_sha256": "25a471e8add7dda7cf854c7f6a1300a6743f1c92753b1d80e93b0ef68e222ffa",
+      "lattice_screen": {
+        "detected": true,
+        "candidate_peaks": 10,
+        "lattice_tolerance_bins": 1.25,
+        "region_match_tolerance_tile_bins": 1.0,
+        "dominant_carrier_retained": false,
+        "measured_lattice_peaks": [
+          [
+            0.14851224962141488,
+            -0.0471058139882876
+          ],
+          [
+            0.00045617447876140313,
+            0.10742469023286778
+          ],
+          [
+            0.07713151989966167,
+            -0.023233292724283684
+          ],
+          [
+            0.07621944165930915,
+            0.03098913351937609
+          ],
+          [
+            0.07563751914667778,
+            -0.07618953644417774
+          ],
+          [
+            0.0048737351637143265,
+            0.05289001882354253
+          ],
+          [
+            0.07733382640314851,
+            0.08484003738030323
+          ],
+          [
+            0.0008508262536003693,
+            0.21114078841685857
+          ],
+          [
+            0.07683257894896273,
+            0.13459771561736733
+          ],
+          [
+            0.07282807442023916,
+            -0.12694311748307952
+          ]
+        ],
+        "basis_cycles_per_pixel": [
+          [
+            0.07590604929118369,
+            0.030055317015105765
+          ],
+          [
+            0.07677076831847057,
+            0.08301301105255256
+          ]
+        ],
+        "lattice_power_fraction": 0.36783653052088844,
+        "matched_regions": 14,
+        "dominant_amplitude_ratio": 1.3797277366932166,
+        "fraction_locked_to_dominant": 0.02040816326530612,
+        "protected_regions": [
+          {
+            "y": 64,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.1623208624517597,
+            "frequency_x": -0.05424210856197745,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 64,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.15900160900104443,
+            "frequency_x": -0.048945636342082544,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.15592039991708542,
+            "frequency_x": -0.04396994220378484,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.15274416820559264,
+            "frequency_x": -0.038480259396283994,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.1494002340308353,
+            "frequency_x": -0.03300309025164531,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.15476105703679313,
+            "frequency_x": -0.057635641440279474,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 64,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.15127805782483275,
+            "frequency_x": -0.05223905046089214,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.1481073585293335,
+            "frequency_x": -0.04691722860667984,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.14468615816914937,
+            "frequency_x": -0.04195855257122823,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.14155291868468317,
+            "frequency_x": -0.0361759759110515,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.14655461266909495,
+            "frequency_x": -0.060814345459207254,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 64,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.14357541301000262,
+            "frequency_x": -0.055666529500508065,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.14000693602706318,
+            "frequency_x": -0.05025287664523066,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 64,
+            "frequency_y": 0.13689596461968506,
+            "frequency_x": -0.04491018951210782,
+            "gain": 1.0
+          }
+        ]
+      },
+      "alternative_carrier": {
+        "proposed_models": 1,
+        "verified_models": 1,
+        "lattice_models_rejected": 0,
+        "patch_size": 64,
+        "amplitude": 0.15958153277479323,
+        "fitting_patches": 4,
+        "checking_patches": 4,
+        "agreeing_patches": 4,
+        "median_relative_coefficient_error": 0.023412658686702226,
+        "reason": "verified_non_lattice_carrier",
+        "center_frequency": [
+          0.14798329530306115,
+          -0.04697923028571268
+        ],
+        "hessian": [
+          -0.00024762242195326624,
+          -0.00010151698074876364,
+          0.00016345817831597655
+        ]
+      }
+    },
+    {
+      "cohort": "new_realization",
+      "image_id": "dtd_woven_0094",
+      "kind": "global",
+      "variant": "fixed_a@0.08",
+      "reference_sha256": "47686f3a8e6817528165c1932c540dd3de9f456ac22ed9533ae00b69bc6837f7",
+      "observed_sha256": "3c7e1e8eb99d79ed835417d191d8ee0802186e8264d89c878751997c60048c4f",
+      "lattice_screen": {
+        "detected": true,
+        "candidate_peaks": 13,
+        "lattice_tolerance_bins": 1.25,
+        "region_match_tolerance_tile_bins": 1.0,
+        "dominant_carrier_retained": false,
+        "measured_lattice_peaks": [
+          [
+            0.05154461340082143,
+            0.05351536718590194
+          ],
+          [
+            0.05097785791192724,
+            -0.0530522817389544
+          ],
+          [
+            0.0006602775534912475,
+            0.1064938342464032
+          ],
+          [
+            0.20310889008637223,
+            0.0012261461337453384
+          ],
+          [
+            0.0507639990358244,
+            -0.15992179156734126
+          ],
+          [
+            0.001041278568086316,
+            0.21304614506754535
+          ],
+          [
+            0.05259021296307572,
+            0.1603767411939948
+          ],
+          [
+            0.15381705668594842,
+            0.054087298654038156
+          ],
+          [
+            0.15310662101072203,
+            -0.05261900499524948
+          ],
+          [
+            0.001679397060086928,
+            0.32013276940647123
+          ],
+          [
+            0.3054321447556286,
+            0.0017057282358295745
+          ],
+          [
+            0.10000969776207712,
+            0.0006922126820713357
+          ]
+        ],
+        "basis_cycles_per_pixel": [
+          [
+            0.050633046873325004,
+            -0.053055027188408974
+          ],
+          [
+            0.0005722534534800925,
+            0.10667021579640945
+          ]
+        ],
+        "lattice_power_fraction": 0.9026655281395385,
+        "matched_regions": 35,
+        "dominant_amplitude_ratio": 1.0358972680680922,
+        "fraction_locked_to_dominant": 0.2857142857142857,
+        "protected_regions": [
+          {
+            "y": 0,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092229903686532,
+            "frequency_x": -0.05310516524688602,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092229903686532,
+            "frequency_x": -0.05310516524688602,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092229903686532,
+            "frequency_x": -0.05310516524688602,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092229903686532,
+            "frequency_x": -0.05310516524688602,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092229903686532,
+            "frequency_x": -0.05310516524688602,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092229903686532,
+            "frequency_x": -0.05310516524688602,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092229903686532,
+            "frequency_x": -0.05310516524688602,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 64,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092229903686532,
+            "frequency_x": -0.05310516524688602,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092229903686532,
+            "frequency_x": -0.05310516524688602,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092229903686532,
+            "frequency_x": -0.05310516524688602,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092229903686532,
+            "frequency_x": -0.05310516524688602,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092229903686532,
+            "frequency_x": -0.05310516524688602,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092229903686532,
+            "frequency_x": -0.05310516524688602,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092229903686532,
+            "frequency_x": -0.05310516524688602,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05149913090474748,
+            "frequency_x": 0.05357725270633058,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05149913090474748,
+            "frequency_x": 0.05357725270633058,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05149913090474748,
+            "frequency_x": 0.05357725270633058,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092229903686532,
+            "frequency_x": -0.05310516524688602,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092229903686532,
+            "frequency_x": -0.05310516524688602,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092229903686532,
+            "frequency_x": -0.05310516524688602,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092229903686532,
+            "frequency_x": -0.05310516524688602,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05149913090474748,
+            "frequency_x": 0.05357725270633058,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092229903686532,
+            "frequency_x": -0.05310516524688602,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092229903686532,
+            "frequency_x": -0.05310516524688602,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092229903686532,
+            "frequency_x": -0.05310516524688602,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 64,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092229903686532,
+            "frequency_x": -0.05310516524688602,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092229903686532,
+            "frequency_x": -0.05310516524688602,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05149913090474748,
+            "frequency_x": 0.05357725270633058,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05149913090474748,
+            "frequency_x": 0.05357725270633058,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05149913090474748,
+            "frequency_x": 0.05357725270633058,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092229903686532,
+            "frequency_x": -0.05310516524688602,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092229903686532,
+            "frequency_x": -0.05310516524688602,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05149913090474748,
+            "frequency_x": 0.05357725270633058,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05149913090474748,
+            "frequency_x": 0.05357725270633058,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05149913090474748,
+            "frequency_x": 0.05357725270633058,
+            "gain": 1.0
+          }
+        ]
+      },
+      "alternative_carrier": {
+        "proposed_models": 3,
+        "verified_models": 1,
+        "lattice_models_rejected": 0,
+        "patch_size": 64,
+        "amplitude": 0.08061250540055594,
+        "fitting_patches": 8,
+        "checking_patches": 8,
+        "agreeing_patches": 8,
+        "median_relative_coefficient_error": 0.04530046066844537,
+        "reason": "verified_non_lattice_carrier",
+        "center_frequency": [
+          0.0729761927331606,
+          -0.12098547134560131
+        ],
+        "hessian": [
+          5.734720737453323e-07,
+          -5.398329412785448e-07,
+          -8.123557553971539e-08
+        ]
+      }
+    },
+    {
+      "cohort": "new_realization",
+      "image_id": "dtd_woven_0094",
+      "kind": "global",
+      "variant": "fixed_a@0.16",
+      "reference_sha256": "47686f3a8e6817528165c1932c540dd3de9f456ac22ed9533ae00b69bc6837f7",
+      "observed_sha256": "13e2662ee368117560eec644c3200f31f05ff2b34c24511f201c4ce5a192b671",
+      "lattice_screen": {
+        "detected": true,
+        "candidate_peaks": 13,
+        "lattice_tolerance_bins": 1.25,
+        "region_match_tolerance_tile_bins": 1.0,
+        "dominant_carrier_retained": false,
+        "measured_lattice_peaks": [
+          [
+            0.051548133613039955,
+            0.05350863304561576
+          ],
+          [
+            0.050981816257991364,
+            -0.05304614160771005
+          ],
+          [
+            0.0006613910932653778,
+            0.10650245901448444
+          ],
+          [
+            0.20308246114122547,
+            0.0012239202568632545
+          ],
+          [
+            0.05077376206209445,
+            -0.15989861690723245
+          ],
+          [
+            0.0010470240232617245,
+            0.21306694297654227
+          ],
+          [
+            0.05260827444891255,
+            0.16034988549729484
+          ],
+          [
+            0.15384603386970438,
+            0.05406669892316188
+          ],
+          [
+            0.1531351231103114,
+            -0.05261994916300964
+          ],
+          [
+            0.0016714612074251818,
+            0.3201343114678874
+          ],
+          [
+            0.30543971189718333,
+            0.0017026894449798788
+          ],
+          [
+            0.09994048535651993,
+            0.0006888326711601782
+          ]
+        ],
+        "basis_cycles_per_pixel": [
+          [
+            0.05063312991261669,
+            -0.05305541020958289
+          ],
+          [
+            0.0005723182256160082,
+            0.10666834586398828
+          ]
+        ],
+        "lattice_power_fraction": 0.8167456506154082,
+        "matched_regions": 9,
+        "dominant_amplitude_ratio": 1.0362612837014986,
+        "fraction_locked_to_dominant": 1.0,
+        "protected_regions": [
+          {
+            "y": 96,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150323703441127,
+            "frequency_x": 0.05356966265155565,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150323703441127,
+            "frequency_x": 0.05356966265155565,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150323703441127,
+            "frequency_x": 0.05356966265155565,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150323703441127,
+            "frequency_x": 0.05356966265155565,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150323703441127,
+            "frequency_x": 0.05356966265155565,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150323703441127,
+            "frequency_x": 0.05356966265155565,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150323703441127,
+            "frequency_x": 0.05356966265155565,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150323703441127,
+            "frequency_x": 0.05356966265155565,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150323703441127,
+            "frequency_x": 0.05356966265155565,
+            "gain": 1.0
+          }
+        ]
+      },
+      "alternative_carrier": {
+        "proposed_models": 2,
+        "verified_models": 1,
+        "lattice_models_rejected": 0,
+        "patch_size": 64,
+        "amplitude": 0.1533415672476759,
+        "fitting_patches": 8,
+        "checking_patches": 8,
+        "agreeing_patches": 8,
+        "median_relative_coefficient_error": 0.0273347761069513,
+        "reason": "verified_non_lattice_carrier",
+        "center_frequency": [
+          0.07298737556845761,
+          -0.1209919123820804
+        ],
+        "hessian": [
+          3.155307664492349e-07,
+          -2.8575221195839613e-07,
+          -3.301528862124643e-08
+        ]
+      }
+    },
+    {
+      "cohort": "new_realization",
+      "image_id": "dtd_woven_0094",
+      "kind": "global",
+      "variant": "fixed_b@0.08",
+      "reference_sha256": "47686f3a8e6817528165c1932c540dd3de9f456ac22ed9533ae00b69bc6837f7",
+      "observed_sha256": "06b57040511f410621b2fd771248fe0112ac434cbaa321d19332c720225b2d29",
+      "lattice_screen": {
+        "detected": true,
+        "candidate_peaks": 12,
+        "lattice_tolerance_bins": 1.25,
+        "region_match_tolerance_tile_bins": 1.0,
+        "dominant_carrier_retained": false,
+        "measured_lattice_peaks": [
+          [
+            0.05154510514578273,
+            0.053514222162485345
+          ],
+          [
+            0.05097811125580589,
+            -0.05305198386761472
+          ],
+          [
+            0.0006581994804068018,
+            0.10649657854371171
+          ],
+          [
+            0.20310546430020446,
+            0.0012238507994117736
+          ],
+          [
+            0.05076795581444107,
+            -0.1599211078321161
+          ],
+          [
+            0.0010434812013852197,
+            0.2130480985215558
+          ],
+          [
+            0.052588803189447066,
+            0.16037872919926274
+          ],
+          [
+            0.1531026238084347,
+            -0.05261492451946376
+          ],
+          [
+            0.001679546672581185,
+            0.3201351688126973
+          ],
+          [
+            0.30543210572401613,
+            0.0017066339362866705
+          ],
+          [
+            0.10001273372321688,
+            0.0006870170205098532
+          ]
+        ],
+        "basis_cycles_per_pixel": [
+          [
+            0.05061014697856016,
+            -0.05305276308083185
+          ],
+          [
+            0.0005493231606508745,
+            0.10667348422840633
+          ]
+        ],
+        "lattice_power_fraction": 0.8931902467727666,
+        "matched_regions": 35,
+        "dominant_amplitude_ratio": 1.036107465072611,
+        "fraction_locked_to_dominant": 0.2857142857142857,
+        "protected_regions": [
+          {
+            "y": 0,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092232095064901,
+            "frequency_x": -0.053104816657206726,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092232095064901,
+            "frequency_x": -0.053104816657206726,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092232095064901,
+            "frequency_x": -0.053104816657206726,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092232095064901,
+            "frequency_x": -0.053104816657206726,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092232095064901,
+            "frequency_x": -0.053104816657206726,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092232095064901,
+            "frequency_x": -0.053104816657206726,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092232095064901,
+            "frequency_x": -0.053104816657206726,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 64,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092232095064901,
+            "frequency_x": -0.053104816657206726,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092232095064901,
+            "frequency_x": -0.053104816657206726,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092232095064901,
+            "frequency_x": -0.053104816657206726,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092232095064901,
+            "frequency_x": -0.053104816657206726,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092232095064901,
+            "frequency_x": -0.053104816657206726,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092232095064901,
+            "frequency_x": -0.053104816657206726,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092232095064901,
+            "frequency_x": -0.053104816657206726,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05149924013759196,
+            "frequency_x": 0.053576283531095406,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05149924013759196,
+            "frequency_x": 0.053576283531095406,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05149924013759196,
+            "frequency_x": 0.053576283531095406,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092232095064901,
+            "frequency_x": -0.053104816657206726,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092232095064901,
+            "frequency_x": -0.053104816657206726,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092232095064901,
+            "frequency_x": -0.053104816657206726,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092232095064901,
+            "frequency_x": -0.053104816657206726,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05149924013759196,
+            "frequency_x": 0.053576283531095406,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092232095064901,
+            "frequency_x": -0.053104816657206726,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092232095064901,
+            "frequency_x": -0.053104816657206726,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092232095064901,
+            "frequency_x": -0.053104816657206726,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 64,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092232095064901,
+            "frequency_x": -0.053104816657206726,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092232095064901,
+            "frequency_x": -0.053104816657206726,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05149924013759196,
+            "frequency_x": 0.053576283531095406,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05149924013759196,
+            "frequency_x": 0.053576283531095406,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05149924013759196,
+            "frequency_x": 0.053576283531095406,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092232095064901,
+            "frequency_x": -0.053104816657206726,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092232095064901,
+            "frequency_x": -0.053104816657206726,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05149924013759196,
+            "frequency_x": 0.053576283531095406,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05149924013759196,
+            "frequency_x": 0.053576283531095406,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05149924013759196,
+            "frequency_x": 0.053576283531095406,
+            "gain": 1.0
+          }
+        ]
+      },
+      "alternative_carrier": {
+        "proposed_models": 3,
+        "verified_models": 1,
+        "lattice_models_rejected": 0,
+        "patch_size": 64,
+        "amplitude": 0.08525654071313954,
+        "fitting_patches": 8,
+        "checking_patches": 8,
+        "agreeing_patches": 7,
+        "median_relative_coefficient_error": 0.31931288076512154,
+        "reason": "verified_non_lattice_carrier",
+        "center_frequency": [
+          0.1571306224022021,
+          0.04089061427897269
+        ],
+        "hessian": [
+          5.5316966078186014e-06,
+          3.355260909514785e-06,
+          -6.315890272294283e-06
+        ]
+      }
+    },
+    {
+      "cohort": "new_realization",
+      "image_id": "dtd_woven_0094",
+      "kind": "global",
+      "variant": "fixed_b@0.16",
+      "reference_sha256": "47686f3a8e6817528165c1932c540dd3de9f456ac22ed9533ae00b69bc6837f7",
+      "observed_sha256": "ebd6af934d31fcd09929806daafd64b09496cafeedf3f07cac2dcac8e1d5f3d3",
+      "lattice_screen": {
+        "detected": true,
+        "candidate_peaks": 12,
+        "lattice_tolerance_bins": 1.25,
+        "region_match_tolerance_tile_bins": 1.0,
+        "dominant_carrier_retained": false,
+        "measured_lattice_peaks": [
+          [
+            0.051546944298705495,
+            0.053506701956994765
+          ],
+          [
+            0.05098154068463177,
+            -0.05304565149095609
+          ],
+          [
+            0.0006573531283038119,
+            0.10651381844116634
+          ],
+          [
+            0.2030801514040813,
+            0.001220665571999818
+          ],
+          [
+            0.05079240903232699,
+            -0.15989185362725197
+          ],
+          [
+            0.0010542394120404436,
+            0.21307442724050502
+          ],
+          [
+            0.05260031196015502,
+            0.16034303956223828
+          ],
+          [
+            0.15311521215384957,
+            -0.05261027906415117
+          ],
+          [
+            0.0016903842598877934,
+            0.3201594643069036
+          ],
+          [
+            0.30542116287606924,
+            0.001707744709401425
+          ],
+          [
+            0.0999331542777022,
+            0.0006422143363010854
+          ]
+        ],
+        "basis_cycles_per_pixel": [
+          [
+            0.05115646782205939,
+            0.05362035381320203
+          ],
+          [
+            0.05060603599270984,
+            -0.05305490881694685
+          ]
+        ],
+        "lattice_power_fraction": 0.8092615127752222,
+        "matched_regions": 31,
+        "dominant_amplitude_ratio": 1.0366983207374618,
+        "fraction_locked_to_dominant": 0.3225806451612903,
+        "protected_regions": [
+          {
+            "y": 0,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092480878481091,
+            "frequency_x": -0.05309728988812535,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092480878481091,
+            "frequency_x": -0.05309728988812535,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092480878481091,
+            "frequency_x": -0.05309728988812535,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092480878481091,
+            "frequency_x": -0.05309728988812535,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092480878481091,
+            "frequency_x": -0.05309728988812535,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092480878481091,
+            "frequency_x": -0.05309728988812535,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092480878481091,
+            "frequency_x": -0.05309728988812535,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 64,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092480878481091,
+            "frequency_x": -0.05309728988812535,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092480878481091,
+            "frequency_x": -0.05309728988812535,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092480878481091,
+            "frequency_x": -0.05309728988812535,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092480878481091,
+            "frequency_x": -0.05309728988812535,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092480878481091,
+            "frequency_x": -0.05309728988812535,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092480878481091,
+            "frequency_x": -0.05309728988812535,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092480878481091,
+            "frequency_x": -0.05309728988812535,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051502097859946014,
+            "frequency_x": 0.05356791232132996,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051502097859946014,
+            "frequency_x": 0.05356791232132996,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051502097859946014,
+            "frequency_x": 0.05356791232132996,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092480878481091,
+            "frequency_x": -0.05309728988812535,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092480878481091,
+            "frequency_x": -0.05309728988812535,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051502097859946014,
+            "frequency_x": 0.05356791232132996,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092480878481091,
+            "frequency_x": -0.05309728988812535,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092480878481091,
+            "frequency_x": -0.05309728988812535,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092480878481091,
+            "frequency_x": -0.05309728988812535,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 64,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092480878481091,
+            "frequency_x": -0.05309728988812535,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051502097859946014,
+            "frequency_x": 0.05356791232132996,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051502097859946014,
+            "frequency_x": 0.05356791232132996,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051502097859946014,
+            "frequency_x": 0.05356791232132996,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051502097859946014,
+            "frequency_x": 0.05356791232132996,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092480878481091,
+            "frequency_x": -0.05309728988812535,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051502097859946014,
+            "frequency_x": 0.05356791232132996,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051502097859946014,
+            "frequency_x": 0.05356791232132996,
+            "gain": 1.0
+          }
+        ]
+      },
+      "alternative_carrier": {
+        "proposed_models": 3,
+        "verified_models": 1,
+        "lattice_models_rejected": 0,
+        "patch_size": 64,
+        "amplitude": 0.15777760968999965,
+        "fitting_patches": 8,
+        "checking_patches": 8,
+        "agreeing_patches": 8,
+        "median_relative_coefficient_error": 0.14646296082968385,
+        "reason": "verified_non_lattice_carrier",
+        "center_frequency": [
+          0.1570545702816682,
+          0.04097282022155326
+        ],
+        "hessian": [
+          3.020120915310268e-06,
+          1.0375651968369719e-06,
+          7.893785652642243e-07
+        ]
+      }
+    },
+    {
+      "cohort": "new_realization",
+      "image_id": "dtd_woven_0094",
+      "kind": "chirp",
+      "variant": "varying_a@0.08",
+      "reference_sha256": "47686f3a8e6817528165c1932c540dd3de9f456ac22ed9533ae00b69bc6837f7",
+      "observed_sha256": "42a97cd108f0940b4a127c1a971996644780464ea110d96de33a318a79aaf332",
+      "lattice_screen": {
+        "detected": true,
+        "candidate_peaks": 12,
+        "lattice_tolerance_bins": 1.25,
+        "region_match_tolerance_tile_bins": 1.0,
+        "dominant_carrier_retained": false,
+        "measured_lattice_peaks": [
+          [
+            0.051545076517599535,
+            0.05351459462985375
+          ],
+          [
+            0.05097802189300687,
+            -0.053051527060193025
+          ],
+          [
+            0.0006600326821409226,
+            0.10649548344685755
+          ],
+          [
+            0.2031101753256546,
+            0.0012244451721916743
+          ],
+          [
+            0.05075582954570982,
+            -0.1598760907569297
+          ],
+          [
+            0.001043418662841536,
+            0.21304812117458663
+          ],
+          [
+            0.05259057029081361,
+            0.16037580465304585
+          ],
+          [
+            0.15381821332475276,
+            0.054084397561625044
+          ],
+          [
+            0.15310855949572294,
+            -0.052617568696863924
+          ],
+          [
+            0.0016806515523605059,
+            0.3201313379025737
+          ],
+          [
+            0.30543224401733066,
+            0.001705868009114619
+          ],
+          [
+            0.10001119196118488,
+            0.0006923664240401325
+          ]
+        ],
+        "basis_cycles_per_pixel": [
+          [
+            0.05063266392331774,
+            -0.0530527469683894
+          ],
+          [
+            0.0005732969235575527,
+            0.10666654495348636
+          ]
+        ],
+        "lattice_power_fraction": 0.905730922654033,
+        "matched_regions": 35,
+        "dominant_amplitude_ratio": 1.0360415860056733,
+        "fraction_locked_to_dominant": 0.2857142857142857,
+        "protected_regions": [
+          {
+            "y": 0,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.0509223486271339,
+            "frequency_x": -0.05310448606979377,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.0509223486271339,
+            "frequency_x": -0.05310448606979377,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.0509223486271339,
+            "frequency_x": -0.05310448606979377,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.0509223486271339,
+            "frequency_x": -0.05310448606979377,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.0509223486271339,
+            "frequency_x": -0.05310448606979377,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.0509223486271339,
+            "frequency_x": -0.05310448606979377,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.0509223486271339,
+            "frequency_x": -0.05310448606979377,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 64,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.0509223486271339,
+            "frequency_x": -0.05310448606979377,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.0509223486271339,
+            "frequency_x": -0.05310448606979377,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.0509223486271339,
+            "frequency_x": -0.05310448606979377,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.0509223486271339,
+            "frequency_x": -0.05310448606979377,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.0509223486271339,
+            "frequency_x": -0.05310448606979377,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.0509223486271339,
+            "frequency_x": -0.05310448606979377,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.0509223486271339,
+            "frequency_x": -0.05310448606979377,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05149930243977346,
+            "frequency_x": 0.053576664563774114,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05149930243977346,
+            "frequency_x": 0.053576664563774114,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05149930243977346,
+            "frequency_x": 0.053576664563774114,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.0509223486271339,
+            "frequency_x": -0.05310448606979377,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.0509223486271339,
+            "frequency_x": -0.05310448606979377,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.0509223486271339,
+            "frequency_x": -0.05310448606979377,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.0509223486271339,
+            "frequency_x": -0.05310448606979377,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05149930243977346,
+            "frequency_x": 0.053576664563774114,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.0509223486271339,
+            "frequency_x": -0.05310448606979377,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.0509223486271339,
+            "frequency_x": -0.05310448606979377,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.0509223486271339,
+            "frequency_x": -0.05310448606979377,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 64,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.0509223486271339,
+            "frequency_x": -0.05310448606979377,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.0509223486271339,
+            "frequency_x": -0.05310448606979377,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05149930243977346,
+            "frequency_x": 0.053576664563774114,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05149930243977346,
+            "frequency_x": 0.053576664563774114,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05149930243977346,
+            "frequency_x": 0.053576664563774114,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.0509223486271339,
+            "frequency_x": -0.05310448606979377,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.0509223486271339,
+            "frequency_x": -0.05310448606979377,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05149930243977346,
+            "frequency_x": 0.053576664563774114,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05149930243977346,
+            "frequency_x": 0.053576664563774114,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05149930243977346,
+            "frequency_x": 0.053576664563774114,
+            "gain": 1.0
+          }
+        ]
+      },
+      "alternative_carrier": {
+        "proposed_models": 3,
+        "verified_models": 1,
+        "lattice_models_rejected": 1,
+        "patch_size": 64,
+        "amplitude": 0.07943766674509256,
+        "fitting_patches": 5,
+        "checking_patches": 6,
+        "agreeing_patches": 6,
+        "median_relative_coefficient_error": 0.19144444245752978,
+        "reason": "verified_non_lattice_carrier",
+        "center_frequency": [
+          0.05240486358480055,
+          -0.12318650984500834
+        ],
+        "hessian": [
+          -0.00017484771359002615,
+          -0.00012616571154915333,
+          0.00027186877316170456
+        ]
+      }
+    },
+    {
+      "cohort": "new_realization",
+      "image_id": "dtd_woven_0094",
+      "kind": "chirp",
+      "variant": "varying_a@0.16",
+      "reference_sha256": "47686f3a8e6817528165c1932c540dd3de9f456ac22ed9533ae00b69bc6837f7",
+      "observed_sha256": "37e06d6bf27b49de253b8fd98c551a7b8046f8747220e52807c0db42399862a1",
+      "lattice_screen": {
+        "detected": true,
+        "candidate_peaks": 13,
+        "lattice_tolerance_bins": 1.25,
+        "region_match_tolerance_tile_bins": 1.0,
+        "dominant_carrier_retained": false,
+        "measured_lattice_peaks": [
+          [
+            0.05154975822628225,
+            0.05350664534291374
+          ],
+          [
+            0.050980030320816286,
+            -0.053043681931252556
+          ],
+          [
+            0.0006614036945004654,
+            0.10651092256385965
+          ],
+          [
+            0.203086579271181,
+            0.0012162485907001282
+          ],
+          [
+            0.050751219092714184,
+            -0.15976895330052818
+          ],
+          [
+            0.0010489735331148595,
+            0.21307075482956309
+          ],
+          [
+            0.05260232425806707,
+            0.16033629617994966
+          ],
+          [
+            0.1538418472001933,
+            0.05406373785055669
+          ],
+          [
+            0.15314664160145833,
+            -0.052627119277159344
+          ],
+          [
+            0.0016744905054722108,
+            0.3201381526368865
+          ],
+          [
+            0.3054247999824791,
+            0.0017032264237101232
+          ],
+          [
+            0.09995478618270617,
+            0.0006737020432058073
+          ]
+        ],
+        "basis_cycles_per_pixel": [
+          [
+            0.05063166146273451,
+            -0.053050240950100774
+          ],
+          [
+            0.0005739459885782762,
+            0.10665873623360533
+          ]
+        ],
+        "lattice_power_fraction": 0.8219952892241721,
+        "matched_regions": 19,
+        "dominant_amplitude_ratio": 1.0358215186561777,
+        "fraction_locked_to_dominant": 0.5263157894736842,
+        "protected_regions": [
+          {
+            "y": 96,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051503885781053076,
+            "frequency_x": 0.05356820020076503,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051503885781053076,
+            "frequency_x": 0.05356820020076503,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051503885781053076,
+            "frequency_x": 0.05356820020076503,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092486453983764,
+            "frequency_x": -0.05309550940796119,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092486453983764,
+            "frequency_x": -0.05309550940796119,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092486453983764,
+            "frequency_x": -0.05309550940796119,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051503885781053076,
+            "frequency_x": 0.05356820020076503,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092486453983764,
+            "frequency_x": -0.05309550940796119,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092486453983764,
+            "frequency_x": -0.05309550940796119,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 64,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092486453983764,
+            "frequency_x": -0.05309550940796119,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092486453983764,
+            "frequency_x": -0.05309550940796119,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051503885781053076,
+            "frequency_x": 0.05356820020076503,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051503885781053076,
+            "frequency_x": 0.05356820020076503,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051503885781053076,
+            "frequency_x": 0.05356820020076503,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092486453983764,
+            "frequency_x": -0.05309550940796119,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092486453983764,
+            "frequency_x": -0.05309550940796119,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051503885781053076,
+            "frequency_x": 0.05356820020076503,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051503885781053076,
+            "frequency_x": 0.05356820020076503,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051503885781053076,
+            "frequency_x": 0.05356820020076503,
+            "gain": 1.0
+          }
+        ]
+      },
+      "alternative_carrier": {
+        "proposed_models": 3,
+        "verified_models": 1,
+        "lattice_models_rejected": 0,
+        "patch_size": 64,
+        "amplitude": 0.1518305468562814,
+        "fitting_patches": 5,
+        "checking_patches": 7,
+        "agreeing_patches": 7,
+        "median_relative_coefficient_error": 0.10345670458756233,
+        "reason": "verified_non_lattice_carrier",
+        "center_frequency": [
+          0.05218447293741984,
+          -0.12307509706134465
+        ],
+        "hessian": [
+          -0.00017789096164531123,
+          -0.0001236137275095031,
+          0.0002670096140571648
+        ]
+      }
+    },
+    {
+      "cohort": "new_realization",
+      "image_id": "dtd_woven_0094",
+      "kind": "chirp",
+      "variant": "varying_b@0.08",
+      "reference_sha256": "47686f3a8e6817528165c1932c540dd3de9f456ac22ed9533ae00b69bc6837f7",
+      "observed_sha256": "d77c4555eb955d99d8772a8e50aaa59281a35178667f60649f462fb931f95d3b",
+      "lattice_screen": {
+        "detected": true,
+        "candidate_peaks": 12,
+        "lattice_tolerance_bins": 1.25,
+        "region_match_tolerance_tile_bins": 1.0,
+        "dominant_carrier_retained": false,
+        "measured_lattice_peaks": [
+          [
+            0.05154503804248287,
+            0.05351422326260643
+          ],
+          [
+            0.05097813239032203,
+            -0.05305210732447762
+          ],
+          [
+            0.0006601302318281102,
+            0.10649570887607353
+          ],
+          [
+            0.20310972055582535,
+            0.0012239107176798716
+          ],
+          [
+            0.05076580034899556,
+            -0.1599200399655727
+          ],
+          [
+            0.15318331509843072,
+            -0.053298375374173076
+          ],
+          [
+            0.001042822645669729,
+            0.21304760971532896
+          ],
+          [
+            0.05259058042097406,
+            0.16037909314661436
+          ],
+          [
+            0.15381793444118844,
+            0.05408515410815031
+          ],
+          [
+            0.0016789663902179273,
+            0.32013733320015747
+          ],
+          [
+            0.30543286288756394,
+            0.0017081919017338115
+          ],
+          [
+            0.10001137153408539,
+            0.0006889411125781654
+          ]
+        ],
+        "basis_cycles_per_pixel": [
+          [
+            0.05063719086974346,
+            -0.053090370940935855
+          ],
+          [
+            0.0005702875538075987,
+            0.10668854141590714
+          ]
+        ],
+        "lattice_power_fraction": 0.9097706595668886,
+        "matched_regions": 35,
+        "dominant_amplitude_ratio": 1.0360234005993885,
+        "fraction_locked_to_dominant": 0.2857142857142857,
+        "protected_regions": [
+          {
+            "y": 0,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092233322678828,
+            "frequency_x": -0.05310490903085412,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092233322678828,
+            "frequency_x": -0.05310490903085412,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092233322678828,
+            "frequency_x": -0.05310490903085412,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092233322678828,
+            "frequency_x": -0.05310490903085412,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092233322678828,
+            "frequency_x": -0.05310490903085412,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092233322678828,
+            "frequency_x": -0.05310490903085412,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092233322678828,
+            "frequency_x": -0.05310490903085412,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 64,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092233322678828,
+            "frequency_x": -0.05310490903085412,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092233322678828,
+            "frequency_x": -0.05310490903085412,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092233322678828,
+            "frequency_x": -0.05310490903085412,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092233322678828,
+            "frequency_x": -0.05310490903085412,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092233322678828,
+            "frequency_x": -0.05310490903085412,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092233322678828,
+            "frequency_x": -0.05310490903085412,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092233322678828,
+            "frequency_x": -0.05310490903085412,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051499353961921845,
+            "frequency_x": 0.05357633610320126,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051499353961921845,
+            "frequency_x": 0.05357633610320126,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051499353961921845,
+            "frequency_x": 0.05357633610320126,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092233322678828,
+            "frequency_x": -0.05310490903085412,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092233322678828,
+            "frequency_x": -0.05310490903085412,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092233322678828,
+            "frequency_x": -0.05310490903085412,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092233322678828,
+            "frequency_x": -0.05310490903085412,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051499353961921845,
+            "frequency_x": 0.05357633610320126,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092233322678828,
+            "frequency_x": -0.05310490903085412,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092233322678828,
+            "frequency_x": -0.05310490903085412,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092233322678828,
+            "frequency_x": -0.05310490903085412,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 64,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092233322678828,
+            "frequency_x": -0.05310490903085412,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092233322678828,
+            "frequency_x": -0.05310490903085412,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051499353961921845,
+            "frequency_x": 0.05357633610320126,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051499353961921845,
+            "frequency_x": 0.05357633610320126,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051499353961921845,
+            "frequency_x": 0.05357633610320126,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092233322678828,
+            "frequency_x": -0.05310490903085412,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092233322678828,
+            "frequency_x": -0.05310490903085412,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051499353961921845,
+            "frequency_x": 0.05357633610320126,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051499353961921845,
+            "frequency_x": 0.05357633610320126,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.051499353961921845,
+            "frequency_x": 0.05357633610320126,
+            "gain": 1.0
+          }
+        ]
+      },
+      "alternative_carrier": {
+        "proposed_models": 2,
+        "verified_models": 0,
+        "lattice_models_rejected": 1,
+        "patch_size": 64,
+        "reason": "no_unique_verified_carrier"
+      }
+    },
+    {
+      "cohort": "new_realization",
+      "image_id": "dtd_woven_0094",
+      "kind": "chirp",
+      "variant": "varying_b@0.16",
+      "reference_sha256": "47686f3a8e6817528165c1932c540dd3de9f456ac22ed9533ae00b69bc6837f7",
+      "observed_sha256": "c24db99a29d7c59f9c23827e5823f8f5337379c6b4b9933f9cae0f494b6c497c",
+      "lattice_screen": {
+        "detected": true,
+        "candidate_peaks": 12,
+        "lattice_tolerance_bins": 1.25,
+        "region_match_tolerance_tile_bins": 1.0,
+        "dominant_carrier_retained": false,
+        "measured_lattice_peaks": [
+          [
+            0.051549244340078924,
+            0.05349979396844552
+          ],
+          [
+            0.05098153061242721,
+            -0.05305016905562554
+          ],
+          [
+            0.0006656287331342883,
+            0.10651951449370597
+          ],
+          [
+            0.1528470985719158,
+            -0.05339277278849418
+          ],
+          [
+            0.2030789895143328,
+            0.0012410712883923942
+          ],
+          [
+            0.05077997406421536,
+            -0.15990213956329596
+          ],
+          [
+            0.0010474979020608385,
+            0.21307379471173835
+          ],
+          [
+            0.05260622388023605,
+            0.16035873779972348
+          ],
+          [
+            0.1538471307000536,
+            0.05408054576072174
+          ],
+          [
+            0.0016848660523279737,
+            0.3201399161576568
+          ],
+          [
+            0.30543716475285054,
+            0.0017311133241080985
+          ],
+          [
+            0.09999345873044736,
+            0.0005595741624882521
+          ]
+        ],
+        "basis_cycles_per_pixel": [
+          [
+            0.0512000316082119,
+            0.05359511889656125
+          ],
+          [
+            0.05061857159045981,
+            -0.05309666619171189
+          ]
+        ],
+        "lattice_power_fraction": 0.8424731100013277,
+        "matched_regions": 37,
+        "dominant_amplitude_ratio": 1.0350766950750208,
+        "fraction_locked_to_dominant": 0.4864864864864865,
+        "protected_regions": [
+          {
+            "y": 0,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092514394934926,
+            "frequency_x": -0.05310197316156259,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092514394934926,
+            "frequency_x": -0.05310197316156259,
+            "gain": 1.0
+          },
+          {
+            "y": 0,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092514394934926,
+            "frequency_x": -0.05310197316156259,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150351505987534,
+            "frequency_x": 0.05356317142427103,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150351505987534,
+            "frequency_x": 0.05356317142427103,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 64,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092514394934926,
+            "frequency_x": -0.05310197316156259,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092514394934926,
+            "frequency_x": -0.05310197316156259,
+            "gain": 1.0
+          },
+          {
+            "y": 32,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092514394934926,
+            "frequency_x": -0.05310197316156259,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150351505987534,
+            "frequency_x": 0.05356317142427103,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 64,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150351505987534,
+            "frequency_x": 0.05356317142427103,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092514394934926,
+            "frequency_x": -0.05310197316156259,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092514394934926,
+            "frequency_x": -0.05310197316156259,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092514394934926,
+            "frequency_x": -0.05310197316156259,
+            "gain": 1.0
+          },
+          {
+            "y": 64,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092514394934926,
+            "frequency_x": -0.05310197316156259,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150351505987534,
+            "frequency_x": 0.05356317142427103,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150351505987534,
+            "frequency_x": 0.05356317142427103,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 64,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092514394934926,
+            "frequency_x": -0.05310197316156259,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150351505987534,
+            "frequency_x": 0.05356317142427103,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150351505987534,
+            "frequency_x": 0.05356317142427103,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150351505987534,
+            "frequency_x": 0.05356317142427103,
+            "gain": 1.0
+          },
+          {
+            "y": 96,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150351505987534,
+            "frequency_x": 0.05356317142427103,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092514394934926,
+            "frequency_x": -0.05310197316156259,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150351505987534,
+            "frequency_x": 0.05356317142427103,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 64,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092514394934926,
+            "frequency_x": -0.05310197316156259,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092514394934926,
+            "frequency_x": -0.05310197316156259,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092514394934926,
+            "frequency_x": -0.05310197316156259,
+            "gain": 1.0
+          },
+          {
+            "y": 128,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150351505987534,
+            "frequency_x": 0.05356317142427103,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092514394934926,
+            "frequency_x": -0.05310197316156259,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 32,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092514394934926,
+            "frequency_x": -0.05310197316156259,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 64,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092514394934926,
+            "frequency_x": -0.05310197316156259,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 96,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150351505987534,
+            "frequency_x": 0.05356317142427103,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150351505987534,
+            "frequency_x": 0.05356317142427103,
+            "gain": 1.0
+          },
+          {
+            "y": 160,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150351505987534,
+            "frequency_x": 0.05356317142427103,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 0,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05092514394934926,
+            "frequency_x": -0.05310197316156259,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 128,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150351505987534,
+            "frequency_x": 0.05356317142427103,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 160,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150351505987534,
+            "frequency_x": 0.05356317142427103,
+            "gain": 1.0
+          },
+          {
+            "y": 192,
+            "x": 192,
+            "height": 64,
+            "width": 64,
+            "scale": 256,
+            "frequency_y": 0.05150351505987534,
+            "frequency_x": 0.05356317142427103,
+            "gain": 1.0
+          }
+        ]
+      },
+      "alternative_carrier": {
+        "proposed_models": 1,
+        "verified_models": 1,
+        "lattice_models_rejected": 0,
+        "patch_size": 64,
+        "amplitude": 0.15476435096773708,
+        "fitting_patches": 5,
+        "checking_patches": 4,
+        "agreeing_patches": 4,
+        "median_relative_coefficient_error": 0.07510136092044806,
+        "reason": "verified_non_lattice_carrier",
+        "center_frequency": [
+          0.14801942341637794,
+          -0.04697832291388798
+        ],
+        "hessian": [
+          -0.0002441118190091513,
+          -0.00010263092535627632,
+          0.0001679305455630661
+        ]
+      }
+    }
+  ]
+}

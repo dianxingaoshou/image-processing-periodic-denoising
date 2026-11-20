@@ -1,0 +1,10 @@
+{
+  "purpose": "Supplement registered after identifying the proposed endpoint-based evidence and before generating any new-direction sample. Probe texture-only exposures that create endpoints and real additive carriers on an observation with no endpoints.",
+  "clean_controls": ["high_contrast_clip", "bright_exposure_clip"],
+  "clean_transforms": "Use clip(0.5+1.35*(X-0.5),0,1) and clip(1.20*X+0.045,0,1) respectively as the transformed clean reference and identical observation. Both create real intensity endpoints without injected stripes.",
+  "no_endpoint_reference": "0.18 + 0.64*X",
+  "no_endpoint_variants": ["fixed_E", "axis_y_E"],
+  "amplitude": 0.08,
+  "matching": "Use precisely the same phases, directions and amplitudes as in the full-range fixed_E and axis_y_E conditions. For the compressed reference all observations lie strictly within (0,1). Lower texture contrast also changes the signal-to-texture ratio.",
+  "scope": "Report these four supplementary conditions separately from the sixteen new directions/strengths and three primary transformed clean controls."
+}

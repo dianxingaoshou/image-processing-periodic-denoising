@@ -1,0 +1,190 @@
+{
+  "completed_utc": "2026-11-20T01:54:09.567213+00:00",
+  "inputs": 125,
+  "historical_baselines_checked": 112,
+  "rows": 375,
+  "targeted_normal_entry_checks": 4,
+  "groups": {
+    "historical": {
+      "inputs": 112,
+      "better_than_previous": 3,
+      "tied_with_previous": 109,
+      "worse_than_previous": 0,
+      "exact_same_as_previous": 109,
+      "previous_net_improvements": 68,
+      "retained_net_improvements": 68,
+      "new_net_improvements": 3,
+      "current_net_improvements": 71,
+      "previous_worse_than_input": 0,
+      "current_worse_than_input": 0,
+      "input_mean_mse": 0.003933089611841535,
+      "previous_mean_mse": 0.0014505502394320424,
+      "current_mean_mse": 0.0013650353271409958
+    },
+    "weak83_carriers": {
+      "inputs": 8,
+      "better_than_previous": 0,
+      "tied_with_previous": 8,
+      "worse_than_previous": 0,
+      "exact_same_as_previous": 8,
+      "previous_net_improvements": 1,
+      "retained_net_improvements": 1,
+      "new_net_improvements": 0,
+      "current_net_improvements": 1,
+      "previous_worse_than_input": 0,
+      "current_worse_than_input": 0,
+      "input_mean_mse": 0.0024087684890202092,
+      "previous_mean_mse": 0.0023789598596591945,
+      "current_mean_mse": 0.0023789598596591945
+    },
+    "weak83_clean_controls": {
+      "inputs": 3,
+      "better_than_previous": 0,
+      "tied_with_previous": 3,
+      "worse_than_previous": 0,
+      "exact_same_as_previous": 3,
+      "previous_net_improvements": 0,
+      "retained_net_improvements": 0,
+      "new_net_improvements": 0,
+      "current_net_improvements": 0,
+      "previous_worse_than_input": 0,
+      "current_worse_than_input": 0,
+      "input_mean_mse": 0.0,
+      "previous_mean_mse": 0.0,
+      "current_mean_mse": 0.0
+    },
+    "weak83_single_axis": {
+      "inputs": 2,
+      "better_than_previous": 0,
+      "tied_with_previous": 2,
+      "worse_than_previous": 0,
+      "exact_same_as_previous": 2,
+      "previous_net_improvements": 0,
+      "retained_net_improvements": 0,
+      "new_net_improvements": 0,
+      "current_net_improvements": 0,
+      "previous_worse_than_input": 0,
+      "current_worse_than_input": 0,
+      "input_mean_mse": 0.0027882188080388054,
+      "previous_mean_mse": 0.0027882188080388054,
+      "current_mean_mse": 0.0027882188080388054
+    }
+  },
+  "reference_texture_peaks_in_fft_bins": {
+    "5570bcf159c874f4a31288928af2514b20374b884f8b442342e4a52f0fcd3d2f": [
+      [
+        9,
+        -2
+      ],
+      [
+        19,
+        0
+      ],
+      [
+        9,
+        6
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        15
+      ],
+      [
+        10,
+        -13
+      ]
+    ],
+    "26330cc40a64d288182a03e3dbbba5d4e36653c6892623efc1cfbd706ca8137d": [
+      [
+        2,
+        -9
+      ],
+      [
+        0,
+        19
+      ],
+      [
+        6,
+        9
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        15,
+        0
+      ],
+      [
+        13,
+        -10
+      ]
+    ],
+    "d76686e49aff89eee47bd2d68e0a7510eb43e0f65cd40c9607eff8557afa9821": [
+      [
+        9,
+        -2
+      ],
+      [
+        19,
+        0
+      ],
+      [
+        9,
+        6
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        19,
+        6
+      ],
+      [
+        0,
+        15
+      ]
+    ],
+    "ad724e1fcb0a34153fbe75c89fe77bf25452f9d2819d331f3392afbf9a4ccfb9": [
+      [
+        2,
+        9
+      ],
+      [
+        0,
+        19
+      ],
+      [
+        6,
+        -9
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        13,
+        -12
+      ],
+      [
+        4,
+        -25
+      ]
+    ]
+  },
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.5",
+    "scipy": "1.18.1"
+  },
+  "artifact_sha256": {
+    "freeze.json": "94ce460d53fbeb989f085b0263050f0829e3f049d55df1a9284db27d5a5ac5d0",
+    "metrics.csv": "a77eaa69ec6343ee773d4dba981ad0dedb7569c7634e6f3a90046eb032a3bcda",
+    "parity.csv": "f0aa2cd04b82c283bef420b0c96f839df7da5257ab926bec1f4225dfb434f793",
+    "RESULTS.md": "093a286375be89efab0945d321e3101b2b4b56b381f294aa80e656ab12289848"
+  }
+}

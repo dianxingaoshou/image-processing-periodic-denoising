@@ -1,0 +1,834 @@
+{
+  "baseline": "project_weave.denoise",
+  "script_sha256": "3e0c3b1acd840d8d90f4408c35d0b13cd89223b40542d03bf10b56f64fc21251",
+  "same_photo_clean_global_residual_cosine": 0.9977221695595975,
+  "hash_checks": "5 historical input and output pairs",
+  "controls": "skip_narrow disables the previous directional proposal for one diagnostic call only",
+  "axes": "0: index rows and fit along x; 1: index columns and fit along y. Intervals are zero-based, half-open.",
+  "far_lines": "outside amplitude context plus flank_width on either side; check same-frequency amplitude >= half the supported median",
+  "records": [
+    {
+      "image": "woven_0083",
+      "kind": "clean",
+      "clean_sha256": "5570bcf159c874f4a31288928af2514b20374b884f8b442342e4a52f0fcd3d2f",
+      "observed_sha256": "5570bcf159c874f4a31288928af2514b20374b884f8b442342e4a52f0fcd3d2f",
+      "frequency_ranges_cycles_per_pixel": {},
+      "input_mse": 0.0,
+      "old": {
+        "route": "narrow",
+        "reason": "compact_directional_support",
+        "sha256": "990dc8fef7a8187b02eedbbe0290b20679d51ce031d7685a8537f7b74199d039",
+        "mse": 0.00018218176736262113,
+        "changed_pixels": 1024,
+        "projection": null,
+        "orthogonal_mse": null,
+        "narrow_plane_rmse": {
+          "inside": 0.2245783903867728,
+          "outside": 0.22007744165404766
+        },
+        "global_abstain": false,
+        "clean_mse": 0.00018218176736262113,
+        "selected_regions": [
+          {
+            "normal_axis": 1,
+            "start": 153,
+            "stop": 157,
+            "context_start": 149,
+            "context_stop": 161,
+            "tangent_frequency": 0.0736654767443724
+          }
+        ]
+      },
+      "skip_narrow": {
+        "route": "unchanged",
+        "reason": "insufficient_spatial_support",
+        "sha256": "5570bcf159c874f4a31288928af2514b20374b884f8b442342e4a52f0fcd3d2f",
+        "mse": 0.0,
+        "changed_pixels": 0,
+        "projection": null,
+        "orthogonal_mse": null,
+        "narrow_plane_rmse": null,
+        "global_abstain": false,
+        "clean_mse": 0.0
+      },
+      "candidates": [
+        {
+          "normal_axis": 0,
+          "rank": 1,
+          "tangent_frequency": 0.016566526042912703,
+          "qualified_lines": 5,
+          "interval_reasons": {
+            "too_few_supported_rows": 3
+          },
+          "accepted": []
+        },
+        {
+          "normal_axis": 0,
+          "rank": 2,
+          "tangent_frequency": 0.02275157905679449,
+          "qualified_lines": 1,
+          "interval_reasons": {
+            "too_few_supported_rows": 1
+          },
+          "accepted": []
+        },
+        {
+          "normal_axis": 0,
+          "rank": 3,
+          "tangent_frequency": 0.03343508434129808,
+          "qualified_lines": 2,
+          "interval_reasons": {
+            "too_few_supported_rows": 1
+          },
+          "accepted": []
+        },
+        {
+          "normal_axis": 0,
+          "rank": 4,
+          "tangent_frequency": 0.04131149557192207,
+          "qualified_lines": 0,
+          "interval_reasons": {},
+          "accepted": []
+        },
+        {
+          "normal_axis": 0,
+          "rank": 5,
+          "tangent_frequency": 0.06595439455036196,
+          "qualified_lines": 0,
+          "interval_reasons": {},
+          "accepted": []
+        },
+        {
+          "normal_axis": 1,
+          "rank": 1,
+          "tangent_frequency": 0.036658648592827775,
+          "qualified_lines": 31,
+          "interval_reasons": {
+            "broad_amplitude_context": 4,
+            "too_few_supported_rows": 6
+          },
+          "accepted": []
+        },
+        {
+          "normal_axis": 1,
+          "rank": 2,
+          "tangent_frequency": 0.0736654767443724,
+          "qualified_lines": 18,
+          "interval_reasons": {
+            "broad_amplitude_context": 1,
+            "compact_supported_region": 1
+          },
+          "accepted": [
+            {
+              "start": 153,
+              "stop": 157,
+              "width": 4,
+              "accepted": true,
+              "reason": "compact_supported_region",
+              "contrast_context": "amplitude",
+              "context_start": 149,
+              "context_stop": 161,
+              "context_width": 12,
+              "touches_image_edge": false,
+              "median_amplitude": 0.15296321968678267,
+              "left_flank_median": 0.03095760773499071,
+              "right_flank_median": 0.04703219803264895,
+              "outside_to_inside_ratio": 0.3074739020854497,
+              "median_stability": 0.8980497444523621,
+              "median_validation_gain": 0.15078851963407974,
+              "far_lines": 212,
+              "far_lines_at_least_half_amplitude": 99
+            }
+          ]
+        },
+        {
+          "normal_axis": 1,
+          "rank": 3,
+          "tangent_frequency": 0.02184381814410027,
+          "qualified_lines": 6,
+          "interval_reasons": {
+            "too_few_supported_rows": 1,
+            "broad_amplitude_context": 1
+          },
+          "accepted": []
+        },
+        {
+          "normal_axis": 1,
+          "rank": 4,
+          "tangent_frequency": 0.05000348615004956,
+          "qualified_lines": 1,
+          "interval_reasons": {
+            "too_few_supported_rows": 1
+          },
+          "accepted": []
+        },
+        {
+          "normal_axis": 1,
+          "rank": 5,
+          "tangent_frequency": 0.015895165427396697,
+          "qualified_lines": 0,
+          "interval_reasons": {},
+          "accepted": []
+        }
+      ]
+    },
+    {
+      "image": "woven_0083",
+      "kind": "global",
+      "clean_sha256": "5570bcf159c874f4a31288928af2514b20374b884f8b442342e4a52f0fcd3d2f",
+      "observed_sha256": "48ad4ff898e10629c0c3b11d594d63cfdc0e13039502bcefddacb0dd9855c8ab",
+      "frequency_ranges_cycles_per_pixel": {
+        "true_fy": [
+          0.11832983916492233,
+          0.11832983916492233
+        ],
+        "true_fx": [
+          0.05486294334835344,
+          0.05486294334835344
+        ]
+      },
+      "input_mse": 0.007046810370527628,
+      "old": {
+        "route": "narrow",
+        "reason": "compact_directional_support",
+        "sha256": "ef22512e55d47f6596fbd6567ba2a8b7a3e45383bf06eeb88f57f4176d1ebc00",
+        "mse": 0.007229505212279255,
+        "changed_pixels": 1020,
+        "projection": -0.00018948199979562395,
+        "orthogonal_mse": 0.00018002410130459984,
+        "narrow_plane_rmse": {
+          "inside": 0.23327806130629408,
+          "outside": 0.23452577366292
+        },
+        "global_abstain": false,
+        "contaminated_mse": 0.007229505212279255,
+        "selected_regions": [
+          {
+            "normal_axis": 1,
+            "start": 153,
+            "stop": 157,
+            "context_start": 149,
+            "context_stop": 161,
+            "tangent_frequency": 0.07370901614995333
+          }
+        ]
+      },
+      "skip_narrow": {
+        "route": "general",
+        "reason": "spatially_corroborated_tiles",
+        "sha256": "d9fc422d33aac8591b18c39c05bab5e8c4db1337be605f858d20815dc1810cf4",
+        "mse": 0.0030464026186757583,
+        "changed_pixels": 56320,
+        "projection": 0.42870574721077903,
+        "orthogonal_mse": 0.0007464849217137887,
+        "narrow_plane_rmse": null,
+        "global_abstain": false,
+        "contaminated_mse": 0.0030464026186757583,
+        "tiles": 34
+      },
+      "candidates": [
+        {
+          "normal_axis": 0,
+          "rank": 1,
+          "tangent_frequency": 0.054775229520118256,
+          "qualified_lines": 60,
+          "interval_reasons": {
+            "too_few_supported_rows": 19,
+            "broad_amplitude_context": 9
+          },
+          "accepted": []
+        },
+        {
+          "normal_axis": 0,
+          "rank": 2,
+          "tangent_frequency": 0.03351163535313205,
+          "qualified_lines": 2,
+          "interval_reasons": {
+            "too_few_supported_rows": 1
+          },
+          "accepted": []
+        },
+        {
+          "normal_axis": 0,
+          "rank": 3,
+          "tangent_frequency": 0.043577139273398596,
+          "qualified_lines": 0,
+          "interval_reasons": {},
+          "accepted": []
+        },
+        {
+          "normal_axis": 0,
+          "rank": 4,
+          "tangent_frequency": 0.06557642460619183,
+          "qualified_lines": 0,
+          "interval_reasons": {},
+          "accepted": []
+        },
+        {
+          "normal_axis": 0,
+          "rank": 5,
+          "tangent_frequency": 0.07296748756813518,
+          "qualified_lines": 0,
+          "interval_reasons": {},
+          "accepted": []
+        },
+        {
+          "normal_axis": 1,
+          "rank": 1,
+          "tangent_frequency": 0.03665219973686737,
+          "qualified_lines": 32,
+          "interval_reasons": {
+            "broad_amplitude_context": 5,
+            "too_few_supported_rows": 6
+          },
+          "accepted": []
+        },
+        {
+          "normal_axis": 1,
+          "rank": 2,
+          "tangent_frequency": 0.07370901614995333,
+          "qualified_lines": 15,
+          "interval_reasons": {
+            "broad_amplitude_context": 2,
+            "too_few_supported_rows": 1,
+            "compact_supported_region": 1
+          },
+          "accepted": [
+            {
+              "start": 153,
+              "stop": 157,
+              "width": 4,
+              "accepted": true,
+              "reason": "compact_supported_region",
+              "contrast_context": "amplitude",
+              "context_start": 149,
+              "context_stop": 161,
+              "context_width": 12,
+              "touches_image_edge": false,
+              "median_amplitude": 0.15283707646084954,
+              "left_flank_median": 0.03156295348967472,
+              "right_flank_median": 0.04546060766986691,
+              "outside_to_inside_ratio": 0.2974448917930723,
+              "median_stability": 0.8822736739327701,
+              "median_validation_gain": 0.11589596315092593,
+              "far_lines": 212,
+              "far_lines_at_least_half_amplitude": 99
+            }
+          ]
+        },
+        {
+          "normal_axis": 1,
+          "rank": 3,
+          "tangent_frequency": 0.11833064138036826,
+          "qualified_lines": 95,
+          "interval_reasons": {
+            "too_few_supported_rows": 12,
+            "broad_amplitude_context": 13
+          },
+          "accepted": []
+        },
+        {
+          "normal_axis": 1,
+          "rank": 4,
+          "tangent_frequency": 0.0499973131305184,
+          "qualified_lines": 1,
+          "interval_reasons": {
+            "too_few_supported_rows": 1
+          },
+          "accepted": []
+        },
+        {
+          "normal_axis": 1,
+          "rank": 5,
+          "tangent_frequency": 0.02182680876796626,
+          "qualified_lines": 2,
+          "interval_reasons": {
+            "too_few_supported_rows": 1
+          },
+          "accepted": []
+        }
+      ]
+    },
+    {
+      "image": "woven_0083",
+      "kind": "chirp",
+      "clean_sha256": "5570bcf159c874f4a31288928af2514b20374b884f8b442342e4a52f0fcd3d2f",
+      "observed_sha256": "ddcf52c1049638ce58cf5e951ed517d2e25c34b4314f282bc88e131c0d107efc",
+      "frequency_ranges_cycles_per_pixel": {
+        "true_fy": [
+          0.07983293798266715,
+          0.07983293798266715
+        ],
+        "true_fx": [
+          0.000988332251153863,
+          0.04320947121028456
+        ]
+      },
+      "input_mse": 0.004930980477575928,
+      "old": {
+        "route": "unchanged",
+        "reason": "insufficient_spatial_support",
+        "sha256": "ddcf52c1049638ce58cf5e951ed517d2e25c34b4314f282bc88e131c0d107efc",
+        "mse": 0.004930980477575928,
+        "changed_pixels": 0,
+        "projection": 0.0,
+        "orthogonal_mse": 0.0,
+        "narrow_plane_rmse": null,
+        "global_abstain": false,
+        "contaminated_mse": 0.004930980477575928
+      },
+      "skip_narrow": {
+        "route": "unchanged",
+        "reason": "insufficient_spatial_support",
+        "sha256": "ddcf52c1049638ce58cf5e951ed517d2e25c34b4314f282bc88e131c0d107efc",
+        "mse": 0.004930980477575928,
+        "changed_pixels": 0,
+        "projection": 0.0,
+        "orthogonal_mse": 0.0,
+        "narrow_plane_rmse": null,
+        "global_abstain": false,
+        "contaminated_mse": 0.004930980477575928
+      },
+      "candidates": [
+        {
+          "normal_axis": 0,
+          "rank": 1,
+          "tangent_frequency": 0.016702200752699344,
+          "qualified_lines": 1,
+          "interval_reasons": {
+            "too_few_supported_rows": 1
+          },
+          "accepted": []
+        },
+        {
+          "normal_axis": 0,
+          "rank": 2,
+          "tangent_frequency": 0.027395634698447236,
+          "qualified_lines": 0,
+          "interval_reasons": {},
+          "accepted": []
+        },
+        {
+          "normal_axis": 0,
+          "rank": 3,
+          "tangent_frequency": 0.03956684152123751,
+          "qualified_lines": 2,
+          "interval_reasons": {
+            "too_few_supported_rows": 2
+          },
+          "accepted": []
+        },
+        {
+          "normal_axis": 0,
+          "rank": 4,
+          "tangent_frequency": 0.06650233916480847,
+          "qualified_lines": 0,
+          "interval_reasons": {},
+          "accepted": []
+        },
+        {
+          "normal_axis": 0,
+          "rank": 5,
+          "tangent_frequency": 0.05971797334354465,
+          "qualified_lines": 0,
+          "interval_reasons": {},
+          "accepted": []
+        },
+        {
+          "normal_axis": 1,
+          "rank": 1,
+          "tangent_frequency": 0.03678655695829706,
+          "qualified_lines": 31,
+          "interval_reasons": {
+            "broad_amplitude_context": 4,
+            "too_few_supported_rows": 4
+          },
+          "accepted": []
+        },
+        {
+          "normal_axis": 1,
+          "rank": 2,
+          "tangent_frequency": 0.07974715531204976,
+          "qualified_lines": 13,
+          "interval_reasons": {
+            "too_few_supported_rows": 5,
+            "broad_amplitude_context": 1
+          },
+          "accepted": []
+        },
+        {
+          "normal_axis": 1,
+          "rank": 3,
+          "tangent_frequency": 0.021835906259375783,
+          "qualified_lines": 5,
+          "interval_reasons": {
+            "too_few_supported_rows": 1,
+            "broad_amplitude_context": 1
+          },
+          "accepted": []
+        },
+        {
+          "normal_axis": 1,
+          "rank": 4,
+          "tangent_frequency": 0.050018327043653596,
+          "qualified_lines": 1,
+          "interval_reasons": {
+            "too_few_supported_rows": 1
+          },
+          "accepted": []
+        },
+        {
+          "normal_axis": 1,
+          "rank": 5,
+          "tangent_frequency": 0.06148274271035572,
+          "qualified_lines": 2,
+          "interval_reasons": {
+            "too_few_supported_rows": 1
+          },
+          "accepted": []
+        }
+      ]
+    },
+    {
+      "image": "69022",
+      "kind": "edge8",
+      "clean_sha256": "4923c33c5de7c30850e6488a318d592f99fdfee462ce918bb446e886700cb442",
+      "observed_sha256": "90c79de66f7b96accf2775f8a5b4e0a453148faf8c38206eef792fc661b0cc41",
+      "frequency_ranges_cycles_per_pixel": {
+        "true_fy": [
+          0.12757175417245825,
+          0.12757175417245825
+        ],
+        "true_fx": [
+          0.11597650650018251,
+          0.11597650650018251
+        ]
+      },
+      "input_mse": 9.282224659632615e-05,
+      "old": {
+        "route": "narrow",
+        "reason": "compact_directional_support",
+        "sha256": "1c55cec0a9aa47ebbc7c5f7a7ec3ea1b1e1dc65e19c4815bb18596f19c681281",
+        "mse": 3.253821475457385e-05,
+        "changed_pixels": 1024,
+        "projection": 0.752056388588512,
+        "orthogonal_mse": 2.683187112604118e-05,
+        "narrow_plane_rmse": {
+          "inside": 0.13334145227602065,
+          "outside": 0.1166547491075179
+        },
+        "global_abstain": false,
+        "contaminated_mse": 0.0010412228721463632,
+        "clean_mse": 0.0,
+        "adjacent_clean_mse": 0.0,
+        "selected_regions": [
+          {
+            "normal_axis": 0,
+            "start": 251,
+            "stop": 255,
+            "context_start": 250,
+            "context_stop": 256,
+            "tangent_frequency": 0.11605381867751137
+          }
+        ]
+      },
+      "skip_narrow": {
+        "route": "unchanged",
+        "reason": "insufficient_spatial_support",
+        "sha256": "90c79de66f7b96accf2775f8a5b4e0a453148faf8c38206eef792fc661b0cc41",
+        "mse": 9.282224659632615e-05,
+        "changed_pixels": 0,
+        "projection": 0.0,
+        "orthogonal_mse": 0.0,
+        "narrow_plane_rmse": null,
+        "global_abstain": false,
+        "contaminated_mse": 0.002970311891082437,
+        "clean_mse": 0.0,
+        "adjacent_clean_mse": 0.0
+      },
+      "candidates": [
+        {
+          "normal_axis": 0,
+          "rank": 1,
+          "tangent_frequency": 0.01417032284493969,
+          "qualified_lines": 4,
+          "interval_reasons": {
+            "too_few_supported_rows": 3
+          },
+          "accepted": []
+        },
+        {
+          "normal_axis": 0,
+          "rank": 2,
+          "tangent_frequency": 0.029917544932862628,
+          "qualified_lines": 0,
+          "interval_reasons": {},
+          "accepted": []
+        },
+        {
+          "normal_axis": 0,
+          "rank": 3,
+          "tangent_frequency": 0.11605381867751137,
+          "qualified_lines": 4,
+          "interval_reasons": {
+            "compact_supported_region": 1
+          },
+          "accepted": [
+            {
+              "start": 251,
+              "stop": 255,
+              "width": 4,
+              "accepted": true,
+              "reason": "compact_supported_region",
+              "contrast_context": "amplitude",
+              "context_start": 250,
+              "context_stop": 256,
+              "context_width": 6,
+              "touches_image_edge": false,
+              "median_amplitude": 0.09930641005359045,
+              "left_flank_median": 0.01233056054732682,
+              "right_flank_median": null,
+              "outside_to_inside_ratio": 0.12416681401203271,
+              "median_stability": 0.9214412461747892,
+              "median_validation_gain": 0.18243807208210655,
+              "far_lines": 234,
+              "far_lines_at_least_half_amplitude": 0
+            }
+          ]
+        },
+        {
+          "normal_axis": 0,
+          "rank": 4,
+          "tangent_frequency": 0.06050709326752936,
+          "qualified_lines": 0,
+          "interval_reasons": {},
+          "accepted": []
+        },
+        {
+          "normal_axis": 0,
+          "rank": 5,
+          "tangent_frequency": 0.04683340087566289,
+          "qualified_lines": 0,
+          "interval_reasons": {},
+          "accepted": []
+        },
+        {
+          "normal_axis": 1,
+          "rank": 1,
+          "tangent_frequency": 0.03750458136418329,
+          "qualified_lines": 0,
+          "interval_reasons": {},
+          "accepted": []
+        },
+        {
+          "normal_axis": 1,
+          "rank": 2,
+          "tangent_frequency": 0.019778690635805733,
+          "qualified_lines": 0,
+          "interval_reasons": {},
+          "accepted": []
+        },
+        {
+          "normal_axis": 1,
+          "rank": 3,
+          "tangent_frequency": 0.027964889807046082,
+          "qualified_lines": 3,
+          "interval_reasons": {
+            "broad_amplitude_context": 1
+          },
+          "accepted": []
+        },
+        {
+          "normal_axis": 1,
+          "rank": 4,
+          "tangent_frequency": 0.05088004157826989,
+          "qualified_lines": 1,
+          "interval_reasons": {
+            "too_few_supported_rows": 1
+          },
+          "accepted": []
+        },
+        {
+          "normal_axis": 1,
+          "rank": 5,
+          "tangent_frequency": 0.062311397324376,
+          "qualified_lines": 0,
+          "interval_reasons": {},
+          "accepted": []
+        }
+      ]
+    },
+    {
+      "image": "69022",
+      "kind": "edge16",
+      "clean_sha256": "4923c33c5de7c30850e6488a318d592f99fdfee462ce918bb446e886700cb442",
+      "observed_sha256": "d064c3b6e7a66ff666b6eea42ca9b7711e733d05468ff7330b6c031b34835d64",
+      "frequency_ranges_cycles_per_pixel": {
+        "true_fy": [
+          0.12757175417245825,
+          0.12757175417245825
+        ],
+        "true_fx": [
+          0.11597650650018251,
+          0.11597650650018251
+        ]
+      },
+      "input_mse": 0.00017253923615624547,
+      "old": {
+        "route": "narrow",
+        "reason": "compact_directional_support",
+        "sha256": "60cd7c7352d9e5db62c03c2f6d948756a4a0cec96fa6e5ae3dfc0024cb92f782",
+        "mse": 6.919815632553994e-05,
+        "changed_pixels": 1280,
+        "projection": 0.6496581106415988,
+        "orthogonal_mse": 4.8020787198452187e-05,
+        "narrow_plane_rmse": {
+          "inside": 0.13193447015433132,
+          "outside": 0.11670392210182079
+        },
+        "global_abstain": false,
+        "contaminated_mse": 0.0011809374234844122,
+        "clean_mse": 0.0,
+        "adjacent_clean_mse": 0.0,
+        "selected_regions": [
+          {
+            "normal_axis": 0,
+            "start": 250,
+            "stop": 255,
+            "context_start": 244,
+            "context_stop": 256,
+            "tangent_frequency": 0.11603482084093618
+          }
+        ]
+      },
+      "skip_narrow": {
+        "route": "unchanged",
+        "reason": "insufficient_spatial_support",
+        "sha256": "d064c3b6e7a66ff666b6eea42ca9b7711e733d05468ff7330b6c031b34835d64",
+        "mse": 0.00017253923615624547,
+        "changed_pixels": 0,
+        "projection": 0.0,
+        "orthogonal_mse": 0.0,
+        "narrow_plane_rmse": null,
+        "global_abstain": false,
+        "contaminated_mse": 0.0029446251859284534,
+        "clean_mse": 0.0,
+        "adjacent_clean_mse": 0.0
+      },
+      "candidates": [
+        {
+          "normal_axis": 0,
+          "rank": 1,
+          "tangent_frequency": 0.01417032284493969,
+          "qualified_lines": 3,
+          "interval_reasons": {
+            "too_few_supported_rows": 2
+          },
+          "accepted": []
+        },
+        {
+          "normal_axis": 0,
+          "rank": 2,
+          "tangent_frequency": 0.029917544932862628,
+          "qualified_lines": 0,
+          "interval_reasons": {},
+          "accepted": []
+        },
+        {
+          "normal_axis": 0,
+          "rank": 3,
+          "tangent_frequency": 0.11603482084093618,
+          "qualified_lines": 6,
+          "interval_reasons": {
+            "too_few_supported_rows": 1,
+            "compact_supported_region": 1
+          },
+          "accepted": [
+            {
+              "start": 250,
+              "stop": 255,
+              "width": 5,
+              "accepted": true,
+              "reason": "compact_supported_region",
+              "contrast_context": "amplitude",
+              "context_start": 244,
+              "context_stop": 256,
+              "context_width": 12,
+              "touches_image_edge": false,
+              "median_amplitude": 0.10923043860851743,
+              "left_flank_median": 0.01347734840654032,
+              "right_flank_median": null,
+              "outside_to_inside_ratio": 0.12338454901607802,
+              "median_stability": 0.899284586387629,
+              "median_validation_gain": 0.24523765696516497,
+              "far_lines": 228,
+              "far_lines_at_least_half_amplitude": 0
+            }
+          ]
+        },
+        {
+          "normal_axis": 0,
+          "rank": 4,
+          "tangent_frequency": 0.06050709326752936,
+          "qualified_lines": 0,
+          "interval_reasons": {},
+          "accepted": []
+        },
+        {
+          "normal_axis": 0,
+          "rank": 5,
+          "tangent_frequency": 0.04660899685450949,
+          "qualified_lines": 2,
+          "interval_reasons": {
+            "too_few_supported_rows": 1
+          },
+          "accepted": []
+        },
+        {
+          "normal_axis": 1,
+          "rank": 1,
+          "tangent_frequency": 0.03749284718891912,
+          "qualified_lines": 0,
+          "interval_reasons": {},
+          "accepted": []
+        },
+        {
+          "normal_axis": 1,
+          "rank": 2,
+          "tangent_frequency": 0.01978521568172451,
+          "qualified_lines": 0,
+          "interval_reasons": {},
+          "accepted": []
+        },
+        {
+          "normal_axis": 1,
+          "rank": 3,
+          "tangent_frequency": 0.02797004999220949,
+          "qualified_lines": 3,
+          "interval_reasons": {
+            "broad_amplitude_context": 1
+          },
+          "accepted": []
+        },
+        {
+          "normal_axis": 1,
+          "rank": 4,
+          "tangent_frequency": 0.05087197344697564,
+          "qualified_lines": 1,
+          "interval_reasons": {
+            "too_few_supported_rows": 1
+          },
+          "accepted": []
+        },
+        {
+          "normal_axis": 1,
+          "rank": 5,
+          "tangent_frequency": 0.06231926114057087,
+          "qualified_lines": 0,
+          "interval_reasons": {},
+          "accepted": []
+        }
+      ]
+    }
+  ]
+}

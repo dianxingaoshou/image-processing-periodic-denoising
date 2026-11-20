@@ -1,0 +1,24 @@
+{
+  "target": "dtd_woven_0083",
+  "comparison": "project_weave.denoise vs project_stripes.denoise, default shared configuration",
+  "historical": {"weave_study": 92, "additional_photos": 12},
+  "required_parity": {"image_id": "69022", "kinds": ["edge8", "edge16"], "variant": 3, "amplitude": 0.12},
+  "new_woven": {
+    "units": "cycles/pixel, linear sinusoids, centered coordinates, clipped to [0,1]",
+    "amplitudes": [0.07, 0.15],
+    "carriers": [
+      {"name": "stationary_A", "fy": 0.081, "fx": 0.123, "phase_seed": 2026112011},
+      {"name": "stationary_B", "fy": -0.117, "fx": 0.047, "phase_seed": 2026112012}
+    ],
+    "phase_rule": "numpy default_rng(seed).uniform(-pi,pi), shared across amplitudes"
+  },
+  "new_69022": {
+    "kinds": ["edge8", "edge16"],
+    "variants": [0, 2],
+    "amplitude": 0.12,
+    "generator": "support_data.make_sample, structure_seed('69022', 'local_support', seed=2026111605), original carrier, change boundary to left/top"
+  },
+  "measures": ["clean MAE and modified pixel count", "whole and contaminated MSE improvement vs input", "post-clipping noise projection and orthogonal error", "clean MSE and 16-pixel adjacent clean MSE", "69022 required output, residual, support and strength equality"],
+  "mse_tie_tolerance": 1e-12,
+  "scope": "Additional synthetic excitations on two known photographs, not additional independent photographs. Historical results and tuning cases reported separately."
+}

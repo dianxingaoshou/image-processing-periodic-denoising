@@ -1,0 +1,87 @@
+{
+  "completed_utc": "2026-11-20T01:38:48.530694+00:00",
+  "inputs": 112,
+  "historical_baselines_checked": 104,
+  "rows": 336,
+  "targeted_normal_entry_checks": 13,
+  "groups": {
+    "weave_92": {
+      "inputs": 92,
+      "better_than_previous": 0,
+      "tied_with_previous": 92,
+      "worse_than_previous": 0,
+      "exact_same_as_previous": 92,
+      "previous_net_improvements": 56,
+      "retained_net_improvements": 56,
+      "new_net_improvements": 0,
+      "current_net_improvements": 56,
+      "previous_worse_than_input": 0,
+      "current_worse_than_input": 0,
+      "input_mean_mse": 0.004003502269341659,
+      "previous_mean_mse": 0.0014397855165336662,
+      "current_mean_mse": 0.0014397855165336662
+    },
+    "photos_12": {
+      "inputs": 12,
+      "better_than_previous": 2,
+      "tied_with_previous": 10,
+      "worse_than_previous": 0,
+      "exact_same_as_previous": 10,
+      "previous_net_improvements": 5,
+      "retained_net_improvements": 5,
+      "new_net_improvements": 1,
+      "current_net_improvements": 6,
+      "previous_worse_than_input": 2,
+      "current_worse_than_input": 0,
+      "input_mean_mse": 0.0037455017789059693,
+      "previous_mean_mse": 0.0022675119774842535,
+      "current_mean_mse": 0.001903738280737077
+    },
+    "new_woven": {
+      "inputs": 4,
+      "better_than_previous": 2,
+      "tied_with_previous": 2,
+      "worse_than_previous": 0,
+      "exact_same_as_previous": 2,
+      "previous_net_improvements": 2,
+      "retained_net_improvements": 2,
+      "new_net_improvements": 0,
+      "current_net_improvements": 2,
+      "previous_worse_than_input": 2,
+      "current_worse_than_input": 0,
+      "input_mean_mse": 0.006669830497775048,
+      "previous_mean_mse": 0.0018793489319859336,
+      "current_mean_mse": 0.0017807631999181414
+    },
+    "new_69022": {
+      "inputs": 4,
+      "better_than_previous": 0,
+      "tied_with_previous": 4,
+      "worse_than_previous": 0,
+      "exact_same_as_previous": 4,
+      "previous_net_improvements": 4,
+      "retained_net_improvements": 4,
+      "new_net_improvements": 0,
+      "current_net_improvements": 4,
+      "previous_worse_than_input": 0,
+      "current_worse_than_input": 0,
+      "input_mean_mse": 0.00013962110221185577,
+      "previous_mean_mse": 8.361781693493289e-06,
+      "current_mean_mse": 8.361781693493289e-06
+    }
+  },
+  "environment": {
+    "python": "3.14.7",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "numpy": "2.5.5",
+    "scipy": "1.18.1",
+    "scikit_image": "0.26.0",
+    "pillow": "13.0.0"
+  },
+  "artifact_sha256": {
+    "freeze.json": "2ac0a67d0a2aafcfaf52643607d6d32935647de004de2a10ad4494a0a8081d3a",
+    "metrics.csv": "dbe6de20ad78fe078368ab83c1a5e407ccebe1a05884b17f23bdd6506bde4fb5",
+    "parity.csv": "d331a893806d15942910a66a21e0cfd63373a6655a73210a6d930a532319b309",
+    "RESULTS.md": "ec7f39de7c630431bc74cfb480aa06b865792e2a4bd69075ebc1bfe7c73c1879"
+  }
+}

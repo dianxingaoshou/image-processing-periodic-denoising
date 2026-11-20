@@ -1,0 +1,500 @@
+{
+  "cases": [
+    {
+      "observed_sha256": "6b0e47abe4007c0c7517e634274f9bb024090e10541ef5f74da126a2dde8a7bf",
+      "output_sha256": "ec9ea3a54ce64690c33b50e6983256860d12f230a33f171c68921a05d7818335",
+      "narrow_supported_pixels": 0,
+      "global_ambiguity_risk": 0.0,
+      "positive_gain_tiles": 41,
+      "total_tiles": 49,
+      "spatially_eligible_tiles": 37,
+      "texture_vetoed_tiles": 0,
+      "accepted_tiles": 37,
+      "components": [
+        {
+          "tiles": 37,
+          "decision": "accepted",
+          "median_harmonic_score": 0.22651811147185733,
+          "near_pure_loss_fraction": 0.0,
+          "median_local_periodic_fraction": 0.5638614415888556,
+          "median_structure_loss": 0.36210612809892656
+        }
+      ],
+      "example": {
+        "center_yx": [
+          128,
+          128
+        ],
+        "selected_fy_fx": [
+          0.0007149111621213543,
+          0.10724422747070257
+        ],
+        "distinct_modes": [
+          {
+            "fy_fx": [
+              0.0006527975011904377,
+              0.10743703027722971
+            ],
+            "local_amplitude": 0.05980042898794801
+          }
+        ],
+        "true_fy_fx": null
+      },
+      "paired_errors": {
+        "input_mse": 0.0,
+        "restored_mse": 0.0007454327417228206,
+        "restored_mae": 0.0208502193824599,
+        "removed_rms": 0.027302614192102934
+      },
+      "image_id": "dtd_knitted_0108",
+      "kind": "clean",
+      "seed": 0,
+      "reference_sha256": "6b0e47abe4007c0c7517e634274f9bb024090e10541ef5f74da126a2dde8a7bf"
+    },
+    {
+      "observed_sha256": "492868d2586f6dd6fa5b19df53fa848e03161367ab634f391fa5bcd02ad0ed92",
+      "output_sha256": "af116e3c29488a88319110d241035130885a6da161d05e2e147dc7592642a3e0",
+      "narrow_supported_pixels": 0,
+      "global_ambiguity_risk": 0.0,
+      "positive_gain_tiles": 49,
+      "total_tiles": 49,
+      "spatially_eligible_tiles": 49,
+      "texture_vetoed_tiles": 0,
+      "accepted_tiles": 49,
+      "components": [
+        {
+          "tiles": 49,
+          "decision": "accepted",
+          "median_harmonic_score": 0.025567340594082184,
+          "near_pure_loss_fraction": 0.0,
+          "median_local_periodic_fraction": 0.8200148236629372,
+          "median_structure_loss": 0.5820206547847147
+        }
+      ],
+      "example": {
+        "center_yx": [
+          128,
+          128
+        ],
+        "selected_fy_fx": [
+          0.07465781405732452,
+          -0.02029004300309798
+        ],
+        "distinct_modes": [
+          {
+            "fy_fx": [
+              0.07465781405732452,
+              -0.02029004300309798
+            ],
+            "local_amplitude": 0.095311411352541
+          },
+          {
+            "fy_fx": [
+              0.0006530288443099192,
+              0.10743705207445418
+            ],
+            "local_amplitude": 0.05980074534360337
+          }
+        ],
+        "true_fy_fx": [
+          -0.0746958411053502,
+          0.020450695718194953
+        ]
+      },
+      "paired_errors": {
+        "input_mse": 0.0071887006361077395,
+        "restored_mse": 0.00015275918259699412,
+        "restored_mae": 0.009457972838428936,
+        "removed_rms": 0.08432525286284702,
+        "removed_projection_on_added": 0.9839531815274924,
+        "nonaligned_removed_rms": 0.012284465370103814
+      },
+      "all_tile_coverage": {
+        "tiles": 49,
+        "pool_contains_added": 49,
+        "selected_added": 49,
+        "selected_matches_same_tile_clean": 0
+      },
+      "accepted_tile_coverage": {
+        "tiles": 49,
+        "pool_contains_added": 49,
+        "selected_added": 49,
+        "selected_matches_same_tile_clean": 0
+      },
+      "image_id": "dtd_knitted_0108",
+      "kind": "global",
+      "seed": 3083693998,
+      "reference_sha256": "6b0e47abe4007c0c7517e634274f9bb024090e10541ef5f74da126a2dde8a7bf"
+    },
+    {
+      "observed_sha256": "225931c385b5c6cefc76b540acb3d2a0c4a7f175323fd15b88f9b2b43bc7c2ab",
+      "output_sha256": "f673847867db924f0edb9f37f74aa591e364d2a09afc6a411c2874c4e84b8ea0",
+      "narrow_supported_pixels": 0,
+      "global_ambiguity_risk": 0.0,
+      "positive_gain_tiles": 45,
+      "total_tiles": 49,
+      "spatially_eligible_tiles": 45,
+      "texture_vetoed_tiles": 0,
+      "accepted_tiles": 45,
+      "components": [
+        {
+          "tiles": 45,
+          "decision": "accepted",
+          "median_harmonic_score": 0.08596132604604481,
+          "near_pure_loss_fraction": 0.0,
+          "median_local_periodic_fraction": 0.787758127236389,
+          "median_structure_loss": 0.44024005372333613
+        }
+      ],
+      "example": {
+        "center_yx": [
+          128,
+          128
+        ],
+        "selected_fy_fx": [
+          0.052635550440235074,
+          0.04775517097081279
+        ],
+        "distinct_modes": [
+          {
+            "fy_fx": [
+              0.051979651239206795,
+              0.048800044158352984
+            ],
+            "local_amplitude": 0.0790327771604119
+          },
+          {
+            "fy_fx": [
+              0.0006527914708864916,
+              0.10743705322762184
+            ],
+            "local_amplitude": 0.0597976282971593
+          }
+        ],
+        "true_fy_fx": [
+          0.051962126504724315,
+          0.048868285401833994
+        ]
+      },
+      "paired_errors": {
+        "input_mse": 0.0050132835276599196,
+        "restored_mse": 0.0003266955660042954,
+        "restored_mae": 0.01030418684227513,
+        "removed_rms": 0.06610758261497704,
+        "removed_projection_on_added": 0.9032802943302846,
+        "nonaligned_removed_rms": 0.016727157416741648
+      },
+      "all_tile_coverage": {
+        "tiles": 49,
+        "pool_contains_added": 49,
+        "selected_added": 48,
+        "selected_matches_same_tile_clean": 1
+      },
+      "accepted_tile_coverage": {
+        "tiles": 45,
+        "pool_contains_added": 45,
+        "selected_added": 45,
+        "selected_matches_same_tile_clean": 0
+      },
+      "image_id": "dtd_knitted_0108",
+      "kind": "chirp",
+      "seed": 2835700985,
+      "reference_sha256": "6b0e47abe4007c0c7517e634274f9bb024090e10541ef5f74da126a2dde8a7bf"
+    },
+    {
+      "observed_sha256": "47686f3a8e6817528165c1932c540dd3de9f456ac22ed9533ae00b69bc6837f7",
+      "output_sha256": "d99471dfd0af4c0b760d764ff406a58a225563aa6b59231bc371044f0d01ba83",
+      "narrow_supported_pixels": 0,
+      "global_ambiguity_risk": 0.0,
+      "positive_gain_tiles": 49,
+      "total_tiles": 49,
+      "spatially_eligible_tiles": 35,
+      "texture_vetoed_tiles": 0,
+      "accepted_tiles": 35,
+      "components": [
+        {
+          "tiles": 16,
+          "decision": "accepted",
+          "median_harmonic_score": 0.0230482704276682,
+          "near_pure_loss_fraction": 0.0,
+          "median_local_periodic_fraction": 0.8459383740740823,
+          "median_structure_loss": 0.37341841165795653
+        },
+        {
+          "tiles": 10,
+          "decision": "accepted",
+          "median_harmonic_score": 0.016979911941952287,
+          "near_pure_loss_fraction": 0.0,
+          "median_local_periodic_fraction": 0.8472841665629038,
+          "median_structure_loss": 0.3789375062688503
+        },
+        {
+          "tiles": 9,
+          "decision": "accepted",
+          "median_harmonic_score": 0.01991013405393657,
+          "near_pure_loss_fraction": 0.0,
+          "median_local_periodic_fraction": 0.8593666463674574,
+          "median_structure_loss": 0.38231938357999157
+        }
+      ],
+      "example": {
+        "center_yx": [
+          128,
+          128
+        ],
+        "selected_fy_fx": [
+          0.051498260733704705,
+          0.053578671987325036
+        ],
+        "distinct_modes": [
+          {
+            "fy_fx": [
+              0.051498260733704705,
+              0.053578671987325036
+            ],
+            "local_amplitude": 0.24076112160370816
+          },
+          {
+            "fy_fx": [
+              0.05092194049450654,
+              -0.053106541403014344
+            ],
+            "local_amplitude": 0.2391409692231853
+          },
+          {
+            "fy_fx": [
+              0.0006103702169721803,
+              0.10641215008123917
+            ],
+            "local_amplitude": 0.08706319932140139
+          }
+        ],
+        "true_fy_fx": null
+      },
+      "paired_errors": {
+        "input_mse": 0.0,
+        "restored_mse": 0.022128689103961027,
+        "restored_mae": 0.11779506142602292,
+        "removed_rms": 0.14875714807686058
+      },
+      "image_id": "dtd_woven_0094",
+      "kind": "clean",
+      "seed": 0,
+      "reference_sha256": "47686f3a8e6817528165c1932c540dd3de9f456ac22ed9533ae00b69bc6837f7"
+    },
+    {
+      "observed_sha256": "27039291596b617fea06e37145957d8791e53edf4f61fb52de1bdb7fb6f81fdb",
+      "output_sha256": "1f1f042b540fb5238c38bc7408c34b578d28bd12ed49c8e5a10d612d4ce6e4b4",
+      "narrow_supported_pixels": 0,
+      "global_ambiguity_risk": 0.0,
+      "positive_gain_tiles": 49,
+      "total_tiles": 49,
+      "spatially_eligible_tiles": 34,
+      "texture_vetoed_tiles": 0,
+      "accepted_tiles": 34,
+      "components": [
+        {
+          "tiles": 15,
+          "decision": "accepted",
+          "median_harmonic_score": 0.03304199508644011,
+          "near_pure_loss_fraction": 0.0,
+          "median_local_periodic_fraction": 0.8167792280629005,
+          "median_structure_loss": 0.33314855521501274
+        },
+        {
+          "tiles": 10,
+          "decision": "accepted",
+          "median_harmonic_score": 0.015845859106893012,
+          "near_pure_loss_fraction": 0.0,
+          "median_local_periodic_fraction": 0.8239483248074451,
+          "median_structure_loss": 0.33505569907744964
+        },
+        {
+          "tiles": 9,
+          "decision": "accepted",
+          "median_harmonic_score": 0.03054484042087615,
+          "near_pure_loss_fraction": 0.0,
+          "median_local_periodic_fraction": 0.8419645400256102,
+          "median_structure_loss": 0.33668640282554885
+        }
+      ],
+      "example": {
+        "center_yx": [
+          128,
+          128
+        ],
+        "selected_fy_fx": [
+          0.05150164933712719,
+          0.053572802175680646
+        ],
+        "distinct_modes": [
+          {
+            "fy_fx": [
+              0.05150164933712719,
+              0.053572802175680646
+            ],
+            "local_amplitude": 0.24003084775150677
+          },
+          {
+            "fy_fx": [
+              0.05092220836894192,
+              -0.053100996216486895
+            ],
+            "local_amplitude": 0.23818183494421105
+          },
+          {
+            "fy_fx": [
+              0.04327519930999414,
+              -0.13384036851633757
+            ],
+            "local_amplitude": 0.12272693687584922
+          }
+        ],
+        "true_fy_fx": [
+          -0.04327766024530361,
+          0.1338421610640113
+        ]
+      },
+      "paired_errors": {
+        "input_mse": 0.006956015291559135,
+        "restored_mse": 0.02800081981516654,
+        "restored_mae": 0.13732107906901603,
+        "removed_rms": 0.14476635240109098,
+        "removed_projection_on_added": -0.006290076460638195,
+        "nonaligned_removed_rms": 0.14476540184844375
+      },
+      "all_tile_coverage": {
+        "tiles": 49,
+        "pool_contains_added": 49,
+        "selected_added": 0,
+        "selected_matches_same_tile_clean": 48
+      },
+      "accepted_tile_coverage": {
+        "tiles": 34,
+        "pool_contains_added": 34,
+        "selected_added": 0,
+        "selected_matches_same_tile_clean": 34
+      },
+      "image_id": "dtd_woven_0094",
+      "kind": "global",
+      "seed": 2939790546,
+      "reference_sha256": "47686f3a8e6817528165c1932c540dd3de9f456ac22ed9533ae00b69bc6837f7"
+    },
+    {
+      "observed_sha256": "6372e201afc375b00fba626543611f4297b155731ec27e61e2735d776859cb52",
+      "output_sha256": "550a0132e381758b80c7bf000a607d67f3da1ab1eadddf1a2b1f0264fcc9aab1",
+      "narrow_supported_pixels": 0,
+      "global_ambiguity_risk": 0.0,
+      "positive_gain_tiles": 49,
+      "total_tiles": 49,
+      "spatially_eligible_tiles": 32,
+      "texture_vetoed_tiles": 0,
+      "accepted_tiles": 32,
+      "components": [
+        {
+          "tiles": 13,
+          "decision": "accepted",
+          "median_harmonic_score": 0.02178886001785572,
+          "near_pure_loss_fraction": 0.0,
+          "median_local_periodic_fraction": 0.8430503638971454,
+          "median_structure_loss": 0.34997470654974544
+        },
+        {
+          "tiles": 10,
+          "decision": "accepted",
+          "median_harmonic_score": 0.015822064448678227,
+          "near_pure_loss_fraction": 0.0,
+          "median_local_periodic_fraction": 0.8554354506789215,
+          "median_structure_loss": 0.3511832360185013
+        },
+        {
+          "tiles": 9,
+          "decision": "accepted",
+          "median_harmonic_score": 0.019567447316302104,
+          "near_pure_loss_fraction": 0.0,
+          "median_local_periodic_fraction": 0.8670422456118841,
+          "median_structure_loss": 0.3518886563842035
+        }
+      ],
+      "example": {
+        "center_yx": [
+          128,
+          128
+        ],
+        "selected_fy_fx": [
+          0.05150009293366957,
+          0.0535755339998975
+        ],
+        "distinct_modes": [
+          {
+            "fy_fx": [
+              0.05150009293366957,
+              0.0535755339998975
+            ],
+            "local_amplitude": 0.24065685177578994
+          },
+          {
+            "fy_fx": [
+              0.05092338097898727,
+              -0.05310337876230439
+            ],
+            "local_amplitude": 0.23907467798811716
+          },
+          {
+            "fy_fx": [
+              0.0006072842548779493,
+              0.10641658706872158
+            ],
+            "local_amplitude": 0.07421618940766751
+          },
+          {
+            "fy_fx": [
+              0.20306344441385277,
+              0.0013694065118428841
+            ],
+            "local_amplitude": 0.04787995880335874
+          }
+        ],
+        "true_fy_fx": [
+          0.01992954551546777,
+          0.11854363766258058
+        ]
+      },
+      "paired_errors": {
+        "input_mse": 0.00489782808691509,
+        "restored_mse": 0.0245426711054446,
+        "restored_mae": 0.12672036215791915,
+        "removed_rms": 0.14026185176581776,
+        "removed_projection_on_added": 0.002913948972911801,
+        "nonaligned_removed_rms": 0.140261703514662
+      },
+      "all_tile_coverage": {
+        "tiles": 49,
+        "pool_contains_added": 0,
+        "selected_added": 0,
+        "selected_matches_same_tile_clean": 48
+      },
+      "accepted_tile_coverage": {
+        "tiles": 32,
+        "pool_contains_added": 0,
+        "selected_added": 0,
+        "selected_matches_same_tile_clean": 32
+      },
+      "image_id": "dtd_woven_0094",
+      "kind": "chirp",
+      "seed": 3750289692,
+      "reference_sha256": "47686f3a8e6817528165c1932c540dd3de9f456ac22ed9533ae00b69bc6837f7"
+    }
+  ],
+  "verified_against": "results/project_refinement/metrics.csv; exact hashes for six outputs",
+  "prior_metrics_sha256": "4a4781a32622c1afdf9bf312f098beb85b5393a623683f2bee23ccd5807f4b85",
+  "source_sha256": "e0bb2b592547be53a634f5af31f187aed7a3b4e7c1a3b454ea6623258337da70",
+  "frequency": "cycles/pixel; local field sampled at (origin + size//2); distance modulo conjugate sign; within 1/min(tile height,width), 1/64 in this audit",
+  "projection": "removed vs actual (post-clipping) addition. Orthogonal energy also includes waveform estimation error.",
+  "old_thresholds": {
+    "harmonic_score": 0.25,
+    "periodic_fraction": 0.98,
+    "structure_loss": 0.8,
+    "minimum_ambiguous_fraction": 0.5
+  }
+}

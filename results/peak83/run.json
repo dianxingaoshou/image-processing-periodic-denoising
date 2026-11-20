@@ -1,0 +1,86 @@
+{
+  "completed_utc": "2026-11-20T02:26:50.781871+00:00",
+  "inputs": 154,
+  "historical_baselines_checked": 148,
+  "rows": 462,
+  "peak_rows": 294,
+  "groups": {
+    "three": {
+      "inputs": 3,
+      "better_than_previous": 3,
+      "tied_with_previous": 0,
+      "worse_than_previous": 0,
+      "exact_same_as_previous": 0,
+      "previous_net_improvements": 3,
+      "retained_net_improvements": 3,
+      "new_net_improvements": 0,
+      "current_net_improvements": 3,
+      "previous_worse_than_input": 0,
+      "current_worse_than_input": 0,
+      "input_mean_mse": 0.001729499636945243,
+      "previous_mean_mse": 0.000753245492298962,
+      "current_mean_mse": 0.0007531195713120228
+    },
+    "nine": {
+      "inputs": 9,
+      "better_than_previous": 3,
+      "tied_with_previous": 6,
+      "worse_than_previous": 0,
+      "exact_same_as_previous": 6,
+      "previous_net_improvements": 9,
+      "retained_net_improvements": 9,
+      "new_net_improvements": 0,
+      "current_net_improvements": 9,
+      "previous_worse_than_input": 0,
+      "current_worse_than_input": 0,
+      "input_mean_mse": 0.0023637691727378275,
+      "previous_mean_mse": 0.00019234095500359733,
+      "current_mean_mse": 0.00019211548109132303
+    },
+    "new_phases": {
+      "inputs": 6,
+      "better_than_previous": 6,
+      "tied_with_previous": 0,
+      "worse_than_previous": 0,
+      "exact_same_as_previous": 0,
+      "previous_net_improvements": 6,
+      "retained_net_improvements": 6,
+      "new_net_improvements": 0,
+      "current_net_improvements": 6,
+      "previous_worse_than_input": 0,
+      "current_worse_than_input": 0,
+      "input_mean_mse": 0.0017290323520142423,
+      "previous_mean_mse": 0.000797314401587619,
+      "current_mean_mse": 0.0007971359880827363
+    },
+    "historical": {
+      "inputs": 148,
+      "better_than_previous": 9,
+      "tied_with_previous": 138,
+      "worse_than_previous": 1,
+      "exact_same_as_previous": 138,
+      "previous_net_improvements": 97,
+      "retained_net_improvements": 97,
+      "new_net_improvements": 0,
+      "current_net_improvements": 97,
+      "previous_worse_than_input": 0,
+      "current_worse_than_input": 0,
+      "input_mean_mse": 0.0034133505448341738,
+      "previous_mean_mse": 0.0011732081219035068,
+      "current_mean_mse": 0.001173189150475843
+    }
+  },
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.5",
+    "scipy": "1.18.1"
+  },
+  "artifact_sha256": {
+    "freeze.json": "20b0b8396517b18866c2793b273e868b995da767ea3f933a5b99f7ba5e024b86",
+    "metrics.csv": "833cb287da8bfac191658e1e01c0265995018d6c1bf46ff5454b6f30a26e434d",
+    "matched.csv": "96f38985569610eae53ec21df1e147cca0cd0fd4ecdba9038c6ef0dc78c8c604",
+    "per_peak.csv": "f8ad8ebc4e9275d065bc52428e1ffc8d50730be8d5e0c499055afd447b55e072",
+    "parity.csv": "f0aa2cd04b82c283bef420b0c96f839df7da5257ab926bec1f4225dfb434f793",
+    "RESULTS.md": "529d7243afc66948269fc3f260407188e738aa89e2ce76e6cf3ed06530f4ca4d"
+  }
+}

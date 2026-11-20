@@ -1,0 +1,8 @@
+{
+  "reason": "Supplement fixed before evaluation or generation of any of the new cases. The proposed retry searches one changing axis at a time. Add one x and one y sweep without altering the original two crossed-axis sweeps.",
+  "amplitudes": [0.075],
+  "new_variants": [
+    {"name":"axis_x", "kind":"chirp", "fy":0.098, "fx":-0.105, "dy":0, "dx":0.058, "cross":0, "seed":2026112111},
+    {"name":"axis_y", "kind":"chirp", "fy":-0.088, "fx":-0.124, "dy":-0.039, "dx":0, "cross":0, "seed":2026112112}
+  ]
+}

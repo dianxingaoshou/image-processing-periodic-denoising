@@ -1,0 +1,20 @@
+{
+  "target": "dtd_woven_0083",
+  "historical_inputs": 112,
+  "previous": "project_stripes",
+  "current": "project_weak",
+  "new_variants": [
+    {"name": "fixed_C", "kind": "fixed", "fy": 0.063, "fx": -0.136, "dy": 0, "dx": 0, "cross": 0, "seed": 2026112101},
+    {"name": "fixed_D", "kind": "fixed", "fy": 0.143, "fx": 0.083, "dy": 0, "dx": 0, "cross": 0, "seed": 2026112102},
+    {"name": "sweep_C", "kind": "chirp", "fy": 0.095, "fx": -0.116, "dy": 0.045, "dx": -0.032, "cross": 0.018, "seed": 2026112103},
+    {"name": "sweep_D", "kind": "chirp", "fy": -0.106, "fx": 0.069, "dy": -0.055, "dx": 0.059, "cross": -0.025, "seed": 2026112104}
+  ],
+  "amplitudes": [0.05, 0.085],
+  "generator": "evaluate_weave.new_cases centered linear and quadratic phases; one PCG64 phase per direction shared across strengths; clip to [0,1]",
+  "clean_controls": ["transpose", "elastic_warp", "rotated_warp"],
+  "warps": "Two smooth displacements of the original photograph without additive waves. Sample at (y+2.5*sin(2*pi*x/113), x+1.75*sin(2*pi*y/97+0.4)) using bilinear reflect interpolation; second control applies this warp to rot90(photo), with displacement signs reversed.",
+  "texture_metric": "Clean-image power around the six strongest distinct reference FFT peaks between 0.025 and 0.45 cycles/pixel. Use a detrended Hann-windowed reference to locate peaks, 6-bin minimum separation including conjugate, 2-bin disk about each plus its conjugate. Report orthogonal removal error in that band at the measured global noise gain, and band MSE of output vs clean. The true gain-matched ideal residual is a*(observed-clean). Only for evaluation.",
+  "parity": {"image_id":"69022", "kinds":["edge8","edge16"], "variants":["0","2","3"], "bottom_strengths":[0.0,0.5,1.0]},
+  "mse_tie_tolerance": 1e-12,
+  "scope": "Added carrier conditions and transformed clean controls reuse the known photograph. No additional independent photographs."
+}

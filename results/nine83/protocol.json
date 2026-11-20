@@ -1,0 +1,36 @@
+{
+  "target": "dtd_woven_0083",
+  "historical_inputs": 125,
+  "previous": "project_weak",
+  "current": "project_guarded",
+  "focus_nine": [
+    ["weak83_carriers","fixed","fixed_C@0.05",0.05],
+    ["weak83_carriers","fixed","fixed_C@0.09",0.085],
+    ["weak83_carriers","fixed","fixed_D@0.05",0.05],
+    ["weak83_carriers","fixed","fixed_D@0.09",0.085],
+    ["weak83_single_axis","chirp","axis_x@0.07",0.075],
+    ["weak83_single_axis","chirp","axis_y@0.07",0.075],
+    ["weak83_carriers","chirp","sweep_C@0.05",0.05],
+    ["weak83_carriers","chirp","sweep_D@0.05",0.05],
+    ["weak83_carriers","chirp","sweep_D@0.09",0.085]
+  ],
+  "previous_small_gain": ["weak83_carriers","chirp","sweep_C@0.09",0.085],
+  "amplitudes": [0.045, 0.08],
+  "new_variants": [
+    {"name":"fixed_E","kind":"fixed","fy":0.052,"fx":0.158,"dy":0,"dx":0,"cross":0,"seed":2026112211},
+    {"name":"fixed_F","kind":"fixed","fy":0.134,"fx":-0.091,"dy":0,"dx":0,"cross":0,"seed":2026112212},
+    {"name":"axis_x_E","kind":"axis_x","fy":0.112,"fx":0.081,"dy":0,"dx":-0.046,"cross":0,"seed":2026112221},
+    {"name":"axis_x_F","kind":"axis_x","fy":-0.071,"fx":0.149,"dy":0,"dx":0.071,"cross":0,"seed":2026112222},
+    {"name":"axis_y_E","kind":"axis_y","fy":0.073,"fx":-0.133,"dy":0.064,"dx":0,"cross":0,"seed":2026112231},
+    {"name":"axis_y_F","kind":"axis_y","fy":0.151,"fx":0.052,"dy":-0.043,"dx":0,"cross":0,"seed":2026112232},
+    {"name":"coupled_E","kind":"coupled","fy":0.109,"fx":0.106,"dy":-0.036,"dx":0.047,"cross":-0.023,"seed":2026112241},
+    {"name":"coupled_F","kind":"coupled","fy":-0.138,"fx":0.058,"dy":0.064,"dx":0.035,"cross":0.026,"seed":2026112242}
+  ],
+  "generator": "Use the centered linear/quadratic pixel-coordinate phase and the per-direction PCG64 offset from evaluate_weave.new_cases, with the same offset for both strengths. Clip each observation to [0,1]. Carry exact amplitude in a separate CSV column. All eight new (fy,fx) pairs are in cycles/pixel.",
+  "clean_controls": ["clockwise90", "gamma_1p25", "cross_shear"],
+  "clean_transforms": "Rotate the original clockwise by 90 degrees; raise gray intensity to power 1.25; or bilinearly sample with reflect boundaries at (y+1.6*sin(2*pi*(x+0.23*y)/83), x+2.2*cos(2*pi*(y-0.17*x)/127)). Treat each transformed photograph as the clean reference and identical observation.",
+  "texture_metric": "Reuse evaluate_weak83.measure and its six pairs of reference Fourier peak disks, real post-clipping gain, off_noise_mse, texture_excess_mse at matched gain, and total texture_band_mse versus clean. Zero exposure is evaluated by changed pixels and MAE.",
+  "parity": {"image_id":"69022","kinds":["edge8","edge16"],"variants":["0","2","3"],"bottom_strengths":[0.0,0.5,1.0]},
+  "mse_tie_tolerance": 1e-12,
+  "scope": "Nine known failures are regression/design cases. The sixteen new noisy conditions and three new controls reuse the same original photograph; directions and phase seeds are fixed before new samples or inference."
+}

@@ -1,0 +1,562 @@
+{
+  "phase": "original axis_x_E@0.080 seed",
+  "source_sha256": {
+    "project_collision.py": "6562333422b2227ab2436f580219f5678e5174543db197376624ca4adc1c7eda",
+    "collision_review.py": "b06d09a5a0a0470e7403b4a577f17cd9881f243e8c71aca1e708259d07e6ea8e",
+    "check_collision_textures.py": "cd71fc8f53fa57657b95f44ee1dae9f6f86e81674ee39d25402e3ee8e74f79e2"
+  },
+  "cases": [
+    {
+      "side": "left",
+      "kind": "clean_gap",
+      "reference_sha256": "5570bcf159c874f4a31288928af2514b20374b884f8b442342e4a52f0fcd3d2f",
+      "observed_sha256": "d929c6623e8e1e7899a4cb932a88b642b2760ea71947eec57ba9f52da2eff01a",
+      "outputs_identical": true,
+      "previous": {
+        "route": "unchanged",
+        "reason": "recurring_narrow_texture",
+        "review_reason": null,
+        "output_sha256": "d929c6623e8e1e7899a4cb932a88b642b2760ea71947eec57ba9f52da2eff01a",
+        "inside": {
+          "pixels": 24832,
+          "input_mse": 0.0,
+          "mse": 0.0,
+          "mae": 0.0,
+          "gain": null,
+          "changed_pixels": 0
+        },
+        "exterior": {
+          "pixels": 37120,
+          "input_mse": 0.0031675348559326707,
+          "mse": 0.0031675348559326707,
+          "mae": 0.05062811574714696,
+          "gain": 0.0,
+          "changed_pixels": 0
+        },
+        "whole": {
+          "pixels": 65536,
+          "input_mse": 0.0018565685979637578,
+          "mse": 0.0018565685979637578,
+          "mae": 0.030068428124003628,
+          "gain": 0.0,
+          "changed_pixels": 0
+        }
+      },
+      "current": {
+        "route": "unchanged",
+        "reason": "recurring_narrow_texture",
+        "review_reason": null,
+        "output_sha256": "d929c6623e8e1e7899a4cb932a88b642b2760ea71947eec57ba9f52da2eff01a",
+        "inside": {
+          "pixels": 24832,
+          "input_mse": 0.0,
+          "mse": 0.0,
+          "mae": 0.0,
+          "gain": null,
+          "changed_pixels": 0
+        },
+        "exterior": {
+          "pixels": 37120,
+          "input_mse": 0.0031675348559326707,
+          "mse": 0.0031675348559326707,
+          "mae": 0.05062811574714696,
+          "gain": 0.0,
+          "changed_pixels": 0
+        },
+        "whole": {
+          "pixels": 65536,
+          "input_mse": 0.0018565685979637578,
+          "mse": 0.0018565685979637578,
+          "mae": 0.030068428124003628,
+          "gain": 0.0,
+          "changed_pixels": 0
+        }
+      }
+    },
+    {
+      "side": "left",
+      "kind": "stationary_weave_gap",
+      "reference_sha256": "0995f23164010e92940bb1d023ae069343842b55525d55abaca1dc8335f9f8eb",
+      "observed_sha256": "b0661750da46277e873eaff2abe7c5fd712707d30c3aa1bdf95815e5f94a5cb0",
+      "outputs_identical": true,
+      "previous": {
+        "route": "unchanged",
+        "reason": "recurring_narrow_texture",
+        "review_reason": null,
+        "output_sha256": "b0661750da46277e873eaff2abe7c5fd712707d30c3aa1bdf95815e5f94a5cb0",
+        "inside": {
+          "pixels": 24832,
+          "input_mse": 0.0,
+          "mse": 0.0,
+          "mae": 0.0,
+          "gain": null,
+          "changed_pixels": 0
+        },
+        "exterior": {
+          "pixels": 37120,
+          "input_mse": 0.0031675348559326707,
+          "mse": 0.0031675348559326707,
+          "mae": 0.05062811574714696,
+          "gain": 0.0,
+          "changed_pixels": 0
+        },
+        "whole": {
+          "pixels": 65536,
+          "input_mse": 0.001856579878191476,
+          "mse": 0.001856579878191476,
+          "mae": 0.03006852651588343,
+          "gain": 0.0,
+          "changed_pixels": 0
+        },
+        "paired_stationary_texture_gain": 1.0,
+        "paired_stationary_texture_mse": 0.0
+      },
+      "current": {
+        "route": "unchanged",
+        "reason": "recurring_narrow_texture",
+        "review_reason": null,
+        "output_sha256": "b0661750da46277e873eaff2abe7c5fd712707d30c3aa1bdf95815e5f94a5cb0",
+        "inside": {
+          "pixels": 24832,
+          "input_mse": 0.0,
+          "mse": 0.0,
+          "mae": 0.0,
+          "gain": null,
+          "changed_pixels": 0
+        },
+        "exterior": {
+          "pixels": 37120,
+          "input_mse": 0.0031675348559326707,
+          "mse": 0.0031675348559326707,
+          "mae": 0.05062811574714696,
+          "gain": 0.0,
+          "changed_pixels": 0
+        },
+        "whole": {
+          "pixels": 65536,
+          "input_mse": 0.001856579878191476,
+          "mse": 0.001856579878191476,
+          "mae": 0.03006852651588343,
+          "gain": 0.0,
+          "changed_pixels": 0
+        },
+        "paired_stationary_texture_gain": 1.0,
+        "paired_stationary_texture_mse": 0.0
+      }
+    },
+    {
+      "side": "left",
+      "kind": "stationary_weave_plus_stripe",
+      "reference_sha256": "0995f23164010e92940bb1d023ae069343842b55525d55abaca1dc8335f9f8eb",
+      "observed_sha256": "764545406e8b9a10d8ed36f6c74f341b493403e9fac9390f82e3b002bdb301b8",
+      "outputs_identical": false,
+      "previous": {
+        "route": "general",
+        "reason": "texture_reviewed_chirp",
+        "review_reason": null,
+        "output_sha256": "d385488d083036443a12e6f4af0e1c4103e3ded7ffce9a715420c3c148c652cd",
+        "inside": {
+          "pixels": 24832,
+          "input_mse": 0.0031762795179572276,
+          "mse": 0.0022799006623953834,
+          "mae": 0.04048212147124915,
+          "gain": 0.22353788162790217,
+          "changed_pixels": 11798
+        },
+        "exterior": {
+          "pixels": 37120,
+          "input_mse": 0.0031675348559326707,
+          "mse": 0.001340655402456443,
+          "mae": 0.026902315548681045,
+          "gain": 0.5316920628690105,
+          "changed_pixels": 24575
+        },
+        "whole": {
+          "pixels": 65536,
+          "input_mse": 0.0031723501591872454,
+          "mse": 0.0016347821650128324,
+          "mae": 0.031281243368944084,
+          "gain": 0.4347790209684668,
+          "changed_pixels": 39957
+        },
+        "paired_stationary_texture_gain": 0.930867088978524,
+        "paired_stationary_texture_mse": 2.8360615971572048e-05
+      },
+      "current": {
+        "route": "general",
+        "reason": "locally_verified_chirp_release",
+        "review_reason": "all_inferred_bands_verified",
+        "output_sha256": "04b528f30b3dce10849251e174bccc0118e571e4939de4a809e8b9d86f20d2f6",
+        "inside": {
+          "pixels": 24832,
+          "input_mse": 0.0031762795179572276,
+          "mse": 4.056620381988148e-05,
+          "mae": 0.005558940480647454,
+          "gain": 0.9538341355776522,
+          "changed_pixels": 24832
+        },
+        "exterior": {
+          "pixels": 37120,
+          "input_mse": 0.0031675348559326707,
+          "mse": 2.052805076431254e-05,
+          "mae": 0.0037196951369079484,
+          "gain": 0.9570233518269555,
+          "changed_pixels": 37120
+        },
+        "whole": {
+          "pixels": 65536,
+          "input_mse": 0.0031723501591872454,
+          "mse": 2.8569888888312457e-05,
+          "mae": 0.004471643062965892,
+          "gain": 0.9557674856237028,
+          "changed_pixels": 65536
+        },
+        "paired_stationary_texture_gain": 0.9589902792405597,
+        "paired_stationary_texture_mse": 6.611167083066288e-06
+      }
+    },
+    {
+      "side": "left",
+      "kind": "identical_observation",
+      "reference_sha256": "a96e67264114fabafbe40ce1bbf59aa7696a50acd73743a31b02228b3142b4f3",
+      "observed_sha256": "cb80c358c8e3f0becae4d4c90870ce541468aa6b8292ac9a61441d72bcb0f3bb",
+      "outputs_identical": false,
+      "previous": {
+        "route": "general",
+        "reason": "texture_reviewed_chirp",
+        "review_reason": null,
+        "output_sha256": "49a601aeedee5cad9f0f0dfc955889fb3931b3866f00306b9ce0a67598fdbef0",
+        "inside": {
+          "pixels": 24832,
+          "input_mse": 0.0,
+          "mse": 0.0005158355507216035,
+          "mae": 0.011434694178643671,
+          "gain": null,
+          "changed_pixels": 11503
+        },
+        "exterior": {
+          "pixels": 37120,
+          "input_mse": 0.0031675348559326707,
+          "mse": 0.0012118950466550654,
+          "mae": 0.02239463203198993,
+          "gain": 0.5787833959526626,
+          "changed_pixels": 25270
+        },
+        "whole": {
+          "pixels": 65536,
+          "input_mse": 0.0018565342201325998,
+          "mse": 0.0009379051812810513,
+          "mae": 0.01833038158840838,
+          "gain": 0.6044556486246125,
+          "changed_pixels": 40357
+        }
+      },
+      "current": {
+        "route": "general",
+        "reason": "locally_verified_chirp_release",
+        "review_reason": "all_inferred_bands_verified",
+        "output_sha256": "5e2188a662c1bb86444d83ddf598306d6821d323b34839fe1ff51afe9d139bcf",
+        "inside": {
+          "pixels": 24832,
+          "input_mse": 0.0,
+          "mse": 0.002984636303909991,
+          "mae": 0.04916745946849949,
+          "gain": null,
+          "changed_pixels": 24832
+        },
+        "exterior": {
+          "pixels": 37120,
+          "input_mse": 0.0031675348559326707,
+          "mse": 1.7035354150565843e-05,
+          "mae": 0.003278278586106252,
+          "gain": 0.9680995720781931,
+          "changed_pixels": 37120
+        },
+        "whole": {
+          "pixels": 65536,
+          "input_mse": 0.0018565342201325998,
+          "mse": 0.0011982891721265944,
+          "mae": 0.021830150613828328,
+          "gain": 0.9810972362351541,
+          "changed_pixels": 65536
+        }
+      }
+    },
+    {
+      "side": "right",
+      "kind": "clean_gap",
+      "reference_sha256": "5570bcf159c874f4a31288928af2514b20374b884f8b442342e4a52f0fcd3d2f",
+      "observed_sha256": "0ff25843b00edf63a0848eac1a4d9bf22f15266b0243f1a6195accdbac0cb664",
+      "outputs_identical": true,
+      "previous": {
+        "route": "unchanged",
+        "reason": "recurring_narrow_texture",
+        "review_reason": null,
+        "output_sha256": "0ff25843b00edf63a0848eac1a4d9bf22f15266b0243f1a6195accdbac0cb664",
+        "inside": {
+          "pixels": 17408,
+          "input_mse": 0.0,
+          "mse": 0.0,
+          "mae": 0.0,
+          "gain": null,
+          "changed_pixels": 0
+        },
+        "exterior": {
+          "pixels": 46336,
+          "input_mse": 0.0031694007656652367,
+          "mse": 0.0031694007656652367,
+          "mae": 0.05064088264014338,
+          "gain": 0.0,
+          "changed_pixels": 0
+        },
+        "whole": {
+          "pixels": 65536,
+          "input_mse": 0.002271570344304627,
+          "mse": 0.002271570344304627,
+          "mae": 0.036494995822382977,
+          "gain": 0.0,
+          "changed_pixels": 0
+        }
+      },
+      "current": {
+        "route": "unchanged",
+        "reason": "recurring_narrow_texture",
+        "review_reason": null,
+        "output_sha256": "0ff25843b00edf63a0848eac1a4d9bf22f15266b0243f1a6195accdbac0cb664",
+        "inside": {
+          "pixels": 17408,
+          "input_mse": 0.0,
+          "mse": 0.0,
+          "mae": 0.0,
+          "gain": null,
+          "changed_pixels": 0
+        },
+        "exterior": {
+          "pixels": 46336,
+          "input_mse": 0.0031694007656652367,
+          "mse": 0.0031694007656652367,
+          "mae": 0.05064088264014338,
+          "gain": 0.0,
+          "changed_pixels": 0
+        },
+        "whole": {
+          "pixels": 65536,
+          "input_mse": 0.002271570344304627,
+          "mse": 0.002271570344304627,
+          "mae": 0.036494995822382977,
+          "gain": 0.0,
+          "changed_pixels": 0
+        }
+      }
+    },
+    {
+      "side": "right",
+      "kind": "stationary_weave_gap",
+      "reference_sha256": "7f719cf7960e9f4b5eced4aed3e36f87c15e14c4b18241d35dbf5fabc1a7b616",
+      "observed_sha256": "ca10798d6fdeb180eaea1e1eda7c24559d390768ec69f2c3c0270aa627e40ff7",
+      "outputs_identical": true,
+      "previous": {
+        "route": "unchanged",
+        "reason": "recurring_narrow_texture",
+        "review_reason": null,
+        "output_sha256": "ca10798d6fdeb180eaea1e1eda7c24559d390768ec69f2c3c0270aa627e40ff7",
+        "inside": {
+          "pixels": 17408,
+          "input_mse": 0.0,
+          "mse": 0.0,
+          "mae": 0.0,
+          "gain": null,
+          "changed_pixels": 0
+        },
+        "exterior": {
+          "pixels": 46336,
+          "input_mse": 0.0031694007656652367,
+          "mse": 0.0031694007656652367,
+          "mae": 0.05064088264014338,
+          "gain": 0.0,
+          "changed_pixels": 0
+        },
+        "whole": {
+          "pixels": 65536,
+          "input_mse": 0.002271599343310654,
+          "mse": 0.002271599343310654,
+          "mae": 0.036495168613099996,
+          "gain": 0.0,
+          "changed_pixels": 0
+        },
+        "paired_stationary_texture_gain": 1.0,
+        "paired_stationary_texture_mse": 0.0
+      },
+      "current": {
+        "route": "unchanged",
+        "reason": "recurring_narrow_texture",
+        "review_reason": null,
+        "output_sha256": "ca10798d6fdeb180eaea1e1eda7c24559d390768ec69f2c3c0270aa627e40ff7",
+        "inside": {
+          "pixels": 17408,
+          "input_mse": 0.0,
+          "mse": 0.0,
+          "mae": 0.0,
+          "gain": null,
+          "changed_pixels": 0
+        },
+        "exterior": {
+          "pixels": 46336,
+          "input_mse": 0.0031694007656652367,
+          "mse": 0.0031694007656652367,
+          "mae": 0.05064088264014338,
+          "gain": 0.0,
+          "changed_pixels": 0
+        },
+        "whole": {
+          "pixels": 65536,
+          "input_mse": 0.002271599343310654,
+          "mse": 0.002271599343310654,
+          "mae": 0.036495168613099996,
+          "gain": 0.0,
+          "changed_pixels": 0
+        },
+        "paired_stationary_texture_gain": 1.0,
+        "paired_stationary_texture_mse": 0.0
+      }
+    },
+    {
+      "side": "right",
+      "kind": "stationary_weave_plus_stripe",
+      "reference_sha256": "7f719cf7960e9f4b5eced4aed3e36f87c15e14c4b18241d35dbf5fabc1a7b616",
+      "observed_sha256": "782c7c357f8a232112edbf1ff7fc6a1ed13ef3152d30f04696c84ea48c720b2c",
+      "outputs_identical": false,
+      "previous": {
+        "route": "general",
+        "reason": "texture_reviewed_chirp",
+        "review_reason": null,
+        "output_sha256": "8d8d1e723e8f4c5410d1b761d3dd132230185684eeac84cb4f4567fe2cd81b65",
+        "inside": {
+          "pixels": 17408,
+          "input_mse": 0.0031907533484912885,
+          "mse": 0.0025566962691917963,
+          "mae": 0.043594633362182195,
+          "gain": 0.1514172750285244,
+          "changed_pixels": 6006
+        },
+        "exterior": {
+          "pixels": 46336,
+          "input_mse": 0.0031694007656652367,
+          "mse": 0.0012893164155079167,
+          "mae": 0.02573463635379998,
+          "gain": 0.5137079952327382,
+          "changed_pixels": 32883
+        },
+        "whole": {
+          "pixels": 65536,
+          "input_mse": 0.0031742565381888284,
+          "mse": 0.001594977018343226,
+          "mae": 0.03006138112018674,
+          "gain": 0.4265367889424561,
+          "changed_pixels": 40681
+        },
+        "paired_stationary_texture_gain": 0.9870181732419857,
+        "paired_stationary_texture_mse": 1.687226114603662e-05
+      },
+      "current": {
+        "route": "general",
+        "reason": "locally_verified_chirp_release",
+        "review_reason": "all_inferred_bands_verified",
+        "output_sha256": "5e203823bbbc4617fdd5191f14fbb3ac8389993822b9ee069d3a035232318a0d",
+        "inside": {
+          "pixels": 17408,
+          "input_mse": 0.0031907533484912885,
+          "mse": 1.1969718051750238e-05,
+          "mae": 0.0026490677109659603,
+          "gain": 0.9764178867564333,
+          "changed_pixels": 17408
+        },
+        "exterior": {
+          "pixels": 46336,
+          "input_mse": 0.0031694007656652367,
+          "mse": 2.520666642949457e-05,
+          "mae": 0.003854311075175202,
+          "gain": 0.9743818118057278,
+          "changed_pixels": 46336
+        },
+        "whole": {
+          "pixels": 65536,
+          "input_mse": 0.0031742565381888284,
+          "mse": 2.1638488151801288e-05,
+          "mae": 0.0035250351589302736,
+          "gain": 0.9749093907653987,
+          "changed_pixels": 65536
+        },
+        "paired_stationary_texture_gain": 0.9891104911249229,
+        "paired_stationary_texture_mse": 8.53030629879002e-06
+      }
+    },
+    {
+      "side": "right",
+      "kind": "identical_observation",
+      "reference_sha256": "47fc1e65493465cdf3a0a67af91190897a0a5ee61746daeed83430fb5040ef28",
+      "observed_sha256": "cb80c358c8e3f0becae4d4c90870ce541468aa6b8292ac9a61441d72bcb0f3bb",
+      "outputs_identical": false,
+      "previous": {
+        "route": "general",
+        "reason": "texture_reviewed_chirp",
+        "review_reason": null,
+        "output_sha256": "49a601aeedee5cad9f0f0dfc955889fb3931b3866f00306b9ce0a67598fdbef0",
+        "inside": {
+          "pixels": 17408,
+          "input_mse": 0.0,
+          "mse": 0.00033806780057811097,
+          "mae": 0.007667141118608618,
+          "gain": null,
+          "changed_pixels": 5558
+        },
+        "exterior": {
+          "pixels": 46336,
+          "input_mse": 0.0031694007656652367,
+          "mse": 0.001221860209728072,
+          "mae": 0.02295179351478281,
+          "gain": 0.565297587096726,
+          "changed_pixels": 33007
+        },
+        "whole": {
+          "pixels": 65536,
+          "input_mse": 0.0022712562861374208,
+          "mse": 0.000982049486146056,
+          "mae": 0.01892871158135363,
+          "gain": 0.5756644394444351,
+          "changed_pixels": 40357
+        }
+      },
+      "current": {
+        "route": "general",
+        "reason": "locally_verified_chirp_release",
+        "review_reason": "all_inferred_bands_verified",
+        "output_sha256": "5e2188a662c1bb86444d83ddf598306d6821d323b34839fe1ff51afe9d139bcf",
+        "inside": {
+          "pixels": 17408,
+          "input_mse": 0.0,
+          "mse": 0.0029867220113595893,
+          "mae": 0.04918682572411939,
+          "gain": null,
+          "changed_pixels": 17408
+        },
+        "exterior": {
+          "pixels": 46336,
+          "input_mse": 0.0031694007656652367,
+          "mse": 2.4871251756178407e-05,
+          "mae": 0.00417871966269589,
+          "gain": 0.9669921330374605,
+          "changed_pixels": 46336
+        },
+        "whole": {
+          "pixels": 65536,
+          "input_mse": 0.0022712562861374208,
+          "mse": 0.0008398274492014851,
+          "mae": 0.016692194518911664,
+          "gain": 0.9721635115727537,
+          "changed_pixels": 65536
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,2178 @@
+{
+  "development/clean": {
+    "input": {
+      "inputs": 2,
+      "modified": 0,
+      "mse": 0.0,
+      "mae": 0.0,
+      "contaminated_mse": null,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.0
+    },
+    "baseline": {
+      "inputs": 2,
+      "modified": 0,
+      "mse": 0.0,
+      "mae": 0.0,
+      "contaminated_mse": null,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.0,
+      "improved_vs_input": 0,
+      "harmed_vs_input": 0
+    },
+    "refined": {
+      "inputs": 2,
+      "modified": 0,
+      "mse": 0.0,
+      "mae": 0.0,
+      "contaminated_mse": null,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.0,
+      "improved_vs_input": 0,
+      "harmed_vs_input": 0
+    },
+    "paired_refined_vs_baseline": {
+      "mse": {
+        "available": 2,
+        "better": 0,
+        "tied": 2,
+        "worse": 0
+      },
+      "contaminated_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      },
+      "clean_mse": {
+        "available": 2,
+        "better": 0,
+        "tied": 2,
+        "worse": 0
+      },
+      "adjacent_clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      }
+    }
+  },
+  "all_development/clean": {
+    "input": {
+      "inputs": 6,
+      "modified": 0,
+      "mse": 0.0,
+      "mae": 0.0,
+      "contaminated_mse": null,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.0
+    },
+    "baseline": {
+      "inputs": 6,
+      "modified": 0,
+      "mse": 0.0,
+      "mae": 0.0,
+      "contaminated_mse": null,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.0,
+      "improved_vs_input": 0,
+      "harmed_vs_input": 0
+    },
+    "refined": {
+      "inputs": 6,
+      "modified": 0,
+      "mse": 0.0,
+      "mae": 0.0,
+      "contaminated_mse": null,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.0,
+      "improved_vs_input": 0,
+      "harmed_vs_input": 0
+    },
+    "paired_refined_vs_baseline": {
+      "mse": {
+        "available": 6,
+        "better": 0,
+        "tied": 6,
+        "worse": 0
+      },
+      "contaminated_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      },
+      "clean_mse": {
+        "available": 6,
+        "better": 0,
+        "tied": 6,
+        "worse": 0
+      },
+      "adjacent_clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      }
+    }
+  },
+  "development/global": {
+    "input": {
+      "inputs": 2,
+      "modified": 0,
+      "mse": 0.007021440283432842,
+      "mae": 0.07525924356035545,
+      "contaminated_mse": 0.007021440283432842,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.07620091174794692
+    },
+    "baseline": {
+      "inputs": 2,
+      "modified": 2,
+      "mse": 0.00042142171629992525,
+      "mae": 0.011369324295618915,
+      "contaminated_mse": 0.00042142171629992525,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.01278337776423459,
+      "improved_vs_input": 2,
+      "harmed_vs_input": 0
+    },
+    "refined": {
+      "inputs": 2,
+      "modified": 2,
+      "mse": 0.00042142171629992525,
+      "mae": 0.011369324295618915,
+      "contaminated_mse": 0.00042142171629992525,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.01278337776423459,
+      "improved_vs_input": 2,
+      "harmed_vs_input": 0
+    },
+    "paired_refined_vs_baseline": {
+      "mse": {
+        "available": 2,
+        "better": 0,
+        "tied": 2,
+        "worse": 0
+      },
+      "contaminated_mse": {
+        "available": 2,
+        "better": 0,
+        "tied": 2,
+        "worse": 0
+      },
+      "clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      },
+      "adjacent_clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      }
+    }
+  },
+  "all_development/global": {
+    "input": {
+      "inputs": 6,
+      "modified": 0,
+      "mse": 0.006912189152004263,
+      "mae": 0.07467300019812204,
+      "contaminated_mse": 0.006912189152004263,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.07614058399621909
+    },
+    "baseline": {
+      "inputs": 6,
+      "modified": 6,
+      "mse": 0.00024956425674658257,
+      "mae": 0.008884061992154932,
+      "contaminated_mse": 0.00024956425674658257,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.011816152559461711,
+      "improved_vs_input": 6,
+      "harmed_vs_input": 0
+    },
+    "refined": {
+      "inputs": 6,
+      "modified": 6,
+      "mse": 0.00024956425674658257,
+      "mae": 0.008884061992154932,
+      "contaminated_mse": 0.00024956425674658257,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.011816152559461711,
+      "improved_vs_input": 6,
+      "harmed_vs_input": 0
+    },
+    "paired_refined_vs_baseline": {
+      "mse": {
+        "available": 6,
+        "better": 0,
+        "tied": 6,
+        "worse": 0
+      },
+      "contaminated_mse": {
+        "available": 6,
+        "better": 0,
+        "tied": 6,
+        "worse": 0
+      },
+      "clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      },
+      "adjacent_clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      }
+    }
+  },
+  "development/local": {
+    "input": {
+      "inputs": 2,
+      "modified": 0,
+      "mse": 0.00046029874737511903,
+      "mae": 0.008701465883915353,
+      "contaminated_mse": 0.0012427233310772843,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": 0.0,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.008839909872755798
+    },
+    "baseline": {
+      "inputs": 2,
+      "modified": 0,
+      "mse": 0.00046029874737511903,
+      "mae": 0.008701465883915353,
+      "contaminated_mse": 0.0012427233310772843,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": 0.0,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.008839909872755798,
+      "improved_vs_input": 0,
+      "harmed_vs_input": 0
+    },
+    "refined": {
+      "inputs": 2,
+      "modified": 0,
+      "mse": 0.00046029874737511903,
+      "mae": 0.008701465883915353,
+      "contaminated_mse": 0.0012427233310772843,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": 0.0,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.008839909872755798,
+      "improved_vs_input": 0,
+      "harmed_vs_input": 0
+    },
+    "paired_refined_vs_baseline": {
+      "mse": {
+        "available": 2,
+        "better": 0,
+        "tied": 2,
+        "worse": 0
+      },
+      "contaminated_mse": {
+        "available": 2,
+        "better": 0,
+        "tied": 2,
+        "worse": 0
+      },
+      "clean_mse": {
+        "available": 2,
+        "better": 0,
+        "tied": 2,
+        "worse": 0
+      },
+      "adjacent_clean_mse": {
+        "available": 2,
+        "better": 0,
+        "tied": 2,
+        "worse": 0
+      }
+    }
+  },
+  "all_development/local": {
+    "input": {
+      "inputs": 6,
+      "modified": 0,
+      "mse": 0.00046834221478752404,
+      "mae": 0.00887747692639646,
+      "contaminated_mse": 0.0012392087675914692,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": 0.0,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.010039196228121093
+    },
+    "baseline": {
+      "inputs": 6,
+      "modified": 0,
+      "mse": 0.00046834221478752404,
+      "mae": 0.00887747692639646,
+      "contaminated_mse": 0.0012392087675914692,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": 0.0,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.010039196228121093,
+      "improved_vs_input": 0,
+      "harmed_vs_input": 0
+    },
+    "refined": {
+      "inputs": 6,
+      "modified": 0,
+      "mse": 0.00046834221478752404,
+      "mae": 0.00887747692639646,
+      "contaminated_mse": 0.0012392087675914692,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": 0.0,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.010039196228121093,
+      "improved_vs_input": 0,
+      "harmed_vs_input": 0
+    },
+    "paired_refined_vs_baseline": {
+      "mse": {
+        "available": 6,
+        "better": 0,
+        "tied": 6,
+        "worse": 0
+      },
+      "contaminated_mse": {
+        "available": 6,
+        "better": 0,
+        "tied": 6,
+        "worse": 0
+      },
+      "clean_mse": {
+        "available": 6,
+        "better": 0,
+        "tied": 6,
+        "worse": 0
+      },
+      "adjacent_clean_mse": {
+        "available": 6,
+        "better": 0,
+        "tied": 6,
+        "worse": 0
+      }
+    }
+  },
+  "development/chirp": {
+    "input": {
+      "inputs": 2,
+      "modified": 0,
+      "mse": 0.004898854500679339,
+      "mae": 0.06225380399630242,
+      "contaminated_mse": 0.004898854500679339,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.06298472383501962
+    },
+    "baseline": {
+      "inputs": 2,
+      "modified": 2,
+      "mse": 0.0012375968577360435,
+      "mae": 0.023524459619491154,
+      "contaminated_mse": 0.0012375968577360435,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.028556756912844018,
+      "improved_vs_input": 2,
+      "harmed_vs_input": 0
+    },
+    "refined": {
+      "inputs": 2,
+      "modified": 2,
+      "mse": 0.0012375968577360435,
+      "mae": 0.023524459619491154,
+      "contaminated_mse": 0.0012375968577360435,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.028556756912844018,
+      "improved_vs_input": 2,
+      "harmed_vs_input": 0
+    },
+    "paired_refined_vs_baseline": {
+      "mse": {
+        "available": 2,
+        "better": 0,
+        "tied": 2,
+        "worse": 0
+      },
+      "contaminated_mse": {
+        "available": 2,
+        "better": 0,
+        "tied": 2,
+        "worse": 0
+      },
+      "clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      },
+      "adjacent_clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      }
+    }
+  },
+  "all_development/chirp": {
+    "input": {
+      "inputs": 6,
+      "modified": 0,
+      "mse": 0.004840301556209199,
+      "mae": 0.06192186047229664,
+      "contaminated_mse": 0.004840301556209199,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.06298941209719325
+    },
+    "baseline": {
+      "inputs": 6,
+      "modified": 6,
+      "mse": 0.001128930543409627,
+      "mae": 0.021560606985671613,
+      "contaminated_mse": 0.001128930543409627,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.03544885842050724,
+      "improved_vs_input": 6,
+      "harmed_vs_input": 0
+    },
+    "refined": {
+      "inputs": 6,
+      "modified": 6,
+      "mse": 0.001128930543409627,
+      "mae": 0.021560606985671613,
+      "contaminated_mse": 0.001128930543409627,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.03544885842050724,
+      "improved_vs_input": 6,
+      "harmed_vs_input": 0
+    },
+    "paired_refined_vs_baseline": {
+      "mse": {
+        "available": 6,
+        "better": 0,
+        "tied": 6,
+        "worse": 0
+      },
+      "contaminated_mse": {
+        "available": 6,
+        "better": 0,
+        "tied": 6,
+        "worse": 0
+      },
+      "clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      },
+      "adjacent_clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      }
+    }
+  },
+  "development/orientation": {
+    "input": {
+      "inputs": 2,
+      "modified": 0,
+      "mse": 0.005441754987339642,
+      "mae": 0.06608114266950434,
+      "contaminated_mse": 0.005441754987339642,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.06673699752455489
+    },
+    "baseline": {
+      "inputs": 2,
+      "modified": 2,
+      "mse": 0.004085092192804521,
+      "mae": 0.05123650864820575,
+      "contaminated_mse": 0.004085092192804521,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.05174540294173469,
+      "improved_vs_input": 2,
+      "harmed_vs_input": 0
+    },
+    "refined": {
+      "inputs": 2,
+      "modified": 2,
+      "mse": 0.004085092192804521,
+      "mae": 0.05123650864820575,
+      "contaminated_mse": 0.004085092192804521,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.05174540294173469,
+      "improved_vs_input": 2,
+      "harmed_vs_input": 0
+    },
+    "paired_refined_vs_baseline": {
+      "mse": {
+        "available": 2,
+        "better": 0,
+        "tied": 2,
+        "worse": 0
+      },
+      "contaminated_mse": {
+        "available": 2,
+        "better": 0,
+        "tied": 2,
+        "worse": 0
+      },
+      "clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      },
+      "adjacent_clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      }
+    }
+  },
+  "all_development/orientation": {
+    "input": {
+      "inputs": 6,
+      "modified": 0,
+      "mse": 0.005380494896674157,
+      "mae": 0.0657327203994326,
+      "contaminated_mse": 0.005380494896674157,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.06671601995150025
+    },
+    "baseline": {
+      "inputs": 6,
+      "modified": 6,
+      "mse": 0.004843155587845395,
+      "mae": 0.05991770969157528,
+      "contaminated_mse": 0.004843155587845395,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.06526150796819641,
+      "improved_vs_input": 6,
+      "harmed_vs_input": 0
+    },
+    "refined": {
+      "inputs": 6,
+      "modified": 6,
+      "mse": 0.004843155587845395,
+      "mae": 0.05991770969157528,
+      "contaminated_mse": 0.004843155587845395,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.06526150796819641,
+      "improved_vs_input": 6,
+      "harmed_vs_input": 0
+    },
+    "paired_refined_vs_baseline": {
+      "mse": {
+        "available": 6,
+        "better": 0,
+        "tied": 6,
+        "worse": 0
+      },
+      "contaminated_mse": {
+        "available": 6,
+        "better": 0,
+        "tied": 6,
+        "worse": 0
+      },
+      "clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      },
+      "adjacent_clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      }
+    }
+  },
+  "mixed/local+edge16": {
+    "input": {
+      "inputs": 2,
+      "modified": 0,
+      "mse": 0.0006973196165245435,
+      "mae": 0.012298807932652072,
+      "contaminated_mse": 0.0014710868792830493,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": 0.0,
+      "broad_only_mse": 0.0012486245129275412,
+      "narrow_only_mse": 0.0030303939558260955,
+      "worst_fifth_mae": 0.013222488452275253
+    },
+    "baseline": {
+      "inputs": 2,
+      "modified": 2,
+      "mse": 0.0006012705055515274,
+      "mae": 0.011204243511627732,
+      "contaminated_mse": 0.0012686129484531699,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": 0.0,
+      "broad_only_mse": 0.0012486245129275412,
+      "narrow_only_mse": 0.0013911557952199535,
+      "worst_fifth_mae": 0.012109090435092042,
+      "improved_vs_input": 2,
+      "harmed_vs_input": 0
+    },
+    "refined": {
+      "inputs": 2,
+      "modified": 2,
+      "mse": 0.0006012705055515274,
+      "mae": 0.011204243511627732,
+      "contaminated_mse": 0.0012686129484531699,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": 0.0,
+      "broad_only_mse": 0.0012486245129275412,
+      "narrow_only_mse": 0.0013911557952199535,
+      "worst_fifth_mae": 0.012109090435092042,
+      "improved_vs_input": 2,
+      "harmed_vs_input": 0
+    },
+    "paired_refined_vs_baseline": {
+      "mse": {
+        "available": 2,
+        "better": 0,
+        "tied": 2,
+        "worse": 0
+      },
+      "contaminated_mse": {
+        "available": 2,
+        "better": 0,
+        "tied": 2,
+        "worse": 0
+      },
+      "clean_mse": {
+        "available": 2,
+        "better": 0,
+        "tied": 2,
+        "worse": 0
+      },
+      "adjacent_clean_mse": {
+        "available": 2,
+        "better": 0,
+        "tied": 2,
+        "worse": 0
+      }
+    }
+  },
+  "regression/clean": {
+    "input": {
+      "inputs": 1,
+      "modified": 0,
+      "mse": 0.0,
+      "mae": 0.0,
+      "contaminated_mse": null,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.0
+    },
+    "baseline": {
+      "inputs": 1,
+      "modified": 0,
+      "mse": 0.0,
+      "mae": 0.0,
+      "contaminated_mse": null,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.0,
+      "improved_vs_input": 0,
+      "harmed_vs_input": 0
+    },
+    "refined": {
+      "inputs": 1,
+      "modified": 0,
+      "mse": 0.0,
+      "mae": 0.0,
+      "contaminated_mse": null,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.0,
+      "improved_vs_input": 0,
+      "harmed_vs_input": 0
+    },
+    "paired_refined_vs_baseline": {
+      "mse": {
+        "available": 1,
+        "better": 0,
+        "tied": 1,
+        "worse": 0
+      },
+      "contaminated_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      },
+      "clean_mse": {
+        "available": 1,
+        "better": 0,
+        "tied": 1,
+        "worse": 0
+      },
+      "adjacent_clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      }
+    }
+  },
+  "regression/edge8": {
+    "input": {
+      "inputs": 1,
+      "modified": 0,
+      "mse": 9.282224659632615e-05,
+      "mae": 0.001294563347122503,
+      "contaminated_mse": 0.002970311891082437,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": 0.0,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.001294563347122503
+    },
+    "baseline": {
+      "inputs": 1,
+      "modified": 1,
+      "mse": 3.253821475457385e-05,
+      "mae": 0.0005551340527581522,
+      "contaminated_mse": 0.0010412228721463632,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": 0.0,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.0005551340527581522,
+      "improved_vs_input": 1,
+      "harmed_vs_input": 0
+    },
+    "refined": {
+      "inputs": 1,
+      "modified": 1,
+      "mse": 3.253821475457385e-05,
+      "mae": 0.0005551340527581522,
+      "contaminated_mse": 0.0010412228721463632,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": 0.0,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.0005551340527581522,
+      "improved_vs_input": 1,
+      "harmed_vs_input": 0
+    },
+    "paired_refined_vs_baseline": {
+      "mse": {
+        "available": 1,
+        "better": 0,
+        "tied": 1,
+        "worse": 0
+      },
+      "contaminated_mse": {
+        "available": 1,
+        "better": 0,
+        "tied": 1,
+        "worse": 0
+      },
+      "clean_mse": {
+        "available": 1,
+        "better": 0,
+        "tied": 1,
+        "worse": 0
+      },
+      "adjacent_clean_mse": {
+        "available": 1,
+        "better": 0,
+        "tied": 1,
+        "worse": 0
+      }
+    }
+  },
+  "regression/edge16": {
+    "input": {
+      "inputs": 1,
+      "modified": 0,
+      "mse": 0.00017253923615624547,
+      "mae": 0.0024440414747430137,
+      "contaminated_mse": 0.0029446251859284534,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": 0.0,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.0024440414747430137
+    },
+    "baseline": {
+      "inputs": 1,
+      "modified": 1,
+      "mse": 6.919815632553994e-05,
+      "mae": 0.001330643457559801,
+      "contaminated_mse": 0.0011809374234844122,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": 0.0,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.001330643457559801,
+      "improved_vs_input": 1,
+      "harmed_vs_input": 0
+    },
+    "refined": {
+      "inputs": 1,
+      "modified": 1,
+      "mse": 6.919815632553994e-05,
+      "mae": 0.001330643457559801,
+      "contaminated_mse": 0.0011809374234844122,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": 0.0,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.001330643457559801,
+      "improved_vs_input": 1,
+      "harmed_vs_input": 0
+    },
+    "paired_refined_vs_baseline": {
+      "mse": {
+        "available": 1,
+        "better": 0,
+        "tied": 1,
+        "worse": 0
+      },
+      "contaminated_mse": {
+        "available": 1,
+        "better": 0,
+        "tied": 1,
+        "worse": 0
+      },
+      "clean_mse": {
+        "available": 1,
+        "better": 0,
+        "tied": 1,
+        "worse": 0
+      },
+      "adjacent_clean_mse": {
+        "available": 1,
+        "better": 0,
+        "tied": 1,
+        "worse": 0
+      }
+    }
+  },
+  "regression/edge32": {
+    "input": {
+      "inputs": 1,
+      "modified": 0,
+      "mse": 0.00033334572083825207,
+      "mae": 0.0047682610639337986,
+      "contaminated_mse": 0.0028445264870948107,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": 0.0,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.0047682610639337986
+    },
+    "baseline": {
+      "inputs": 1,
+      "modified": 1,
+      "mse": 0.00011940520206538157,
+      "mae": 0.002441627692248474,
+      "contaminated_mse": 0.0010189007268996486,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": 0.0,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.002441627692248474,
+      "improved_vs_input": 1,
+      "harmed_vs_input": 0
+    },
+    "refined": {
+      "inputs": 1,
+      "modified": 1,
+      "mse": 0.00011940520206538157,
+      "mae": 0.002441627692248474,
+      "contaminated_mse": 0.0010189007268996486,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": 0.0,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.002441627692248474,
+      "improved_vs_input": 1,
+      "harmed_vs_input": 0
+    },
+    "paired_refined_vs_baseline": {
+      "mse": {
+        "available": 1,
+        "better": 0,
+        "tied": 1,
+        "worse": 0
+      },
+      "contaminated_mse": {
+        "available": 1,
+        "better": 0,
+        "tied": 1,
+        "worse": 0
+      },
+      "clean_mse": {
+        "available": 1,
+        "better": 0,
+        "tied": 1,
+        "worse": 0
+      },
+      "adjacent_clean_mse": {
+        "available": 1,
+        "better": 0,
+        "tied": 1,
+        "worse": 0
+      }
+    }
+  },
+  "DTD/clean": {
+    "input": {
+      "inputs": 12,
+      "modified": 0,
+      "mse": 0.0,
+      "mae": 0.0,
+      "contaminated_mse": null,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.0
+    },
+    "baseline": {
+      "inputs": 12,
+      "modified": 6,
+      "mse": 0.00805769432062463,
+      "mae": 0.04298426044636219,
+      "contaminated_mse": null,
+      "clean_mse": 0.00805769432062463,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.13413158690078783,
+      "improved_vs_input": 0,
+      "harmed_vs_input": 6
+    },
+    "refined": {
+      "inputs": 12,
+      "modified": 2,
+      "mse": 0.001906176820473654,
+      "mae": 0.011553773400706902,
+      "contaminated_mse": null,
+      "clean_mse": 0.001906176820473654,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.046215093602827606,
+      "improved_vs_input": 0,
+      "harmed_vs_input": 2
+    },
+    "paired_refined_vs_baseline": {
+      "mse": {
+        "available": 12,
+        "better": 4,
+        "tied": 8,
+        "worse": 0
+      },
+      "contaminated_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      },
+      "clean_mse": {
+        "available": 12,
+        "better": 4,
+        "tied": 8,
+        "worse": 0
+      },
+      "adjacent_clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      }
+    }
+  },
+  "DTD_design/clean": {
+    "input": {
+      "inputs": 6,
+      "modified": 0,
+      "mse": 0.0,
+      "mae": 0.0,
+      "contaminated_mse": null,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.0
+    },
+    "baseline": {
+      "inputs": 6,
+      "modified": 3,
+      "mse": 0.00977680185039617,
+      "mae": 0.04597734653361454,
+      "contaminated_mse": null,
+      "clean_mse": 0.00977680185039617,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.13481052914111122,
+      "improved_vs_input": 0,
+      "harmed_vs_input": 3
+    },
+    "refined": {
+      "inputs": 6,
+      "modified": 0,
+      "mse": 0.0,
+      "mae": 0.0,
+      "contaminated_mse": null,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.0,
+      "improved_vs_input": 0,
+      "harmed_vs_input": 0
+    },
+    "paired_refined_vs_baseline": {
+      "mse": {
+        "available": 6,
+        "better": 3,
+        "tied": 3,
+        "worse": 0
+      },
+      "contaminated_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      },
+      "clean_mse": {
+        "available": 6,
+        "better": 3,
+        "tied": 3,
+        "worse": 0
+      },
+      "adjacent_clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      }
+    }
+  },
+  "DTD_remaining/clean": {
+    "input": {
+      "inputs": 6,
+      "modified": 0,
+      "mse": 0.0,
+      "mae": 0.0,
+      "contaminated_mse": null,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.0
+    },
+    "baseline": {
+      "inputs": 6,
+      "modified": 3,
+      "mse": 0.006338586790853087,
+      "mae": 0.03999117435910984,
+      "contaminated_mse": null,
+      "clean_mse": 0.006338586790853087,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.10954841338609958,
+      "improved_vs_input": 0,
+      "harmed_vs_input": 3
+    },
+    "refined": {
+      "inputs": 6,
+      "modified": 2,
+      "mse": 0.003812353640947308,
+      "mae": 0.023107546801413803,
+      "contaminated_mse": null,
+      "clean_mse": 0.003812353640947308,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.06932264040424141,
+      "improved_vs_input": 0,
+      "harmed_vs_input": 2
+    },
+    "paired_refined_vs_baseline": {
+      "mse": {
+        "available": 6,
+        "better": 1,
+        "tied": 5,
+        "worse": 0
+      },
+      "contaminated_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      },
+      "clean_mse": {
+        "available": 6,
+        "better": 1,
+        "tied": 5,
+        "worse": 0
+      },
+      "adjacent_clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      }
+    }
+  },
+  "analytic/clean": {
+    "input": {
+      "inputs": 2,
+      "modified": 0,
+      "mse": 0.0,
+      "mae": 0.0,
+      "contaminated_mse": null,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.0
+    },
+    "baseline": {
+      "inputs": 2,
+      "modified": 2,
+      "mse": 0.0004401688273267349,
+      "mae": 0.006142354956391618,
+      "contaminated_mse": null,
+      "clean_mse": 0.0004401688273267349,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.009900757867412237,
+      "improved_vs_input": 0,
+      "harmed_vs_input": 2
+    },
+    "refined": {
+      "inputs": 2,
+      "modified": 0,
+      "mse": 0.0,
+      "mae": 0.0,
+      "contaminated_mse": null,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.0,
+      "improved_vs_input": 0,
+      "harmed_vs_input": 0
+    },
+    "paired_refined_vs_baseline": {
+      "mse": {
+        "available": 2,
+        "better": 2,
+        "tied": 0,
+        "worse": 0
+      },
+      "contaminated_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      },
+      "clean_mse": {
+        "available": 2,
+        "better": 2,
+        "tied": 0,
+        "worse": 0
+      },
+      "adjacent_clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      }
+    }
+  },
+  "analytic_twin/edge8": {
+    "input": {
+      "inputs": 1,
+      "modified": 0,
+      "mse": 0.00022500000000000005,
+      "mae": 0.002383952045286776,
+      "contaminated_mse": 0.0072000000000000015,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": 0.0,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.002383952045286776
+    },
+    "baseline": {
+      "inputs": 1,
+      "modified": 1,
+      "mse": 2.6239078752928476e-20,
+      "mae": 2.2295091177256747e-11,
+      "contaminated_mse": 8.396505200937112e-19,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": 0.0,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 2.2295091177256747e-11,
+      "improved_vs_input": 1,
+      "harmed_vs_input": 0
+    },
+    "refined": {
+      "inputs": 1,
+      "modified": 0,
+      "mse": 0.00022500000000000005,
+      "mae": 0.002383952045286776,
+      "contaminated_mse": 0.0072000000000000015,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": 0.0,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.002383952045286776,
+      "improved_vs_input": 0,
+      "harmed_vs_input": 0
+    },
+    "paired_refined_vs_baseline": {
+      "mse": {
+        "available": 1,
+        "better": 0,
+        "tied": 0,
+        "worse": 1
+      },
+      "contaminated_mse": {
+        "available": 1,
+        "better": 0,
+        "tied": 0,
+        "worse": 1
+      },
+      "clean_mse": {
+        "available": 1,
+        "better": 0,
+        "tied": 1,
+        "worse": 0
+      },
+      "adjacent_clean_mse": {
+        "available": 1,
+        "better": 0,
+        "tied": 1,
+        "worse": 0
+      }
+    }
+  },
+  "analytic_positive/edge16": {
+    "input": {
+      "inputs": 1,
+      "modified": 0,
+      "mse": 0.00018281249999999987,
+      "mae": 0.0025402157066589156,
+      "contaminated_mse": 0.0031199556953460956,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": 0.0,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.0025402157066589156
+    },
+    "baseline": {
+      "inputs": 1,
+      "modified": 1,
+      "mse": 8.481375972798589e-07,
+      "mae": 9.149578966758332e-05,
+      "contaminated_mse": 1.4430577006341027e-05,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": 0.0,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 9.149578966758332e-05,
+      "improved_vs_input": 1,
+      "harmed_vs_input": 0
+    },
+    "refined": {
+      "inputs": 1,
+      "modified": 1,
+      "mse": 8.481375972798589e-07,
+      "mae": 9.149578966758332e-05,
+      "contaminated_mse": 1.4430577006341027e-05,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": 0.0,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 9.149578966758332e-05,
+      "improved_vs_input": 1,
+      "harmed_vs_input": 0
+    },
+    "paired_refined_vs_baseline": {
+      "mse": {
+        "available": 1,
+        "better": 0,
+        "tied": 1,
+        "worse": 0
+      },
+      "contaminated_mse": {
+        "available": 1,
+        "better": 0,
+        "tied": 1,
+        "worse": 0
+      },
+      "clean_mse": {
+        "available": 1,
+        "better": 0,
+        "tied": 1,
+        "worse": 0
+      },
+      "adjacent_clean_mse": {
+        "available": 1,
+        "better": 0,
+        "tied": 1,
+        "worse": 0
+      }
+    }
+  },
+  "DTD_paired/global": {
+    "input": {
+      "inputs": 12,
+      "modified": 0,
+      "mse": 0.006679134590738149,
+      "mae": 0.07221281908070233,
+      "contaminated_mse": 0.006679134590738149,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.07634676562905876
+    },
+    "baseline": {
+      "inputs": 12,
+      "modified": 12,
+      "mse": 0.010235510568606653,
+      "mae": 0.05732485564754084,
+      "contaminated_mse": 0.010235510568606653,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.15073693296342214,
+      "improved_vs_input": 8,
+      "harmed_vs_input": 4
+    },
+    "refined": {
+      "inputs": 12,
+      "modified": 9,
+      "mse": 0.004589213093866861,
+      "mae": 0.0419172737398005,
+      "contaminated_mse": 0.004589213093866861,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.09577848879341666,
+      "improved_vs_input": 8,
+      "harmed_vs_input": 1
+    },
+    "paired_refined_vs_baseline": {
+      "mse": {
+        "available": 12,
+        "better": 3,
+        "tied": 9,
+        "worse": 0
+      },
+      "contaminated_mse": {
+        "available": 12,
+        "better": 3,
+        "tied": 9,
+        "worse": 0
+      },
+      "clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      },
+      "adjacent_clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      }
+    }
+  },
+  "DTD_design/global": {
+    "input": {
+      "inputs": 6,
+      "modified": 0,
+      "mse": 0.0065218117519654055,
+      "mae": 0.07039459479789957,
+      "contaminated_mse": 0.0065218117519654055,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.07635047015768517
+    },
+    "baseline": {
+      "inputs": 6,
+      "modified": 6,
+      "mse": 0.012046181028988162,
+      "mae": 0.06243771706102615,
+      "contaminated_mse": 0.012046181028988162,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.14533764811274705,
+      "improved_vs_input": 4,
+      "harmed_vs_input": 2
+    },
+    "refined": {
+      "inputs": 6,
+      "modified": 4,
+      "mse": 0.002996143739839924,
+      "mae": 0.03872327973115511,
+      "contaminated_mse": 0.002996143739839924,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.07419433612313392,
+      "improved_vs_input": 4,
+      "harmed_vs_input": 0
+    },
+    "paired_refined_vs_baseline": {
+      "mse": {
+        "available": 6,
+        "better": 2,
+        "tied": 4,
+        "worse": 0
+      },
+      "contaminated_mse": {
+        "available": 6,
+        "better": 2,
+        "tied": 4,
+        "worse": 0
+      },
+      "clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      },
+      "adjacent_clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      }
+    }
+  },
+  "DTD_paired/chirp": {
+    "input": {
+      "inputs": 12,
+      "modified": 0,
+      "mse": 0.0047023062918932065,
+      "mae": 0.06005257035623592,
+      "contaminated_mse": 0.0047023062918932065,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.06305400123097861
+    },
+    "baseline": {
+      "inputs": 12,
+      "modified": 11,
+      "mse": 0.01050521724941332,
+      "mae": 0.06554234565239149,
+      "contaminated_mse": 0.01050521724941332,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.14340813398256638,
+      "improved_vs_input": 7,
+      "harmed_vs_input": 4
+    },
+    "refined": {
+      "inputs": 12,
+      "modified": 8,
+      "mse": 0.004582326224430785,
+      "mae": 0.04744148684335075,
+      "contaminated_mse": 0.004582326224430785,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.0840379072110397,
+      "improved_vs_input": 7,
+      "harmed_vs_input": 1
+    },
+    "paired_refined_vs_baseline": {
+      "mse": {
+        "available": 12,
+        "better": 3,
+        "tied": 9,
+        "worse": 0
+      },
+      "contaminated_mse": {
+        "available": 12,
+        "better": 3,
+        "tied": 9,
+        "worse": 0
+      },
+      "clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      },
+      "adjacent_clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      }
+    }
+  },
+  "DTD_design/chirp": {
+    "input": {
+      "inputs": 6,
+      "modified": 0,
+      "mse": 0.004587499853419714,
+      "mae": 0.05851252897130083,
+      "contaminated_mse": 0.004587499853419714,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.0630584713999776
+    },
+    "baseline": {
+      "inputs": 6,
+      "modified": 6,
+      "mse": 0.01247740043719616,
+      "mae": 0.06992529487487499,
+      "contaminated_mse": 0.01247740043719616,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.14587803428027066,
+      "improved_vs_input": 4,
+      "harmed_vs_input": 2
+    },
+    "refined": {
+      "inputs": 6,
+      "modified": 4,
+      "mse": 0.002825072246411917,
+      "mae": 0.04186046049408784,
+      "contaminated_mse": 0.002825072246411917,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.06168353113790919,
+      "improved_vs_input": 4,
+      "harmed_vs_input": 0
+    },
+    "paired_refined_vs_baseline": {
+      "mse": {
+        "available": 6,
+        "better": 2,
+        "tied": 4,
+        "worse": 0
+      },
+      "contaminated_mse": {
+        "available": 6,
+        "better": 2,
+        "tied": 4,
+        "worse": 0
+      },
+      "clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      },
+      "adjacent_clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      }
+    }
+  },
+  "DTD_remaining/global": {
+    "input": {
+      "inputs": 6,
+      "modified": 0,
+      "mse": 0.006836457429510892,
+      "mae": 0.0740310433635051,
+      "contaminated_mse": 0.006836457429510892,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.07618739986342105
+    },
+    "baseline": {
+      "inputs": 6,
+      "modified": 6,
+      "mse": 0.00842484010822514,
+      "mae": 0.052211994234055537,
+      "contaminated_mse": 0.00842484010822514,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.12677245319716957,
+      "improved_vs_input": 4,
+      "harmed_vs_input": 2
+    },
+    "refined": {
+      "inputs": 6,
+      "modified": 5,
+      "mse": 0.006182282447893798,
+      "mae": 0.04511126774844587,
+      "contaminated_mse": 0.006182282447893798,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.10547027374034057,
+      "improved_vs_input": 4,
+      "harmed_vs_input": 1
+    },
+    "paired_refined_vs_baseline": {
+      "mse": {
+        "available": 6,
+        "better": 1,
+        "tied": 5,
+        "worse": 0
+      },
+      "contaminated_mse": {
+        "available": 6,
+        "better": 1,
+        "tied": 5,
+        "worse": 0
+      },
+      "clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      },
+      "adjacent_clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      }
+    }
+  },
+  "DTD_remaining/chirp": {
+    "input": {
+      "inputs": 6,
+      "modified": 0,
+      "mse": 0.004817112730366698,
+      "mae": 0.06159261174117101,
+      "contaminated_mse": 0.004817112730366698,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.0629636959372063
+    },
+    "baseline": {
+      "inputs": 6,
+      "modified": 5,
+      "mse": 0.008533034061630479,
+      "mae": 0.061159396429907996,
+      "contaminated_mse": 0.008533034061630479,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.11851946156002582,
+      "improved_vs_input": 3,
+      "harmed_vs_input": 2
+    },
+    "refined": {
+      "inputs": 6,
+      "modified": 4,
+      "mse": 0.006339580202449654,
+      "mae": 0.05302251319261365,
+      "contaminated_mse": 0.006339580202449654,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.09451815541251234,
+      "improved_vs_input": 3,
+      "harmed_vs_input": 1
+    },
+    "paired_refined_vs_baseline": {
+      "mse": {
+        "available": 6,
+        "better": 1,
+        "tied": 5,
+        "worse": 0
+      },
+      "contaminated_mse": {
+        "available": 6,
+        "better": 1,
+        "tied": 5,
+        "worse": 0
+      },
+      "clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      },
+      "adjacent_clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      }
+    }
+  },
+  "development_extension/clean": {
+    "input": {
+      "inputs": 4,
+      "modified": 0,
+      "mse": 0.0,
+      "mae": 0.0,
+      "contaminated_mse": null,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.0
+    },
+    "baseline": {
+      "inputs": 4,
+      "modified": 0,
+      "mse": 0.0,
+      "mae": 0.0,
+      "contaminated_mse": null,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.0,
+      "improved_vs_input": 0,
+      "harmed_vs_input": 0
+    },
+    "refined": {
+      "inputs": 4,
+      "modified": 0,
+      "mse": 0.0,
+      "mae": 0.0,
+      "contaminated_mse": null,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.0,
+      "improved_vs_input": 0,
+      "harmed_vs_input": 0
+    },
+    "paired_refined_vs_baseline": {
+      "mse": {
+        "available": 4,
+        "better": 0,
+        "tied": 4,
+        "worse": 0
+      },
+      "contaminated_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      },
+      "clean_mse": {
+        "available": 4,
+        "better": 0,
+        "tied": 4,
+        "worse": 0
+      },
+      "adjacent_clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      }
+    }
+  },
+  "development_extension/global": {
+    "input": {
+      "inputs": 4,
+      "modified": 0,
+      "mse": 0.006857563586289974,
+      "mae": 0.07437987851700534,
+      "contaminated_mse": 0.006857563586289974,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.07608025624449126
+    },
+    "baseline": {
+      "inputs": 4,
+      "modified": 4,
+      "mse": 0.0001636355269699112,
+      "mae": 0.007641430840422941,
+      "contaminated_mse": 0.0001636355269699112,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.010848927354688832,
+      "improved_vs_input": 4,
+      "harmed_vs_input": 0
+    },
+    "refined": {
+      "inputs": 4,
+      "modified": 4,
+      "mse": 0.0001636355269699112,
+      "mae": 0.007641430840422941,
+      "contaminated_mse": 0.0001636355269699112,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.010848927354688832,
+      "improved_vs_input": 4,
+      "harmed_vs_input": 0
+    },
+    "paired_refined_vs_baseline": {
+      "mse": {
+        "available": 4,
+        "better": 0,
+        "tied": 4,
+        "worse": 0
+      },
+      "contaminated_mse": {
+        "available": 4,
+        "better": 0,
+        "tied": 4,
+        "worse": 0
+      },
+      "clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      },
+      "adjacent_clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      }
+    }
+  },
+  "development_extension/local": {
+    "input": {
+      "inputs": 4,
+      "modified": 0,
+      "mse": 0.00047236394849372654,
+      "mae": 0.008965482447637011,
+      "contaminated_mse": 0.0012374514858485618,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": 0.0,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.01101086131808865
+    },
+    "baseline": {
+      "inputs": 4,
+      "modified": 0,
+      "mse": 0.00047236394849372654,
+      "mae": 0.008965482447637011,
+      "contaminated_mse": 0.0012374514858485618,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": 0.0,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.01101086131808865,
+      "improved_vs_input": 0,
+      "harmed_vs_input": 0
+    },
+    "refined": {
+      "inputs": 4,
+      "modified": 0,
+      "mse": 0.00047236394849372654,
+      "mae": 0.008965482447637011,
+      "contaminated_mse": 0.0012374514858485618,
+      "clean_mse": 0.0,
+      "adjacent_clean_mse": 0.0,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.01101086131808865,
+      "improved_vs_input": 0,
+      "harmed_vs_input": 0
+    },
+    "paired_refined_vs_baseline": {
+      "mse": {
+        "available": 4,
+        "better": 0,
+        "tied": 4,
+        "worse": 0
+      },
+      "contaminated_mse": {
+        "available": 4,
+        "better": 0,
+        "tied": 4,
+        "worse": 0
+      },
+      "clean_mse": {
+        "available": 4,
+        "better": 0,
+        "tied": 4,
+        "worse": 0
+      },
+      "adjacent_clean_mse": {
+        "available": 4,
+        "better": 0,
+        "tied": 4,
+        "worse": 0
+      }
+    }
+  },
+  "development_extension/chirp": {
+    "input": {
+      "inputs": 4,
+      "modified": 0,
+      "mse": 0.00481102508397413,
+      "mae": 0.06175588871029374,
+      "contaminated_mse": 0.00481102508397413,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.0629941003593669
+    },
+    "baseline": {
+      "inputs": 4,
+      "modified": 4,
+      "mse": 0.0010745973862464184,
+      "mae": 0.020578680668761843,
+      "contaminated_mse": 0.0010745973862464184,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.04234095992817046,
+      "improved_vs_input": 4,
+      "harmed_vs_input": 0
+    },
+    "refined": {
+      "inputs": 4,
+      "modified": 4,
+      "mse": 0.0010745973862464184,
+      "mae": 0.020578680668761843,
+      "contaminated_mse": 0.0010745973862464184,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.04234095992817046,
+      "improved_vs_input": 4,
+      "harmed_vs_input": 0
+    },
+    "paired_refined_vs_baseline": {
+      "mse": {
+        "available": 4,
+        "better": 0,
+        "tied": 4,
+        "worse": 0
+      },
+      "contaminated_mse": {
+        "available": 4,
+        "better": 0,
+        "tied": 4,
+        "worse": 0
+      },
+      "clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      },
+      "adjacent_clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      }
+    }
+  },
+  "development_extension/orientation": {
+    "input": {
+      "inputs": 4,
+      "modified": 0,
+      "mse": 0.005349864851341413,
+      "mae": 0.06555850926439674,
+      "contaminated_mse": 0.005349864851341413,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.0666950423784456
+    },
+    "baseline": {
+      "inputs": 4,
+      "modified": 4,
+      "mse": 0.005222187285365831,
+      "mae": 0.06425831021326003,
+      "contaminated_mse": 0.005222187285365831,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.06601357881112944,
+      "improved_vs_input": 4,
+      "harmed_vs_input": 0
+    },
+    "refined": {
+      "inputs": 4,
+      "modified": 4,
+      "mse": 0.005222187285365831,
+      "mae": 0.06425831021326003,
+      "contaminated_mse": 0.005222187285365831,
+      "clean_mse": null,
+      "adjacent_clean_mse": null,
+      "broad_only_mse": null,
+      "narrow_only_mse": null,
+      "worst_fifth_mae": 0.06601357881112944,
+      "improved_vs_input": 4,
+      "harmed_vs_input": 0
+    },
+    "paired_refined_vs_baseline": {
+      "mse": {
+        "available": 4,
+        "better": 0,
+        "tied": 4,
+        "worse": 0
+      },
+      "contaminated_mse": {
+        "available": 4,
+        "better": 0,
+        "tied": 4,
+        "worse": 0
+      },
+      "clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      },
+      "adjacent_clean_mse": {
+        "available": 0,
+        "better": 0,
+        "tied": 0,
+        "worse": 0
+      }
+    }
+  }
+}

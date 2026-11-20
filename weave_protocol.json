@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "target_ids": ["dtd_knitted_0108", "dtd_woven_0094"],
+  "historical_cases": 76,
+  "historical_run": "results/project_refinement/run.json",
+  "new_variants": [
+    {"name": "fixed_a", "kind": "global", "seed": 2026111801, "fy": -0.073, "fx": 0.121, "dy": 0.0, "dx": 0.0, "cross": 0.0},
+    {"name": "fixed_b", "kind": "global", "seed": 2026111802, "fy": 0.157, "fx": 0.041, "dy": 0.0, "dx": 0.0, "cross": 0.0},
+    {"name": "varying_a", "kind": "chirp", "seed": 2026111803, "fy": -0.052, "fx": 0.123, "dy": 0.046, "dx": -0.067, "cross": 0.031},
+    {"name": "varying_b", "kind": "chirp", "seed": 2026111804, "fy": 0.148, "fx": -0.047, "dy": -0.063, "dx": 0.042, "cross": -0.026}
+  ],
+  "amplitudes": [0.08, 0.16],
+  "phase": "x,y are pixel coordinates centered on the image; cycles = fy*y + fx*x + dy*y^2/(2*(H-1)) + dx*x^2/(2*(W-1)) + cross*x*y/sqrt((H-1)*(W-1)). Offset in radians from default_rng(seed).uniform(-pi,pi).",
+  "observation": "clip(reference + amplitude * sin(2*pi*cycles + offset), 0, 1); same added signal before clipping for both photographs",
+  "evaluation": "Post-clipping observation minus the exact reference defines the added signal. Historical cases verified against archived run and metrics. New realizations reserved for one comparison after the source freeze; photos themselves were used for development.",
+  "mse_tie_tolerance": 1e-12
+}

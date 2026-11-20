@@ -1,0 +1,34 @@
+{
+  "sources": [
+    {
+      "filename": "knitted/knitted_0103.jpg",
+      "url": "https://www.robots.ox.ac.uk/~vgg/data/dtd/images/knitted/knitted_0103.jpg",
+      "jpeg_sha256": "0637f77b6ba61a56e19aeec6952cbb657650392afbbb93f851c4a82a2d1686e1",
+      "reference_sha256": "9ffc149fb2552b42d6a4398318300e3ccb648cd0ff3eb3e2e9cf52fa8ebf4dd5"
+    },
+    {
+      "filename": "knitted/knitted_0140.jpg",
+      "url": "https://www.robots.ox.ac.uk/~vgg/data/dtd/images/knitted/knitted_0140.jpg",
+      "jpeg_sha256": "8c9b8c0bd2364dc9f05f589560e5d3b186d52af806b6ab8ec5f5ab70a0b7d91e",
+      "reference_sha256": "7cd4d3432ce46bd8bdaf6d2914de3373605c566944c21658f36952a606ccfb10"
+    },
+    {
+      "filename": "woven/woven_0079.jpg",
+      "url": "https://www.robots.ox.ac.uk/~vgg/data/dtd/images/woven/woven_0079.jpg",
+      "jpeg_sha256": "094d2467b1608561dc20e18da20409eb1893aa5bbc76c60402d90d6c43b0b5a5",
+      "reference_sha256": "05ec2bc7362b2f73a3703564db4ca3a27e587f85b868f2e31fa762502a54fe19"
+    },
+    {
+      "filename": "woven/woven_0083.jpg",
+      "url": "https://www.robots.ox.ac.uk/~vgg/data/dtd/images/woven/woven_0083.jpg",
+      "jpeg_sha256": "e9d029d8da9f63902e841fc327e7ac765ddafa6a46a90ebb8fd8ae7c898b20e9",
+      "reference_sha256": "5570bcf159c874f4a31288928af2514b20374b884f8b442342e4a52f0fcd3d2f"
+    }
+  ],
+  "rows": 36,
+  "inputs": 12,
+  "script_sha256": "64b3e5d3159134b7e2c3d3b48894e7709ae34a866ff5596b7052f52fdc6e1b53",
+  "selection_sha256": "8e44471922dadd1d6fd9587e8a5da266311dfa380fbcffcd0075b0a77d7c4b58",
+  "metrics_sha256": "92fd09e3f0b4b42bec8fcb5f927bb7c74782b16374fbfb0ca5bf859f3b440178",
+  "freeze_sha256": "5e55e2567088c188c1b572aee5ab7a8dbe6ce2ad09497a2878c3d6234d2ea225"
+}

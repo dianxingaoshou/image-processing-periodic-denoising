@@ -1,0 +1,23 @@
+{
+  "previous": "project_guarded",
+  "current": "project_peak",
+  "target": "dtd_woven_0083",
+  "historical_inputs": 148,
+  "known_damage": {
+    "axis_x_E@0.045": [5, 6],
+    "axis_x_E@0.080": [5],
+    "axis_y_E@0.045": [6]
+  },
+  "preregistered_phase_seeds": {
+    "axis_x_E": [882703, 882719],
+    "axis_y_E": [882721, 882733]
+  },
+  "phase_cases": {"axis_x_E": [0.045, 0.08], "axis_y_E": [0.045]},
+  "phase_rule": "Replace only the phase seed in the corresponding nine83 direction. Use both seeds independently at every listed amplitude, producing six new observations. The clean reference, frequency, curvature, amplitude and [0,1] clipping use the historical generator.",
+  "near_gain_absolute_tolerance": 0.02,
+  "gain_comparison": "Measure a=<observed-output,observed-clean>/||observed-clean||^2. Compare raw gains and flag comparable if |a_current-a_previous| <= 0.02. For a_previous>1e-8 also scale the full previous removal by a_current/a_previous, without clipping the analytical reconstruction; evaluate whole image, six peak pairs and aligned-gain excess in exactly the same subspace. Always report missing comparisons or regressions.",
+  "primary": "On each of three known cases, at comparable gain, compare each of its previously harmed peak pairs to the previous restoration and the previous restoration scaled to the current gain; also compare to noisy input. Report every other peak and the other nine historical recoveries with the same measurements. No aggregate can override a per-peak regression.",
+  "squared_error_reporting": "Use raw values and absolute tolerance 1e-18 for peak-MSE direction counts (FFT roundoff); whole-image MSE ties use 1e-12. Each disk of radius two FFT bins and its conjugate uses the same reference-selected peaks, normalized by all image pixels. Same-gain excess is removal minus a times actual injected signal.",
+  "controls": "All 33 clean historical controls (including unclipped and exposure-clipped same-photo variants), their changed-pixel counts, prior nine carries, the full 148 historical inputs with hash replay, and all ten default/alternative-gain 69022 edge checks from nine83. Separately report the six new phases and remaining stripe.",
+  "scope": "Register before changing the candidate or generating new phases. The three target inputs are design cases; the extra phases come from the same photograph and are only run after code freeze. Retain unsuccessful and unchanged cases."
+}
