@@ -1,0 +1,135 @@
+{
+  "completed_utc": "2026-11-20T03:19:32.579331+00:00",
+  "inputs": 166,
+  "historical_baselines_checked": 160,
+  "texture_challenges": 24,
+  "alternative_reference_checks": 8,
+  "groups": {
+    "historical": {
+      "inputs": 160,
+      "better_than_previous": 6,
+      "tied_with_previous": 154,
+      "worse_than_previous": 0,
+      "exact_same_as_previous": 154,
+      "previous_net_improvements": 109,
+      "retained_net_improvements": 109,
+      "new_net_improvements": 0,
+      "current_net_improvements": 109,
+      "previous_worse_than_input": 0,
+      "current_worse_than_input": 0,
+      "input_mean_mse": 0.0033005122232991025,
+      "previous_mean_mse": 0.001117040241773027,
+      "current_mean_mse": 0.0010822751327152567
+    },
+    "target": {
+      "inputs": 4,
+      "better_than_previous": 4,
+      "tied_with_previous": 0,
+      "worse_than_previous": 0,
+      "exact_same_as_previous": 0,
+      "previous_net_improvements": 4,
+      "retained_net_improvements": 4,
+      "new_net_improvements": 0,
+      "current_net_improvements": 4,
+      "previous_worse_than_input": 0,
+      "current_worse_than_input": 0,
+      "input_mean_mse": 0.002088805278480472,
+      "previous_mean_mse": 0.0010262849307213816,
+      "current_mean_mse": 0.00010165509067100464
+    },
+    "new_phases": {
+      "inputs": 6,
+      "better_than_previous": 1,
+      "tied_with_previous": 5,
+      "worse_than_previous": 0,
+      "exact_same_as_previous": 5,
+      "previous_net_improvements": 6,
+      "retained_net_improvements": 6,
+      "new_net_improvements": 0,
+      "current_net_improvements": 6,
+      "previous_worse_than_input": 0,
+      "current_worse_than_input": 0,
+      "input_mean_mse": 0.002089203791411341,
+      "previous_mean_mse": 0.0001225198100618925,
+      "current_mean_mse": 5.1375351015197996e-05
+    },
+    "nine": {
+      "inputs": 9,
+      "better_than_previous": 0,
+      "tied_with_previous": 9,
+      "worse_than_previous": 0,
+      "exact_same_as_previous": 9,
+      "previous_net_improvements": 9,
+      "retained_net_improvements": 9,
+      "new_net_improvements": 0,
+      "current_net_improvements": 9,
+      "previous_worse_than_input": 0,
+      "current_worse_than_input": 0,
+      "input_mean_mse": 0.0023637691727378275,
+      "previous_mean_mse": 0.00019211548109132303,
+      "current_mean_mse": 0.00019211548109132303
+    }
+  },
+  "effects": {
+    "axis_x_E_s741209@0.045": {
+      "group": "target",
+      "visible": true,
+      "visible_and_peaks": true
+    },
+    "axis_x_E_s741209@0.080": {
+      "group": "target",
+      "visible": true,
+      "visible_and_peaks": true
+    },
+    "axis_x_E_s741251@0.045": {
+      "group": "target",
+      "visible": true,
+      "visible_and_peaks": true
+    },
+    "axis_x_E_s741251@0.080": {
+      "group": "target",
+      "visible": true,
+      "visible_and_peaks": true
+    },
+    "axis_x_E_s638913@0.045": {
+      "group": "new_phases",
+      "visible": false,
+      "visible_and_peaks": false
+    },
+    "axis_x_E_s638913@0.080": {
+      "group": "new_phases",
+      "visible": false,
+      "visible_and_peaks": false
+    },
+    "axis_x_E_s638927@0.045": {
+      "group": "new_phases",
+      "visible": true,
+      "visible_and_peaks": true
+    },
+    "axis_x_E_s638927@0.080": {
+      "group": "new_phases",
+      "visible": false,
+      "visible_and_peaks": false
+    },
+    "axis_x_E_s638951@0.045": {
+      "group": "new_phases",
+      "visible": false,
+      "visible_and_peaks": false
+    },
+    "axis_x_E_s638951@0.080": {
+      "group": "new_phases",
+      "visible": false,
+      "visible_and_peaks": false
+    }
+  },
+  "artifact_sha256": {
+    "freeze.json": "f73552d8b2e8d63b3ca412e33bfe2d84b99d612175a6d301461c21b85dbce15e",
+    "metrics.csv": "045eccea8cb2e7c0dbf8f9bf3301426f4cf10571e0644406ddc0de42f61288fe",
+    "per_peak.csv": "f83c1859e64289221ac69ac80c811ba6067681fe6d32e414ee8de0b74f935c4e",
+    "regions.csv": "e5230eaf92fe7de8867d82d8017cdb941d416121aba0862fde6e9ad8a82aaa75",
+    "parity.csv": "f0aa2cd04b82c283bef420b0c96f839df7da5257ab926bec1f4225dfb434f793",
+    "texture_controls.csv": "ad46c6b5470bc023bc156f9cfc9b3283b6d622cd9261802543d098ed48a959af",
+    "alternative_references.csv": "be5f79beb152fe221194267fa492cf6a0bcedf8cbe765b4f856da96d5ebcfb59",
+    "RESULTS.md": "b2c4a467da75f6cb5075e4d46e4ca6b4e001a5854571f31a0466802bd73261ce"
+  }
+}

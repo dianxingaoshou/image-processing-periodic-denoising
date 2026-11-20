@@ -1,0 +1,434 @@
+{
+  "axis_x_E_s741209@0.045": {
+    "old_reason": "inconclusive_exterior_phase_fit",
+    "exterior_runs": [
+      [
+        0,
+        27
+      ],
+      [
+        124,
+        185
+      ]
+    ],
+    "recorded_bands": [
+      {
+        "start": 27,
+        "stop": 124,
+        "minimum_measured_clearance_bins": 10.087769389356339,
+        "transverse_relative_coefficients": [
+          [
+            1.120989477818792,
+            0.15405235875985313
+          ],
+          [
+            1.0361648866916646,
+            -0.11704654615363841
+          ]
+        ],
+        "held_endpoint_count": 64,
+        "held_endpoint_alignment": 0.8622830579038292,
+        "local_stationary_residual_ratio": 0.32595489855623067
+      },
+      {
+        "start": 185,
+        "stop": 256,
+        "minimum_measured_clearance_bins": 9.337055536794361,
+        "transverse_relative_coefficients": [
+          [
+            1.0073031924740206,
+            -0.013096219948879021
+          ],
+          [
+            1.0799627491608133,
+            0.05806678224425118
+          ]
+        ],
+        "held_endpoint_count": 57,
+        "held_endpoint_alignment": 0.8437467103830785,
+        "local_stationary_residual_ratio": 0.21580283031440697
+      }
+    ],
+    "effective_columns": 41.5,
+    "effective_span": 176,
+    "buffer_period": 8,
+    "optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+    "iterations": 17,
+    "initial_frequency_bins": [
+      28.645214050898456,
+      20.740366376014123,
+      -12.051593479699799
+    ],
+    "fitted_frequency_bins": [
+      28.71920376682456,
+      21.019162704617145,
+      -10.463299229466214
+    ],
+    "drift_bins": 1.123995541077974,
+    "known_texture_removed_exterior_fit": {
+      "center_frequency": [
+        0.112000581248742,
+        0.08100146632786236
+      ],
+      "hessian": [
+        0.0,
+        0.0,
+        -0.00018035362786709
+      ],
+      "amplitude": 0.044584538337528956,
+      "phase_radians": -0.5801631534618884,
+      "exterior_weight_columns": 41.5,
+      "maximum_corner_drift_bins": 0.17209671910709484,
+      "transverse_amplitudes": [
+        0.04448701464341721,
+        0.04471363284027257,
+        0.04480667338470052,
+        0.04460651965804176
+      ]
+    },
+    "known_texture_removed_model_real_brightness_errors": [
+      [
+        0.1359970343788389,
+        0.14803695866204805
+      ],
+      [
+        0.13363252273859813,
+        0.11210068081567227
+      ]
+    ],
+    "reference_sha256": "5570bcf159c874f4a31288928af2514b20374b884f8b442342e4a52f0fcd3d2f",
+    "observation_sha256": "d7faf2ee9bb8ddea5d41710558c92e905f36a23a815b5ac1e6dd595608f5e2e9"
+  },
+  "axis_x_E_s741209@0.080": {
+    "old_reason": "inconclusive_exterior_phase_fit",
+    "exterior_runs": [
+      [
+        0,
+        27
+      ],
+      [
+        123,
+        186
+      ]
+    ],
+    "recorded_bands": [
+      {
+        "start": 27,
+        "stop": 123,
+        "minimum_measured_clearance_bins": 10.137281319139136,
+        "transverse_relative_coefficients": [
+          [
+            1.0690230838679675,
+            0.07931258266897948
+          ],
+          [
+            1.025530115379917,
+            -0.06746160868796981
+          ]
+        ],
+        "held_endpoint_count": 168,
+        "held_endpoint_alignment": 0.8544114279972554,
+        "local_stationary_residual_ratio": 0.1747829009944755
+      },
+      {
+        "start": 186,
+        "stop": 256,
+        "minimum_measured_clearance_bins": 9.391488805280487,
+        "transverse_relative_coefficients": [
+          [
+            0.9951507031112992,
+            -0.017751828047061886
+          ],
+          [
+            1.0392095374840677,
+            0.0317028307232478
+          ]
+        ],
+        "held_endpoint_count": 114,
+        "held_endpoint_alignment": 0.819472755499347,
+        "local_stationary_residual_ratio": 0.1186579557963995
+      }
+    ],
+    "effective_columns": 43.5,
+    "effective_span": 177,
+    "buffer_period": 8,
+    "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "iterations": 15,
+    "initial_frequency_bins": [
+      28.65756056353251,
+      20.738005677431776,
+      -11.947959948573867
+    ],
+    "fitted_frequency_bins": [
+      28.6995797412257,
+      20.86371315948338,
+      -11.22691894524434
+    ],
+    "drift_bins": 0.5140375059480331,
+    "known_texture_removed_exterior_fit": {
+      "center_frequency": [
+        0.11200056035030005,
+        0.08100249644128667
+      ],
+      "hessian": [
+        0.0,
+        0.0,
+        -0.00018032764725686384
+      ],
+      "amplitude": 0.07882910826915948,
+      "phase_radians": -0.5803559409419355,
+      "exterior_weight_columns": 43.5,
+      "maximum_corner_drift_bins": 0.09467383047278538,
+      "transverse_amplitudes": [
+        0.07871378856890832,
+        0.07876216332893034,
+        0.07949489505939343,
+        0.0790641116078398
+      ]
+    },
+    "known_texture_removed_model_real_brightness_errors": [
+      [
+        0.0761824771691828,
+        0.08219327477608392
+      ],
+      [
+        0.07460743640861615,
+        0.061773627230854375
+      ]
+    ],
+    "reference_sha256": "5570bcf159c874f4a31288928af2514b20374b884f8b442342e4a52f0fcd3d2f",
+    "observation_sha256": "9273b258afa94bb39c4921b033be197d92a300183191d6b8b54202f27e7f55bd"
+  },
+  "axis_x_E_s741251@0.045": {
+    "old_reason": "inconclusive_exterior_phase_fit",
+    "exterior_runs": [
+      [
+        0,
+        24
+      ],
+      [
+        123,
+        188
+      ]
+    ],
+    "recorded_bands": [
+      {
+        "start": 24,
+        "stop": 123,
+        "minimum_measured_clearance_bins": 10.092043645910325,
+        "transverse_relative_coefficients": [
+          [
+            0.8327242113282861,
+            0.055462012418958706
+          ],
+          [
+            1.0676015594247836,
+            0.06509065487803493
+          ]
+        ],
+        "held_endpoint_count": 59,
+        "held_endpoint_alignment": 0.8469828345378586,
+        "local_stationary_residual_ratio": 0.3002293934918127
+      },
+      {
+        "start": 188,
+        "stop": 256,
+        "minimum_measured_clearance_bins": 9.354133221423771,
+        "transverse_relative_coefficients": [
+          [
+            0.999074985090085,
+            -0.027629646489327035
+          ],
+          [
+            1.031974167736862,
+            0.060090914079988525
+          ]
+        ],
+        "held_endpoint_count": 43,
+        "held_endpoint_alignment": 0.7857253429009857,
+        "local_stationary_residual_ratio": 0.22537309502918282
+      }
+    ],
+    "effective_columns": 42.5,
+    "effective_span": 179,
+    "buffer_period": 8,
+    "optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+    "iterations": 16,
+    "initial_frequency_bins": [
+      28.677162047023703,
+      20.72715527247793,
+      -11.605355427701552
+    ],
+    "fitted_frequency_bins": [
+      28.60382659407003,
+      20.523359064718075,
+      -12.625161926765985
+    ],
+    "drift_bins": 0.727709410086803,
+    "known_texture_removed_exterior_fit": {
+      "center_frequency": [
+        0.1120009506663645,
+        0.08099731033673686
+      ],
+      "hessian": [
+        0.0,
+        0.0,
+        -0.00018046563741682339
+      ],
+      "amplitude": 0.044596201388338454,
+      "phase_radians": -2.481669954190874,
+      "exterior_weight_columns": 42.5,
+      "maximum_corner_drift_bins": 0.16893398608140667,
+      "transverse_amplitudes": [
+        0.04457033849267057,
+        0.044682890454136315,
+        0.044840111870754165,
+        0.04455487353975044
+      ]
+    },
+    "known_texture_removed_model_real_brightness_errors": [
+      [
+        0.11450827250261703,
+        0.15074161106637238
+      ],
+      [
+        0.13485184697495195,
+        0.11021912668307111
+      ]
+    ],
+    "reference_sha256": "5570bcf159c874f4a31288928af2514b20374b884f8b442342e4a52f0fcd3d2f",
+    "observation_sha256": "be938e8d05ef95c9579e7252066ede983c212241e936edf1caecca9a766e0d66"
+  },
+  "axis_x_E_s741251@0.080": {
+    "old_reason": "exterior_model_failed_local_confirmation",
+    "exterior_runs": [
+      [
+        0,
+        25
+      ],
+      [
+        122,
+        187
+      ]
+    ],
+    "recorded_bands": [
+      {
+        "start": 25,
+        "stop": 122,
+        "minimum_measured_clearance_bins": 10.168182313216082,
+        "transverse_relative_coefficients": [
+          [
+            0.9070752229496999,
+            0.03906614029699494
+          ],
+          [
+            1.0401522390543447,
+            0.04593319553122753
+          ]
+        ],
+        "held_endpoint_count": 167,
+        "held_endpoint_alignment": 0.855356294452537,
+        "local_stationary_residual_ratio": 0.156528932016479,
+        "exterior_fit_half_coefficients": [
+          [
+            0.9132860934235157,
+            -0.15571672148309737
+          ],
+          [
+            1.0672814137159239,
+            -0.031183490518735688
+          ]
+        ],
+        "exterior_fit_endpoint_alignment": 0.854587356652778,
+        "old_half_coefficient_errors": [
+          0.1782329906139707,
+          0.07415658239526272
+        ]
+      },
+      {
+        "start": 187,
+        "stop": 256,
+        "minimum_measured_clearance_bins": 9.416103866057941,
+        "transverse_relative_coefficients": [
+          [
+            0.9939721323644133,
+            -0.022071476077467237
+          ],
+          [
+            1.025273136958389,
+            0.03706519071892643
+          ]
+        ],
+        "held_endpoint_count": 100,
+        "held_endpoint_alignment": 0.8188710910973817,
+        "local_stationary_residual_ratio": 0.0951659233099544,
+        "exterior_fit_half_coefficients": [
+          [
+            0.9413251429470872,
+            0.34939006776005044
+          ],
+          [
+            0.9043536785658942,
+            0.4931793521553305
+          ]
+        ],
+        "exterior_fit_endpoint_alignment": 0.7336737820647976,
+        "old_half_coefficient_errors": [
+          0.35428259666479855,
+          0.5023684824869369
+        ]
+      }
+    ],
+    "effective_columns": 43.5,
+    "effective_span": 178,
+    "buffer_period": 8,
+    "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "iterations": 16,
+    "initial_frequency_bins": [
+      28.674854238038264,
+      20.730655683841825,
+      -11.695061169113679
+    ],
+    "fitted_frequency_bins": [
+      28.633123426638953,
+      20.61806920339216,
+      -12.265787842352092
+    ],
+    "drift_bins": 0.4075441654248191,
+    "old_exterior_amplitude": 0.07996934733471038,
+    "old_exterior_phase": -2.483638705814881,
+    "known_texture_removed_exterior_fit": {
+      "center_frequency": [
+        0.11200100034943293,
+        0.08099489300419176
+      ],
+      "hessian": [
+        0.0,
+        0.0,
+        -0.00018050591342995612
+      ],
+      "amplitude": 0.07885937381490633,
+      "phase_radians": -2.481308488064551,
+      "exterior_weight_columns": 43.5,
+      "maximum_corner_drift_bins": 0.07886365773436631,
+      "transverse_amplitudes": [
+        0.07891232557741983,
+        0.07873439241542472,
+        0.07943328557179939,
+        0.07895492741002522
+      ]
+    },
+    "known_texture_removed_model_real_brightness_errors": [
+      [
+        0.06334129240926759,
+        0.08788204415303251
+      ],
+      [
+        0.07278394614978427,
+        0.07148776044480812
+      ]
+    ],
+    "reference_sha256": "5570bcf159c874f4a31288928af2514b20374b884f8b442342e4a52f0fcd3d2f",
+    "observation_sha256": "dfca79b2a3f59b8c75d201384aad87ced5150d9c89362d60ea26221280fb5202"
+  }
+}

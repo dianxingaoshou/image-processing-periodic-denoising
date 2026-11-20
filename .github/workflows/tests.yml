@@ -24,6 +24,6 @@ jobs:
       - name: Install dependencies
         run: python -m pip install -r requirements-lock.txt
       - name: Run analytical and numerical unit tests
-        run: >-
-          python -m pytest -q tests original/periodic_notch_starter/test_demo.py
-          -m "not requires_bsds"
+        run: python -m pytest -q
+      - name: Verify frozen study source and numerical records
+        run: python experiments/run.py check

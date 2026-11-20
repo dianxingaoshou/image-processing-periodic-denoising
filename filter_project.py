@@ -7,9 +7,12 @@ import hashlib
 from importlib import import_module
 import json
 from pathlib import Path
+import sys
 
 import numpy as np
 from PIL import Image
+
+sys.path.insert(0, str(Path(__file__).resolve().parent / 'src'))
 
 from image_io_v3 import load_gray, sha256_file
 from project_pipeline import DEFAULT_GENERAL_CONFIG, DEFAULT_NARROW_CONFIG, load_config

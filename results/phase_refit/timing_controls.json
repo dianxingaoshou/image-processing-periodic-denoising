@@ -1,0 +1,105 @@
+{
+  "variant": "axis_x_E_s741209@0.080",
+  "rounds": 4,
+  "scope": "Supplemental post-hoc timing; one warmup each. Complete APIs in serial AB/BA order. Excludes I/O, hashing and synthesis. Not pooled into the core benchmark.",
+  "results": [
+    {
+      "side": "left",
+      "kind": "stationary_weave_plus_stripe",
+      "observed_sha256": "5f3c3d845135673a5a4a309c5a1b3d1fa3ee18055949ad61cf9dfcc01e78a4d1",
+      "previous_sha256": "5f3c3d845135673a5a4a309c5a1b3d1fa3ee18055949ad61cf9dfcc01e78a4d1",
+      "current_sha256": "63aa91e9592e91cd63cf4e1dbfad2ce6feee0690be8931185c17c9ba05d60d3d",
+      "previous_reason": "recurring_narrow_texture",
+      "current_reason": "phase_refit_after_texture_abstention",
+      "ms": {
+        "previous": [
+          1296.6575,
+          1289.8328,
+          1290.1614,
+          1295.3001
+        ],
+        "current": [
+          1310.8314,
+          1321.4651,
+          1318.5503,
+          1326.2049
+        ]
+      },
+      "median_ms": {
+        "previous": 1292.73075,
+        "current": 1320.0077
+      },
+      "paired_median_ratio": 1.022931663753369,
+      "paired_range": [
+        1.0109311055540882,
+        1.0245243414495273
+      ]
+    },
+    {
+      "side": "left",
+      "kind": "clean_gap",
+      "observed_sha256": "8c532f7b066db3501a75a95739d69f1543764437690de9d8ff03754914cfb712",
+      "previous_sha256": "8c532f7b066db3501a75a95739d69f1543764437690de9d8ff03754914cfb712",
+      "current_sha256": "8c532f7b066db3501a75a95739d69f1543764437690de9d8ff03754914cfb712",
+      "previous_reason": "recurring_narrow_texture",
+      "current_reason": "recurring_narrow_texture",
+      "ms": {
+        "previous": [
+          942.8738,
+          944.8844,
+          941.8523,
+          941.3385
+        ],
+        "current": [
+          942.9159,
+          968.8024,
+          938.0537,
+          950.466
+        ]
+      },
+      "median_ms": {
+        "previous": 942.3630499999999,
+        "current": 946.6909499999999
+      },
+      "paired_median_ratio": 1.0048704750988833,
+      "paired_range": [
+        0.9959668835548844,
+        1.0253131494180663
+      ]
+    },
+    {
+      "side": "right",
+      "kind": "stationary_weave_plus_stripe",
+      "observed_sha256": "f58a2b4d1ed42885b07e5d3ccad25409f3e3082c57abffb42a43768276d04949",
+      "previous_sha256": "56092085b33f6b1f72ca708b8f56a7c9ba19a6ad051de09c856b3adbdf8ad61e",
+      "current_sha256": "ca94dbbf202d9581d14eaf56a9b48e2dfc829b85cf265e638944c80fd2570936",
+      "previous_reason": "texture_reviewed_chirp",
+      "current_reason": "phase_refit_verified_chirp",
+      "ms": {
+        "previous": [
+          1407.735,
+          1418.6611,
+          1480.231,
+          1400.1197
+        ],
+        "current": [
+          1385.7113,
+          1377.5899,
+          1361.3687,
+          1378.1356
+        ]
+      },
+      "median_ms": {
+        "previous": 1413.19805,
+        "current": 1377.86275
+      },
+      "paired_median_ratio": 0.9776738682028246,
+      "paired_range": [
+        0.9197001684196588,
+        0.9843552231066216
+      ]
+    }
+  ],
+  "source_sha256": "c8f205737291529a4d7151f09140dc7b2b43239bdb2d7c416b5764faa33e8691",
+  "formal_texture_sha256": "ad46c6b5470bc023bc156f9cfc9b3283b6d622cd9261802543d098ed48a959af"
+}

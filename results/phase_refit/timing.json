@@ -1,0 +1,191 @@
+{
+  "inputs": 13,
+  "rounds": 4,
+  "methods": [
+    "previous",
+    "current"
+  ],
+  "runtime": {
+    "cpu": "AMD64 Family 26 Model 68 Stepping 0, AuthenticAMD",
+    "python": "3.14.7",
+    "numpy": "2.5.5",
+    "scipy": "1.18.1"
+  },
+  "scope": "Complete API, excluding synthesis, I/O, hashing and scoring. One warm-up per method/input. Balanced serial AB/BA.",
+  "groups": {
+    "all": {
+      "previous_median_ms": 15264.42995,
+      "current_median_ms": 15001.04485,
+      "paired_median_ratio": 0.9870673937250927,
+      "paired_range": [
+        0.9790376147544239,
+        0.987684564209862
+      ]
+    },
+    "target": {
+      "previous_median_ms": 5788.775900000001,
+      "current_median_ms": 5685.3628499999995,
+      "paired_median_ratio": 0.9821477599373332,
+      "paired_range": [
+        0.9754451688587421,
+        0.9963140488525682
+      ]
+    },
+    "new_phases": {
+      "previous_median_ms": 8486.234,
+      "current_median_ms": 8329.048900000002,
+      "paired_median_ratio": 0.9831514630943103,
+      "paired_range": [
+        0.9771305611885559,
+        0.9942385821369888
+      ]
+    },
+    "clean": {
+      "previous_median_ms": 916.183,
+      "current_median_ms": 913.81645,
+      "paired_median_ratio": 0.9994800492577601,
+      "paired_range": [
+        0.9878536681269813,
+        1.0083396502482718
+      ]
+    },
+    "narrow_edges": {
+      "previous_median_ms": 74.06895,
+      "current_median_ms": 74.37735,
+      "paired_median_ratio": 1.0104733788924833,
+      "paired_range": [
+        0.9840044273579633,
+        1.0164638530334693
+      ]
+    },
+    "core7": {
+      "previous_median_ms": 6776.2106,
+      "current_median_ms": 6671.99595,
+      "paired_median_ratio": 0.9846240181171493,
+      "paired_range": [
+        0.9794638748882153,
+        0.9962486621576089
+      ]
+    },
+    "regression / 69022 / edge8 / 3": {
+      "previous_median_ms": 37.0237,
+      "current_median_ms": 36.67915,
+      "paired_median_ratio": 0.9918485056131064,
+      "paired_range": [
+        0.9800818326648273,
+        1.0239673483575062
+      ]
+    },
+    "regression / 69022 / edge16 / 3": {
+      "previous_median_ms": 37.0041,
+      "current_median_ms": 37.321799999999996,
+      "paired_median_ratio": 1.0164582694559532,
+      "paired_range": [
+        0.9808336992727623,
+        1.0413241252352474
+      ]
+    },
+    "archived_photo / dtd_woven_0083 / clean / ": {
+      "previous_median_ms": 916.183,
+      "current_median_ms": 913.81645,
+      "paired_median_ratio": 0.9994800492577601,
+      "paired_range": [
+        0.9878536681269813,
+        1.0083396502482718
+      ]
+    },
+    "collision83_phases / dtd_woven_0083 / axis_x / axis_x_E_s741209@0.045": {
+      "previous_median_ms": 1457.4229,
+      "current_median_ms": 1454.4697500000002,
+      "paired_median_ratio": 1.003337816264205,
+      "paired_range": [
+        0.9818519756262766,
+        1.011210636028098
+      ]
+    },
+    "collision83_phases / dtd_woven_0083 / axis_x / axis_x_E_s741209@0.080": {
+      "previous_median_ms": 1426.2784000000001,
+      "current_median_ms": 1400.0878,
+      "paired_median_ratio": 0.9795901652631511,
+      "paired_range": [
+        0.9640348377690738,
+        1.018047136267127
+      ]
+    },
+    "collision83_phases / dtd_woven_0083 / axis_x / axis_x_E_s741251@0.045": {
+      "previous_median_ms": 1447.5127499999999,
+      "current_median_ms": 1439.29485,
+      "paired_median_ratio": 0.980281042090462,
+      "paired_range": [
+        0.9642820571587877,
+        1.0059757888387844
+      ]
+    },
+    "collision83_phases / dtd_woven_0083 / axis_x / axis_x_E_s741251@0.080": {
+      "previous_median_ms": 1432.37565,
+      "current_median_ms": 1369.3735499999998,
+      "paired_median_ratio": 0.9704113080676904,
+      "paired_range": [
+        0.9293006542577161,
+        1.0039328506603646
+      ]
+    },
+    "phase_refit_phases / dtd_woven_0083 / axis_x / axis_x_E_s638913@0.045": {
+      "previous_median_ms": 1373.79715,
+      "current_median_ms": 1367.2797500000001,
+      "paired_median_ratio": 0.9975332887222738,
+      "paired_range": [
+        0.9896394418165587,
+        1.0026165424181157
+      ]
+    },
+    "phase_refit_phases / dtd_woven_0083 / axis_x / axis_x_E_s638913@0.080": {
+      "previous_median_ms": 1383.5131000000001,
+      "current_median_ms": 1371.85455,
+      "paired_median_ratio": 0.9954443056407258,
+      "paired_range": [
+        0.9364613683339629,
+        1.0333940865067552
+      ]
+    },
+    "phase_refit_phases / dtd_woven_0083 / axis_x / axis_x_E_s638927@0.045": {
+      "previous_median_ms": 1448.4962500000001,
+      "current_median_ms": 1410.85345,
+      "paired_median_ratio": 0.974111624212971,
+      "paired_range": [
+        0.9368887764900934,
+        1.0007229699781361
+      ]
+    },
+    "phase_refit_phases / dtd_woven_0083 / axis_x / axis_x_E_s638927@0.080": {
+      "previous_median_ms": 1361.1632,
+      "current_median_ms": 1356.96595,
+      "paired_median_ratio": 0.996676026912337,
+      "paired_range": [
+        0.9501896096770186,
+        1.0155009034327505
+      ]
+    },
+    "phase_refit_phases / dtd_woven_0083 / axis_x / axis_x_E_s638951@0.045": {
+      "previous_median_ms": 1475.761,
+      "current_median_ms": 1413.5303,
+      "paired_median_ratio": 0.9572848434174899,
+      "paired_range": [
+        0.9485710293540109,
+        0.9994841992931646
+      ]
+    },
+    "phase_refit_phases / dtd_woven_0083 / axis_x / axis_x_E_s638951@0.080": {
+      "previous_median_ms": 1390.88475,
+      "current_median_ms": 1392.8661499999998,
+      "paired_median_ratio": 0.9959317835436639,
+      "paired_range": [
+        0.9850285691210641,
+        1.0078027265339062
+      ]
+    }
+  },
+  "metrics_sha256": "045eccea8cb2e7c0dbf8f9bf3301426f4cf10571e0644406ddc0de42f61288fe",
+  "timing_sha256": "3988e90f1c25682ef03be028c3ac5f875cff73b401186cf0996f029cc806cc05",
+  "source_sha256": "a409ca501694459d9c836fc7b679454642660b73f35717d96abf77c182c31afe"
+}

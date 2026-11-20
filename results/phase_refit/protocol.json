@@ -1,0 +1,18 @@
+{
+  "target": "dtd_woven_0083",
+  "previous": "project_collision",
+  "current": "project_phase",
+  "target_seeds": [741209, 741251],
+  "new_phase_seeds": [638913, 638927, 638951],
+  "amplitudes": [0.045, 0.08],
+  "historical_inputs": 160,
+  "fields": "Each new seed changes only the initial phase of historical axis_x_E. Evaluate both amplitudes after freezing the implementation. Use the historical clean photograph and stripe generator.",
+  "fixed_column_ranges_inclusive": [[38, 111], [199, 255]],
+  "peak_groups": [5, 6],
+  "visible_gain_increase": 0.10,
+  "visible_regional_mse_decrease": 0.25,
+  "quality": "Report whole-image actual stripe projection, MSE in each fixed strip, raw Fourier-band MSE for peaks 5 and 6, and excess error at the smaller positive projection of the two methods. Report all target and new phases. An effect is visible if gain increases by at least 0.10 and MSE falls at least 25 percent in each fixed strip. A texture-protected improvement also requires no increase over previous at either focus peak in raw and matched-excess MSE. Use 1e-18 as the peak equality tolerance.",
+  "regression": "Reproduce all 160 historical ground truths, observations and old output, route and reason. Check original nine, all 33 clean controls, 10 narrow/strength controls on 69022, and the eight published local texture/identifiability controls. Report individual differences. A changed output at an ambiguous clean reference must be assessed explicitly.",
+  "paired_texture": "For each target seed and amplitude superimpose the established phase-offset stationary weave (amplitude 0.035) in one of the two old collision bands. Compare marginal preservation by projecting output(with weave) minus output(without weave) onto the known added weave; also compare marginal MSE. For high amplitudes test both no-noise-in-band and stationary weave with exterior-only noise for each side. Report residual and clean-band damage.",
+  "timing": "On the same machine run the four design cases, six new phase cases, one clean original, and two bottom narrow cases. Prewarm both complete APIs per input, balance AB/BA order for four paired rounds, omit disk I/O, synthesis and evaluation, and validate output hashes independently. Report median actual elapsed time per case, aggregate paired ratio and its range."
+}

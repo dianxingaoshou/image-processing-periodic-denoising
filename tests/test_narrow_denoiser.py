@@ -8,7 +8,7 @@ import numpy as np
 import pytest
 from PIL import Image
 
-from narrow_denoiser import Config,Prepared,config_dict,prepare,restore,denoise
+from narrow_denoiser import Config,prepare,restore,denoise
 
 
 @pytest.mark.parametrize('axis',(0,1))
@@ -52,13 +52,12 @@ def test_same_profiles_are_reused_without_mutating_ablation_inputs():
 def test_cli_records_configuration_and_input_without_reference_metrics(tmp_path):
     y,x=np.indices((96,96));a=.5+.12*(x<8)*np.sin(2*np.pi*.13*y)
     path=tmp_path/'input.png';Image.fromarray(np.rint(a*255).astype('uint8')).save(path)
-    config=tmp_path/'config.json';config.write_text(json.dumps(dict(configuration=config_dict(Config()))),encoding='utf-8')
     output=tmp_path/'output'
-    result=subprocess.run([sys.executable,'filter_narrow.py',str(path),'--config',str(config),'--out',str(output)],capture_output=True,text=True)
+    result=subprocess.run([sys.executable,'filter_project.py',str(path),'--out',str(output)],capture_output=True,text=True)
     assert result.returncode==0,result.stderr
     record=json.loads((output/'decisions.json').read_text(encoding='utf-8'))
-    assert record['algorithm']=='narrow_profiles'
-    assert record['configuration']['compact_support']
+    assert record['algorithm']=='project_phase'
+    assert record['configuration']['narrow']['compact_support']
     assert record['reference_metrics'].startswith('not computed')
     assert len(record['configuration_provenance']['effective_configuration_sha256'])==64
     restored=np.load(output/'restored.npy')

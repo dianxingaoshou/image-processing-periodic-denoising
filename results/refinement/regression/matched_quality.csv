@@ -1,5 +1,0 @@
-﻿image_id,kind,matched,reason,target_dirty_mse,baseline_clean_mse,structure_clean_mse,clean_mse_difference
-10081,edge_strip,False,nonmonotonic recovery curve; ambiguous strength branch,,,,
-102062,edge_strip,False,duplicate recovery level; no unique interpolated damage,,,,
-104010,edge_strip,False,duplicate recovery level; no unique interpolated damage,,,,
-104055,edge_strip,True,,0.0019897613657235335,6.028595749452529e-12,6.7027527543315485e-12,6.741570048790197e-13
